@@ -1,0 +1,17 @@
+{
+  "name": "msss-registre-functions",
+  "description": "Planificateur de collecte du registre MSSS vers Firestore",
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": "20"
+  },
+  "scripts": {
+    "copy-scraper": "node copy-scraper.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "firebase-admin": "^12.7.0",
+    "firebase-functions": "^6.1.1"
+  }
+}

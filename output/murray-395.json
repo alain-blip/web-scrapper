@@ -1,0 +1,229 @@
+{
+  "noForm": "395",
+  "numeroInterne": "395",
+  "numeroRegistre": "395-1",
+  "residencesLiees": [
+    "395-1",
+    "395-2"
+  ],
+  "statut": "Active",
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=395",
+  "section1_identification": {
+    "nomResidence": "Résidence Murray",
+    "adresse": "205, rue Murray",
+    "codePostal": "J1G 2K2",
+    "esss": "05 - CIUSSS de l'Estrie – CHUS",
+    "esssCode": "05",
+    "esssNom": "CIUSSS de l'Estrie – CHUS",
+    "municipalite": "Sherbrooke",
+    "territoireCLSC": "Sherbrooke",
+    "territoireRLS": "RLS de Sherbrooke",
+    "territoireMRC": null,
+    "courriels": [
+      "info@residencemurray.com",
+      "luciedesrosiers@residencemurray.com"
+    ],
+    "telephone": "819-569-8988",
+    "telecopieur": "819-569-7186",
+    "dateOuverture": "1997-01-08",
+    "typeResidence": "Résidence à but lucratif",
+    "categorieRPA": 2,
+    "nombreTotalUnitesImmeubles": 122,
+    "appartenanceGroupeReseau": null,
+    "immeublesAssocies": []
+  },
+  "section2_titulaires": {
+    "personneMorale": {
+      "nomCompagnie": "9146-6573 Québec inc.",
+      "neq": "1162487210",
+      "datePrisePossession": "1997-01-08"
+    },
+    "actionnaires": [
+      {
+        "nom": "Fiducie familiale Pierre Chapdelaine",
+        "prenom": null,
+        "mention": "premier actionnaire"
+      },
+      {
+        "nom": "CHAPDELAINE",
+        "prenom": "Pierre",
+        "mention": null
+      }
+    ]
+  },
+  "section3_autresRPA": {
+    "proprietaireAutresRPA": false,
+    "nombreAutresResidences": 0,
+    "liste": []
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "CHAPDELAINE",
+      "prenom": "Pierre"
+    },
+    {
+      "nom": "DESROSIERS",
+      "prenom": "Lucie"
+    }
+  ],
+  "section5_administrateurs": [
+    {
+      "nom": "PIERRE",
+      "prenom": "Chapdelaine",
+      "occupation": null,
+      "fonction": "Président, trésorier et secrétaire"
+    }
+  ],
+  "section6_portraits": {
+    "capaciteTotaleImmeubles": 122,
+    "capaciteRPA": 40,
+    "repartitionAges": {
+      "moins65": 0,
+      "de65a74": 2,
+      "de75a84": 13,
+      "de85plus": 23,
+      "totalResidents": 38
+    },
+    "unitesParMission": {
+      "rpa": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 40,
+        "total": 40,
+        "clientelePersonnesAgees": "Oui"
+      },
+      "ri": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 0,
+        "clientelePersonnesAgees": "N/D"
+      },
+      "rtf": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 0,
+        "clientelePersonnesAgees": "N/D"
+      },
+      "chsld": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 0,
+        "clientelePersonnesAgees": null
+      },
+      "autres": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 0,
+        "clientelePersonnesAgees": "Oui"
+      }
+    },
+    "totalUnitesLocatives": 40,
+    "entente108": false,
+    "employes": {
+      "semaine": {
+        "jour": 20,
+        "soir": 3,
+        "nuit": 2
+      },
+      "finDeSemaine": {
+        "jour": 9,
+        "soir": 3,
+        "nuit": 2
+      }
+    },
+    "personnelAssistance": {
+      "semaine": {
+        "jour": 2,
+        "soir": 2,
+        "nuit": 1
+      },
+      "finDeSemaine": {
+        "jour": 2,
+        "soir": 2,
+        "nuit": 1
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 1
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 1
+        },
+        "precisions": "Sur appel soir et nuit et fin de semaine."
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 2,
+          "soir": 1,
+          "nuit": 1
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 1
+        },
+        "precisions": "Sur appel soir et nuit."
+      }
+    ]
+  },
+  "section7_services": {
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    },
+    "loisirs": true,
+    "repas": true,
+    "aideDomestique": true,
+    "assistancePersonnelle": false,
+    "soinsInfirmiers": false
+  },
+  "section8_reconnaissance": {
+    "membreAssociation": true,
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section9_immeuble": {
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "sousSol": {
+      "present": true,
+      "porteExterieure": true,
+      "residentsHeberges": true,
+      "nombreEtagesHorsSousSol": 6
+    },
+    "rampeAcces": true,
+    "nombreAscenseurs": 2,
+    "mitigeurEauChaude": true,
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "systemeGicleurs": "En totalité",
+    "sourceEauPotable": "Système d'aqueduc municipal",
+    "generatrice": true,
+    "climatisation": {
+      "ensembleImmeubles": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "controleIndependant": true
+    }
+  }
+}

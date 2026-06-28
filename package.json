@@ -1,0 +1,14 @@
+{
+  "name": "web-scrapper",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Scraper du Registre des résidences pour aînés (K10 MSSS)",
+  "scripts": {
+    "scrape": "node src/scrape.js",
+    "compare": "node scripts/compare.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
+}

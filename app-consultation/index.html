@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consultation — Registre des résidences pour aînés (K10 MSSS)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Registre des résidences pour aînés</h1>
+    <p class="sub">Prototype de consultation — jeu de test (4 fiches) · lecture seule</p>
+  </header>
+
+  <!-- VUE LISTE -->
+  <main id="vue-liste">
+    <section class="filtres" aria-label="Filtres">
+      <div class="filtre">
+        <label for="f-esss">Région / ÉSSS</label>
+        <select id="f-esss"><option value="">Toutes</option></select>
+      </div>
+      <div class="filtre">
+        <label for="f-cat">Catégorie RPA</label>
+        <select id="f-cat">
+          <option value="">Toutes</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+      <div class="filtre">
+        <label>Nombre d'unités</label>
+        <div class="fourchette">
+          <input type="number" id="f-min" inputmode="numeric" min="0" placeholder="min" aria-label="Unités minimum">
+          <span>–</span>
+          <input type="number" id="f-max" inputmode="numeric" min="0" placeholder="max" aria-label="Unités maximum">
+        </div>
+      </div>
+      <button id="f-reset" type="button" class="reset">Réinitialiser</button>
+    </section>
+
+    <p id="compteur" class="compteur" aria-live="polite"></p>
+
+    <div class="table-wrap">
+      <table id="tableau">
+        <thead>
+          <tr>
+            <th data-key="nom">Nom</th>
+            <th data-key="municipalite">Municipalité</th>
+            <th data-key="cat" class="num">Cat. RPA</th>
+            <th data-key="unites" class="num">Unités</th>
+            <th data-key="esss">Région / ÉSSS</th>
+          </tr>
+        </thead>
+        <tbody id="corps"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- VUE DÉTAIL -->
+  <main id="vue-detail" hidden>
+    <button id="retour" type="button" class="retour">← Retour à la liste</button>
+    <div id="detail"></div>
+  </main>
+
+  <footer class="pied">
+    Données : Registre K10, MSSS Québec · Affichage en lecture seule.
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

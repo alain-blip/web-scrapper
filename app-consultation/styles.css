@@ -1,0 +1,129 @@
+:root {
+  --bleu: #0b5394;
+  --bleu-clair: #e7f0f8;
+  --gris: #f5f6f8;
+  --bord: #d9dde2;
+  --texte: #1f2933;
+  --muet: #6b7280;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--texte);
+  background: var(--gris);
+  line-height: 1.45;
+}
+
+.topbar {
+  background: var(--bleu);
+  color: #fff;
+  padding: 16px 20px;
+}
+.topbar h1 { margin: 0; font-size: 1.25rem; }
+.topbar .sub { margin: 4px 0 0; font-size: .85rem; opacity: .9; }
+
+main { padding: 16px; max-width: 1100px; margin: 0 auto; }
+
+/* --- Filtres --- */
+.filtres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: flex-end;
+  background: #fff;
+  border: 1px solid var(--bord);
+  border-radius: 10px;
+  padding: 14px;
+}
+.filtre { display: flex; flex-direction: column; gap: 4px; }
+.filtre label { font-size: .78rem; font-weight: 600; color: var(--muet); text-transform: uppercase; letter-spacing: .02em; }
+.filtre select, .filtre input {
+  padding: 8px 10px;
+  border: 1px solid var(--bord);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+}
+.fourchette { display: flex; align-items: center; gap: 6px; }
+.fourchette input { width: 90px; }
+.reset {
+  margin-left: auto;
+  padding: 9px 14px;
+  border: 1px solid var(--bord);
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: .9rem;
+}
+.reset:hover { background: var(--gris); }
+
+.compteur { margin: 14px 2px 8px; color: var(--muet); font-size: .9rem; }
+
+/* --- Tableau --- */
+.table-wrap { overflow-x: auto; background: #fff; border: 1px solid var(--bord); border-radius: 10px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 11px 14px; text-align: left; border-bottom: 1px solid var(--bord); }
+th { background: var(--bleu-clair); font-size: .8rem; text-transform: uppercase; letter-spacing: .02em; color: #334; white-space: nowrap; }
+th.num, td.num { text-align: right; }
+tbody tr { cursor: pointer; }
+tbody tr:hover { background: var(--bleu-clair); }
+tbody tr:last-child td { border-bottom: none; }
+td.nom { font-weight: 600; color: var(--bleu); }
+.vide { padding: 24px; text-align: center; color: var(--muet); }
+
+/* --- Détail --- */
+.retour {
+  margin-bottom: 14px;
+  padding: 9px 14px;
+  border: 1px solid var(--bord);
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: .95rem;
+}
+.retour:hover { background: var(--bleu-clair); }
+
+.fiche-titre { margin: 0 0 4px; color: var(--bleu); }
+.fiche-meta { color: var(--muet); font-size: .9rem; margin: 0 0 18px; }
+.badge {
+  display: inline-block; padding: 2px 9px; border-radius: 999px;
+  background: var(--bleu-clair); color: var(--bleu); font-size: .8rem; font-weight: 600;
+  margin-right: 6px;
+}
+
+.section { background: #fff; border: 1px solid var(--bord); border-radius: 10px; margin-bottom: 14px; overflow: hidden; }
+.section > h2 { margin: 0; padding: 12px 16px; background: var(--bleu-clair); font-size: 1rem; color: #1c3d5a; }
+.section .corps { padding: 6px 16px 14px; }
+
+.champ { display: flex; gap: 12px; padding: 6px 0; border-bottom: 1px dashed #eef1f4; }
+.champ:last-child { border-bottom: none; }
+.champ .k { flex: 0 0 42%; color: var(--muet); font-size: .9rem; }
+.champ .v { flex: 1; font-size: .95rem; word-break: break-word; }
+.v.oui { color: #157347; font-weight: 600; }
+.v.non { color: #9a3412; }
+.v.nul { color: #aab2bd; }
+
+.sous-objet { margin: 6px 0 6px 8px; padding-left: 12px; border-left: 3px solid var(--bleu-clair); }
+.sous-titre { font-weight: 600; font-size: .9rem; margin: 8px 0 2px; color: #334; }
+
+.mini-table { width: 100%; border-collapse: collapse; margin: 6px 0; font-size: .9rem; }
+.mini-table th, .mini-table td { border: 1px solid var(--bord); padding: 6px 8px; }
+.mini-table th { background: var(--gris); }
+
+.pied { text-align: center; color: var(--muet); font-size: .8rem; padding: 20px; }
+
+/* --- Mobile --- */
+@media (max-width: 640px) {
+  .filtres { flex-direction: column; align-items: stretch; }
+  .reset { margin-left: 0; }
+  .filtre select, .fourchette input { width: 100%; }
+  .fourchette input { width: 100%; }
+  th, td { padding: 9px 10px; }
+  .champ { flex-direction: column; gap: 2px; }
+  .champ .k { flex-basis: auto; }
+  /* masque les colonnes secondaires pour rester lisible sur petit écran */
+  th:nth-child(5), td:nth-child(5) { display: none; }
+}

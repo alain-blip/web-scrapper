@@ -27,7 +27,10 @@ export const collecteQuotidienne = onSchedule(
     schedule: '0 3 * * *',
     timeZone: 'America/Montreal',
     region: 'northamerica-northeast1',
-    timeoutSeconds: 3600,   // 60 min : marge pour les grosses régions
+    timeoutSeconds: 1800,   // 30 min : maximum autorisé pour onSchedule.
+                            // Si une grosse région déborde : écriture incrémentale
+                            // déjà persistée + statut "partiel" (on découpera plus
+                            // tard si la mesure le montre nécessaire).
     memory: '1GiB',
     retryCount: 0,          // idempotent (merge par noForm) ; pas de double run
   },

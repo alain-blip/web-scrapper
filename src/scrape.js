@@ -6,7 +6,7 @@
 //   node src/scrape.js --fixture fixtures/murray-395.html --noForm 395
 
 import fs from 'node:fs';
-import { fetchFiche, decodeCp1252 } from './fetch.js';
+import { fetchFiche } from './fetch.js';
 import { extract } from './extract.js';
 import { transform } from './transform.js';
 
@@ -27,7 +27,9 @@ function parseArgs(argv) {
 export async function scrape({ noForm, fixture } = {}) {
   let html;
   if (fixture) {
-    html = decodeCp1252(fs.readFileSync(fixture));
+    // Les fixtures sont stockées en UTF-8 (artefact de test). Le chemin live
+    // (fetchFiche) décode lui la réponse réelle en cp1252.
+    html = fs.readFileSync(fixture, 'utf-8');
   } else {
     html = await fetchFiche(noForm);
   }

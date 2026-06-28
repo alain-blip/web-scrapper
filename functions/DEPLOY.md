@@ -119,6 +119,55 @@ mesure, pas avant.**
 
 ---
 
+## 7. 🧪 Déclencheur de TEST temporaire (`collecteTest`) — à retirer après validation
+
+Une 2ᵉ fonction, **`collecteTest`**, permet de tester la chaîne complète
+(collecte → écriture Firestore → `_collectionLog`) **à la demande**, sans
+attendre le bon jour. Mêmes garde-fous (throttle 1,5 s, back-off, journal),
+avec une **limite basse par défaut (5 fiches)**.
+
+### a) Définir le jeton (une fois)
+Crée le fichier **`functions/.env`** (copie de `.env.example`) avec un secret long :
+```
+COLLECTE_TEST_TOKEN=un-secret-long-et-aleatoire-que-toi-seul-connais
+```
+> Sans ce jeton, l'endpoint répond `403` (désactivé). Le fichier `.env` n'est pas
+> versionné (il est dans `.gitignore`).
+
+### b) Déployer (inclut les 2 fonctions)
+```bash
+firebase deploy --only functions
+```
+À la fin, Firebase affiche l'**URL** de `collecteTest`, du type :
+```
+https://collectetest-XXXXXXXX-nn.a.run.app
+```
+(ou la forme `https://northamerica-northeast1-primexpert-msss-registre.cloudfunctions.net/collecteTest`).
+
+### c) Appeler le test (doux : 5 fiches)
+Dans le navigateur ou avec `curl`, en remplaçant l'URL et le jeton :
+```bash
+curl "https://<URL-de-collecteTest>?token=TON_SECRET&cdRSS=05&limit=5"
+```
+Paramètres : `cdRSS` (région, 2 chiffres) · `limit` (défaut 5, max 50) ·
+`throttle` (ms, défaut 1500). La réponse JSON donne `nbListe / nbVues /
+nbEcrites / nbErreurs / nbSkips / bloque / statut / dureeMs`, et un
+enregistrement `mode:"test"` apparaît dans `_collectionLog`.
+
+> ⚠️ On lancera ce test **à froid** (après que le serveur MSSS ait « oublié » les
+> sondes), avec un `limit` bas, pour rester doux.
+
+### d) RETIRER l'outil après validation
+1. Dans `functions/index.js`, **supprimer tout le bloc `collecteTest`** (entre la
+   bannière « OUTIL DE TEST TEMPORAIRE » et la fin du fichier) ainsi que les imports
+   devenus inutiles (`onRequest`, `defineString`).
+2. Redéployer : `firebase deploy --only functions` → Firebase détecte la fonction
+   retirée et **demande de la supprimer** → répondre **oui**.
+   (ou explicitement : `firebase functions:delete collecteTest --region northamerica-northeast1`)
+3. Optionnel : supprimer `functions/.env`.
+
+---
+
 ## En cas de souci
 
 - `firebase deploy` échoue en demandant la facturation → refais l'**étape 2** (Blaze).

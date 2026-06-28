@@ -1,0 +1,216 @@
+{
+  "noForm": "6529",
+  "numeroInterne": "6529",
+  "numeroRegistre": "6529",
+  "residencesLiees": [],
+  "statut": "Active",
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=6529",
+  "section1_identification": {
+    "nomResidence": "Résidence London",
+    "adresse": "301, rue London",
+    "codePostal": "J1H 3M6",
+    "esss": "05 - CIUSSS de l'Estrie – CHUS",
+    "esssCode": "05",
+    "esssNom": "CIUSSS de l'Estrie – CHUS",
+    "municipalite": "Sherbrooke",
+    "territoireCLSC": "Sherbrooke",
+    "territoireRLS": "RLS de Sherbrooke",
+    "territoireMRC": null,
+    "courriels": [
+      "methot.se@videotron.ca"
+    ],
+    "telephone": "819-564-8415",
+    "telecopieur": null,
+    "dateOuverture": "1989-01-01",
+    "typeResidence": "Résidence à but lucratif",
+    "categorieRPA": 3,
+    "nombreTotalUnitesImmeubles": 30,
+    "appartenanceGroupeReseau": null,
+    "immeublesAssocies": []
+  },
+  "section2_titulaires": {
+    "personneMorale": {
+      "nomCompagnie": "9200-3540 Québec inc.",
+      "neq": "1165353351",
+      "datePrisePossession": "2014-08-29"
+    },
+    "actionnaires": [
+      {
+        "nom": "MÉTHOT",
+        "prenom": "Sébastien",
+        "mention": null
+      }
+    ]
+  },
+  "section3_autresRPA": {
+    "proprietaireAutresRPA": false,
+    "nombreAutresResidences": 0,
+    "liste": []
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "Aucun",
+      "prenom": null
+    }
+  ],
+  "section5_administrateurs": [
+    {
+      "nom": "MÉTHOT",
+      "prenom": "Sébastien",
+      "occupation": null,
+      "fonction": "Homme d'affaires Président, vice-président, secrétaire, trésorier, administrateur"
+    }
+  ],
+  "section6_portraits": {
+    "capaciteTotaleImmeubles": 30,
+    "capaciteRPA": 30,
+    "repartitionAges": {
+      "moins65": 5,
+      "de65a74": 10,
+      "de75a84": 11,
+      "de85plus": 4,
+      "totalResidents": 30
+    },
+    "unitesParMission": {
+      "rpa": {
+        "chambresSimples": 30,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 30,
+        "clientelePersonnesAgees": "Oui"
+      },
+      "ri": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 0,
+        "clientelePersonnesAgees": "Non"
+      },
+      "rtf": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 0,
+        "clientelePersonnesAgees": "Non"
+      },
+      "chsld": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 0,
+        "clientelePersonnesAgees": null
+      },
+      "autres": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 0,
+        "clientelePersonnesAgees": "Non"
+      }
+    },
+    "totalUnitesLocatives": 30,
+    "entente108": false,
+    "employes": {
+      "semaine": {
+        "jour": 5,
+        "soir": 1,
+        "nuit": 1
+      },
+      "finDeSemaine": {
+        "jour": 2,
+        "soir": 1,
+        "nuit": 1
+      }
+    },
+    "personnelAssistance": {
+      "semaine": {
+        "jour": 3,
+        "soir": 1,
+        "nuit": 1
+      },
+      "finDeSemaine": {
+        "jour": 2,
+        "soir": 1,
+        "nuit": 1
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ]
+  },
+  "section7_services": {
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    },
+    "loisirs": true,
+    "repas": true,
+    "aideDomestique": true,
+    "assistancePersonnelle": true,
+    "soinsInfirmiers": true
+  },
+  "section8_reconnaissance": {
+    "membreAssociation": true,
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section9_immeuble": {
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "sousSol": {
+      "present": true,
+      "porteExterieure": false,
+      "residentsHeberges": false,
+      "nombreEtagesHorsSousSol": 2
+    },
+    "rampeAcces": true,
+    "nombreAscenseurs": 1,
+    "mitigeurEauChaude": true,
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "systemeGicleurs": "En totalité",
+    "sourceEauPotable": "Système d'aqueduc municipal",
+    "generatrice": false,
+    "climatisation": {
+      "ensembleImmeubles": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "controleIndependant": false
+    }
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "noForm": "7948",
+  "numeroInterne": "7948",
+  "numeroRegistre": "5610-2",
+  "residencesLiees": [
+    "5610-1",
+    "5610-2"
+  ],
+  "statut": "Active",
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7948",
+  "section1_identification": {
+    "nomResidence": "Manoir Stanstead",
+    "adresse": "496 rue Dufferin",
+    "codePostal": "J0B 3E0",
+    "esss": "05 - CIUSSS de l'Estrie – CHUS",
+    "esssCode": "05",
+    "esssNom": "CIUSSS de l'Estrie – CHUS",
+    "municipalite": "Stanstead",
+    "territoireCLSC": "Memphrémagog",
+    "territoireRLS": "RLS de Memphrémagog",
+    "territoireMRC": null,
+    "courriels": [
+      "infirmerie@manoirstanstead.ca"
+    ],
+    "telephone": "819-876-7080",
+    "telecopieur": null,
+    "dateOuverture": "2011-06-01",
+    "typeResidence": "Résidence à but lucratif",
+    "categorieRPA": 4,
+    "nombreTotalUnitesImmeubles": 67,
+    "appartenanceGroupeReseau": null,
+    "immeublesAssocies": []
+  },
+  "section2_titulaires": {
+    "personneMorale": {
+      "nomCompagnie": "9200-9554 Québec Inc.",
+      "neq": "1165386393",
+      "datePrisePossession": "2011-01-06"
+    },
+    "actionnaires": [
+      {
+        "nom": "CORPORATION FINANCIÈRE LEMIRE",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "2549-9187 QUÉBEC INC.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "2549-9179 QUÉBEC INC.",
+        "prenom": null,
+        "mention": null
+      }
+    ]
+  },
+  "section3_autresRPA": {
+    "proprietaireAutresRPA": false,
+    "nombreAutresResidences": 0,
+    "liste": []
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "ROLFE",
+      "prenom": "Donna"
+    }
+  ],
+  "section5_administrateurs": [
+    {
+      "nom": "PARENT",
+      "prenom": "Martin",
+      "occupation": null,
+      "fonction": "Entrepreneur construction Secrétaire"
+    },
+    {
+      "nom": "PARENT",
+      "prenom": "Éloi",
+      "occupation": null,
+      "fonction": "Entrepreneur construction Administrateur"
+    },
+    {
+      "nom": "LEMIRE",
+      "prenom": "Louis-Robert",
+      "occupation": null,
+      "fonction": "Promoteur immobilier Président"
+    }
+  ],
+  "section6_portraits": {
+    "capaciteTotaleImmeubles": 101,
+    "capaciteRPA": 13,
+    "repartitionAges": {
+      "moins65": 0,
+      "de65a74": 0,
+      "de75a84": 2,
+      "de85plus": 9,
+      "totalResidents": 11
+    },
+    "unitesParMission": {
+      "rpa": {
+        "chambresSimples": 13,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 13,
+        "clientelePersonnesAgees": "Oui"
+      },
+      "ri": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 0,
+        "clientelePersonnesAgees": "Non"
+      },
+      "rtf": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 0,
+        "clientelePersonnesAgees": "Non"
+      },
+      "chsld": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 0,
+        "clientelePersonnesAgees": null
+      },
+      "autres": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 0,
+        "clientelePersonnesAgees": "Non"
+      }
+    },
+    "totalUnitesLocatives": 13,
+    "entente108": false,
+    "employes": {
+      "semaine": {
+        "jour": 13,
+        "soir": 4,
+        "nuit": 2
+      },
+      "finDeSemaine": {
+        "jour": 7,
+        "soir": 4,
+        "nuit": 2
+      }
+    },
+    "personnelAssistance": {
+      "semaine": {
+        "jour": 4,
+        "soir": 4,
+        "nuit": 2
+      },
+      "finDeSemaine": {
+        "jour": 4,
+        "soir": 4,
+        "nuit": 2
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ]
+  },
+  "section7_services": {
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    },
+    "loisirs": true,
+    "repas": true,
+    "aideDomestique": true,
+    "assistancePersonnelle": true,
+    "soinsInfirmiers": true
+  },
+  "section8_reconnaissance": {
+    "membreAssociation": false,
+    "associations": [],
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section9_immeuble": {
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "sousSol": {
+      "present": true,
+      "porteExterieure": true,
+      "residentsHeberges": false,
+      "nombreEtagesHorsSousSol": 3
+    },
+    "rampeAcces": true,
+    "nombreAscenseurs": 1,
+    "mitigeurEauChaude": true,
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "systemeGicleurs": "En totalité",
+    "sourceEauPotable": "Système d'aqueduc municipal",
+    "generatrice": true,
+    "climatisation": {
+      "ensembleImmeubles": true,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "controleIndependant": true
+    }
+  }
+}

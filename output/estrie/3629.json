@@ -1,0 +1,252 @@
+{
+  "noForm": "3629",
+  "numeroInterne": "3629",
+  "numeroRegistre": "3629",
+  "residencesLiees": [],
+  "statut": "Active",
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=3629",
+  "section1_identification": {
+    "nomResidence": "Résidence du Mont",
+    "adresse": "280, rue Denison Est",
+    "codePostal": "J2H 2R6",
+    "esss": "05 - CIUSSS de l'Estrie – CHUS",
+    "esssCode": "05",
+    "esssNom": "CIUSSS de l'Estrie – CHUS",
+    "municipalite": "Granby",
+    "territoireCLSC": "Haute-Yamaska",
+    "territoireRLS": "RLS de la Haute-Yamaska",
+    "territoireMRC": null,
+    "courriels": [
+      "residencedumont@videotron.ca"
+    ],
+    "telephone": "450-375-4684",
+    "telecopieur": "450-375-5692",
+    "dateOuverture": "1985-06-01",
+    "typeResidence": "Résidence à but lucratif",
+    "categorieRPA": 3,
+    "nombreTotalUnitesImmeubles": 75,
+    "appartenanceGroupeReseau": null,
+    "immeublesAssocies": []
+  },
+  "section2_titulaires": {
+    "personneMorale": {
+      "nomCompagnie": "Résidence du Mont (2007) Inc.",
+      "neq": "1164492002",
+      "datePrisePossession": "1985-06-01"
+    },
+    "actionnaires": [
+      {
+        "nom": "DUMAS",
+        "prenom": "Bernard",
+        "mention": null
+      },
+      {
+        "nom": "BOUTHIETTE DUMAS",
+        "prenom": "Sylvie",
+        "mention": null
+      },
+      {
+        "nom": "DUMAS",
+        "prenom": "Élizabeth",
+        "mention": null
+      },
+      {
+        "nom": "DUMAS",
+        "prenom": "Audrey",
+        "mention": null
+      }
+    ]
+  },
+  "section3_autresRPA": {
+    "proprietaireAutresRPA": false,
+    "nombreAutresResidences": 0,
+    "liste": []
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "DUMAS",
+      "prenom": "Élizabeth"
+    },
+    {
+      "nom": "DUMAS",
+      "prenom": "Audrey"
+    }
+  ],
+  "section5_administrateurs": [
+    {
+      "nom": "DUMAS",
+      "prenom": "Bernard",
+      "occupation": null,
+      "fonction": "Administrateur Président"
+    },
+    {
+      "nom": "BOUTHIETTE",
+      "prenom": "Sylvie",
+      "occupation": null,
+      "fonction": "Administratrice Vice-présidente"
+    },
+    {
+      "nom": "DUMAS",
+      "prenom": "Audrey",
+      "occupation": null,
+      "fonction": "Directrice adjointe Secrétaire"
+    },
+    {
+      "nom": "DUMAS",
+      "prenom": "Élizabeth",
+      "occupation": null,
+      "fonction": "Directrice adjointe Trésorière"
+    }
+  ],
+  "section6_portraits": {
+    "capaciteTotaleImmeubles": 75,
+    "capaciteRPA": 75,
+    "repartitionAges": {
+      "moins65": 3,
+      "de65a74": 19,
+      "de75a84": 23,
+      "de85plus": 28,
+      "totalResidents": 73
+    },
+    "unitesParMission": {
+      "rpa": {
+        "chambresSimples": 60,
+        "chambresDoubles": 15,
+        "logements": 0,
+        "total": 75,
+        "clientelePersonnesAgees": "Oui"
+      },
+      "ri": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 0,
+        "clientelePersonnesAgees": "Non"
+      },
+      "rtf": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 0,
+        "clientelePersonnesAgees": "Non"
+      },
+      "chsld": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 0,
+        "clientelePersonnesAgees": null
+      },
+      "autres": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 0,
+        "clientelePersonnesAgees": "Non"
+      }
+    },
+    "totalUnitesLocatives": 75,
+    "entente108": true,
+    "employes": {
+      "semaine": {
+        "jour": 10,
+        "soir": 4,
+        "nuit": 2
+      },
+      "finDeSemaine": {
+        "jour": 7,
+        "soir": 4,
+        "nuit": 1
+      }
+    },
+    "personnelAssistance": {
+      "semaine": {
+        "jour": 3,
+        "soir": 2,
+        "nuit": 1
+      },
+      "finDeSemaine": {
+        "jour": 2,
+        "soir": 2,
+        "nuit": 1
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ]
+  },
+  "section7_services": {
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    },
+    "loisirs": true,
+    "repas": true,
+    "aideDomestique": true,
+    "assistancePersonnelle": true,
+    "soinsInfirmiers": true
+  },
+  "section8_reconnaissance": {
+    "membreAssociation": true,
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section9_immeuble": {
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "sousSol": {
+      "present": true,
+      "porteExterieure": true,
+      "residentsHeberges": false,
+      "nombreEtagesHorsSousSol": 3
+    },
+    "rampeAcces": true,
+    "nombreAscenseurs": 2,
+    "mitigeurEauChaude": true,
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "systemeGicleurs": "En totalité",
+    "sourceEauPotable": "Système d'aqueduc municipal",
+    "generatrice": false,
+    "climatisation": {
+      "ensembleImmeubles": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "controleIndependant": false
+    }
+  }
+}

@@ -145,8 +145,10 @@ function liByParentText($, fragment) {
 // --- extraction par section ----------------------------------------------
 
 function extractHeader($) {
-  const titre = clean($('h1 a[name="haut"]').first().text()); // « Résidence Murray (395-1) »
-  const regMatch = titre.match(/\((\d+-\d+)\)/);
+  const titre = clean($('h1 a[name="haut"]').first().text()); // « Résidence Murray (395-1) » ou « Résidence du Mont (3629) »
+  // Le numéro de registre est « N-M » pour une résidence liée, ou « N » seul
+  // pour une résidence à immeuble unique.
+  const regMatch = titre.match(/\((\d+(?:-\d+)?)\)\s*$/);
 
   const interneTxt = clean($('h1').filter((_, el) => /Num[ée]ro interne/i.test($(el).text())).first().text());
   const interneMatch = interneTxt.match(/(\d+)/);

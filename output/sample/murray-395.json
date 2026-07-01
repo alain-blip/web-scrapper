@@ -33,6 +33,7 @@
     "personneMorale": {
       "nomCompagnie": "9146-6573 Québec inc.",
       "neq": "1162487210",
+      "neqNormalise": "1162487210",
       "datePrisePossession": "1997-01-08"
     },
     "actionnaires": [

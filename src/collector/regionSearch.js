@@ -31,7 +31,28 @@ export async function chercherRegion(cdRSS, { timeoutMs = 40000 } = {}) {
     clearTimeout(t);
   }
 
-  if (estAccueil(html)) return { bloque: true, residences: [] };
+  // F8 : si blocage détecté, conserver un extrait du HTML pour traçabilité
+  // (distinguer un vrai soft-block d'un faux positif dû à un changement de page).
+  if (estAccueil(html)) {
+    // Extraction ciblée des marqueurs diagnostiques — jamais un curseur positionnel
+    // qui pourrait glisser dans le corps des tables. Trois patterns :
+    //   1. <title> (dans <head>) : « Objet déplacé » sur les redirections IIS.
+    //   2. Texte « Objet déplacé » suivi du texte brut jusqu'au prochain tag HTML.
+    //   3. URL K10accueil.asp extraite de son attribut href (valeur entre guillemets,
+    //      impossible de traverser un <td> ou une valeur nominative).
+    const markers = [];
+    const mTitle = html.match(/<title[^>]*>([^<]{0,100})<\/title>/i);
+    if (mTitle) markers.push(`title:"${mTitle[1].trim()}"`);
+    const mObj = html.match(/Objet\s+d[ée]plac[ée][^<]{0,80}/i);
+    if (mObj) markers.push(mObj[0].trim());
+    const mRef = html.match(/href=["']([^"']*K10accueil\.asp[^"']{0,60})/i);
+    if (mRef) markers.push(`href:${mRef[1]}`);
+    return {
+      bloque: true,
+      residences: [],
+      htmlExcerpt: (markers.join(' | ') || '(aucun marqueur extrait)').slice(0, 300),
+    };
+  }
   return { bloque: false, residences: parseResultats(html) };
 }
 

@@ -62,7 +62,9 @@ export async function collectRegion(cdRSS, opts = {}) {
     stats.bloque = true;
     stats.statut = 'bloque';
     stats.dureeMs = Date.now() - debut;
-    logger(`[${cdRSS}] recherche bloquée (redirection accueil).`);
+    // F8 : log l'extrait HTML pour traçabilité faux-positif (voir regionSearch.js).
+    logger(`[${cdRSS}] recherche bloquée (redirection accueil détectée).`
+      + (recherche.htmlExcerpt ? ` Extrait : ${recherche.htmlExcerpt}` : ''));
     return stats;
   }
   stats.nbListe = recherche.residences.length;
@@ -88,10 +90,13 @@ export async function collectRegion(cdRSS, opts = {}) {
     if (!estDetailValide(html)) {
       stats.skips.push(r.registre);
       blocagesConsec += 1;
+      // F7 : log explicite de chaque skip pour traçabilité (ancre lien_1 absente).
+      logger(`[${cdRSS}] skip noForm=${r.registre} — ancre lien_1 absente`
+        + ` (${blocagesConsec}/${seuilBlocage} consécutifs).`);
       if (blocagesConsec >= seuilBlocage) {
         stats.bloque = true;
         stats.statut = 'partiel';
-        logger(`[${cdRSS}] arrêt : ${blocagesConsec} redirections consécutives (soft-block présumé).`);
+        logger(`[${cdRSS}] ARRÊT : ${blocagesConsec} skips consécutifs >= seuil (${seuilBlocage}) — soft-block présumé.`);
         break;
       }
       continue;
@@ -113,6 +118,20 @@ export async function collectRegion(cdRSS, opts = {}) {
   }
 
   if (stats.statut === 'ok' && stats.nbErreurs > 0) stats.statut = 'ok_avec_erreurs';
+
+  // F7 : détection d'un taux de skip anormalement élevé (> 50 % sur ≥ 5 fiches).
+  // Indique un possible renommage de l'ancre K10 — statut 'suspect' remonte dans
+  // _collectionLog pour alerter sans bloquer les fiches déjà écrites.
+  const SEUIL_TAUX_SUSPECT = 0.5;
+  const MIN_VUES_SUSPECT = 5;
+  stats.tauxSkip = stats.nbVues > 0 ? stats.skips.length / stats.nbVues : 0;
+  if (stats.statut === 'ok' && stats.tauxSkip >= SEUIL_TAUX_SUSPECT
+      && stats.nbVues >= MIN_VUES_SUSPECT) {
+    stats.statut = 'suspect';
+    logger(`[${cdRSS}] ALERTE taux skip ${Math.round(stats.tauxSkip * 100)}%`
+      + ` sur ${stats.nbVues} fiches vues — possible renommage ancre K10.`);
+  }
+
   stats.dureeMs = Date.now() - debut;
   return stats;
 }

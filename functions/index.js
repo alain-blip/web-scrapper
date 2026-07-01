@@ -22,6 +22,22 @@ import {
 initializeApp();
 const db = getFirestore();
 
+// Remplace récursivement toute valeur undefined par null et collecte les
+// chemins concernés dans `manquants`. Prévient le rejet Firestore (qui refuse
+// undefined) et rend la perte visible plutôt que destructrice (F15).
+function sanitizeFirestore(obj, prefix, manquants) {
+  if (obj === undefined) { manquants.push(prefix); return null; }
+  if (obj === null || typeof obj !== 'object') return obj;
+  if (Array.isArray(obj)) {
+    return obj.map((v, i) => sanitizeFirestore(v, `${prefix}[${i}]`, manquants));
+  }
+  const out = {};
+  for (const [k, v] of Object.entries(obj)) {
+    out[k] = sanitizeFirestore(v, prefix ? `${prefix}.${k}` : k, manquants);
+  }
+  return out;
+}
+
 export const collecteQuotidienne = onSchedule(
   {
     schedule: '0 3 * * *',
@@ -35,6 +51,25 @@ export const collecteQuotidienne = onSchedule(
     retryCount: 0,          // idempotent (merge par noForm) ; pas de double run
   },
   async () => {
+    // F10 : au démarrage, clôturer tout _collectionLog resté 'en_cours' depuis
+    // plus de 3h (symptôme d'un timeout 1800s non terminé proprement).
+    // N'inclut PAS les logs de test (préfixe TEST_) — distincts par construction.
+    const SEUIL_INTERRUPTION_MS = 3 * 60 * 60 * 1000;
+    const maintenant = Date.now();
+    const orphelins = await db.collection('_collectionLog')
+      .where('statut', '==', 'en_cours').get();
+    const clotureOrphelins = orphelins.docs
+      .filter((doc) => {
+        const majMs = doc.data().maj?.toMillis?.() ?? 0;
+        return maintenant - majMs > SEUIL_INTERRUPTION_MS;
+      })
+      .map((doc) => doc.ref.set({
+        statut: 'interrompu',
+        enCours: FieldValue.delete(),
+        clotureLe: FieldValue.serverTimestamp(),
+      }, { merge: true }));
+    if (clotureOrphelins.length) await Promise.all(clotureOrphelins);
+
     const jour = jourDuMoisMontreal();
     const date = dateMontreal();
     const codes = regionsPourJour(jour);
@@ -58,16 +93,23 @@ export const collecteQuotidienne = onSchedule(
     }, { merge: true });
 
     // Écriture incrémentale d'une fiche (merge par noForm → idempotent).
+    // sanitizeFirestore : tout undefined → null ; si champs manquants détectés,
+    // _incomplete=true + _champsManquants[] rendent la lacune visible (F15).
     const writeFiche = async (fiche, meta) => {
+      const manquants = [];
+      const ficheClean = sanitizeFirestore(fiche, '', manquants);
+      const flagsIncomplete = manquants.length > 0
+        ? { _incomplete: true, _champsManquants: manquants } : {};
       await db.collection('residences').doc(String(fiche.noForm)).set({
-        ...fiche,
+        ...ficheClean,
+        ...flagsIncomplete,
         _regionCdRSS: meta.cdRSS,
         _collecteLe: FieldValue.serverTimestamp(),
       }, { merge: true });
     };
 
     const parRegion = [];
-    let totVues = 0, totEcrites = 0, totErreurs = 0, totSkips = 0, bloque = false;
+    let totVues = 0, totEcrites = 0, totErreurs = 0, totSkips = 0, bloque = false, suspect = false;
 
     for (const cd of codes) {
       let s;
@@ -102,9 +144,12 @@ export const collecteQuotidienne = onSchedule(
       totVues += s.nbVues; totEcrites += s.nbEcrites;
       totErreurs += s.nbErreurs; totSkips += (s.skips || []).length;
       bloque = bloque || s.bloque;
+      suspect = suspect || s.statut === 'suspect';
     }
 
-    const statut = bloque ? 'partiel' : (totErreurs > 0 ? 'ok_avec_erreurs' : 'ok');
+    const statut = bloque ? 'partiel'
+      : suspect ? 'suspect'
+      : (totErreurs > 0 ? 'ok_avec_erreurs' : 'ok');
     await logRef.set({
       date, jourDuMois: jour, regions: codes, parRegion,
       nbFichesVues: totVues, nbEcrites: totEcrites,
@@ -155,8 +200,13 @@ export const collecteTest = onRequest(
     }, { merge: true });
 
     const writeFiche = async (fiche, meta) => {
+      const manquants = [];
+      const ficheClean = sanitizeFirestore(fiche, '', manquants);
+      const flagsIncomplete = manquants.length > 0
+        ? { _incomplete: true, _champsManquants: manquants } : {};
       await db.collection('residences').doc(String(fiche.noForm)).set({
-        ...fiche, _regionCdRSS: meta.cdRSS, _collecteLe: FieldValue.serverTimestamp(),
+        ...ficheClean, ...flagsIncomplete,
+        _regionCdRSS: meta.cdRSS, _collecteLe: FieldValue.serverTimestamp(),
       }, { merge: true });
     };
 

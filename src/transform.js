@@ -45,6 +45,22 @@ export function transform(raw) {
 
   const { esssCode, esssNom } = splitEsss(s1.esss);
 
+  // neqNormalise : exactement 10 chiffres (NEQ québécois) ou null + _neqARevoir.
+  // Règle stricte : on ne fabrique pas un identifiant qui a l'air valide.
+  // Ce champ servira de clé de jointure REQ — tolérance zéro sur la longueur.
+  const neqBrut = strOrNull(s2.personneMorale.neq);
+  const neqChiffres = neqBrut ? neqBrut.replace(/\D/g, '') : '';
+  const neqNormalise = neqChiffres.length === 10 ? neqChiffres : null;
+  const neqARevoir = neqChiffres.length !== 10 && neqBrut !== null ? neqBrut : undefined;
+
+  // categorieRPA : protection de la sémantique 1-4 (Charte IV).
+  // intOrNull extrait le chiffre brut ; on valide la plage avant d'écrire.
+  const catRaw = intOrNull(s1.categorieRPA);
+  const CATS_VALIDES = [1, 2, 3, 4];
+  const categorieRPA = CATS_VALIDES.includes(catRaw) ? catRaw : null;
+  const categorieARevoir = catRaw !== null && !CATS_VALIDES.includes(catRaw)
+    ? strOrNull(s1.categorieRPA) : undefined;
+
   return {
     noForm: strOrNull(raw.noForm),
     numeroInterne: strOrNull(h.numeroInterne),
@@ -69,7 +85,8 @@ export function transform(raw) {
       telecopieur: strOrNull(s1.telecopieur),
       dateOuverture: strOrNull(s1.dateOuverture),
       typeResidence: strOrNull(s1.typeResidence),
-      categorieRPA: intOrNull(s1.categorieRPA),
+      categorieRPA,
+      ...(categorieARevoir !== undefined ? { _categorieARevoir: categorieARevoir } : {}),
       nombreTotalUnitesImmeubles: intOrNull(s1.nombreTotalUnitesImmeubles),
       appartenanceGroupeReseau: strOrNull(s1.appartenanceGroupeReseau),
       immeublesAssocies: s1.immeublesAssocies || [],
@@ -78,7 +95,9 @@ export function transform(raw) {
     section2_titulaires: {
       personneMorale: {
         nomCompagnie: strOrNull(s2.personneMorale.nomCompagnie),
-        neq: strOrNull(s2.personneMorale.neq),
+        neq: neqBrut,
+        neqNormalise,
+        ...(neqARevoir !== undefined ? { _neqARevoir: neqARevoir } : {}),
         datePrisePossession: strOrNull(s2.personneMorale.datePrisePossession),
       },
       actionnaires: (s2.actionnaires || []).map((a) => ({

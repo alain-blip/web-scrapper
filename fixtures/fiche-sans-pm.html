@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="windows-1252"/><title>K10 - Fiche test sans personne morale</title></head>
+<body>
+<form name="formulaire" id="formulaire" method="post">
+
+<h1><a name="haut">Résidence Test Sans PM (999)</a></h1>
+<h1>Numéro interne : 999</h1>
+<h2>Active</h2>
+
+<!-- Section 1 -->
+<h2><a name="lien_1" class="lien_avec_puce">1 - Identification de la résidence</a></h2>
+<table class="formTableau">
+<tr><td>
+  <span class="libelleLecture">Nom de la résidence :</span><br/>Résidence Test Sans PM
+</td></tr>
+<tr><td>
+  <span class="libelleLecture">Adresse de la résidence :</span><br/>123, rue Principale
+</td></tr>
+<tr><td>
+  <span class="libelleLecture">Code postal :</span><br/>G1A 1A1
+</td></tr>
+<tr><td>
+  <span class="libelleLecture">Établissement de santé et de services sociaux :</span><br/>03 - CIUSSS de la Capitale-Nationale
+</td></tr>
+<tr><td>
+  <span class="libelleLecture">Municipalité :</span><br/>Québec
+</td></tr>
+<tr><td>
+  <span class="libelleLecture">Catégorie de la RPA :</span><br/>2
+</td></tr>
+<tr><td>
+  <span class="libelleLecture">Nombre total d'unités du ou des immeubles :</span><br/>25
+</td></tr>
+<table id="tableauImmeubles" class="formSousTableau"><thead><tr><td>Nom</td><td>Adresse</td></tr></thead><tbody></tbody></table>
+</table>
+
+<!-- Section 2 : personne physique (SANS personne morale, SANS #tableauExp) -->
+<h2><a name="lien_2" class="lien_avec_puce">2 - Identification des titulaires</a></h2>
+<table class="formTableau">
+<tr><td>
+  <!-- Personne physique : aucune compagnie, aucun tableau d'actionnaires -->
+  <span class="libelleLecture">Titulaire personne physique :</span><br/>Propriétaire individuel
+</td></tr>
+</table>
+
+<!-- Section 3 -->
+<h2><a name="lien_3" class="lien_avec_puce">3 - Autres résidences</a></h2>
+<table class="formTableau">
+<tr><td>
+  <table class="formTableauVide">
+    <tr><td>3.1</td><td>Le ou les titulaires sont-ils propriétaires d'autres résidences pour aînés ?</td><td>Non</td></tr>
+    <tr><td>3.2</td><td>Nombre d'autres résidences :</td><td>0</td></tr>
+  </table>
+</td></tr>
+<table id="tableauResid" class="formSousTableau"><thead><tr><td>Nom</td><td>NEQ</td></tr></thead><tbody><tr><td colspan="2">Aucune</td></tr></tbody></table>
+</table>
+
+<!-- Section 4 : UNE SEULE occurrence de #tableauExp (personne responsable) -->
+<h2><a name="lien_4" class="lien_avec_puce">4 - Identification de la personne responsable dans la résidence</a></h2>
+<table class="formTableau">
+<tr><td>
+  <table width="92%" class="formSousTableau" id="tableauExp">
+    <thead>
+      <tr>
+        <td width="5%">&nbsp;</td>
+        <td class="formSTEntete" colspan="4">Nom</td>
+        <td class="formSTEntete formSTDroite" colspan="3">Prénom</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="formSTGauche" colspan="4">TREMBLAY</td>
+        <td class="formSTGauche formSTDroite" colspan="3">Michel</td>
+      </tr>
+    </tbody>
+  </table>
+</td></tr>
+</table>
+
+<!-- Section 5 : tableau administrateurs vide -->
+<h2><a name="lien_5" class="lien_avec_puce">5 - Administrateurs</a></h2>
+<table class="formTableau">
+<tr><td>
+  <table id="tableauAdm" class="formSousTableau">
+    <thead><tr><td>Nom</td><td>Prénom</td><td>Occupation</td><td>Fonction</td></tr></thead>
+    <tbody><tr><td colspan="4">Aucun</td></tr></tbody>
+  </table>
+</td></tr>
+</table>
+
+</form>
+</body>
+</html>

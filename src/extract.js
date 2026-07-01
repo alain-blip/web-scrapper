@@ -201,17 +201,21 @@ function extractSection1($) {
   };
 }
 
-// Lignes utiles d'un sous-tableau (#tableauXxx), hors thead/tfoot et hors
-// lignes « Aucun/Aucune ».
-function rowsOfSousTableau($, selector) {
-  const table = $(selector).first();
-  if (!table.length) return [];
-  return table.find('tbody > tr').toArray()
+// Lignes utiles d'un élément table cheerio, hors thead/tfoot et hors
+// lignes « Aucun/Aucune ». Accepte un élément cheerio (pas un sélecteur).
+function rowsFromTable($, tableEl) {
+  if (!tableEl || !tableEl.length) return [];
+  return tableEl.find('tbody > tr').toArray()
     .map((tr) => $(tr).children('td').toArray().map((td) => clean($(td).text())))
     .filter((cells) => {
       const joined = norm(cells.join(' '));
       return joined && !/^aucune?$/.test(joined.replace(/\s/g, ''));
     });
+}
+
+// Surcharge sélecteur (compatibilité avec tous les autres appelants).
+function rowsOfSousTableau($, selector) {
+  return rowsFromTable($, $(selector).first());
 }
 
 function parseSousTableau($, selector) {
@@ -220,9 +224,19 @@ function parseSousTableau($, selector) {
   return rowsOfSousTableau($, selector).map((cells) => cells.filter(Boolean));
 }
 
+// Trouve le #tableauExp ancré dans une section donnée (via a[name="lien_N"]).
+// Retourne un élément cheerio vide si la section ou son tableau est absent.
+function tableauExpDeSection($, nomAncre) {
+  const anchor = $(`a[name="${nomAncre}"]`);
+  if (!anchor.length) return $();
+  return anchor.closest('h2').nextAll('table').first().find('#tableauExp');
+}
+
 function extractSection2($) {
-  // 1er #tableauExp = actionnaires ; le 2e (section 4) = personne responsable.
-  const rows = rowsOfSousTableau($, '#tableauExp');
+  // #tableauExp de §2 (actionnaires) isolé par l'ancre lien_2.
+  // Plus de repli sur le premier #tableauExp global : évite la contamination
+  // croisée §2/§4 quand la fiche n'a pas de personne morale.
+  const rows = rowsFromTable($, tableauExpDeSection($, 'lien_2'));
   const actionnaires = rows.map((cells) => {
     const vals = cells.filter(Boolean);
     let nom = vals[0] || '';
@@ -254,11 +268,11 @@ function extractSection3($) {
 }
 
 function extractSection4($) {
-  // 2e occurrence de #tableauExp
-  const tables = $('#tableauExp');
-  const table = tables.eq(1).length ? tables.eq(1) : tables.eq(0);
-  const rows = table.find('tbody > tr').toArray()
-    .map((tr) => $(tr).children('td').toArray().map((td) => clean($(td).text())).filter(Boolean))
+  // #tableauExp de §4 (personne responsable) isolé par l'ancre lien_4.
+  // Suppression du repli positionnel eq(0)/eq(1) qui confondait §2 et §4.
+  const table = tableauExpDeSection($, 'lien_4');
+  const rows = rowsFromTable($, table)
+    .map((cells) => cells.filter(Boolean))
     .filter((c) => c.length);
   return rows.map((cells) => ({ nom: cells[0] || '', prenom: cells[1] || null }));
 }

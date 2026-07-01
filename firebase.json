@@ -3,7 +3,8 @@
     "source": "functions",
     "runtime": "nodejs20",
     "predeploy": [
-      "node \"$RESOURCE_DIR/copy-scraper.mjs\""
+      "node \"$RESOURCE_DIR/copy-scraper.mjs\"",
+      "node \"$RESOURCE_DIR/generate-manifest.mjs\""
     ]
   }
 }

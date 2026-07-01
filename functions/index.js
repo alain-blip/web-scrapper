@@ -10,7 +10,7 @@
 
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { onRequest } from 'firebase-functions/v2/https';
-import { defineString } from 'firebase-functions/params';
+import { defineSecret } from 'firebase-functions/params';
 import { initializeApp } from 'firebase-admin/app';
 import { getFirestore, FieldValue } from 'firebase-admin/firestore';
 
@@ -170,10 +170,10 @@ export const collecteQuotidienne = onSchedule(
 // détection soft-block + back-off, écriture incrémentale, journal).
 // Protégé par un jeton (COLLECTE_TEST_TOKEN). --limit bas par défaut (doux).
 // ===========================================================================
-const TEST_TOKEN = defineString('COLLECTE_TEST_TOKEN'); // défini dans functions/.env
+const TEST_TOKEN = defineSecret('COLLECTE_TEST_TOKEN');
 
 export const collecteTest = onRequest(
-  { region: 'northamerica-northeast1', timeoutSeconds: 540, memory: '512MiB' },
+  { region: 'northamerica-northeast1', timeoutSeconds: 540, memory: '512MiB', secrets: ['COLLECTE_TEST_TOKEN'] },
   async (req, res) => {
     // 1. Protection par jeton (endpoint désactivé si le jeton n'est pas défini)
     const attendu = TEST_TOKEN.value();

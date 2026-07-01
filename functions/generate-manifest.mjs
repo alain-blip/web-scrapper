@@ -11,11 +11,12 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const manifestPath = path.join(here, 'functions.yaml');
 const ffBin = path.join(here, 'node_modules', '.bin', 'firebase-functions');
 
-const result = spawnSync(process.execPath, [ffBin, here], {
+const result = spawnSync(process.execPath, [ffBin], {
   env: {
     ...process.env,
     FUNCTIONS_MANIFEST_OUTPUT_PATH: manifestPath,
   },
+  cwd: here,
   stdio: 'pipe',
   encoding: 'utf8',
 });

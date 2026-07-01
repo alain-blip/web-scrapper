@@ -11,6 +11,7 @@
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { onRequest } from 'firebase-functions/v2/https';
 import { defineSecret } from 'firebase-functions/params';
+import * as fnLogger from 'firebase-functions/logger';
 import { initializeApp } from 'firebase-admin/app';
 import { getFirestore, FieldValue } from 'firebase-admin/firestore';
 
@@ -53,7 +54,9 @@ export const collecteQuotidienne = onSchedule(
   async () => {
     // F10 : au démarrage, clôturer tout _collectionLog resté 'en_cours' depuis
     // plus de 3h (symptôme d'un timeout 1800s non terminé proprement).
-    // N'inclut PAS les logs de test (préfixe TEST_) — distincts par construction.
+    // S'applique à TOUT document 'en_cours', y compris les logs de test (préfixe
+    // TEST_) — aucun filtre par préfixe dans la requête ; comportement voulu et
+    // bénin (un test resté bloqué >3h doit lui aussi être clôturé).
     const SEUIL_INTERRUPTION_MS = 3 * 60 * 60 * 1000;
     const maintenant = Date.now();
     const orphelins = await db.collection('_collectionLog')
@@ -124,6 +127,7 @@ export const collecteQuotidienne = onSchedule(
               maj: FieldValue.serverTimestamp(),
             }, { merge: true });
           },
+          logger: (m) => fnLogger.info(m),
         });
       } catch (e) {
         s = {
@@ -139,6 +143,8 @@ export const collecteQuotidienne = onSchedule(
         cdRSS: cd, libelle: LIBELLES[cd] || null, statut: s.statut,
         nbListe: s.nbListe, nbVues: s.nbVues, nbEcrites: s.nbEcrites,
         nbErreurs: s.nbErreurs, nbSkips: (s.skips || []).length,
+        skipsNoForm: (s.skips || []).slice(0, 200), // cap 200 : F7, survit à la requête
+        htmlExcerpt: s.htmlExcerpt || null, // F9 : preuve du blocage, survit à la requête
         bloque: s.bloque, dureeMs: s.dureeMs,
       });
       totVues += s.nbVues; totEcrites += s.nbEcrites;
@@ -220,6 +226,7 @@ export const collecteTest = onRequest(
         onProgress: async (p) => {
           await logRef.set({ enCours: { ecrites: p.nbEcrites, vues: p.nbVues }, maj: FieldValue.serverTimestamp() }, { merge: true });
         },
+        logger: (m) => fnLogger.info(m),
       });
     } catch (e) {
       await logRef.set({ statut: 'erreur', message: e.message, enCours: FieldValue.delete(), maj: FieldValue.serverTimestamp() }, { merge: true });
@@ -230,7 +237,10 @@ export const collecteTest = onRequest(
     await logRef.set({
       mode: 'test', date, cdRSS, libelle: LIBELLES[cdRSS] || null, limit, throttleMs,
       nbListe: stats.nbListe, nbVues: stats.nbVues, nbEcrites: stats.nbEcrites,
-      nbErreurs: stats.nbErreurs, nbSkips: stats.skips.length, bloque: stats.bloque,
+      nbErreurs: stats.nbErreurs, nbSkips: stats.skips.length,
+      skipsNoForm: stats.skips.slice(0, 200), // cap 200 : F7, survit à la requête
+      htmlExcerpt: stats.htmlExcerpt || null, // F9 : preuve du blocage, survit à la requête
+      bloque: stats.bloque,
       statut: stats.statut, dureeMs: stats.dureeMs,
       enCours: FieldValue.delete(), maj: FieldValue.serverTimestamp(),
     }, { merge: true });

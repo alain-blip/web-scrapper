@@ -62,6 +62,10 @@ export async function collectRegion(cdRSS, opts = {}) {
     stats.bloque = true;
     stats.statut = 'bloque';
     stats.dureeMs = Date.now() - debut;
+    // F9 : rattaché à stats (pas seulement au message logger) pour survivre à la
+    // requête et être persisté dans _collectionLog — la preuve du faux-positif/
+    // soft-block est alors dans le doc de collecte qu'on lit déjà.
+    stats.htmlExcerpt = recherche.htmlExcerpt || null;
     // F8 : log l'extrait HTML pour traçabilité faux-positif (voir regionSearch.js).
     logger(`[${cdRSS}] recherche bloquée (redirection accueil détectée).`
       + (recherche.htmlExcerpt ? ` Extrait : ${recherche.htmlExcerpt}` : ''));

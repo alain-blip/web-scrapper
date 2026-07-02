@@ -145,10 +145,27 @@ https://collectetest-XXXXXXXX-nn.a.run.app
 (ou la forme `https://northamerica-northeast1-primexpert-msss-registre.cloudfunctions.net/collecteTest`).
 
 ### c) Appeler le test (doux : 5 fiches)
-Dans le navigateur ou avec `curl`, en remplaçant l'URL et le jeton :
+
+`collecteTest` n'a **pas** de binding IAM `allUsers` — c'est voulu et correct.
+Un `curl` nu (sans authentification) reçoit un **403 Google Frontend** avant
+même d'atteindre le contrôle applicatif du jeton (`x-token`) : ce n'est pas un
+bug de configuration, c'est la posture retenue. Ne pas ouvrir l'endpoint à
+`allUsers` sans GO PO explicite (Zone Rouge — ça rendrait l'endpoint public,
+gardé uniquement par le jeton applicatif).
+
+L'accès correct est une **double barrière** : (a) authentification IAM via ton
+identité `gcloud`, **puis** (b) le jeton applicatif `x-token`. Vérifiée le
+2026-07-02 :
 ```bash
-curl "https://<URL-de-collecteTest>?token=TON_SECRET&cdRSS=05&limit=5"
+URL="https://<URL-de-collecteTest>"
+ID_TOKEN=$(gcloud auth print-identity-token)
+TOKEN=$(gcloud secrets versions access latest --secret=COLLECTE_TEST_TOKEN --project=primexpert-msss-registre)
+curl -s -H "Authorization: Bearer $ID_TOKEN" -H "x-token: $TOKEN" "$URL?cdRSS=05&limit=5"
+unset TOKEN ID_TOKEN
 ```
+Récupère toujours le jeton dans une variable shell — ne l'imprime jamais
+(pas d'`echo`, pas de `?token=` dans l'URL en clair si tu peux l'éviter).
+
 Paramètres : `cdRSS` (région, 2 chiffres) · `limit` (défaut 5, max 50) ·
 `throttle` (ms, défaut 1500). La réponse JSON donne `nbListe / nbVues /
 nbEcrites / nbErreurs / nbSkips / bloque / statut / dureeMs`, et un
@@ -165,6 +182,22 @@ enregistrement `mode:"test"` apparaît dans `_collectionLog`.
    retirée et **demande de la supprimer** → répondre **oui**.
    (ou explicitement : `firebase functions:delete collecteTest --region northamerica-northeast1`)
 3. Optionnel : supprimer `functions/.env`.
+
+### e) À savoir — quirks connus (validation du 2026-07-02)
+
+- **`limit` par défaut de `collecteTest` (5) == `MIN_VUES_SUSPECT` (5).** Une
+  passe test dont les 5 fiches tombent toutes en skip (~7,8 % de chance à un
+  taux de skip région ~60 %) s'auto-étiquette `statut: 'suspect'`. Cosmétique,
+  non-bloquant — ne pas s'en alarmer sur un petit échantillon.
+- **`statut: 'suspect'`** se déclenche sur `nbEcrites === 0 && nbVues ≥ 5 &&
+  !bloque` — la signature d'un renommage de l'ancre K10 (`estDetailValide()`
+  casserait partout). Ce n'est **pas** un taux de skip élevé : ~60 % de skip
+  est la norme (le registre K10 indexe ~3× plus qu'il ne rend consultable).
+  `bloque` reste toujours prioritaire sur ce label.
+- **Canary anti-blocage** (`collectRegion.js`) : tous les 20 skips consécutifs,
+  refetch de Murray (noForm 395, fiche stable connue). Le canary échoue →
+  vrai blocage, `statut: 'partiel'`. Le canary charge → on continue, peu
+  importe la longueur du streak de skips légitimes.
 
 ---
 

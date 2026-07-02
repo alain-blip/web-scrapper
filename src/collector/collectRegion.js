@@ -14,10 +14,24 @@ import { chercherRegion } from './regionSearch.js';
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+// Passé explicitement à fetchFiche (au lieu du défaut implicite de fetch.js)
+// pour que le libellé « timeout (Xms) » ci-dessous soit toujours exact.
+const FETCH_TIMEOUT_MS = 30000;
+
 // Une vraie fiche détail contient l'ancre de section 1 ; sinon c'est une
 // redirection accueil / page « Objet déplacé » / fiche non consultable.
 function estDetailValide(html) {
   return typeof html === 'string' && /name="lien_1"/i.test(html);
+}
+
+// Message d'erreur exploitable : distingue timeout / échec réseau (cause réelle
+// masquée par défaut derrière « fetch failed ») / HTTP. Plafonné à 300 caractères,
+// même précaution que htmlExcerpt (F8/F9) — filet de sécurité Loi 25 même si aucun
+// throw actuel n'embarque de contenu de fiche (extract.js ne lève jamais).
+function detailErreur(e) {
+  if (e.name === 'AbortError') return `timeout (${FETCH_TIMEOUT_MS}ms)`;
+  if (e.cause?.message) return `${e.message}: ${e.cause.message}`;
+  return e.message;
 }
 
 /**
@@ -48,14 +62,14 @@ export async function collectRegion(cdRSS, opts = {}) {
     nbEcrites: 0,
     nbErreurs: 0,
     skips: [],          // Registres non consultables (accueil/redirection/dead)
-    erreurs: [],        // { registre, msg } erreurs réseau/parsing
+    erreurs: [],        // { noForm, message } erreurs réseau/parsing
     bloque: false,
     statut: 'ok',
   };
 
   // 1. Lister la région
   const recherche = await chercherRegion(cdRSS).catch((e) => {
-    stats.erreurs.push({ registre: null, msg: `recherche: ${e.message}` });
+    stats.erreurs.push({ noForm: null, message: `recherche: ${detailErreur(e)}`.slice(0, 300) });
     return { bloque: false, residences: [] };
   });
   if (recherche.bloque) {
@@ -83,10 +97,10 @@ export async function collectRegion(cdRSS, opts = {}) {
 
     let html;
     try {
-      html = await fetchFiche(r.registre);
+      html = await fetchFiche(r.registre, { timeoutMs: FETCH_TIMEOUT_MS });
     } catch (e) {
       stats.nbErreurs += 1;
-      stats.erreurs.push({ registre: r.registre, msg: e.message });
+      stats.erreurs.push({ noForm: r.registre, message: detailErreur(e).slice(0, 300) });
       blocagesConsec = 0;
       continue;
     }
@@ -113,7 +127,7 @@ export async function collectRegion(cdRSS, opts = {}) {
       stats.nbEcrites += 1;
     } catch (e) {
       stats.nbErreurs += 1;
-      stats.erreurs.push({ registre: r.registre, msg: `parse/write: ${e.message}` });
+      stats.erreurs.push({ noForm: r.registre, message: `parse/write: ${detailErreur(e)}`.slice(0, 300) });
     }
 
     if (stats.nbVues % 20 === 0) {

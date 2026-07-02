@@ -144,6 +144,7 @@ export const collecteQuotidienne = onSchedule(
         nbListe: s.nbListe, nbVues: s.nbVues, nbEcrites: s.nbEcrites,
         nbErreurs: s.nbErreurs, nbSkips: (s.skips || []).length,
         skipsNoForm: (s.skips || []).slice(0, 200), // cap 200 : F7, survit à la requête
+        erreursDetail: (s.erreurs || []).slice(0, 200), // même patron que skipsNoForm
         htmlExcerpt: s.htmlExcerpt || null, // F9 : preuve du blocage, survit à la requête
         bloque: s.bloque, dureeMs: s.dureeMs,
       });
@@ -239,6 +240,7 @@ export const collecteTest = onRequest(
       nbListe: stats.nbListe, nbVues: stats.nbVues, nbEcrites: stats.nbEcrites,
       nbErreurs: stats.nbErreurs, nbSkips: stats.skips.length,
       skipsNoForm: stats.skips.slice(0, 200), // cap 200 : F7, survit à la requête
+      erreursDetail: stats.erreurs.slice(0, 200), // même patron que skipsNoForm
       htmlExcerpt: stats.htmlExcerpt || null, // F9 : preuve du blocage, survit à la requête
       bloque: stats.bloque,
       statut: stats.statut, dureeMs: stats.dureeMs,

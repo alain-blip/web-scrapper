@@ -175,17 +175,30 @@ export async function collectRegion(cdRSS, opts = {}) {
 
   if (stats.statut === 'ok' && stats.nbErreurs > 0) stats.statut = 'ok_avec_erreurs';
 
-  // F7 : détection d'un taux de skip anormalement élevé (> 50 % sur ≥ 5 fiches).
-  // Indique un possible renommage de l'ancre K10 — statut 'suspect' remonte dans
-  // _collectionLog pour alerter sans bloquer les fiches déjà écrites.
-  const SEUIL_TAUX_SUSPECT = 0.5;
+  // F7 : détection d'un vrai bris structurel (ex. renommage de l'ancre K10, qui
+  // casserait estDetailValide() partout). Un taux de skip élevé n'est PAS ce
+  // signal — c'est la norme (K10 indexe ~3x le consultable) : Estrie mesurée à
+  // 65 % de skip a quand même écrit 34 % de ses fiches. Un vrai bris produit
+  // zéro écriture, pas un taux dégradé — c'est la signature qui discrimine.
+  //
+  // nbVues >= MIN_VUES_SUSPECT (pas nbListe) couvre déjà les régions 17/18
+  // (0 résidence attendue, Charte) : nbVues n'incrémente que dans la boucle
+  // par-fiche, donc une région vide reste à 0, sous le seuil — jamais suspecte,
+  // aucune condition supplémentaire nécessaire.
+  //
+  // !stats.bloque est impératif : bloque (vrai blocage détecté par le canary)
+  // reste strictement prioritaire. Ce label est cosmétique (_collectionLog
+  // seulement, aucun consommateur n'agit dessus) ; il ne doit jamais écraser
+  // 'partiel' — sinon on dégraderait le signal le plus fort qu'on a en une
+  // simple étiquette.
   const MIN_VUES_SUSPECT = 5;
+  // tauxSkip : gardé calculé et journalisé (utile en lecture de log), mais
+  // n'est plus le déclencheur de 'suspect'.
   stats.tauxSkip = stats.nbVues > 0 ? stats.skips.length / stats.nbVues : 0;
-  if (stats.statut === 'ok' && stats.tauxSkip >= SEUIL_TAUX_SUSPECT
-      && stats.nbVues >= MIN_VUES_SUSPECT) {
+  if (!stats.bloque && stats.nbEcrites === 0 && stats.nbVues >= MIN_VUES_SUSPECT) {
     stats.statut = 'suspect';
-    logger(`[${cdRSS}] ALERTE taux skip ${Math.round(stats.tauxSkip * 100)}%`
-      + ` sur ${stats.nbVues} fiches vues — possible renommage ancre K10.`);
+    logger(`[${cdRSS}] ALERTE zéro écriture sur ${stats.nbVues} fiches vues`
+      + ` (taux skip ${Math.round(stats.tauxSkip * 100)}%) — possible renommage ancre K10.`);
   }
 
   stats.dureeMs = Date.now() - debut;

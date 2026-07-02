@@ -1,0 +1,552 @@
+{
+  "_note": "Snapshot de non-régression figé depuis la fiche réelle K10 noForm=7250 (65-CIUSSS Est-Île-Montréal), APRÈS le fix du nesting section3_autresRPA.liste / section1_identification.immeublesAssocies. Cible : geler la forme { cellules: [...] } (30 lignes section3, 3 lignes immeublesAssocies) — pas un oracle vérifié champ-par-champ contre le PDF source comme murray-395.json.",
+  "noForm": "7250",
+  "numeroInterne": "7250",
+  "numeroRegistre": "7250-1",
+  "residencesLiees": [
+    "7250-1",
+    "7250-2"
+  ],
+  "statut": "Active",
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7250",
+  "section1_identification": {
+    "nomResidence": "Chartwell Rosemont Les Quartiers",
+    "adresse": "5200, rue Molson",
+    "codePostal": "H1Y 0C1",
+    "esss": "65 - CIUSSS de l'Est-de-l'Île-de-Montréal",
+    "esssCode": "65",
+    "esssNom": "CIUSSS de l'Est-de-l'Île-de-Montréal",
+    "municipalite": "Montréal",
+    "territoireCLSC": "Rosemont",
+    "territoireRLS": "RLS de Hochelaga - Mercier-Ouest - Rosemont",
+    "territoireMRC": null,
+    "courriels": [],
+    "telephone": "514-525-5300",
+    "telecopieur": null,
+    "dateOuverture": "2016-05-26",
+    "typeResidence": "Résidence à but lucratif",
+    "categorieRPA": 3,
+    "nombreTotalUnitesImmeubles": 673,
+    "appartenanceGroupeReseau": null,
+    "immeublesAssocies": [
+      {
+        "cellules": [
+          "7409 -immeuble 1",
+          "2532, place Michel-Brault",
+          "Montréal",
+          "H1Y0B6",
+          "68"
+        ]
+      },
+      {
+        "cellules": [
+          "7250-Immeuble 1",
+          "5200, rue Molson",
+          "Montréal",
+          "H1Y0C1",
+          "477"
+        ]
+      },
+      {
+        "cellules": [
+          "7250-Immeuble 2",
+          "2540, rue Pierre-Falardeau",
+          "Montréal",
+          "H1Y0B9",
+          "37"
+        ]
+      }
+    ]
+  },
+  "section2_titulaires": {
+    "personneMorale": {
+      "nomCompagnie": null,
+      "neq": "3361861183",
+      "neqNormalise": "3361861183",
+      "datePrisePossession": "2025-03-03"
+    },
+    "actionnaires": [
+      {
+        "nom": "CSH Trust",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "Chartwell Retirement Residences, Commanditaire",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "GP M Trust",
+        "prenom": null,
+        "mention": null
+      }
+    ]
+  },
+  "section3_autresRPA": {
+    "proprietaireAutresRPA": true,
+    "nombreAutresResidences": 19,
+    "liste": [
+      {
+        "cellules": [
+          "Chartwell Monastère d'Aylmer",
+          "3361861183",
+          "161, rue Principale",
+          "Gatineau",
+          "07 - CISSS de l'Outaouais",
+          "J9H 7H4"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell Domaine de Bordeaux, résidence pour retraités",
+          "3361861183",
+          "2140, chemin Saint-Louis",
+          "Québec",
+          "03 - CIUSSS de la Capitale-Nationale",
+          "G1T 1P8"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell Les Seigneuries du Carrefour",
+          "3361861183",
+          "445, rue des Érables",
+          "Sherbrooke",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J1L 0C2"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Cité Jardin",
+          "3349681836",
+          "60, rue de la Futaie",
+          "Gatineau",
+          "07 - CISSS de l'Outaouais",
+          "J8T 8P5"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell Appartements de Bordeaux, résidence pour retraités",
+          "3361861183",
+          "2142, chemin Saint-Louis",
+          "Québec",
+          "03 - CIUSSS de la Capitale-Nationale",
+          "G1T 1P7"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell Domaine Notre-Dame",
+          "3361861183",
+          "39, rue Wìgwàs",
+          "Gatineau",
+          "07 - CISSS de l'Outaouais",
+          "J8Y 2W1"
+        ]
+      },
+      {
+        "cellules": [
+          "Cité Jardin (Tour IIIB et V)",
+          "3361861183",
+          "90, rue de la Futaie",
+          "Gatineau",
+          "07 - CISSS de l'Outaouais",
+          "J8T 0B8"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell Jardins Notre-Dame",
+          "3361861183",
+          "195, boulevard St-Joseph",
+          "Gatineau",
+          "07 - CISSS de l'Outaouais",
+          "J8Y 0A3"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell, L'Unique, résidence pour retraités",
+          "3361861183",
+          "435, rue Bibeau",
+          "Saint-Eustache",
+          "15 - CISSS des Laurentides",
+          "J7R 0C7"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell Rivière-du-Nord",
+          "3361861183",
+          "685, boulevard Monseigneur-Dubois",
+          "Saint-Jérôme",
+          "15 - CISSS des Laurentides",
+          "J7Y 0M3"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell Rock Forest",
+          "3361861183",
+          "1111, rue du Haut-Bois Nord",
+          "Sherbrooke",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J1N 1A4"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell Le Montcalm",
+          "3361861183",
+          "95, boulevard Montcalm Nord",
+          "Candiac",
+          "73 - CISSS de la Montérégie-Ouest",
+          "J5R 0R8"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell Le Normandie",
+          "3361861183",
+          "410, rue Laberge",
+          "Saint-Jean-sur-Richelieu",
+          "71 - CISSS de la Montérégie-Centre",
+          "J3A 1G5"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell l'Envol, résidence pour retraités",
+          "3361861183",
+          "1108, boul. de la Chaudière",
+          "Québec",
+          "03 - CIUSSS de la Capitale-Nationale",
+          "G1Y 0A6"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell des Mille-Iles",
+          "3361861183",
+          "2915, boulevard de la Pinière",
+          "Terrebonne",
+          "14 - CISSS de Lanaudière",
+          "J6X 0K2"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell du Plateau",
+          "3361861183",
+          "245, boulevard du Plateau",
+          "Gatineau",
+          "07 - CISSS de l'Outaouais",
+          "J9A 0H9"
+        ]
+      },
+      {
+        "cellules": [
+          "Le Florilège",
+          "3361861183",
+          "2556, Rue Lionel-Audet",
+          "Québec",
+          "03 - CIUSSS de la Capitale-Nationale",
+          "G1C 0R7"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell Monastère d'Aylmer",
+          "3361861183",
+          "161, rue Principale",
+          "Gatineau",
+          "07 - CISSS de l'Outaouais",
+          "J9H 7H4"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell Domaine de Bordeaux, résidence pour retraités",
+          "3361861183",
+          "2140, chemin Saint-Louis",
+          "Québec",
+          "03 - CIUSSS de la Capitale-Nationale",
+          "G1T 1P8"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell Domaine Notre-Dame",
+          "3361861183",
+          "39, rue Wìgwàs",
+          "Gatineau",
+          "07 - CISSS de l'Outaouais",
+          "J8Y 2W1"
+        ]
+      },
+      {
+        "cellules": [
+          "Cité Jardin (Tour IIIB et V)",
+          "3361861183",
+          "90, rue de la Futaie",
+          "Gatineau",
+          "07 - CISSS de l'Outaouais",
+          "J8T 0B8"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell Rock Forest",
+          "3361861183",
+          "1111, rue du Haut-Bois Nord",
+          "Sherbrooke",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J1N 1A4"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell Le Normandie",
+          "3361861183",
+          "410, rue Laberge",
+          "Saint-Jean-sur-Richelieu",
+          "71 - CISSS de la Montérégie-Centre",
+          "J3A 1G5"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell l'Envol, résidence pour retraités",
+          "3361861183",
+          "1108, boul. de la Chaudière",
+          "Québec",
+          "03 - CIUSSS de la Capitale-Nationale",
+          "G1Y 0A6"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell des Mille-Iles",
+          "3361861183",
+          "2915, boulevard de la Pinière",
+          "Terrebonne",
+          "14 - CISSS de Lanaudière",
+          "J6X 0K2"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell du Plateau",
+          "3361861183",
+          "245, boulevard du Plateau",
+          "Gatineau",
+          "07 - CISSS de l'Outaouais",
+          "J9A 0H9"
+        ]
+      },
+      {
+        "cellules": [
+          "Le Florilège",
+          "3361861183",
+          "2556, Rue Lionel-Audet",
+          "Québec",
+          "03 - CIUSSS de la Capitale-Nationale",
+          "G1C 0R7"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell Rosemont Les Quartiers - Unité de soins",
+          "3361861183",
+          "5200, rue Molson",
+          "Montréal",
+          "65 - CIUSSS de l'Est-de-l'Île-de-Montréal",
+          "H1Y 0C1"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell L'Aubier résidence pour retraités",
+          "3361861183",
+          "5757, boulevard Étienne-Dallaire",
+          "Lévis",
+          "12 - CISSS de Chaudière-Appalaches",
+          "G6V 0C2"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell L'Aubier résidence pour retraités",
+          "3361861183",
+          "5757, boulevard Étienne-Dallaire",
+          "Lévis",
+          "12 - CISSS de Chaudière-Appalaches",
+          "G6V 0C2"
+        ]
+      }
+    ]
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "MINICUCCI",
+      "prenom": "Angela"
+    }
+  ],
+  "section5_administrateurs": [],
+  "section6_portraits": {
+    "capaciteTotaleImmeubles": 908,
+    "capaciteRPA": 810,
+    "repartitionAges": {
+      "moins65": 13,
+      "de65a74": 73,
+      "de75a84": 314,
+      "de85plus": 220,
+      "totalResidents": 620
+    },
+    "unitesParMission": {
+      "rpa": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 582,
+        "total": 582,
+        "clientelePersonnesAgees": "Oui"
+      },
+      "ri": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 0,
+        "clientelePersonnesAgees": "Non"
+      },
+      "rtf": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 0,
+        "clientelePersonnesAgees": "Non"
+      },
+      "chsld": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 0,
+        "total": 0,
+        "clientelePersonnesAgees": null
+      },
+      "autres": {
+        "chambresSimples": 0,
+        "chambresDoubles": 0,
+        "logements": 37,
+        "total": 37,
+        "clientelePersonnesAgees": "Oui"
+      }
+    },
+    "totalUnitesLocatives": 619,
+    "entente108": false,
+    "employes": {
+      "semaine": {
+        "jour": 51,
+        "soir": 27,
+        "nuit": 28
+      },
+      "finDeSemaine": {
+        "jour": 29,
+        "soir": 16,
+        "nuit": 6
+      }
+    },
+    "personnelAssistance": {
+      "semaine": {
+        "jour": 6,
+        "soir": 6,
+        "nuit": 4
+      },
+      "finDeSemaine": {
+        "jour": 6,
+        "soir": 6,
+        "nuit": 4
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 2,
+          "soir": 1,
+          "nuit": 1
+        },
+        "finDeSemaine": {
+          "jour": 2,
+          "soir": 1,
+          "nuit": 1
+        },
+        "precisions": null
+      }
+    ]
+  },
+  "section7_services": {
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    },
+    "loisirs": true,
+    "repas": true,
+    "aideDomestique": true,
+    "assistancePersonnelle": true,
+    "soinsInfirmiers": true
+  },
+  "section8_reconnaissance": {
+    "membreAssociation": true,
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section9_immeuble": {
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "sousSol": {
+      "present": true,
+      "porteExterieure": true,
+      "residentsHeberges": false,
+      "nombreEtagesHorsSousSol": 10
+    },
+    "rampeAcces": true,
+    "nombreAscenseurs": 8,
+    "mitigeurEauChaude": true,
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "systemeGicleurs": "En totalité",
+    "sourceEauPotable": "Système d'aqueduc municipal",
+    "generatrice": true,
+    "climatisation": {
+      "ensembleImmeubles": null,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "controleIndependant": true
+    }
+  }
+}

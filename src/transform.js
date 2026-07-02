@@ -89,7 +89,7 @@ export function transform(raw) {
       ...(categorieARevoir !== undefined ? { _categorieARevoir: categorieARevoir } : {}),
       nombreTotalUnitesImmeubles: intOrNull(s1.nombreTotalUnitesImmeubles),
       appartenanceGroupeReseau: strOrNull(s1.appartenanceGroupeReseau),
-      immeublesAssocies: s1.immeublesAssocies || [],
+      immeublesAssocies: (s1.immeublesAssocies || []).map((ligne) => ({ cellules: ligne })),
     },
 
     section2_titulaires: {
@@ -110,7 +110,7 @@ export function transform(raw) {
     section3_autresRPA: {
       proprietaireAutresRPA: bool(s3.proprietaireAutresRPA),
       nombreAutresResidences: intOrNull(s3.nombreAutresResidences),
-      liste: s3.liste || [],
+      liste: (s3.liste || []).map((ligne) => ({ cellules: ligne })),
     },
 
     section4_personneResponsable: (raw.section4 || []).map((p) => ({

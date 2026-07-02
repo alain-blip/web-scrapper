@@ -4,8 +4,10 @@
 // modifier (Règle #0). N'écrit pas lui-même : il appelle un callback `writeFiche`
 // (Firestore en prod, console en mesure locale).
 //
-// Scraping doux : délai configurable entre chaque requête + back-off si le
-// serveur MSSS se met à rediriger vers l'accueil (soft-block anti-scraping).
+// Scraping doux : délai configurable entre chaque requête + détection de vrai
+// blocage par canary (voir plus bas — un skip individuel ne suffit pas comme
+// signal : un noForm bidon jamais sollicité rend la même page octet pour octet
+// qu'une vraie fiche non consultable, donc le contenu seul ne discrimine pas).
 
 import { fetchFiche } from '../fetch.js';
 import { extract } from '../extract.js';
@@ -18,8 +20,18 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 // pour que le libellé « timeout (Xms) » ci-dessous soit toujours exact.
 const FETCH_TIMEOUT_MS = 30000;
 
+// Fiche stable de référence pour le canary de blocage réel (Murray, validée
+// 142/142, toujours active) — jamais un ID de collecte, seulement une sonde
+// « le serveur sert-il encore du contenu valide ? ».
+const CANARY_NOFORM = '395';
+const CANARY_APRES_N_SKIPS = 20;
+
 // Une vraie fiche détail contient l'ancre de section 1 ; sinon c'est une
-// redirection accueil / page « Objet déplacé » / fiche non consultable.
+// redirection accueil / page « Objet déplacé » / fiche non consultable — ou,
+// tout aussi bien, un noForm légitimement fermé/inexistant (~60 % du registre,
+// le K10 indexe plus qu'il ne rend consultable). Le contenu seul ne distingue
+// PAS les deux cas : c'est pourquoi ceci n'est plus utilisé pour décider d'un
+// arrêt, seulement pour journaliser un skip et vérifier le canary.
 function estDetailValide(html) {
   return typeof html === 'string' && /name="lien_1"/i.test(html);
 }
@@ -39,19 +51,23 @@ function detailErreur(e) {
  * @param {object} opts
  * @param {(fiche:object, meta:object)=>Promise<void>} opts.writeFiche
  * @param {number} [opts.throttleMs=1500]
- * @param {number} [opts.seuilBlocage=10]  arrêt après N redirections consécutives
+ * @param {number} [opts.canaryApresNSkips=20]  vérifie le canary tous les N skips consécutifs
  * @param {number} [opts.maxFiches]        limite (mesure locale)
  * @param {(p:object)=>void} [opts.onProgress]
  * @param {(m:string)=>void} [opts.logger]
+ * @param {typeof fetchFiche} [opts.fetchFicheFn]      injectable pour les tests offline
+ * @param {typeof chercherRegion} [opts.chercherRegionFn]  injectable pour les tests offline
  */
 export async function collectRegion(cdRSS, opts = {}) {
   const {
     writeFiche,
     throttleMs = 1500,
-    seuilBlocage = 10,
+    canaryApresNSkips = CANARY_APRES_N_SKIPS,
     maxFiches = Infinity,
     onProgress = () => {},
     logger = () => {},
+    fetchFicheFn = fetchFiche,
+    chercherRegionFn = chercherRegion,
   } = opts;
 
   const debut = Date.now();
@@ -68,7 +84,7 @@ export async function collectRegion(cdRSS, opts = {}) {
   };
 
   // 1. Lister la région
-  const recherche = await chercherRegion(cdRSS).catch((e) => {
+  const recherche = await chercherRegionFn(cdRSS).catch((e) => {
     stats.erreurs.push({ noForm: null, message: `recherche: ${detailErreur(e)}`.slice(0, 300) });
     return { bloque: false, residences: [] };
   });
@@ -89,7 +105,14 @@ export async function collectRegion(cdRSS, opts = {}) {
   logger(`[${cdRSS}] ${stats.nbListe} résidence(s) listée(s).`);
 
   // 2. Récupérer chaque fiche (noForm == Registre)
-  let blocagesConsec = 0;
+  //
+  // Un skip individuel (ancre lien_1 absente) ne compte JAMAIS seul vers un
+  // arrêt : ~60 % du registre est légitimement non consultable (K10 indexe
+  // plus qu'il ne rend consultable), et un noForm bidon jamais sollicité rend
+  // la même page, octet pour octet, qu'une vraie fiche bloquée — le contenu
+  // seul ne discrimine pas. Le seul signal de vrai blocage : un canary (fiche
+  // stable connue) qui cesse lui-même de charger.
+  let skipsConsecutifs = 0;
   for (const r of recherche.residences) {
     if (stats.nbVues >= maxFiches) { stats.statut = 'partiel'; break; }
     await sleep(throttleMs);
@@ -97,30 +120,45 @@ export async function collectRegion(cdRSS, opts = {}) {
 
     let html;
     try {
-      html = await fetchFiche(r.registre, { timeoutMs: FETCH_TIMEOUT_MS });
+      html = await fetchFicheFn(r.registre, { timeoutMs: FETCH_TIMEOUT_MS });
     } catch (e) {
       stats.nbErreurs += 1;
       stats.erreurs.push({ noForm: r.registre, message: detailErreur(e).slice(0, 300) });
-      blocagesConsec = 0;
+      skipsConsecutifs = 0;
       continue;
     }
 
     if (!estDetailValide(html)) {
       stats.skips.push(r.registre);
-      blocagesConsec += 1;
+      skipsConsecutifs += 1;
       // F7 : log explicite de chaque skip pour traçabilité (ancre lien_1 absente).
       logger(`[${cdRSS}] skip noForm=${r.registre} — ancre lien_1 absente`
-        + ` (${blocagesConsec}/${seuilBlocage} consécutifs).`);
-      if (blocagesConsec >= seuilBlocage) {
-        stats.bloque = true;
-        stats.statut = 'partiel';
-        logger(`[${cdRSS}] ARRÊT : ${blocagesConsec} skips consécutifs >= seuil (${seuilBlocage}) — soft-block présumé.`);
-        break;
+        + ` (${skipsConsecutifs} consécutifs — légitime, ne compte pas seul vers un arrêt).`);
+
+      if (skipsConsecutifs % canaryApresNSkips === 0) {
+        await sleep(throttleMs);
+        let canaryHtml = '';
+        try {
+          canaryHtml = await fetchFicheFn(CANARY_NOFORM, { timeoutMs: FETCH_TIMEOUT_MS });
+        } catch (e) {
+          canaryHtml = ''; // pas de réponse exploitable → traité comme un échec canary (fail-safe)
+        }
+        if (estDetailValide(canaryHtml)) {
+          logger(`[${cdRSS}] canary noForm=${CANARY_NOFORM} OK après ${skipsConsecutifs} skips`
+            + ` — le serveur sert toujours du contenu valide, on continue.`);
+          skipsConsecutifs = 0;
+        } else {
+          stats.bloque = true;
+          stats.statut = 'partiel';
+          logger(`[${cdRSS}] ARRÊT : canary noForm=${CANARY_NOFORM} en échec après ${skipsConsecutifs} skips`
+            + ` — vrai blocage présumé.`);
+          break;
+        }
       }
       continue;
     }
 
-    blocagesConsec = 0;
+    skipsConsecutifs = 0;
     try {
       const fiche = transform(extract(html, { noForm: r.registre }));
       await writeFiche(fiche, { cdRSS, registre: r.registre });

@@ -1,3 +1,4 @@
 node_modules/
 *.log
 functions/functions.yaml
+.firebase/

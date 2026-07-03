@@ -3,21 +3,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Consultation — Registre des résidences pour aînés (K10 MSSS)</title>
+  <title>Récupération des données du Registre des résidences pour aînés</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="topbar">
-    <h1>Registre des résidences pour aînés</h1>
-    <p class="sub">Prototype de consultation — jeu de test (4 fiches) · lecture seule</p>
+    <h1>Récupération des données du Registre des résidences pour aînés</h1>
+    <p class="sub">Consultation en direct (Firestore, via API gardée) · lecture seule</p>
+    <div id="etat-connexion" class="etat-connexion" hidden>
+      <span id="utilisateur-info"></span>
+      <button id="btn-deconnexion" type="button" class="reset">Se déconnecter</button>
+    </div>
   </header>
 
+  <!-- VUE CONNEXION -->
+  <main id="vue-connexion">
+    <section class="connexion">
+      <p>Cette consultation est réservée aux personnes autorisées.</p>
+      <button id="btn-connexion" type="button" class="connexion-bouton">Se connecter avec Google</button>
+      <p id="connexion-message" class="connexion-message" aria-live="polite"></p>
+    </section>
+  </main>
+
   <!-- VUE LISTE -->
-  <main id="vue-liste">
+  <main id="vue-liste" hidden>
     <section class="filtres" aria-label="Filtres">
       <div class="filtre">
-        <label for="f-esss">Région / ÉSSS</label>
-        <select id="f-esss"><option value="">Toutes</option></select>
+        <label for="f-region">Région</label>
+        <select id="f-region"><option value="">— choisir une région —</option></select>
       </div>
       <div class="filtre">
         <label for="f-cat">Catégorie RPA</label>
@@ -46,10 +59,10 @@
       <table id="tableau">
         <thead>
           <tr>
-            <th data-key="nom">Nom</th>
-            <th data-key="municipalite">Municipalité</th>
-            <th data-key="cat" class="num">Cat. RPA</th>
-            <th data-key="unites" class="num">Unités</th>
+            <th data-key="nom" data-type="texte" class="triable">Nom<span class="fleche-tri"></span></th>
+            <th data-key="municipalite" data-type="texte" class="triable">Municipalité<span class="fleche-tri"></span></th>
+            <th data-key="cat" data-type="nombre" class="num triable">Cat. RPA<span class="fleche-tri"></span></th>
+            <th data-key="unites" data-type="nombre" class="num triable">Unités<span class="fleche-tri"></span></th>
             <th data-key="esss">Région / ÉSSS</th>
           </tr>
         </thead>
@@ -68,7 +81,8 @@
     Données : Registre K10, MSSS Québec · Affichage en lecture seule.
   </footer>
 
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+  <!-- data.js n'est plus la source (étape 3) : l'appli lit consultationApi en
+       direct. Fichier conservé au dépôt, plus jamais chargé ici. -->
+  <script type="module" src="app.js"></script>
 </body>
 </html>

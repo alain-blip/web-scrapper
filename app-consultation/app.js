@@ -1,315 +1,518 @@
 /* Consultation du registre — logique client (lecture seule).
- * Données : window.REGISTRE (généré par build-data.js). */
+ * Données : consultationApi (Firestore en direct, via la fonction gardée).
+ * Plus jamais data.js/window.REGISTRE — voir index.html. */
 
-(function () {
-  'use strict';
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+import {
+  getAuth, connectAuthEmulator, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged,
+} from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js';
+import { firebaseConfig, AUTH_EMULATOR, CONSULTATION_API_URL } from './firebase-config.js';
 
-  const REGISTRE = Array.isArray(window.REGISTRE) ? window.REGISTRE : [];
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+if (AUTH_EMULATOR) connectAuthEmulator(auth, AUTH_EMULATOR, { disableWarnings: true });
 
-  // --- Raccourcis d'accès aux champs servant à la liste/aux filtres ---
-  const get = {
-    nom: (f) => f.section1_identification?.nomResidence || '(sans nom)',
-    municipalite: (f) => f.section1_identification?.municipalite || '—',
-    cat: (f) => f.section1_identification?.categorieRPA,
-    unites: (f) => f.section1_identification?.nombreTotalUnitesImmeubles,
-    esss: (f) => f.section1_identification?.esss || '—',
-  };
+let REGISTRE = []; // fiches résumé de la région actuellement chargée (mode liste)
+let idTokenActuel = null;
 
-  // ============================ FILTRES =============================
-  const elESSS = document.getElementById('f-esss');
-  const elCat = document.getElementById('f-cat');
-  const elMin = document.getElementById('f-min');
-  const elMax = document.getElementById('f-max');
-  const elReset = document.getElementById('f-reset');
-  const elCompteur = document.getElementById('compteur');
-  const elCorps = document.getElementById('corps');
+// --- éléments DOM : connexion ---
+const vueConnexion = document.getElementById('vue-connexion');
+const elEtatConnexion = document.getElementById('etat-connexion');
+const elUtilisateurInfo = document.getElementById('utilisateur-info');
+const elBtnConnexion = document.getElementById('btn-connexion');
+const elBtnDeconnexion = document.getElementById('btn-deconnexion');
+const elConnexionMessage = document.getElementById('connexion-message');
 
-  // Remplit la déroulante ÉSSS à partir des données présentes.
-  function peuplerESSS() {
-    const vues = [...new Set(REGISTRE.map(get.esss).filter((v) => v && v !== '—'))].sort();
-    for (const v of vues) {
-      const opt = document.createElement('option');
-      opt.value = v;
-      opt.textContent = v;
-      elESSS.appendChild(opt);
-    }
+// --- raccourcis d'accès aux champs du résumé (mode liste — champs plats,
+// pas nichés sous section1_identification comme la fiche complète) ---
+const get = {
+  nom: (f) => f.nomResidence || '(sans nom)',
+  municipalite: (f) => f.municipalite || '—',
+  cat: (f) => f.categorieRPA,
+  unites: (f) => f.nombreTotalUnitesImmeubles,
+  esss: (f) => f.esss || '—',
+};
+
+// ============================ FILTRES =============================
+const elRegion = document.getElementById('f-region');
+const elCat = document.getElementById('f-cat');
+const elMin = document.getElementById('f-min');
+const elMax = document.getElementById('f-max');
+const elReset = document.getElementById('f-reset');
+const elCompteur = document.getElementById('compteur');
+const elCorps = document.getElementById('corps');
+const elEntetes = document.querySelectorAll('#tableau th.triable');
+
+// Peuple la déroulante des régions à partir d'un asset statique local
+// (regions-actives.json, généré par functions/regions-actives.mjs — lecture
+// seule sur Firestore, réutilise LIBELLES de regions.js). N'affiche que les
+// régions qui ont déjà des fiches, pas la liste complète du Québec.
+async function peuplerRegions() {
+  let regions = [];
+  try {
+    const res = await fetch('./regions-actives.json');
+    regions = await res.json();
+  } catch (e) {
+    return;
   }
-
-  function fichesFiltrees() {
-    const esss = elESSS.value;
-    const cat = elCat.value;
-    const min = elMin.value === '' ? null : Number(elMin.value);
-    const max = elMax.value === '' ? null : Number(elMax.value);
-
-    return REGISTRE.filter((f) => {
-      if (esss && get.esss(f) !== esss) return false;
-      if (cat && String(get.cat(f)) !== cat) return false;
-      const u = get.unites(f);
-      if (min !== null && (u == null || u < min)) return false;
-      if (max !== null && (u == null || u > max)) return false;
-      return true;
-    });
+  for (const r of regions) {
+    const opt = document.createElement('option');
+    opt.value = r.cdRSS;
+    opt.textContent = `${r.cdRSS} - ${r.libelle || '(région inconnue)'}`;
+    elRegion.appendChild(opt);
   }
+}
 
-  function rendreListe() {
-    const fiches = fichesFiltrees();
-    elCompteur.textContent = `${fiches.length} résidence${fiches.length > 1 ? 's' : ''}`
-      + (fiches.length !== REGISTRE.length ? ` (sur ${REGISTRE.length})` : '');
+// --- tri des colonnes (client, sur les données déjà chargées) ---
+let triColonne = null; // 'nom' | 'municipalite' | 'cat' | 'unites'
+let triDirection = 'asc';
 
-    elCorps.innerHTML = '';
-    if (!fiches.length) {
-      const tr = document.createElement('tr');
-      tr.innerHTML = '<td class="vide" colspan="5">Aucune résidence ne correspond aux filtres.</td>';
-      elCorps.appendChild(tr);
-      return;
-    }
+function comparerValeurs(a, b, numerique) {
+  const aVide = a == null || a === '';
+  const bVide = b == null || b === '';
+  if (aVide && bVide) return 0;
+  if (aVide) return 1; // valeurs vides toujours en fin de tri
+  if (bVide) return -1;
+  const cmp = numerique
+    ? Number(a) - Number(b)
+    : String(a).localeCompare(String(b), 'fr', { sensitivity: 'base' });
+  return triDirection === 'desc' ? -cmp : cmp;
+}
 
-    for (const f of fiches) {
-      const idx = REGISTRE.indexOf(f);
-      const tr = document.createElement('tr');
-      tr.tabIndex = 0;
-      tr.dataset.idx = String(idx);
-      tr.innerHTML = `
-        <td class="nom">${esc(get.nom(f))}</td>
-        <td>${esc(get.municipalite(f))}</td>
-        <td class="num">${get.cat(f) ?? '—'}</td>
-        <td class="num">${get.unites(f) ?? '—'}</td>
-        <td>${esc(get.esss(f))}</td>`;
-      tr.addEventListener('click', () => ouvrirDetail(idx));
-      tr.addEventListener('keydown', (e) => { if (e.key === 'Enter') ouvrirDetail(idx); });
-      elCorps.appendChild(tr);
-    }
+function fichesTriees(fiches) {
+  if (!triColonne) return fiches;
+  const numerique = triColonne === 'cat' || triColonne === 'unites';
+  return [...fiches].sort((x, y) => comparerValeurs(get[triColonne](x), get[triColonne](y), numerique));
+}
+
+function majFlechesEntetes() {
+  for (const th of elEntetes) {
+    const fleche = th.querySelector('.fleche-tri');
+    if (th.dataset.key === triColonne) fleche.textContent = triDirection === 'asc' ? '▲' : '▼';
+    else fleche.textContent = '';
   }
+}
 
-  [elESSS, elCat].forEach((el) => el.addEventListener('change', rendreListe));
-  [elMin, elMax].forEach((el) => el.addEventListener('input', rendreListe));
-  elReset.addEventListener('click', () => {
-    elESSS.value = ''; elCat.value = ''; elMin.value = ''; elMax.value = '';
+for (const th of elEntetes) {
+  th.addEventListener('click', () => {
+    const cle = th.dataset.key;
+    if (triColonne === cle) triDirection = triDirection === 'asc' ? 'desc' : 'asc';
+    else { triColonne = cle; triDirection = 'asc'; }
+    majFlechesEntetes();
     rendreListe();
   });
+}
 
-  // ============================ DÉTAIL ==============================
-  const vueListe = document.getElementById('vue-liste');
-  const vueDetail = document.getElementById('vue-detail');
-  const elDetail = document.getElementById('detail');
-  document.getElementById('retour').addEventListener('click', fermerDetail);
+function fichesFiltrees() {
+  const cat = elCat.value;
+  const min = elMin.value === '' ? null : Number(elMin.value);
+  const max = elMax.value === '' ? null : Number(elMax.value);
 
-  // Libellés lisibles (sections + champs courants). Fallback : humanize().
-  const LABELS = {
-    // en-tête
-    noForm: 'N° de formulaire', numeroInterne: 'Numéro interne',
-    numeroRegistre: 'Numéro de registre', residencesLiees: 'Résidences liées',
-    statut: 'Statut', detailUrl: 'Fiche source', _source: 'Fichier local',
-    // section 1
-    nomResidence: 'Nom de la résidence', adresse: 'Adresse', codePostal: 'Code postal',
-    esss: 'ÉSSS', esssCode: 'Code ÉSSS', esssNom: 'Nom ÉSSS', municipalite: 'Municipalité',
-    territoireCLSC: 'Territoire CLSC', territoireRLS: 'Territoire RLS', territoireMRC: 'Territoire MRC',
-    courriels: 'Courriels', telephone: 'Téléphone', telecopieur: 'Télécopieur',
-    dateOuverture: "Date d'ouverture", typeResidence: 'Type de résidence',
-    categorieRPA: 'Catégorie RPA', nombreTotalUnitesImmeubles: "Nombre total d'unités",
-    appartenanceGroupeReseau: 'Appartenance à un groupe', immeublesAssocies: 'Immeubles associés',
-    // section 2
-    personneMorale: 'Personne morale', nomCompagnie: 'Nom de la compagnie', neq: 'NEQ',
-    datePrisePossession: 'Date de prise de possession', actionnaires: 'Actionnaires',
-    nom: 'Nom', prenom: 'Prénom', mention: 'Mention',
-    // section 3
-    proprietaireAutresRPA: "Propriétaire d'autres RPA", nombreAutresResidences: 'Nombre autres résidences', liste: 'Liste',
-    // section 5
-    occupation: 'Occupation', fonction: 'Fonction',
-    // section 6
-    capaciteTotaleImmeubles: 'Capacité totale immeubles', capaciteRPA: 'Capacité RPA',
-    repartitionAges: 'Répartition par âge', moins65: 'Moins de 65 ans', de65a74: '65–74 ans',
-    de75a84: '75–84 ans', de85plus: '85 ans et +', totalResidents: 'Total résidents',
-    unitesParMission: 'Unités par mission', rpa: 'RPA', ri: 'RI', rtf: 'RTF', chsld: 'CHSLD', autres: 'Autres',
-    chambresSimples: 'Chambres simples', chambresDoubles: 'Chambres doubles', logements: 'Logements',
-    total: 'Total', clientelePersonnesAgees: 'Clientèle pers. âgées',
-    totalUnitesLocatives: 'Total unités locatives', entente108: 'Entente 108',
-    employes: 'Employés', personnelAssistance: "Personnel d'assistance", personnelInfirmier: 'Personnel infirmier',
-    semaine: 'Semaine', finDeSemaine: 'Fin de semaine', jour: 'Jour', soir: 'Soir', nuit: 'Nuit',
-    precisions: 'Précisions', type: 'Type',
-    // section 7
-    securite: 'Sécurité', typeAppelAide: "Type d'appel à l'aide", clienteleErrance: 'Clientèle errance',
-    dispositifSecuriteSortie: 'Dispositif sécurité sortie', loisirs: 'Loisirs', repas: 'Repas',
-    aideDomestique: 'Aide domestique', assistancePersonnelle: 'Assistance personnelle', soinsInfirmiers: 'Soins infirmiers',
-    // section 8
-    membreAssociation: "Membre d'association", associations: 'Associations',
-    permisMAPAQ: 'Permis MAPAQ', permisRBQ: 'Permis RBQ',
-    // section 9
-    typeConstruction: 'Type de construction', sousSol: 'Sous-sol', present: 'Présent',
-    porteExterieure: 'Porte extérieure', residentsHeberges: 'Résidents hébergés',
-    nombreEtagesHorsSousSol: "Nombre d'étages (hors sous-sol)", rampeAcces: "Rampe d'accès",
-    nombreAscenseurs: "Nombre d'ascenseurs", mitigeurEauChaude: 'Mitigeur eau chaude',
-    equipementsDetectionAlarme: 'Équipements détection/alarme', systemeGicleurs: 'Système de gicleurs',
-    sourceEauPotable: 'Source eau potable', generatrice: 'Génératrice', climatisation: 'Climatisation',
-    ensembleImmeubles: 'Ensemble des immeubles', lieuxCommuns: 'Lieux communs',
-    chambresLogements: 'Chambres/logements', controleIndependant: 'Contrôle indépendant',
-  };
+  const filtrees = REGISTRE.filter((f) => {
+    if (cat && String(get.cat(f)) !== cat) return false;
+    const u = get.unites(f);
+    if (min !== null && (u == null || u < min)) return false;
+    if (max !== null && (u == null || u > max)) return false;
+    return true;
+  });
+  return fichesTriees(filtrees);
+}
 
-  const SECTIONS = {
-    section1_identification: '1 · Identification',
-    section2_titulaires: '2 · Titulaires',
-    section3_autresRPA: '3 · Autres RPA',
-    section4_personneResponsable: '4 · Personne responsable',
-    section5_administrateurs: '5 · Administrateurs',
-    section6_portraits: '6 · Portraits',
-    section7_services: '7 · Services',
-    section8_reconnaissance: '8 · Reconnaissance',
-    section9_immeuble: "9 · Caractéristiques de l'immeuble",
-  };
+function rendreListe() {
+  const fiches = fichesFiltrees();
+  elCompteur.textContent = `${fiches.length} résidence${fiches.length > 1 ? 's' : ''}`
+    + (fiches.length !== REGISTRE.length ? ` (sur ${REGISTRE.length})` : '');
 
-  function label(key) {
-    return LABELS[key] || humanize(key);
+  elCorps.innerHTML = '';
+  if (!fiches.length) {
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td class="vide" colspan="5">Aucune résidence — choisis une région ci-dessus.</td>';
+    elCorps.appendChild(tr);
+    return;
   }
 
-  function ouvrirDetail(idx) {
-    const f = REGISTRE[idx];
-    if (!f) return;
-    elDetail.innerHTML = '';
+  for (const f of fiches) {
+    const tr = document.createElement('tr');
+    tr.tabIndex = 0;
+    tr.innerHTML = `
+      <td class="nom">${esc(get.nom(f))}</td>
+      <td>${esc(get.municipalite(f))}</td>
+      <td class="num">${get.cat(f) ?? '—'}</td>
+      <td class="num">${get.unites(f) ?? '—'}</td>
+      <td>${esc(get.esss(f))}</td>`;
+    tr.addEventListener('click', () => ouvrirDetail(f.noForm));
+    tr.addEventListener('keydown', (e) => { if (e.key === 'Enter') ouvrirDetail(f.noForm); });
+    elCorps.appendChild(tr);
+  }
+}
 
-    const s1 = f.section1_identification || {};
-    const titre = document.createElement('h2');
-    titre.className = 'fiche-titre';
-    titre.textContent = s1.nomResidence || '(sans nom)';
-    elDetail.appendChild(titre);
+[elCat].forEach((el) => el.addEventListener('change', rendreListe));
+[elMin, elMax].forEach((el) => el.addEventListener('input', rendreListe));
+elReset.addEventListener('click', () => {
+  elCat.value = ''; elMin.value = ''; elMax.value = '';
+  rendreListe();
+});
 
-    const meta = document.createElement('p');
-    meta.className = 'fiche-meta';
-    const badges = [
-      s1.categorieRPA != null ? `Catégorie ${s1.categorieRPA}` : null,
-      f.statut || null,
-    ].filter(Boolean).map((b) => `<span class="badge">${esc(b)}</span>`).join('');
-    meta.innerHTML = `${badges}${esc([s1.adresse, s1.municipalite, s1.codePostal].filter(Boolean).join(', '))}`;
-    elDetail.appendChild(meta);
+elRegion.addEventListener('change', () => chargerRegion());
 
-    // En-tête : champs hors sections
-    const enteteKeys = Object.keys(f).filter((k) => !k.startsWith('section') && k !== '_source');
-    elDetail.appendChild(carteSection('Informations générales',
-      Object.fromEntries(enteteKeys.map((k) => [k, f[k]]))));
+async function chargerRegion() {
+  const cd = elRegion.value;
+  if (!cd) { REGISTRE = []; rendreListe(); return; }
+  elCompteur.textContent = 'Chargement…';
+  let data;
+  try {
+    data = await appelApi(`?cdRSS=${encodeURIComponent(cd)}`);
+  } catch (e) {
+    return; // message déjà géré par appelApi
+  }
+  REGISTRE = data.fiches || [];
+  rendreListe();
+}
 
-    // Une carte par section, dans l'ordre 1→9
-    for (const key of Object.keys(SECTIONS)) {
-      if (f[key] != null) elDetail.appendChild(carteSection(SECTIONS[key], f[key]));
+// ============================ DÉTAIL ==============================
+const vueListe = document.getElementById('vue-liste');
+const vueDetail = document.getElementById('vue-detail');
+const elDetail = document.getElementById('detail');
+document.getElementById('retour').addEventListener('click', fermerDetail);
+
+// Libellés lisibles (sections + champs courants). Fallback : humanize().
+const LABELS = {
+  // en-tête
+  noForm: 'N° de formulaire', numeroInterne: 'Numéro interne',
+  numeroRegistre: 'Numéro de registre', residencesLiees: 'Résidences liées',
+  statut: 'Statut', detailUrl: 'Fiche source', _source: 'Fichier local',
+  _collecteLe: 'Collecté le',
+  // section 1
+  nomResidence: 'Nom de la résidence', adresse: 'Adresse', codePostal: 'Code postal',
+  esss: 'ÉSSS', esssCode: 'Code ÉSSS', esssNom: 'Nom ÉSSS', municipalite: 'Municipalité',
+  territoireCLSC: 'Territoire CLSC', territoireRLS: 'Territoire RLS', territoireMRC: 'Territoire MRC',
+  courriels: 'Courriels', telephone: 'Téléphone', telecopieur: 'Télécopieur',
+  dateOuverture: "Date d'ouverture", typeResidence: 'Type de résidence',
+  categorieRPA: 'Catégorie RPA', nombreTotalUnitesImmeubles: "Nombre total d'unités",
+  appartenanceGroupeReseau: 'Appartenance à un groupe', immeublesAssocies: 'Immeubles associés',
+  // section 2
+  personneMorale: 'Personne morale', nomCompagnie: 'Nom de la compagnie', neq: 'NEQ',
+  datePrisePossession: 'Date de prise de possession', actionnaires: 'Actionnaires',
+  nom: 'Nom', prenom: 'Prénom', mention: 'Mention',
+  // section 3
+  proprietaireAutresRPA: "Propriétaire d'autres RPA", nombreAutresResidences: 'Nombre autres résidences', liste: 'Liste',
+  // section 5
+  occupation: 'Occupation', fonction: 'Fonction',
+  // section 6
+  capaciteTotaleImmeubles: 'Capacité totale immeubles', capaciteRPA: 'Capacité RPA',
+  repartitionAges: 'Répartition par âge', moins65: 'Moins de 65 ans', de65a74: '65–74 ans',
+  de75a84: '75–84 ans', de85plus: '85 ans et +', totalResidents: 'Total résidents',
+  unitesParMission: 'Unités par mission', rpa: 'RPA', ri: 'RI', rtf: 'RTF', chsld: 'CHSLD', autres: 'Autres',
+  chambresSimples: 'Chambres simples', chambresDoubles: 'Chambres doubles', logements: 'Logements',
+  total: 'Total', clientelePersonnesAgees: 'Clientèle pers. âgées',
+  totalUnitesLocatives: 'Total unités locatives', entente108: 'Entente 108',
+  employes: 'Employés', personnelAssistance: "Personnel d'assistance", personnelInfirmier: 'Personnel infirmier',
+  semaine: 'Semaine', finDeSemaine: 'Fin de semaine', jour: 'Jour', soir: 'Soir', nuit: 'Nuit',
+  precisions: 'Précisions', type: 'Type',
+  // section 7
+  securite: 'Sécurité', typeAppelAide: "Type d'appel à l'aide", clienteleErrance: 'Clientèle errance',
+  dispositifSecuriteSortie: 'Dispositif sécurité sortie', loisirs: 'Loisirs', repas: 'Repas',
+  aideDomestique: 'Aide domestique', assistancePersonnelle: 'Assistance personnelle', soinsInfirmiers: 'Soins infirmiers',
+  // section 8
+  membreAssociation: "Membre d'association", associations: 'Associations',
+  permisMAPAQ: 'Permis MAPAQ', permisRBQ: 'Permis RBQ',
+  // section 9
+  typeConstruction: 'Type de construction', sousSol: 'Sous-sol', present: 'Présent',
+  porteExterieure: 'Porte extérieure', residentsHeberges: 'Résidents hébergés',
+  nombreEtagesHorsSousSol: "Nombre d'étages (hors sous-sol)", rampeAcces: "Rampe d'accès",
+  nombreAscenseurs: "Nombre d'ascenseurs", mitigeurEauChaude: 'Mitigeur eau chaude',
+  equipementsDetectionAlarme: 'Équipements détection/alarme', systemeGicleurs: 'Système de gicleurs',
+  sourceEauPotable: 'Source eau potable', generatrice: 'Génératrice', climatisation: 'Climatisation',
+  ensembleImmeubles: 'Ensemble des immeubles', lieuxCommuns: 'Lieux communs',
+  chambresLogements: 'Chambres/logements', controleIndependant: 'Contrôle indépendant',
+};
+
+const SECTIONS = {
+  section1_identification: '1 · Identification',
+  section2_titulaires: '2 · Titulaires',
+  section3_autresRPA: '3 · Autres RPA',
+  section4_personneResponsable: '4 · Personne responsable',
+  section5_administrateurs: '5 · Administrateurs',
+  section6_portraits: '6 · Portraits',
+  section7_services: '7 · Services',
+  section8_reconnaissance: '8 · Reconnaissance',
+  section9_immeuble: "9 · Caractéristiques de l'immeuble",
+};
+
+function label(key) {
+  return LABELS[key] || humanize(key);
+}
+
+async function ouvrirDetail(noForm) {
+  let f;
+  try {
+    f = await appelApi(`?noForm=${encodeURIComponent(noForm)}`);
+  } catch (e) {
+    return; // message déjà géré par appelApi
+  }
+  if (!f) return;
+  elDetail.innerHTML = '';
+
+  const s1 = f.section1_identification || {};
+  const titre = document.createElement('h2');
+  titre.className = 'fiche-titre';
+  titre.textContent = s1.nomResidence || '(sans nom)';
+  elDetail.appendChild(titre);
+
+  const meta = document.createElement('p');
+  meta.className = 'fiche-meta';
+  const badges = [
+    s1.categorieRPA != null ? `Catégorie ${s1.categorieRPA}` : null,
+    f.statut || null,
+  ].filter(Boolean).map((b) => `<span class="badge">${esc(b)}</span>`).join('');
+  meta.innerHTML = `${badges}${esc([s1.adresse, s1.municipalite, s1.codePostal].filter(Boolean).join(', '))}`;
+  elDetail.appendChild(meta);
+
+  // En-tête : champs hors sections. On masque la plomberie (tout champ `_...`
+  // sauf la date de collecte, reformatée en date lisible) et le doublon
+  // numeroInterne quand il est identique à numeroRegistre — le contenu
+  // métier reste intact, on ne masque que ce qui n'apporte rien à la lecture.
+  const enteteKeys = Object.keys(f).filter((k) => {
+    if (k.startsWith('section')) return false;
+    if (k === '_source') return false;
+    if (k.startsWith('_') && k !== '_collecteLe') return false;
+    if (k === 'numeroInterne' && String(f.numeroInterne) === String(f.numeroRegistre)) return false;
+    return true;
+  });
+  const entete = Object.fromEntries(enteteKeys.map((k) =>
+    [k, k === '_collecteLe' ? formatCollecteLe(f._collecteLe) : f[k]]));
+  elDetail.appendChild(carteSection('Informations générales', entete));
+
+  // Une carte par section, dans l'ordre 1→9
+  for (const key of Object.keys(SECTIONS)) {
+    if (f[key] != null) elDetail.appendChild(carteSection(SECTIONS[key], f[key]));
+  }
+
+  vueListe.hidden = true;
+  vueDetail.hidden = false;
+  window.scrollTo(0, 0);
+}
+
+function fermerDetail() {
+  vueDetail.hidden = true;
+  vueListe.hidden = false;
+}
+
+// Construit une carte <section> à partir d'un objet.
+function carteSection(titre, obj) {
+  const sec = document.createElement('section');
+  sec.className = 'section';
+  const h = document.createElement('h2');
+  h.textContent = titre;
+  sec.appendChild(h);
+  const corps = document.createElement('div');
+  corps.className = 'corps';
+  corps.appendChild(rendreObjet(obj));
+  sec.appendChild(corps);
+  return sec;
+}
+
+// Rend un objet en liste de champs clé/valeur (récursif).
+function rendreObjet(obj) {
+  const frag = document.createDocumentFragment();
+  for (const [k, v] of Object.entries(obj)) {
+    if (Array.isArray(v) && v.length && typeof v[0] === 'object') {
+      // tableau d'objets → mini-table
+      const t = document.createElement('div');
+      t.className = 'sous-titre';
+      t.textContent = label(k);
+      frag.appendChild(t);
+      frag.appendChild(miniTable(v));
+    } else if (v !== null && typeof v === 'object' && !Array.isArray(v)) {
+      // sous-objet → bloc indenté
+      const t = document.createElement('div');
+      t.className = 'sous-titre';
+      t.textContent = label(k);
+      frag.appendChild(t);
+      const box = document.createElement('div');
+      box.className = 'sous-objet';
+      box.appendChild(rendreObjet(v));
+      frag.appendChild(box);
+    } else {
+      frag.appendChild(champ(label(k), v));
     }
+  }
+  return frag;
+}
 
-    vueListe.hidden = true;
-    vueDetail.hidden = false;
-    window.scrollTo(0, 0);
+// Ligne clé/valeur.
+function champ(k, v) {
+  const row = document.createElement('div');
+  row.className = 'champ';
+  const ck = document.createElement('div');
+  ck.className = 'k';
+  ck.textContent = k;
+  const cv = document.createElement('div');
+  cv.className = 'v ' + classeValeur(v);
+  cv.innerHTML = formatValeur(v);
+  row.append(ck, cv);
+  return row;
+}
+
+function miniTable(arr) {
+  const cols = [...new Set(arr.flatMap((o) => Object.keys(o)))];
+  const t = document.createElement('table');
+  t.className = 'mini-table';
+  const thead = document.createElement('thead');
+  thead.innerHTML = '<tr>' + cols.map((c) => `<th>${esc(label(c))}</th>`).join('') + '</tr>';
+  const tbody = document.createElement('tbody');
+  for (const o of arr) {
+    tbody.innerHTML += '<tr>' + cols.map((c) => `<td>${formatValeur(o[c])}</td>`).join('') + '</tr>';
+  }
+  t.append(thead, tbody);
+  return t;
+}
+
+// --- formatage des valeurs ---
+function classeValeur(v) {
+  if (v === true) return 'oui';
+  if (v === false) return 'non';
+  if (v === null || v === '' || (Array.isArray(v) && !v.length)) return 'nul';
+  return '';
+}
+function formatValeur(v) {
+  if (v === true) return 'Oui';
+  if (v === false) return 'Non';
+  if (v === null || v === undefined || v === '') return '—';
+  if (Array.isArray(v)) return v.length ? v.map((x) => esc(String(x))).join('<br>') : '—';
+  if (typeof v === 'object') {
+    // objet imbriqué dans une cellule (ex. semaine {jour,soir,nuit}) → compact
+    const parts = Object.entries(v).map(([k, val]) => `${esc(label(k))} ${formatValeur(val)}`);
+    return parts.length ? parts.join(' · ') : '—';
+  }
+  const s = String(v);
+  if (/^https?:\/\//.test(s)) return `<a href="${esc(s)}" target="_blank" rel="noopener">${esc(s)}</a>`;
+  if (/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(s)) return `<a href="mailto:${esc(s)}">${esc(s)}</a>`;
+  return esc(s);
+}
+
+// Timestamp Firestore {_seconds, _nanoseconds} → date lisible française
+// (fuseau America/Montreal), ex. « 3 juillet 2026 à 03h12 ».
+function formatCollecteLe(ts) {
+  if (!ts || ts._seconds == null) return null;
+  const date = new Date(ts._seconds * 1000);
+  const jour = new Intl.DateTimeFormat('fr-CA', {
+    timeZone: 'America/Montreal', day: 'numeric', month: 'long', year: 'numeric',
+  }).format(date);
+  // formatToParts plutôt qu'un format+replace : le séparateur « h/m » varie
+  // selon la locale (fr-CA rend « 03 h 06 », espaces incluses) — on construit
+  // « 03h06 » nous-mêmes pour un résultat prévisible, indépendant de la locale.
+  const parts = new Intl.DateTimeFormat('fr-CA', {
+    timeZone: 'America/Montreal', hour: '2-digit', minute: '2-digit', hourCycle: 'h23',
+  }).formatToParts(date);
+  const heures = parts.find((p) => p.type === 'hour').value;
+  const minutes = parts.find((p) => p.type === 'minute').value;
+  return `${jour} à ${heures}h${minutes}`;
+}
+
+function humanize(key) {
+  return key
+    .replace(/^section\d+_/, '')
+    .replace(/([a-z])([A-Z])/g, '$1 $2')
+    .replace(/^./, (c) => c.toUpperCase());
+}
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, (c) =>
+    ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+// ============================ AUTH / MUR ==========================
+
+function afficherEcranConnexion(message) {
+  vueConnexion.hidden = false;
+  vueListe.hidden = true;
+  vueDetail.hidden = true;
+  elBtnConnexion.hidden = false;
+  elConnexionMessage.textContent = message || '';
+}
+
+// Connecté à Google mais pas dans _accesAutorises (403) : pas de bouton
+// « se connecter » (déjà connecté) — juste le message + « se déconnecter »
+// dans l'en-tête pour essayer un autre compte.
+function afficherAccesRefuse(message) {
+  vueConnexion.hidden = false;
+  vueListe.hidden = true;
+  vueDetail.hidden = true;
+  elBtnConnexion.hidden = true;
+  elConnexionMessage.textContent = message;
+}
+
+function afficherApp() {
+  vueConnexion.hidden = true;
+  vueListe.hidden = false;
+  vueDetail.hidden = true;
+}
+
+// Appel centralisé à consultationApi : porte le token, gère 401/403.
+// Ne sert jamais de donnée avant d'avoir vérifié la réponse — le mur décide,
+// cette fonction ne fait qu'obéir.
+async function appelApi(queryString) {
+  if (!idTokenActuel) throw new Error('non-connecte');
+  const res = await fetch(`${CONSULTATION_API_URL}${queryString}`, {
+    headers: { Authorization: `Bearer ${idTokenActuel}` },
+  });
+  if (res.status === 401) {
+    await signOut(auth);
+    afficherEcranConnexion('Session expirée ou invalide — reconnecte-toi.');
+    throw new Error('401');
+  }
+  if (res.status === 403) {
+    afficherAccesRefuse('Accès refusé — cette adresse Google n’est pas autorisée.');
+    throw new Error('403');
+  }
+  if (!res.ok) {
+    elConnexionMessage.textContent = '';
+    throw new Error(`HTTP ${res.status}`);
+  }
+  return res.json();
+}
+
+elBtnConnexion.addEventListener('click', async () => {
+  elConnexionMessage.textContent = '';
+  try {
+    await signInWithPopup(auth, new GoogleAuthProvider());
+  } catch (e) {
+    elConnexionMessage.textContent = 'Connexion annulée ou en échec.';
+  }
+});
+
+elBtnDeconnexion.addEventListener('click', () => signOut(auth));
+
+// Aucune donnée n'est chargée avant ce callback ET une action explicite de
+// la personne (Charger une région / cliquer une fiche) : REGISTRE reste vide,
+// rendreListe() n'affiche rien tant qu'aucun fetch n'a réussi.
+//
+// Sonde d'accès immédiate : on ne veut pas attendre le premier clic sur
+// « Charger » pour révéler un 403 — ?cdRSS=00 est un appel légitime au sens
+// du contrat de l'API (aucun cdRSS réel ne vaut « 00 »), qui traverse le mur
+// (token + liste blanche) sans dépendre d'une vraie région. 200 → autorisé
+// (même si 0 résultat) ; 403 → geré par appelApi (écran refus), sans jamais
+// avoir affiché la moindre donnée.
+onAuthStateChanged(auth, async (user) => {
+  if (!user) {
+    idTokenActuel = null;
+    elEtatConnexion.hidden = true;
+    REGISTRE = [];
+    afficherEcranConnexion();
+    return;
+  }
+  idTokenActuel = await user.getIdToken();
+  elEtatConnexion.hidden = false;
+  elUtilisateurInfo.textContent = user.email || '(connecté)';
+  REGISTRE = [];
+
+  try {
+    await appelApi('?cdRSS=00');
+  } catch (e) {
+    return; // 401/403 déjà géré (écran approprié affiché) par appelApi
   }
 
-  function fermerDetail() {
-    vueDetail.hidden = true;
-    vueListe.hidden = false;
-  }
-
-  // Construit une carte <section> à partir d'un objet.
-  function carteSection(titre, obj) {
-    const sec = document.createElement('section');
-    sec.className = 'section';
-    const h = document.createElement('h2');
-    h.textContent = titre;
-    sec.appendChild(h);
-    const corps = document.createElement('div');
-    corps.className = 'corps';
-    corps.appendChild(rendreObjet(obj));
-    sec.appendChild(corps);
-    return sec;
-  }
-
-  // Rend un objet en liste de champs clé/valeur (récursif).
-  function rendreObjet(obj) {
-    const frag = document.createDocumentFragment();
-    for (const [k, v] of Object.entries(obj)) {
-      if (Array.isArray(v) && v.length && typeof v[0] === 'object') {
-        // tableau d'objets → mini-table
-        const t = document.createElement('div');
-        t.className = 'sous-titre';
-        t.textContent = label(k);
-        frag.appendChild(t);
-        frag.appendChild(miniTable(v));
-      } else if (v !== null && typeof v === 'object' && !Array.isArray(v)) {
-        // sous-objet → bloc indenté
-        const t = document.createElement('div');
-        t.className = 'sous-titre';
-        t.textContent = label(k);
-        frag.appendChild(t);
-        const box = document.createElement('div');
-        box.className = 'sous-objet';
-        box.appendChild(rendreObjet(v));
-        frag.appendChild(box);
-      } else {
-        frag.appendChild(champ(label(k), v));
-      }
-    }
-    return frag;
-  }
-
-  // Ligne clé/valeur.
-  function champ(k, v) {
-    const row = document.createElement('div');
-    row.className = 'champ';
-    const ck = document.createElement('div');
-    ck.className = 'k';
-    ck.textContent = k;
-    const cv = document.createElement('div');
-    cv.className = 'v ' + classeValeur(v);
-    cv.innerHTML = formatValeur(v);
-    row.append(ck, cv);
-    return row;
-  }
-
-  function miniTable(arr) {
-    const cols = [...new Set(arr.flatMap((o) => Object.keys(o)))];
-    const t = document.createElement('table');
-    t.className = 'mini-table';
-    const thead = document.createElement('thead');
-    thead.innerHTML = '<tr>' + cols.map((c) => `<th>${esc(label(c))}</th>`).join('') + '</tr>';
-    const tbody = document.createElement('tbody');
-    for (const o of arr) {
-      tbody.innerHTML += '<tr>' + cols.map((c) => `<td>${formatValeur(o[c])}</td>`).join('') + '</tr>';
-    }
-    t.append(thead, tbody);
-    return t;
-  }
-
-  // --- formatage des valeurs ---
-  function classeValeur(v) {
-    if (v === true) return 'oui';
-    if (v === false) return 'non';
-    if (v === null || v === '' || (Array.isArray(v) && !v.length)) return 'nul';
-    return '';
-  }
-  function formatValeur(v) {
-    if (v === true) return 'Oui';
-    if (v === false) return 'Non';
-    if (v === null || v === undefined || v === '') return '—';
-    if (Array.isArray(v)) return v.length ? v.map((x) => esc(String(x))).join('<br>') : '—';
-    if (typeof v === 'object') {
-      // objet imbriqué dans une cellule (ex. semaine {jour,soir,nuit}) → compact
-      const parts = Object.entries(v).map(([k, val]) => `${esc(label(k))} ${formatValeur(val)}`);
-      return parts.length ? parts.join(' · ') : '—';
-    }
-    const s = String(v);
-    if (/^https?:\/\//.test(s)) return `<a href="${esc(s)}" target="_blank" rel="noopener">${esc(s)}</a>`;
-    if (/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(s)) return `<a href="mailto:${esc(s)}">${esc(s)}</a>`;
-    return esc(s);
-  }
-
-  function humanize(key) {
-    return key
-      .replace(/^section\d+_/, '')
-      .replace(/([a-z])([A-Z])/g, '$1 $2')
-      .replace(/^./, (c) => c.toUpperCase());
-  }
-  function esc(s) {
-    return String(s).replace(/[&<>"']/g, (c) =>
-      ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  }
-
-  // ============================ INIT ===============================
-  if (!REGISTRE.length) {
-    elCompteur.textContent = 'Aucune donnée chargée. Lancez : node app-consultation/build-data.js';
-  } else {
-    peuplerESSS();
-    rendreListe();
-  }
-})();
+  afficherApp();
+  if (elRegion.options.length <= 1) await peuplerRegions(); // une seule fois
+  rendreListe();
+});

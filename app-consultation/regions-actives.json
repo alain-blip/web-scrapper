@@ -1,0 +1,57 @@
+[
+  {
+    "cdRSS": "01",
+    "libelle": "CISSS du Bas-Saint-Laurent",
+    "total": 42
+  },
+  {
+    "cdRSS": "02",
+    "libelle": "CIUSSS du Saguenay – Lac-Saint-Jean",
+    "total": 25
+  },
+  {
+    "cdRSS": "03",
+    "libelle": "CIUSSS de la Capitale-Nationale",
+    "total": 166
+  },
+  {
+    "cdRSS": "05",
+    "libelle": "CIUSSS de l'Estrie – CHUS",
+    "total": 100
+  },
+  {
+    "cdRSS": "08",
+    "libelle": "CISSS de l'Abitibi-Témiscamingue",
+    "total": 17
+  },
+  {
+    "cdRSS": "10",
+    "libelle": "CRSSS de la Baie-James",
+    "total": 2
+  },
+  {
+    "cdRSS": "61",
+    "libelle": "CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "total": 24
+  },
+  {
+    "cdRSS": "62",
+    "libelle": "CIUSSS du Centre-Ouest-de-l'Île-de-Montréal",
+    "total": 1
+  },
+  {
+    "cdRSS": "63",
+    "libelle": "CIUSSS du Centre-Sud-de-l'Île-de-Montréal",
+    "total": 1
+  },
+  {
+    "cdRSS": "64",
+    "libelle": "CIUSSS du Nord-de-l'Île-de-Montréal",
+    "total": 1
+  },
+  {
+    "cdRSS": "65",
+    "libelle": "CIUSSS de l'Est-de-l'Île-de-Montréal",
+    "total": 1
+  }
+]

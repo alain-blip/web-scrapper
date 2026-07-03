@@ -1,0 +1,19 @@
+rules_version = '2';
+
+// Couche 1 du mur : refus par défaut sur tout. Aucun accès client direct,
+// ni lecture ni écriture, sur aucune collection (residences/, _accesAutorises/,
+// _collectionLog/ ou toute collection future). Seul l'Admin SDK (nos Cloud
+// Functions, côté serveur) contourne ces règles — c'est le comportement natif
+// de l'Admin SDK, pas une exception écrite ici.
+//
+// Vérifié le 2026-07-03 : cette règle est déjà EXACTEMENT celle active en
+// production (créée à la création de la base, 2026-06-28) — ce fichier ne
+// fait que la rapatrier dans le dépôt pour qu'elle soit versionnée et
+// reproductible, pas pour changer un comportement déjà en place.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

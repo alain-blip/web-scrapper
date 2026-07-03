@@ -62,12 +62,48 @@ main { padding: 16px; max-width: 1100px; margin: 0 auto; }
 
 .compteur { margin: 14px 2px 8px; color: var(--muet); font-size: .9rem; }
 
+/* --- Connexion / mur d'accès --- */
+.etat-connexion {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: .85rem;
+}
+.etat-connexion #utilisateur-info { opacity: .9; }
+.etat-connexion .reset { margin-left: 0; }
+
+.connexion {
+  max-width: 420px;
+  margin: 60px auto;
+  background: #fff;
+  border: 1px solid var(--bord);
+  border-radius: 10px;
+  padding: 28px;
+  text-align: center;
+}
+.connexion-bouton {
+  margin-top: 12px;
+  padding: 10px 18px;
+  border: 1px solid var(--bleu);
+  background: var(--bleu);
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.connexion-bouton:hover { opacity: .9; }
+.connexion-message { margin-top: 14px; color: var(--muet); font-size: .88rem; min-height: 1.2em; }
+
 /* --- Tableau --- */
 .table-wrap { overflow-x: auto; background: #fff; border: 1px solid var(--bord); border-radius: 10px; }
 table { width: 100%; border-collapse: collapse; }
 th, td { padding: 11px 14px; text-align: left; border-bottom: 1px solid var(--bord); }
 th { background: var(--bleu-clair); font-size: .8rem; text-transform: uppercase; letter-spacing: .02em; color: #334; white-space: nowrap; }
 th.num, td.num { text-align: right; }
+th.triable { cursor: pointer; user-select: none; }
+th.triable:hover { background: #dcebf6; }
+.fleche-tri { display: inline-block; width: 1em; margin-left: 2px; opacity: .6; }
 tbody tr { cursor: pointer; }
 tbody tr:hover { background: var(--bleu-clair); }
 tbody tr:last-child td { border-bottom: none; }

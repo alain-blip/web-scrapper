@@ -20,6 +20,10 @@ import {
   regionsPourJour, jourDuMoisMontreal, dateMontreal, LIBELLES,
 } from './lib/scraper/collector/regions.js';
 
+// Backend de lecture pour l'appli de consultation — fichier séparé, lecture
+// seule stricte, n'importe rien du collecteur (voir consultationApi.js).
+export { consultationApi } from './consultationApi.js';
+
 initializeApp();
 const db = getFirestore();
 

@@ -41,6 +41,15 @@
                     <option value="NON_TRAITE">Non Traité</option>
                 </select>
             </div>
+            <div class="flex flex-col">
+                <label class="text-xs text-gray-400 font-bold mb-1 uppercase">Qualité du contact</label>
+                <select id="filterContact" class="bg-gray-900 border border-gray-700 rounded p-2 text-sm focus:outline-none focus:border-emerald-500 text-gray-100" onchange="filtrerDonnees()">
+                    <option value="">Toutes</option>
+                    <option value="DECIDEUR">🎯 Décideur</option>
+                    <option value="PERSO">❓ Perso à confirmer</option>
+                    <option value="GENERALE">🏢 Ligne générale</option>
+                </select>
+            </div>
             <div class="flex flex-col flex-1">
                 <label class="text-xs text-gray-400 font-bold mb-1 uppercase">Recherche par Nom, NEQ, tél. ou courriel</label>
                 <input type="text" id="searchBar" placeholder="Ex: Château Pierrefonds..." class="bg-gray-900 border border-gray-700 rounded p-2 text-sm focus:outline-none focus:border-emerald-500 text-gray-100" oninput="filtrerDonnees()">
@@ -54,6 +63,14 @@
 
     <script>
         let toutesLesResidences = [];
+
+        // Badge de qualité du courriel : distingue le décideur de la réception
+        function badgeQualite(q) {
+            if (q === 'DECIDEUR') return `<span class="bg-emerald-950 text-emerald-300 text-[10px] font-bold px-2 py-0.5 rounded-full border border-emerald-800">🎯 Décideur</span>`;
+            if (q === 'GENERALE') return `<span class="bg-gray-800 text-gray-400 text-[10px] font-bold px-2 py-0.5 rounded-full border border-gray-700">🏢 Ligne générale</span>`;
+            if (q === 'PERSO') return `<span class="bg-sky-950 text-sky-300 text-[10px] font-bold px-2 py-0.5 rounded-full border border-sky-800">❓ Perso à confirmer</span>`;
+            return '';
+        }
 
         // 1. Fetch des données de l'API locale
         async function chargerResidences() {
@@ -75,16 +92,18 @@
         function filtrerDonnees() {
             const catSelected = document.getElementById('filterCategorie').value;
             const statusSelected = document.getElementById('filterStatus').value;
+            const contactSelected = document.getElementById('filterContact').value;
             const searchTerms = document.getElementById('searchBar').value.toLowerCase();
 
             const filtre = toutesLesResidences.filter(r => {
                 const matchCat = catSelected === "" || String(r.categorieRPA) === catSelected;
                 const matchStatus = statusSelected === "" || r.sourcingStatus === statusSelected;
+                const matchContact = contactSelected === "" || r.courrielQualite === contactSelected;
                 const matchSearch = r.nom.toLowerCase().includes(searchTerms)
                     || (r.neq && r.neq.includes(searchTerms))
                     || (r.telephone && r.telephone.includes(searchTerms))
                     || (r.courriel && r.courriel.toLowerCase().includes(searchTerms));
-                return matchCat && matchStatus && matchSearch;
+                return matchCat && matchStatus && matchContact && matchSearch;
             });
 
             genererCards(filtre);
@@ -150,7 +169,7 @@
 
                         <div class="flex flex-wrap gap-x-6 gap-y-2 mb-4 text-sm">
                             ${r.telephone ? `<a href="tel:${r.telephone}" class="flex items-center gap-1.5 text-sky-300 hover:text-sky-200"><span>📞</span><span class="font-mono">${r.telephone}</span></a>` : ''}
-                            ${r.courriel ? `<a href="mailto:${r.courriel}" class="flex items-center gap-1.5 text-sky-300 hover:text-sky-200"><span>✉️</span><span>${r.courriel}</span></a>` : ''}
+                            ${r.courriel ? `<span class="flex items-center gap-1.5"><a href="mailto:${r.courriel}" class="flex items-center gap-1.5 text-sky-300 hover:text-sky-200"><span>✉️</span><span>${r.courriel}</span></a>${badgeQualite(r.courrielQualite)}</span>` : ''}
                             ${r.telecopieur ? `<span class="flex items-center gap-1.5 text-gray-500"><span>📠</span><span class="font-mono">${r.telecopieur}</span></span>` : ''}
                             ${(r.personneResponsable && r.personneResponsable.length) ? `<span class="flex items-center gap-1.5 text-gray-400"><span>👤</span><span>${r.personneResponsable.map(p => `${p.prenom || ''} ${p.nom || ''}`.trim()).join(', ')}</span></span>` : ''}
                             ${(!r.telephone && !r.courriel) ? `<span class="text-gray-600 italic text-xs">Aucune coordonnée au registre K10</span>` : ''}

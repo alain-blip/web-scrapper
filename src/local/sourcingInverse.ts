@@ -11,7 +11,7 @@ const db = new Firestore({ projectId: 'primexpert-msss-registre' });
 // codesRegions : si fourni (ex. ['04']), on ne traite que ces régions (mode
 // quotidien aligné sur le collecteur). Sinon : balayage complet de la base.
 export async function executerSourcingInverseLocal({ codesRegions = null }: { codesRegions?: string[] | null } = {}) {
-  console.log("⚡ Démarrage du pipeline de sourcing REQ LOCAL sur /Volumes/SAUVEGARDE GRIS/03_WEBSCRAPPER");
+  console.log(`⚡ Démarrage du pipeline de sourcing REQ LOCAL (${process.cwd()})`);
 
   // 1. Extraction des fiches à traiter.
   let query: FirebaseFirestore.Query = db.collection('residences');

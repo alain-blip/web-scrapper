@@ -5,11 +5,12 @@
   <key>Label</key>
   <string>com.primexpert.sourcing-req</string>
 
-  <!-- Lance le wrapper qui exécute src/local/sourcingQuotidien.ts -->
+  <!-- Lance le wrapper (sur disque interne → pas de blocage TCC) qui exécute
+       src/local/sourcingQuotidien.ts -->
   <key>ProgramArguments</key>
   <array>
     <string>/bin/bash</string>
-    <string>/Volumes/SAUVEGARDE GRIS/03_WEBSCRAPPER/code/scripts/run-sourcing-req.sh</string>
+    <string>/Users/alainst-jean/03_WEBSCRAPPER/code/scripts/run-sourcing-req.sh</string>
   </array>
 
   <!-- Tous les jours à 5h00. Si la machine dort à 5h00, launchd exécute au
@@ -21,7 +22,7 @@
   </dict>
 
   <!-- Sortie brute de launchd (le log détaillé est écrit par le wrapper dans
-       code/logs/sourcing-req.log). -->
+       ~/Library/Logs/sourcing-req.log). -->
   <key>StandardOutPath</key>
   <string>/Users/alainst-jean/Library/Logs/sourcing-req.out.log</string>
   <key>StandardErrorPath</key>

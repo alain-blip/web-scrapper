@@ -38,7 +38,14 @@ app.get('/api/residences', async (req, res) => {
         categorieRPA: data.categorieRPA ?? id1.categorieRPA ?? 'N/A', // Échelle unique 1-4 [Charte §IV]
         capacite: data.capacite ?? portraits.capaciteRPA ?? 0,
         neq: data.section2_titulaires?.personneMorale?.neqNormalise || 'Aucun',
-        
+
+        // 1b. Coordonnées déjà présentes au registre K10 (section1)
+        telephone: id1.telephone || null,
+        telecopieur: id1.telecopieur || null,
+        courriel: Array.isArray(id1.courriels) && id1.courriels.length ? id1.courriels[0] : null,
+        courriels: Array.isArray(id1.courriels) ? id1.courriels : [],
+        personneResponsable: Array.isArray(data.section4_personneResponsable) ? data.section4_personneResponsable : [],
+
         // 2. Enrichissement Sourcing Inversé REQ
         sourcingStatus: data.enrichissement?.sourcingInverse?.status || 'NON_TRAITE',
         administrateurs: data.enrichissement?.sourcingInverse?.administrateurs || [],

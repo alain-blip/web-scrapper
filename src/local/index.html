@@ -42,7 +42,7 @@
                 </select>
             </div>
             <div class="flex flex-col flex-1">
-                <label class="text-xs text-gray-400 font-bold mb-1 uppercase">Recherche par Nom ou NEQ</label>
+                <label class="text-xs text-gray-400 font-bold mb-1 uppercase">Recherche par Nom, NEQ, tél. ou courriel</label>
                 <input type="text" id="searchBar" placeholder="Ex: Château Pierrefonds..." class="bg-gray-900 border border-gray-700 rounded p-2 text-sm focus:outline-none focus:border-emerald-500 text-gray-100" oninput="filtrerDonnees()">
             </div>
         </section>
@@ -80,7 +80,10 @@
             const filtre = toutesLesResidences.filter(r => {
                 const matchCat = catSelected === "" || String(r.categorieRPA) === catSelected;
                 const matchStatus = statusSelected === "" || r.sourcingStatus === statusSelected;
-                const matchSearch = r.nom.toLowerCase().includes(searchTerms) || (r.neq && r.neq.includes(searchTerms));
+                const matchSearch = r.nom.toLowerCase().includes(searchTerms)
+                    || (r.neq && r.neq.includes(searchTerms))
+                    || (r.telephone && r.telephone.includes(searchTerms))
+                    || (r.courriel && r.courriel.toLowerCase().includes(searchTerms));
                 return matchCat && matchStatus && matchSearch;
             });
 
@@ -143,6 +146,14 @@
                                 <span class="bg-emerald-950 text-emerald-400 text-xs font-mono px-3 py-1 rounded-full border border-emerald-900">Catégorie ${r.categorieRPA}</span>
                                 <p class="text-xs text-gray-400 mt-2 font-mono">NEQ : ${r.neq}</p>
                             </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-x-6 gap-y-2 mb-4 text-sm">
+                            ${r.telephone ? `<a href="tel:${r.telephone}" class="flex items-center gap-1.5 text-sky-300 hover:text-sky-200"><span>📞</span><span class="font-mono">${r.telephone}</span></a>` : ''}
+                            ${r.courriel ? `<a href="mailto:${r.courriel}" class="flex items-center gap-1.5 text-sky-300 hover:text-sky-200"><span>✉️</span><span>${r.courriel}</span></a>` : ''}
+                            ${r.telecopieur ? `<span class="flex items-center gap-1.5 text-gray-500"><span>📠</span><span class="font-mono">${r.telecopieur}</span></span>` : ''}
+                            ${(r.personneResponsable && r.personneResponsable.length) ? `<span class="flex items-center gap-1.5 text-gray-400"><span>👤</span><span>${r.personneResponsable.map(p => `${p.prenom || ''} ${p.nom || ''}`.trim()).join(', ')}</span></span>` : ''}
+                            ${(!r.telephone && !r.courriel) ? `<span class="text-gray-600 italic text-xs">Aucune coordonnée au registre K10</span>` : ''}
                         </div>
 
                         <div>

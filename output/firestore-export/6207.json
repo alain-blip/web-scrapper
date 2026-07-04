@@ -1,0 +1,230 @@
+{
+  "_collecteLe": "2026-07-02T00:00:54.464Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "ROULEAU",
+        "prenom": "Sylvain",
+        "mention": null
+      },
+      {
+        "nom": "FRIGON",
+        "prenom": "Jean-Pierre",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "9209-2089 Québec Inc",
+      "datePrisePossession": "2010-11-23",
+      "neq": "1165843054",
+      "neqNormalise": "1165843054"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "6207",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "POIRIER",
+      "prenom": "Isabelle"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "FRIGON",
+      "prenom": "Jean-Pier",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "ROULEAU",
+      "prenom": "Sylvain",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "6207",
+  "_regionCdRSS": "08",
+  "noForm": "6207",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 182,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 215,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 182,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 182,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 215,
+    "repartitionAges": {
+      "de85plus": 99,
+      "totalResidents": 200,
+      "de65a74": 8,
+      "de75a84": 91,
+      "moins65": 2
+    },
+    "employes": {
+      "semaine": {
+        "soir": 6,
+        "nuit": 1,
+        "jour": 15
+      },
+      "finDeSemaine": {
+        "soir": 4,
+        "nuit": 1,
+        "jour": 9
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=6207",
+  "section1_identification": {
+    "categorieRPA": 2,
+    "esss": "08 - CISSS de l'Abitibi-Témiscamingue",
+    "territoireRLS": "RLS de l'Abitibi",
+    "esssNom": "CISSS de l'Abitibi-Témiscamingue",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Les Jardins du patrimoine Amos",
+    "telephone": "819-732-7733",
+    "codePostal": "J9T 0A3",
+    "telecopieur": "819-732-6622",
+    "esssCode": "08",
+    "territoireCLSC": "Abitibi",
+    "dateOuverture": "2010-11-23",
+    "adresse": "72, Albertine-Chalifoux",
+    "immeublesAssocies": [],
+    "municipalite": "Amos",
+    "courriels": [
+      "direction@lesjardinsamos.com"
+    ],
+    "nombreTotalUnitesImmeubles": 182
+  },
+  "statut": "Active"
+}

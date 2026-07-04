@@ -1,0 +1,229 @@
+{
+  "_collecteLe": "2026-07-01T07:02:17.858Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "TREMBLAY",
+        "prenom": "Odette",
+        "mention": null
+      },
+      {
+        "nom": "ADAMS",
+        "prenom": "Derek",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2006-05-09",
+      "neq": "1172872278"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "5357",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": false
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "TREMBLAY",
+      "prenom": "Odette"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 0,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 2,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "TREMBLAY",
+      "prenom": "Odette",
+      "occupation": null,
+      "fonction": "Retraitée Présidente"
+    },
+    {
+      "nom": "ADAMS",
+      "prenom": "Derek",
+      "occupation": null,
+      "fonction": "Homme d'affaires Vice-président"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "5357",
+  "_regionCdRSS": "01",
+  "noForm": "5357",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 17,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      }
+    },
+    "capaciteRPA": 6,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 6,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 6
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 11,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 11
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 17,
+    "repartitionAges": {
+      "de85plus": 3,
+      "totalResidents": 6,
+      "de65a74": 2,
+      "de75a84": 1,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 4
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 3
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=5357",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "01 - CISSS du Bas-Saint-Laurent",
+    "territoireRLS": "RLS de Matane",
+    "esssNom": "CISSS du Bas-Saint-Laurent",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "La Résidence des Sages",
+    "telephone": "418-566-1206",
+    "codePostal": "G4W 3B9",
+    "telecopieur": "418-566-1206",
+    "esssCode": "01",
+    "territoireCLSC": "Matane",
+    "dateOuverture": "2006-09-06",
+    "adresse": "555, Avenue Saint-Jérôme",
+    "immeublesAssocies": [],
+    "municipalite": "Matane",
+    "courriels": [
+      "gestion@residence-des-sages.com"
+    ],
+    "nombreTotalUnitesImmeubles": 17
+  },
+  "statut": "Active"
+}

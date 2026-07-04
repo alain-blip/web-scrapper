@@ -1,0 +1,227 @@
+{
+  "_collecteLe": "2026-07-02T21:40:45.363Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "9014-6663 Québec Inc.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "NADEAU",
+        "prenom": "André",
+        "mention": null
+      },
+      {
+        "nom": "CYR",
+        "prenom": "Jacques",
+        "mention": null
+      },
+      {
+        "nom": "9024-6554 QUÉBEC INC.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2022-03-01",
+      "neq": "3345122694",
+      "neqNormalise": "3345122694"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "354",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "HÉBERT",
+      "prenom": "Diane"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": false,
+      "nombreEtagesHorsSousSol": 4,
+      "present": true
+    },
+    "mitigeurEauChaude": false,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "354",
+  "_regionCdRSS": "05",
+  "noForm": "354",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 99,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 187,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 99,
+        "chambresDoubles": 8,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 80,
+        "chambresSimples": 11
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 187,
+    "repartitionAges": {
+      "de85plus": 53,
+      "totalResidents": 81,
+      "de65a74": 3,
+      "de75a84": 24,
+      "moins65": 1
+    },
+    "employes": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 1,
+        "jour": 9
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 5
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=354",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Coaticook",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Maison Familiale de Coaticook",
+    "telephone": "819-849-3444",
+    "codePostal": "J1A 0A6",
+    "telecopieur": null,
+    "esssCode": "05",
+    "territoireCLSC": "Coaticook",
+    "dateOuverture": "1984-01-08",
+    "adresse": "136, rue Main Ouest",
+    "immeublesAssocies": [],
+    "municipalite": "Coaticook",
+    "courriels": [
+      "maisonfamiliale@videotron.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 99
+  },
+  "statut": "Active"
+}

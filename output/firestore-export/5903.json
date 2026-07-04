@@ -1,0 +1,255 @@
+{
+  "_collecteLe": "2026-07-02T00:00:03.966Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Bastide des aînés OSBL",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Bastide des aînés",
+      "datePrisePossession": "2009-01-05",
+      "neq": "1148035968",
+      "neqNormalise": "1148035968"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "5903",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQOH-Réseau québécois des osbl d’habitation"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": false
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BALDWIN",
+      "prenom": "Kathleen"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": false,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 0,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 1,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "Le Riche, Christian Serge",
+      "prenom": "retraité",
+      "occupation": null,
+      "fonction": "retraité administrateur"
+    },
+    {
+      "nom": "BERGERON",
+      "prenom": "Angel",
+      "occupation": null,
+      "fonction": "retraitée administrateur"
+    },
+    {
+      "nom": "BALDWIN",
+      "prenom": "Kathleen",
+      "occupation": null,
+      "fonction": "salariée présidente"
+    },
+    {
+      "nom": "DOUCET",
+      "prenom": "Paul-Henri",
+      "occupation": null,
+      "fonction": "retraité administrateur"
+    },
+    {
+      "nom": "FRANCOEUR",
+      "prenom": "Lucien",
+      "occupation": null,
+      "fonction": "retraité administrateur"
+    },
+    {
+      "nom": "DUTIL",
+      "prenom": "Diane",
+      "occupation": null,
+      "fonction": "retraitée trésorière"
+    },
+    {
+      "nom": "CLÉMENT",
+      "prenom": "Stéphanie",
+      "occupation": null,
+      "fonction": "travailleuse sociale secrétaire"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "5903",
+  "_regionCdRSS": "08",
+  "noForm": "5903",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 16,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 32,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 16,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 16,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 32,
+    "repartitionAges": {
+      "de85plus": 7,
+      "totalResidents": 16,
+      "de65a74": 4,
+      "de75a84": 5,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=5903",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "08 - CISSS de l'Abitibi-Témiscamingue",
+    "territoireRLS": "RLS de Rouyn-Noranda",
+    "esssNom": "CISSS de l'Abitibi-Témiscamingue",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Bastide des aînés",
+    "telephone": "819-797-2900",
+    "codePostal": "J9Y 0K8",
+    "telecopieur": "819-797-5454",
+    "esssCode": "08",
+    "territoireCLSC": "Rouyn-Noranda",
+    "dateOuverture": "2009-01-05",
+    "adresse": "6916, Boul. Témiscamingue",
+    "immeublesAssocies": [],
+    "municipalite": "Rouyn-Noranda",
+    "courriels": [
+      "direction@bastidedesaines.com"
+    ],
+    "nombreTotalUnitesImmeubles": 16
+  },
+  "statut": "Active, cessation des activités RPA en cours"
+}

@@ -1,0 +1,289 @@
+{
+  "_collecteLe": "2026-07-02T21:38:37.439Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "9354-1696 QUÉBEC INC.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "Gestion Charlotte Anger",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "Maximat inc",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "Gestion David Gosselin",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "9375-5551 Québec inc.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2018-12-01",
+      "neq": "3373042913",
+      "neqNormalise": "3373042913"
+    }
+  },
+  "residencesLiees": [
+    "7390-1",
+    "7390-2"
+  ],
+  "numeroRegistre": "7390-2",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "FAUTEUX",
+      "prenom": "Vincent"
+    },
+    {
+      "nom": "GINGRAS",
+      "prenom": "Félix"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 4,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 4,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "FAUTEUX",
+      "prenom": "Vincent",
+      "occupation": null,
+      "fonction": "Directeur général Vice-président, secrétaire et trésorier"
+    },
+    {
+      "nom": "ARBEC",
+      "prenom": "Paul",
+      "occupation": null,
+      "fonction": "Président groupe Santé Arbec Président"
+    },
+    {
+      "nom": "HÉBERT",
+      "prenom": "Steve",
+      "occupation": null,
+      "fonction": "Vice-président"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 2,
+    "liste": [
+      {
+        "cellules": [
+          "Le Renaissance Fleurimont inc.",
+          "1181488843",
+          "1341, rue King Est",
+          "Sherbrooke",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J1G 0G4"
+        ]
+      },
+      {
+        "cellules": [
+          "Le Renaissance Cowansville",
+          "3373042913",
+          "130, rue Jean-Besré",
+          "Cowansville",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J2K 0L6"
+        ]
+      },
+      {
+        "cellules": [
+          "Le Renaissance Fleurimont inc.",
+          "1181488843",
+          "1341, rue King Est",
+          "Sherbrooke",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J1G 0G4"
+        ]
+      }
+    ],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7870",
+  "_regionCdRSS": "05",
+  "noForm": "7870",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 18,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 3
+      }
+    },
+    "capaciteRPA": 18,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 18,
+        "chambresDoubles": 1,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 17
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 268,
+    "repartitionAges": {
+      "de85plus": 10,
+      "totalResidents": 18,
+      "de65a74": 0,
+      "de75a84": 8,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 13
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 9
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7870",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de la Pommeraie",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Le Renaissance Cowansville",
+    "telephone": "450-335-3999",
+    "codePostal": "J2K 0L6",
+    "telecopieur": "450-955-1819",
+    "esssCode": "05",
+    "territoireCLSC": "Pommeraie",
+    "dateOuverture": "2018-12-01",
+    "adresse": "130, rue Jean-Besré",
+    "immeublesAssocies": [],
+    "municipalite": "Cowansville",
+    "courriels": [
+      "info@lerenaissance.ca, felixgingras@lerenaissance.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 212
+  },
+  "statut": "Active"
+}

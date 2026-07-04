@@ -1,0 +1,262 @@
+{
+  "_collecteLe": "2026-07-02T21:46:52.013Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "FRANCOEUR",
+        "prenom": "Raphaël",
+        "mention": null
+      },
+      {
+        "nom": "NADEAU",
+        "prenom": "Diane",
+        "mention": null
+      },
+      {
+        "nom": "Gestion Julie Ferland inc.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "RÉSIDENCES LE CHÂTEAU DU BEL ÂGE INC.",
+      "datePrisePossession": "2006-01-01",
+      "neq": "1162866066",
+      "neqNormalise": "1162866066"
+    }
+  },
+  "residencesLiees": [
+    "4839-1",
+    "4839-2"
+  ],
+  "numeroRegistre": "4839-1",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés",
+      "ARIHQ"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "FERLAND",
+      "prenom": "Julie"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 4,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 4,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "FRANCOEUR",
+      "prenom": "Raphaël",
+      "occupation": null,
+      "fonction": "Dirigeant Président"
+    },
+    {
+      "nom": "NADEAU",
+      "prenom": "Diane",
+      "occupation": null,
+      "fonction": "Dirigeante Vice-présidente"
+    },
+    {
+      "nom": "FERLAND",
+      "prenom": "Julie",
+      "occupation": null,
+      "fonction": "Secrétaire et trésorière"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "4839",
+  "_regionCdRSS": "05",
+  "noForm": "4839",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 163,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 8,
+        "nuit": 5,
+        "jour": 10
+      },
+      "finDeSemaine": {
+        "soir": 8,
+        "nuit": 5,
+        "jour": 10
+      }
+    },
+    "capaciteRPA": 125,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 113,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 50,
+        "chambresSimples": 63
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 50,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 50
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 2,
+          "soir": 2,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 195,
+    "repartitionAges": {
+      "de85plus": 71,
+      "totalResidents": 120,
+      "de65a74": 11,
+      "de75a84": 38,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 19,
+        "nuit": 5,
+        "jour": 38
+      },
+      "finDeSemaine": {
+        "soir": 19,
+        "nuit": 5,
+        "jour": 24
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=4839",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Val Saint-François",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Résidences Le Château du Bel Âge inc.",
+    "telephone": "819-845-2981",
+    "codePostal": "J1S 1J3",
+    "telecopieur": "819-845-2997",
+    "esssCode": "05",
+    "territoireCLSC": "Val Saint-François",
+    "dateOuverture": "2006-03-01",
+    "adresse": "16, rue St-Georges",
+    "immeublesAssocies": [
+      {
+        "cellules": [
+          "4839 -immeuble 1",
+          "16, rue St-Georges",
+          "Windsor",
+          "J1S1J3"
+        ]
+      },
+      {
+        "cellules": [
+          "4839 -immeuble 2",
+          "14, rue Principale",
+          "Windsor",
+          "J1S2C2"
+        ]
+      }
+    ],
+    "municipalite": "Windsor",
+    "courriels": [
+      "administration@chateaubelage.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 185
+  },
+  "statut": "Active"
+}

@@ -1,0 +1,233 @@
+{
+  "_collecteLe": "2026-07-01T07:03:10.664Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "BARIL",
+        "prenom": "Diane",
+        "mention": null
+      },
+      {
+        "nom": "BARIL",
+        "prenom": "Claire",
+        "mention": null
+      },
+      {
+        "nom": "9263-9772 QUÉBEC INC.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Les Résidences de la Belle Mer inc.",
+      "datePrisePossession": "2012-07-01",
+      "neq": "1144919165"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "6595",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": false
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BARIL",
+      "prenom": "Claire"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "Non",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 0,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 1,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "BARIL",
+      "prenom": "Diane",
+      "occupation": null,
+      "fonction": "Exploitante RPA Présidente"
+    },
+    {
+      "nom": "BARIL",
+      "prenom": "Claire",
+      "occupation": null,
+      "fonction": "Exploitante RPA Secrétaire -trésorière"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "6595",
+  "_regionCdRSS": "01",
+  "noForm": "6595",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 17,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 3
+      }
+    },
+    "capaciteRPA": 24,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 17,
+        "chambresDoubles": 6,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 11
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 24,
+    "repartitionAges": {
+      "de85plus": 2,
+      "totalResidents": 23,
+      "de65a74": 5,
+      "de75a84": 13,
+      "moins65": 3
+    },
+    "employes": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 3
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=6595",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "01 - CISSS du Bas-Saint-Laurent",
+    "territoireRLS": "RLS de Matane",
+    "esssNom": "CISSS du Bas-Saint-Laurent",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Les Résidences de la Belle Mer inc.",
+    "telephone": "418-733-4851",
+    "codePostal": "G0J 2K0",
+    "telecopieur": "418-733-4851",
+    "esssCode": "01",
+    "territoireCLSC": "Matane",
+    "dateOuverture": "1976-01-01",
+    "adresse": "170, Boulevard Perron",
+    "immeublesAssocies": [],
+    "municipalite": "Sainte-Félicité",
+    "courriels": [
+      "dianeclaire2resdelabellemer@gmail.com"
+    ],
+    "nombreTotalUnitesImmeubles": 17
+  },
+  "statut": "Active"
+}

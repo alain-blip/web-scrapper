@@ -9,6 +9,19 @@
     "compare": "node scripts/compare.js"
   },
   "dependencies": {
-    "cheerio": "^1.0.0"
+    "@google-cloud/firestore": "^8.6.0",
+    "axios": "^1.18.1",
+    "cheerio": "^1.0.0",
+    "express": "^5.2.1",
+    "puppeteer": "^24.43.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.1.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.23.0",
+    "typescript": "^6.0.3"
   }
 }

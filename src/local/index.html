@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primexpert — Consultation K10 & Sourcing REQ</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen font-sans">
+
+    <header class="border-b border-gray-800 bg-gray-950 p-6 shadow-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold text-emerald-400">📊 Silo RPA — Connaissance Marché</h1>
+                <p class="text-sm text-gray-400 mt-1">Matching Registre Public K10 MSSS ↔ Sourcing Inversé REQ</p>
+            </div>
+            <div id="stats" class="text-right text-sm text-gray-400 bg-gray-900 px-4 py-2 rounded-lg border border-gray-800">
+                Chargement...
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-6">
+        <section class="bg-gray-950 p-4 rounded-xl border border-gray-800 mb-6 flex flex-wrap gap-4 items-center">
+            <div class="flex flex-col">
+                <label class="text-xs text-gray-400 font-bold mb-1 uppercase">Catégorie RPA (1-4)</label>
+                <select id="filterCategorie" class="bg-gray-900 border border-gray-700 rounded p-2 text-sm focus:outline-none focus:border-emerald-500 text-gray-100" onchange="filtrerDonnees()">
+                    <option value="">Toutes</option>
+                    <option value="1">Catégorie 1</option>
+                    <option value="2">Catégorie 2</option>
+                    <option value="3">Catégorie 3</option>
+                    <option value="4">Catégorie 4</option>
+                </select>
+            </div>
+            <div class="flex flex-col">
+                <label class="text-xs text-gray-400 font-bold mb-1 uppercase">Statut Sourcing REQ</label>
+                <select id="filterStatus" class="bg-gray-900 border border-gray-700 rounded p-2 text-sm focus:outline-none focus:border-emerald-500 text-gray-100" onchange="filtrerDonnees()">
+                    <option value="">Tous</option>
+                    <option value="REQ_DONE">Enrichi (Succès)</option>
+                    <option value="A_REVISER">À Réviser / S.E.C. vides</option>
+                    <option value="NON_TRAITE">Non Traité</option>
+                </select>
+            </div>
+            <div class="flex flex-col flex-1">
+                <label class="text-xs text-gray-400 font-bold mb-1 uppercase">Recherche par Nom ou NEQ</label>
+                <input type="text" id="searchBar" placeholder="Ex: Château Pierrefonds..." class="bg-gray-900 border border-gray-700 rounded p-2 text-sm focus:outline-none focus:border-emerald-500 text-gray-100" oninput="filtrerDonnees()">
+            </div>
+        </section>
+
+        <section id="cardsContainer" class="grid grid-cols-1 gap-6">
+            <div class="text-center py-12 text-gray-400">Connexion à Firestore local...</div>
+        </section>
+    </main>
+
+    <script>
+        let toutesLesResidences = [];
+
+        // 1. Fetch des données de l'API locale
+        async function chargerResidences() {
+            try {
+                const response = await fetch('/api/residences');
+                toutesLesResidences = await response.json();
+                
+                // Calculer les stats rapides
+                const enrichies = toutesLesResidences.filter(r => r.sourcingStatus === 'REQ_DONE').length;
+                document.getElementById('stats').innerHTML = `<strong>${toutesLesResidences.length}</strong> Résidences au registre | <strong>${enrichies}</strong> Sourcing REQ Complété`;
+                
+                filtrerDonnees();
+            } catch (error) {
+                document.getElementById('cardsContainer').innerHTML = `<div class="text-red-400 text-center py-6">❌ Erreur lors du chargement des données. Vérifie ton terminal Node.</div>`;
+            }
+        }
+
+        // 2. Logique de filtrage en temps réel
+        function filtrerDonnees() {
+            const catSelected = document.getElementById('filterCategorie').value;
+            const statusSelected = document.getElementById('filterStatus').value;
+            const searchTerms = document.getElementById('searchBar').value.toLowerCase();
+
+            const filtre = toutesLesResidences.filter(r => {
+                const matchCat = catSelected === "" || String(r.categorieRPA) === catSelected;
+                const matchStatus = statusSelected === "" || r.sourcingStatus === statusSelected;
+                const matchSearch = r.nom.toLowerCase().includes(searchTerms) || (r.neq && r.neq.includes(searchTerms));
+                return matchCat && matchStatus && matchSearch;
+            });
+
+            genererCards(filtre);
+        }
+
+        // 3. Génération dynamique du layout scannable
+        function genererCards(residences) {
+            const container = document.getElementById('cardsContainer');
+            if(residences.length === 0) {
+                container.innerHTML = `<div class="text-center py-12 text-gray-500">Aucune fiche ne correspond à ces critères.</div>`;
+                return;
+            }
+
+            container.innerHTML = residences.map(r => {
+                // Badge de statut REQ
+                let statusBadge = `<span class="bg-gray-800 text-gray-400 text-xs font-bold px-2.5 py-1 rounded">Non Traité</span>`;
+                if (r.sourcingStatus === 'REQ_DONE') statusBadge = `<span class="bg-emerald-950 text-emerald-400 text-xs font-bold px-2.5 py-1 rounded border border-emerald-800">Enrichi REQ</span>`;
+                if (r.sourcingStatus === 'A_REVISER') statusBadge = `<span class="bg-amber-950 text-amber-400 text-xs font-bold px-2.5 py-1 rounded border border-amber-800">À Réviser</span>`;
+
+                // Render des administrateurs matcheurs
+                let blocAdmins = `<p class="text-sm text-gray-500 italic">Aucune donnée corporative associée.</p>`;
+                if (r.administrateurs && r.administrateurs.length > 0) {
+                    blocAdmins = `
+                        <table class="w-full text-left border-collapse mt-2">
+                            <thead>
+                                <tr class="border-b border-gray-800 text-xs text-gray-400 uppercase">
+                                    <th class="py-2 font-bold">Dirigeant</th>
+                                    <th class="py-2 font-bold">Fonction</th>
+                                    <th class="py-2 font-bold">Adresse Résidentielle</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-800 text-sm">
+                                ${r.administrateurs.map(a => `
+                                    <tr>
+                                        <td class="py-2 font-semibold text-emerald-300">${a.prenom} ${a.nom}</td>
+                                        <td class="py-2 text-gray-300"><span class="bg-gray-900 text-xs px-2 py-0.5 rounded text-gray-400 border border-gray-800">${a.fonction}</span></td>
+                                        <td class="py-2 text-gray-400 text-xs">${a.adresseResidentielle}</td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    `;
+                }
+
+                return `
+                    <div class="bg-gray-950 p-6 rounded-xl border border-gray-800 shadow-sm hover:border-gray-700 transition">
+                        <div class="flex justify-between items-start border-b border-gray-800 pb-4 mb-4">
+                            <div>
+                                <div class="flex items-center gap-3">
+                                    <h3 class="text-lg font-bold text-gray-100">${r.nom}</h3>
+                                    ${statusBadge}
+                                </div>
+                                <p class="text-xs text-gray-400 mt-1">
+                                    Région : <span class="text-gray-200">${r.region}</span> | 
+                                    CIUSSS : <span class="text-gray-200">${r.ciusss}</span>
+                                </p>
+                            </div>
+                            <div class="text-right">
+                                <span class="bg-emerald-950 text-emerald-400 text-xs font-mono px-3 py-1 rounded-full border border-emerald-900">Catégorie ${r.categorieRPA}</span>
+                                <p class="text-xs text-gray-400 mt-2 font-mono">NEQ : ${r.neq}</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Structure Juridique & Organes de Direction (REQ)</h4>
+                            ${blocAdmins}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Démarrage automatique
+        chargerResidences();
+    </script>
+</body>
+</html>

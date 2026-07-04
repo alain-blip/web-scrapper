@@ -1,0 +1,515 @@
+{
+  "_collecteLe": "2026-07-02T21:47:18.947Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "9674632 CANADA INC.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "Les Résidences S.E.C.-III",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2017-04-01",
+      "neq": "3371702575",
+      "neqNormalise": "3371702575"
+    }
+  },
+  "residencesLiees": [
+    "7299-1",
+    "7299-2"
+  ],
+  "numeroRegistre": "7299-2",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés",
+      "FQLI, Chambre de commerce HY, FADOQ"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "MARTIN",
+      "prenom": "Pamelasue"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 5,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "HIGGS",
+      "prenom": "Andrew Fujio",
+      "occupation": null,
+      "fonction": "Trésorier / Administrateur"
+    },
+    {
+      "nom": "VON ELLM",
+      "prenom": "Sylvia",
+      "occupation": null,
+      "fonction": "Trésorier / Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 20,
+    "liste": [
+      {
+        "cellules": [
+          "La Roseraie",
+          "3369308112",
+          "825, rue Arthur-Rousseau",
+          "Québec",
+          "03 - CIUSSS de la Capitale-Nationale",
+          "G1V 4S6"
+        ]
+      },
+      {
+        "cellules": [
+          "Le Cherbourg",
+          "3373030777",
+          "8160, boulevard du Saint-Laurent, suite 100",
+          "Brossard",
+          "71 - CISSS de la Montérégie-Centre",
+          "J4X 3A9"
+        ]
+      },
+      {
+        "cellules": [
+          "Lumia",
+          "3371222962",
+          "15, Place de la Triade",
+          "Pointe-Claire",
+          "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+          "H9R 0A3"
+        ]
+      },
+      {
+        "cellules": [
+          "Livélia",
+          "3371222947",
+          "325, chemin de la Pointe-Sud",
+          "Montréal",
+          "63 - CIUSSS du Centre-Sud-de-l'Île-de-Montréal",
+          "H3E 0B1"
+        ]
+      },
+      {
+        "cellules": [
+          "Nobélia",
+          "3364134539",
+          "1111, boulevard Alphonse-Desjardins",
+          "Lévis",
+          "12 - CISSS de Chaudière-Appalaches",
+          "G6V 0B4"
+        ]
+      },
+      {
+        "cellules": [
+          "Clairière",
+          "3367159830",
+          "481, boulevard Père-Lelièvre",
+          "Québec",
+          "03 - CIUSSS de la Capitale-Nationale",
+          "G1M 0A3"
+        ]
+      },
+      {
+        "cellules": [
+          "Vista",
+          "3371223036",
+          "5300, chemin de la Côte-Saint-Luc",
+          "Montréal",
+          "62 - CIUSSS du Centre-Ouest-de-l'Île-de-Montréal",
+          "H3X 0A3"
+        ]
+      },
+      {
+        "cellules": [
+          "Le St-Charles",
+          "3373030827",
+          "8400, rue Saint-Charles",
+          "Brossard",
+          "71 - CISSS de la Montérégie-Centre",
+          "J4X 0A2"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Stella",
+          "3362746607",
+          "3300, boulevard Le Carrefour",
+          "Laval",
+          "13 - CISSS de Laval",
+          "H7T 0A1"
+        ]
+      },
+      {
+        "cellules": [
+          "Boisé - Des Plaines",
+          "3365066433",
+          "479, boulevard Père-Lelièvre",
+          "Québec",
+          "03 - CIUSSS de la Capitale-Nationale",
+          "G1M 0B8"
+        ]
+      },
+      {
+        "cellules": [
+          "Sonata",
+          "3370297551",
+          "110, rue de Gaspé Ouest",
+          "Châteauguay",
+          "73 - CISSS de la Montérégie-Ouest",
+          "J6J 0C5"
+        ]
+      },
+      {
+        "cellules": [
+          "Alphée",
+          "3371371496",
+          "10, 8e Avenue",
+          "Deux-Montagnes",
+          "15 - CISSS des Laurentides",
+          "J7R 0L7"
+        ]
+      },
+      {
+        "cellules": [
+          "Le St-Augustin",
+          "3372052038",
+          "3645, rue de l'Hêtrière",
+          "Saint-Augustin-de-Desmaures",
+          "03 - CIUSSS de la Capitale-Nationale",
+          "G3A 0R6"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell Panorama",
+          "3361861183",
+          "100, RUE ETIENNE-LAVOIE",
+          "Laval",
+          "13 - CISSS de Laval",
+          "H7X 0E6"
+        ]
+      },
+      {
+        "cellules": [
+          "Azalis",
+          "3373434235",
+          "256, rue Notre-Dame",
+          "Repentigny",
+          "14 - CISSS de Lanaudière",
+          "J6A 0C5"
+        ]
+      },
+      {
+        "cellules": [
+          "La Roseraie",
+          "3369308112",
+          "825, rue Arthur-Rousseau",
+          "Québec",
+          "03 - CIUSSS de la Capitale-Nationale",
+          "G1V 4S6"
+        ]
+      },
+      {
+        "cellules": [
+          "Tours Angrignon (Les)",
+          "3369003093",
+          "1500, boulevard Angrignon",
+          "Montréal",
+          "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+          "H8N 3H8"
+        ]
+      },
+      {
+        "cellules": [
+          "Le Cherbourg",
+          "3373030777",
+          "8160, boulevard du Saint-Laurent, suite 100",
+          "Brossard",
+          "71 - CISSS de la Montérégie-Centre",
+          "J4X 3A9"
+        ]
+      },
+      {
+        "cellules": [
+          "Lumia",
+          "3371222962",
+          "15, Place de la Triade",
+          "Pointe-Claire",
+          "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+          "H9R 0A3"
+        ]
+      },
+      {
+        "cellules": [
+          "Livélia",
+          "3371222947",
+          "325, chemin de la Pointe-Sud",
+          "Montréal",
+          "63 - CIUSSS du Centre-Sud-de-l'Île-de-Montréal",
+          "H3E 0B1"
+        ]
+      },
+      {
+        "cellules": [
+          "Vista",
+          "3371223036",
+          "5300, chemin de la Côte-Saint-Luc",
+          "Montréal",
+          "62 - CIUSSS du Centre-Ouest-de-l'Île-de-Montréal",
+          "H3X 0A3"
+        ]
+      },
+      {
+        "cellules": [
+          "Le St-Charles",
+          "3373030827",
+          "8400, rue Saint-Charles",
+          "Brossard",
+          "71 - CISSS de la Montérégie-Centre",
+          "J4X 0A2"
+        ]
+      },
+      {
+        "cellules": [
+          "Sonata",
+          "3370297551",
+          "110, rue de Gaspé Ouest",
+          "Châteauguay",
+          "73 - CISSS de la Montérégie-Ouest",
+          "J6J 0C5"
+        ]
+      },
+      {
+        "cellules": [
+          "Simonia",
+          "3371702575",
+          "35, rue St-Charles Sud",
+          "Granby",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J2G 0B9"
+        ]
+      },
+      {
+        "cellules": [
+          "Alphée",
+          "3371371496",
+          "10, 8e Avenue",
+          "Deux-Montagnes",
+          "15 - CISSS des Laurentides",
+          "J7R 0L7"
+        ]
+      },
+      {
+        "cellules": [
+          "Le St-Augustin",
+          "3372052038",
+          "3645, rue de l'Hêtrière",
+          "Saint-Augustin-de-Desmaures",
+          "03 - CIUSSS de la Capitale-Nationale",
+          "G3A 0R6"
+        ]
+      },
+      {
+        "cellules": [
+          "Chartwell Panorama",
+          "3361861183",
+          "100, RUE ETIENNE-LAVOIE",
+          "Laval",
+          "13 - CISSS de Laval",
+          "H7X 0E6"
+        ]
+      },
+      {
+        "cellules": [
+          "Azalis",
+          "3373434235",
+          "256, rue Notre-Dame",
+          "Repentigny",
+          "14 - CISSS de Lanaudière",
+          "J6A 0C5"
+        ]
+      }
+    ],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7849",
+  "_regionCdRSS": "05",
+  "noForm": "7849",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 31,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 4
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 3
+      }
+    },
+    "capaciteRPA": 32,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 31,
+        "chambresDoubles": 1,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 30
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 428,
+    "repartitionAges": {
+      "de85plus": 21,
+      "totalResidents": 29,
+      "de65a74": 0,
+      "de75a84": 8,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 4,
+        "nuit": 3,
+        "jour": 21
+      },
+      "finDeSemaine": {
+        "soir": 4,
+        "nuit": 3,
+        "jour": 13
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7849",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de la Haute-Yamaska",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Simonia",
+    "telephone": "450-305-1919",
+    "codePostal": "J2G 0B9",
+    "telecopieur": "450-360-4466",
+    "esssCode": "05",
+    "territoireCLSC": "Haute-Yamaska",
+    "dateOuverture": "2017-04-01",
+    "adresse": "35, rue St-Charles Sud",
+    "immeublesAssocies": [],
+    "municipalite": "Granby",
+    "courriels": [
+      "pamartin@cogir.net"
+    ],
+    "nombreTotalUnitesImmeubles": 229
+  },
+  "statut": "Active"
+}

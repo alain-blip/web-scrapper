@@ -1,0 +1,224 @@
+{
+  "_collecteLe": "2026-07-02T21:41:11.885Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "ST-LAURENT",
+        "prenom": "Carmen",
+        "mention": null
+      },
+      {
+        "nom": "SMITH",
+        "prenom": "Réal",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "9137-1989 Québec Inc.",
+      "datePrisePossession": "1995-10-07",
+      "neq": "1161942355",
+      "neqNormalise": "1161942355"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "2256",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "MACEY",
+      "prenom": "Lisa"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 3,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "ST-LAURENT",
+      "prenom": "Carmen",
+      "occupation": null,
+      "fonction": "Présidente et secrétaire"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "2256",
+  "_regionCdRSS": "05",
+  "noForm": "2256",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 64,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 5
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 4
+      }
+    },
+    "capaciteRPA": 64,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 64,
+        "chambresDoubles": 32,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 32
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": "1 fds sur 2"
+      }
+    ],
+    "capaciteTotaleImmeubles": 64,
+    "repartitionAges": {
+      "de85plus": 31,
+      "totalResidents": 60,
+      "de65a74": 4,
+      "de75a84": 25,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 5,
+        "nuit": 2,
+        "jour": 11
+      },
+      "finDeSemaine": {
+        "soir": 5,
+        "nuit": 2,
+        "jour": 7
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=2256",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de la Pommeraie",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Manoir Lac Brome",
+    "telephone": "450-242-4663",
+    "codePostal": "J0E 1V0",
+    "telecopieur": "450-242-2433",
+    "esssCode": "05",
+    "territoireCLSC": "Pommeraie",
+    "dateOuverture": "1995-07-10",
+    "adresse": "28, chemin du Mont Echo",
+    "immeublesAssocies": [],
+    "municipalite": "Lac-Brome",
+    "courriels": [
+      "info@manoirlacbrome.com"
+    ],
+    "nombreTotalUnitesImmeubles": 64
+  },
+  "statut": "Active"
+}

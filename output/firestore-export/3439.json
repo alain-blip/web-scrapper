@@ -1,0 +1,250 @@
+{
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Conseil d'administration de l'Étoile Filante",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "F.G.L - Étoile Filante inc. (organisation)",
+      "datePrisePossession": "1995-07-21",
+      "neq": "1144884260",
+      "neqNormalise": "1144884260"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "3439",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés",
+      "RQOH-Réseau québécois des osbl d’habitation"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": false
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "PATERSON",
+      "prenom": "Nicole"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": false,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 0,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 1,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "BISSON",
+      "prenom": "Nicole",
+      "occupation": null,
+      "fonction": "Propriétaire restaurant Administratrice"
+    },
+    {
+      "nom": "MARQUIS",
+      "prenom": "Jacques",
+      "occupation": null,
+      "fonction": "Camionneur Vice-Président"
+    },
+    {
+      "nom": "AUDET",
+      "prenom": "Violaine",
+      "occupation": null,
+      "fonction": "Présidente"
+    },
+    {
+      "nom": "AUDET",
+      "prenom": "Anne",
+      "occupation": null,
+      "fonction": "Secrétaire Administratrice"
+    },
+    {
+      "nom": "SAUVAGEAU",
+      "prenom": "Chantal",
+      "occupation": null,
+      "fonction": "Administratrice"
+    },
+    {
+      "nom": "THIBAULT",
+      "prenom": "Sylvie",
+      "occupation": null,
+      "fonction": "Administratrice"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "3439",
+  "_regionCdRSS": "10",
+  "noForm": "3439",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 18,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 30,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 18,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 12,
+        "chambresSimples": 6
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 30,
+    "repartitionAges": {
+      "de85plus": 7,
+      "totalResidents": 16,
+      "de65a74": 2,
+      "de75a84": 7,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=3439",
+  "section1_identification": {
+    "categorieRPA": 1,
+    "esss": "10 - CRSSS de la Baie-James",
+    "territoireRLS": null,
+    "esssNom": "CRSSS de la Baie-James",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "F.G.L - Étoile Filante inc.",
+    "telephone": "819-755-8897",
+    "codePostal": "J0Y 1X0",
+    "telecopieur": "819-755-3121",
+    "esssCode": "10",
+    "territoireCLSC": "Lebel-sur-Quévillon",
+    "dateOuverture": "1998-01-01",
+    "adresse": "51, Des trembles, C.P. 1420",
+    "immeublesAssocies": [],
+    "municipalite": "Lebel-sur-Quévillon",
+    "courriels": [
+      "etoilefilantelsq@outlook.com"
+    ],
+    "nombreTotalUnitesImmeubles": 18
+  },
+  "statut": "Active",
+  "_collecteLe": "2026-07-01T23:48:38.060Z"
+}

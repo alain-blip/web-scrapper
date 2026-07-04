@@ -1,0 +1,232 @@
+{
+  "_collecteLe": "2026-07-02T21:45:06.633Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Fiducie familiale Pierre Chapdelaine",
+        "prenom": null,
+        "mention": "premier actionnaire"
+      },
+      {
+        "nom": "CHAPDELAINE",
+        "prenom": "Pierre",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "9146-6573 Québec inc.",
+      "datePrisePossession": "1997-01-08",
+      "neq": "1162487210",
+      "neqNormalise": "1162487210"
+    }
+  },
+  "residencesLiees": [
+    "395-1",
+    "395-2"
+  ],
+  "numeroRegistre": "395-1",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "CHAPDELAINE",
+      "prenom": "Pierre"
+    },
+    {
+      "nom": "DESROSIERS",
+      "prenom": "Lucie"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 6,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "PIERRE",
+      "prenom": "Chapdelaine",
+      "occupation": null,
+      "fonction": "Président, trésorier et secrétaire"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "395",
+  "_regionCdRSS": "05",
+  "noForm": "395",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 40,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      }
+    },
+    "capaciteRPA": 40,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 40,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 40,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 1
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 1
+        },
+        "precisions": "Sur appel soir et nuit et fin de semaine."
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 2,
+          "soir": 1,
+          "nuit": 1
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 1
+        },
+        "precisions": "Sur appel soir et nuit."
+      }
+    ],
+    "capaciteTotaleImmeubles": 122,
+    "repartitionAges": {
+      "de85plus": 23,
+      "totalResidents": 38,
+      "de65a74": 2,
+      "de75a84": 13,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 20
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 9
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=395",
+  "section1_identification": {
+    "categorieRPA": 2,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Sherbrooke",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Résidence Murray",
+    "telephone": "819-569-8988",
+    "codePostal": "J1G 2K2",
+    "telecopieur": "819-569-7186",
+    "esssCode": "05",
+    "territoireCLSC": "Sherbrooke",
+    "dateOuverture": "1997-01-08",
+    "adresse": "205, rue Murray",
+    "immeublesAssocies": [],
+    "municipalite": "Sherbrooke",
+    "courriels": [
+      "info@residencemurray.com",
+      "luciedesrosiers@residencemurray.com"
+    ],
+    "nombreTotalUnitesImmeubles": 122
+  },
+  "statut": "Active"
+}

@@ -1,0 +1,234 @@
+{
+  "_collecteLe": "2026-07-02T16:45:06.709Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "8317682 Canada inc.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "Les Résidences Sélection S.E.C. -III",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2013-04-02",
+      "neq": "3368960715",
+      "neqNormalise": "3368960715"
+    }
+  },
+  "residencesLiees": [
+    "4770-1",
+    "4770-2"
+  ],
+  "numeroRegistre": "4770-2",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "LISA",
+      "prenom": "Lorenzetti"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": false,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 8,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 7,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "HIGGS",
+      "prenom": "Andrew Fujio",
+      "occupation": null,
+      "fonction": "VP senior; gestions d'actifs VP; administrateur"
+    },
+    {
+      "nom": "Sylvia Von Ellm",
+      "prenom": "VP fiscalité",
+      "occupation": null,
+      "fonction": "VP fiscalité Administratrice; Trésorière"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7711",
+  "_regionCdRSS": "61",
+  "noForm": "7711",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 32,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 4,
+        "nuit": 3,
+        "jour": 4
+      },
+      "finDeSemaine": {
+        "soir": 4,
+        "nuit": 3,
+        "jour": 4
+      }
+    },
+    "capaciteRPA": 32,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 32,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 32,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 2,
+          "soir": 2,
+          "nuit": 1
+        },
+        "finDeSemaine": {
+          "jour": 2,
+          "soir": 2,
+          "nuit": 1
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 990,
+    "repartitionAges": {
+      "de85plus": 21,
+      "totalResidents": 29,
+      "de65a74": 1,
+      "de75a84": 7,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 11,
+        "nuit": 2,
+        "jour": 24
+      },
+      "finDeSemaine": {
+        "soir": 8,
+        "nuit": 2,
+        "jour": 16
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7711",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireRLS": "RLS de Pierrefonds - Lac Saint-Louis",
+    "esssNom": "CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Le Cambridge SEC",
+    "telephone": "514-694-8383",
+    "codePostal": "H9R 6B3",
+    "telecopieur": null,
+    "esssCode": "61",
+    "territoireCLSC": "Lac Saint-Louis",
+    "dateOuverture": "2004-04-02",
+    "adresse": "340, boulevard Hymus",
+    "immeublesAssocies": [],
+    "municipalite": "Pointe-Claire",
+    "courriels": [
+      "lisalorenzetti2020@hotmail.com"
+    ],
+    "nombreTotalUnitesImmeubles": 32
+  },
+  "statut": "Active"
+}

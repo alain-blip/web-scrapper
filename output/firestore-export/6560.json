@@ -1,0 +1,218 @@
+{
+  "_collecteLe": "2026-07-02T00:00:44.014Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "8593027 CANADA INC",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "Cogir RPA, société en commandite",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Société en commandite de Val-d'Or, agissant par son commandité 8593027 Canada inc.",
+      "datePrisePossession": "2012-07-01",
+      "neq": "3366692641",
+      "neqNormalise": "3366692641"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "6560",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "PLOUFFE",
+      "prenom": "Ginette"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 6,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 2,
+    "liste": [],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "6560",
+  "_regionCdRSS": "08",
+  "noForm": "6560",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 199,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 260,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 199,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 199,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 260,
+    "repartitionAges": {
+      "de85plus": 112,
+      "totalResidents": 227,
+      "de65a74": 10,
+      "de75a84": 105,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 7,
+        "nuit": 2,
+        "jour": 17
+      },
+      "finDeSemaine": {
+        "soir": 6,
+        "nuit": 2,
+        "jour": 10
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=6560",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "08 - CISSS de l'Abitibi-Témiscamingue",
+    "territoireRLS": "RLS de la Vallée-de-l'Or",
+    "esssNom": "CISSS de l'Abitibi-Témiscamingue",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Le Boréal",
+    "telephone": "819-874-7484",
+    "codePostal": "J9P 0J4",
+    "telecopieur": "819-874-4070",
+    "esssCode": "08",
+    "territoireCLSC": "Vallée-de-l'Or",
+    "dateOuverture": "2012-07-01",
+    "adresse": "111, rue Sylvestre",
+    "immeublesAssocies": [],
+    "municipalite": "Val-d'Or",
+    "courriels": [
+      "gplouffe@cogir.net"
+    ],
+    "nombreTotalUnitesImmeubles": 199
+  },
+  "statut": "Active"
+}

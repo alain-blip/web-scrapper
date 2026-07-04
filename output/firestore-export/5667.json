@@ -1,0 +1,221 @@
+{
+  "_collecteLe": "2026-07-02T16:45:54.935Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Groupe Katasa inc.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "CHARTRAND",
+        "prenom": "Lise",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2015-11-01",
+      "neq": "3346210548",
+      "neqNormalise": "3346210548"
+    }
+  },
+  "residencesLiees": [
+    "5667-1",
+    "5667-2"
+  ],
+  "numeroRegistre": "5667-1",
+  "section8_reconnaissance": {
+    "associations": [
+      "CORPIQ"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "NICOLETA",
+      "prenom": "Tsiolis"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 3,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 7,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "5667",
+  "_regionCdRSS": "61",
+  "noForm": "5667",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 154,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 3,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 3,
+        "jour": 2
+      }
+    },
+    "capaciteRPA": 166,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 154,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 105,
+        "chambresSimples": 49
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 2,
+          "soir": 1,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 194,
+    "repartitionAges": {
+      "de85plus": 97,
+      "totalResidents": 153,
+      "de65a74": 6,
+      "de75a84": 47,
+      "moins65": 3
+    },
+    "employes": {
+      "semaine": {
+        "soir": 7,
+        "nuit": 3,
+        "jour": 16
+      },
+      "finDeSemaine": {
+        "soir": 7,
+        "nuit": 3,
+        "jour": 8
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=5667",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireRLS": "RLS de Pierrefonds - Lac Saint-Louis",
+    "esssNom": "CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Manoir Pierrefonds",
+    "telephone": "514-626-6651",
+    "codePostal": "H9K 1A6",
+    "telecopieur": "514-626-6652",
+    "esssCode": "61",
+    "territoireCLSC": "Pierrefonds",
+    "dateOuverture": "2007-07-08",
+    "adresse": "18465, boulevard Gouin Ouest",
+    "immeublesAssocies": [],
+    "municipalite": "Montréal",
+    "courriels": [
+      "nicoleta@manoirpierrefonds.com"
+    ],
+    "nombreTotalUnitesImmeubles": 166
+  },
+  "statut": "Active"
+}

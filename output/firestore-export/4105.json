@@ -1,0 +1,228 @@
+{
+  "_collecteLe": "2026-07-02T00:00:28.297Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "CORRIVEAU",
+        "prenom": "François",
+        "mention": null
+      },
+      {
+        "nom": "COUTURE",
+        "prenom": "Diane",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "9102-3762 QUÉBEC INC.",
+      "datePrisePossession": "1997-01-01",
+      "neq": "1149947948",
+      "neqNormalise": "1149947948"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "4105",
+  "section8_reconnaissance": {
+    "associations": [],
+    "membreAssociation": false,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "CORRIVEAU",
+      "prenom": "François"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "Non",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 1,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "COUTURE",
+      "prenom": "Diane",
+      "occupation": null,
+      "fonction": "secrétaire"
+    },
+    {
+      "nom": "CORRIVEAU",
+      "prenom": "François",
+      "occupation": null,
+      "fonction": "Président"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "4105",
+  "_regionCdRSS": "08",
+  "noForm": "4105",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 22,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 22,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 22,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 22
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 22,
+    "repartitionAges": {
+      "de85plus": 11,
+      "totalResidents": 20,
+      "de65a74": 1,
+      "de75a84": 8,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=4105",
+  "section1_identification": {
+    "categorieRPA": 2,
+    "esss": "08 - CISSS de l'Abitibi-Témiscamingue",
+    "territoireRLS": "RLS du Témiscaming",
+    "esssNom": "CISSS de l'Abitibi-Témiscamingue",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "La Maison de Jérémie",
+    "telephone": "819-728-2175",
+    "codePostal": "J0Z 2G0",
+    "telecopieur": "819-728-2568",
+    "esssCode": "08",
+    "territoireCLSC": "Ville-Marie",
+    "dateOuverture": "1997-01-01",
+    "adresse": "18, rue principale nord",
+    "immeublesAssocies": [],
+    "municipalite": "Saint-Bruno-de-Guigues",
+    "courriels": [
+      "couturecorriveau@tlb.sympatico.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 22
+  },
+  "statut": "Active"
+}

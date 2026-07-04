@@ -1,0 +1,230 @@
+{
+  "_collecteLe": "2026-07-02T16:45:27.516Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "SCARDERA",
+        "prenom": "Remo",
+        "mention": null
+      },
+      {
+        "nom": "ROSARIA",
+        "prenom": "Renzo",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "9031-2570 Québec inc.",
+      "datePrisePossession": "1989-11-01",
+      "neq": "1145500550",
+      "neqNormalise": "1145500550"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "1146",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": false
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "ROSARIA",
+      "prenom": "Renzo"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "Non",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 0,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 1,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "REMO",
+      "prenom": "Scardera",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "ROSARIA",
+      "prenom": "Renzo",
+      "occupation": null,
+      "fonction": "Vice-présidente, Secrétaire"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 4,
+    "liste": [],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "1146",
+  "_regionCdRSS": "61",
+  "noForm": "1146",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 50,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 5
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 5
+      }
+    },
+    "capaciteRPA": 39,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 39,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 39
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 11,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 11
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 1,
+          "nuit": 0
+        },
+        "precisions": "2 inf.aux. à temps partiel"
+      }
+    ],
+    "capaciteTotaleImmeubles": 50,
+    "repartitionAges": {
+      "de85plus": 6,
+      "totalResidents": 37,
+      "de65a74": 4,
+      "de75a84": 27,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 6
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 5
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=1146",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireRLS": "RLS de Pierrefonds - Lac Saint-Louis",
+    "esssNom": "CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "LES RÉSIDENCES VIVENDI",
+    "telephone": "514-624-0188",
+    "codePostal": "H9C 2N4",
+    "telecopieur": "514-624-0189",
+    "esssCode": "61",
+    "territoireCLSC": "Pierrefonds",
+    "dateOuverture": "1989-11-01",
+    "adresse": "10, rue Saint-Pierre",
+    "immeublesAssocies": [],
+    "municipalite": "Montréal",
+    "courriels": [
+      "roserenzo@videotron.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 39
+  },
+  "statut": "Active"
+}

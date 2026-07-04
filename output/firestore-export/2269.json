@@ -1,0 +1,234 @@
+{
+  "_collecteLe": "2026-07-02T21:44:23.034Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "LAÏ",
+        "prenom": "Didier",
+        "mention": null
+      },
+      {
+        "nom": "Jacquemet Mosnier Lai, Estelle",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "9300-6971 Québec inc.",
+      "datePrisePossession": "2014-06-21",
+      "neq": "1169987501",
+      "neqNormalise": "1169987501"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "2269",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "Jacquemet Mosnier Lai, Estelle",
+      "prenom": null
+    },
+    {
+      "nom": "LEBRUN",
+      "prenom": "France"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 3,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "LAÏ",
+      "prenom": "Didier",
+      "occupation": null,
+      "fonction": "Secrétaire"
+    },
+    {
+      "nom": "Jacquemet Mosnier Lai, Estelle",
+      "prenom": "Présidente",
+      "occupation": null,
+      "fonction": "Présidente"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "2269",
+  "_regionCdRSS": "05",
+  "noForm": "2269",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 48,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 52,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 48,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 4,
+        "chambresSimples": 44
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 52,
+    "repartitionAges": {
+      "de85plus": 23,
+      "totalResidents": 48,
+      "de65a74": 9,
+      "de75a84": 16,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 6
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 4
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=2269",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de la Pommeraie",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Résidence Le Panier Fleuri",
+    "telephone": "450-263-0032",
+    "codePostal": "J2K 1J4",
+    "telecopieur": "450-263-0034",
+    "esssCode": "05",
+    "territoireCLSC": "Pommeraie",
+    "dateOuverture": "1991-01-01",
+    "adresse": "419, rue Principale",
+    "immeublesAssocies": [],
+    "municipalite": "Cowansville",
+    "courriels": [
+      "estelle.lai@sympatico.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 48
+  },
+  "statut": "Active"
+}

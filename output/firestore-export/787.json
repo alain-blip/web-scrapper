@@ -1,0 +1,250 @@
+{
+  "_collecteLe": "2026-07-02T07:00:42.219Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Foyer St-Ambroise Inc. Corporation du",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Foyer Saint-Ambroise Inc.",
+      "datePrisePossession": "1995-01-01",
+      "neq": "1143731389",
+      "neqNormalise": "1143731389"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "787",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés",
+      "RQOH-Réseau québécois des osbl d’habitation"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "PAQUET",
+      "prenom": "Monsieur Louis-Marie"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "Non",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 0,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 1,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "TREMBLAY",
+      "prenom": "Solange",
+      "occupation": null,
+      "fonction": "Retraitée Présidente"
+    },
+    {
+      "nom": "THÉRIAULT",
+      "prenom": "Myrianne",
+      "occupation": null,
+      "fonction": "Retraitée Administratrice"
+    },
+    {
+      "nom": "BRASSARD",
+      "prenom": "Gabriel",
+      "occupation": null,
+      "fonction": "Retraité Administrateur"
+    },
+    {
+      "nom": "ASSELIN",
+      "prenom": "Candide",
+      "occupation": null,
+      "fonction": "Retraitée Administratrice"
+    },
+    {
+      "nom": "HARVEY",
+      "prenom": "Martial",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "TREMBLAY",
+      "prenom": "Nancy",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "787",
+  "_regionCdRSS": "02",
+  "noForm": "787",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 24,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 24,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 24,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 24,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 24,
+    "repartitionAges": {
+      "de85plus": 10,
+      "totalResidents": 22,
+      "de65a74": 3,
+      "de75a84": 9,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=787",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "02 - CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireRLS": "RLS de Jonquière",
+    "esssNom": "CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Foyer Saint-Ambroise Inc.",
+    "telephone": "418-672-1168",
+    "codePostal": "G7P 2J1",
+    "telecopieur": "418-672-1168",
+    "esssCode": "02",
+    "territoireCLSC": "Jonquière",
+    "dateOuverture": "1995-01-01",
+    "adresse": "144, Brassard",
+    "immeublesAssocies": [],
+    "municipalite": "Saint-Ambroise",
+    "courriels": [
+      "foyerstambroise@videotron.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 24
+  },
+  "statut": "Active"
+}

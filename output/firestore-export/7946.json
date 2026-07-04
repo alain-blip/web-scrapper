@@ -1,0 +1,248 @@
+{
+  "_collecteLe": "2026-07-02T07:02:30.587Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "BOUCHARD",
+        "prenom": "Cajetan",
+        "mention": null
+      },
+      {
+        "nom": "MARTEL",
+        "prenom": "Guylaine",
+        "mention": null
+      },
+      {
+        "nom": "TREMBLAY",
+        "prenom": "Marilyn",
+        "mention": null
+      },
+      {
+        "nom": "BOUCHARD",
+        "prenom": "Véronique",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Place Desainay inc",
+      "datePrisePossession": "2025-01-15",
+      "neq": "1177166379",
+      "neqNormalise": "1177166379"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "7946",
+  "section8_reconnaissance": {
+    "associations": [],
+    "membreAssociation": false,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BOUCHARD",
+      "prenom": "Véronique"
+    },
+    {
+      "nom": "LEMIEUX",
+      "prenom": "Isabelle"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 5,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "BOUCHARD",
+      "prenom": "Cajetan",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "TREMBLAY",
+      "prenom": "Marilyn",
+      "occupation": null,
+      "fonction": "Secrétaire"
+    },
+    {
+      "nom": "BOUCHARD",
+      "prenom": "Véronique",
+      "occupation": null,
+      "fonction": "Trésorier"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7946",
+  "_regionCdRSS": "02",
+  "noForm": "7946",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 206,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 140,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 70,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 70,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 136,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 136,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 140,
+    "repartitionAges": {
+      "de85plus": 32,
+      "totalResidents": 90,
+      "de65a74": 9,
+      "de75a84": 47,
+      "moins65": 2
+    },
+    "employes": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 7
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7946",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "02 - CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireRLS": "RLS de Chicoutimi",
+    "esssNom": "CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Place Desainay inc.",
+    "telephone": "418-615-5560",
+    "codePostal": "G7H 0T8",
+    "telecopieur": null,
+    "esssCode": "02",
+    "territoireCLSC": "Saguenay",
+    "dateOuverture": "2025-01-15",
+    "adresse": "151, rue du Sauvignon",
+    "immeublesAssocies": [],
+    "municipalite": "Saguenay",
+    "courriels": [
+      "info@desainay.com"
+    ],
+    "nombreTotalUnitesImmeubles": 70
+  },
+  "statut": "Active"
+}

@@ -1,0 +1,249 @@
+{
+  "_collecteLe": "2026-07-02T07:01:44.278Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Maison d'un Nouvel Élan",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Maison d'un Nouvel Élan",
+      "datePrisePossession": "1990-04-01",
+      "neq": "1143820901",
+      "neqNormalise": "1143820901"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "791",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQOH-Réseau québécois des osbl d’habitation",
+      "FROH Saguenay Lac-St-Jean"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BOUDREAULT",
+      "prenom": "Johanne"
+    },
+    {
+      "nom": "BEAUDOIN",
+      "prenom": "Mona"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 2,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "BOUDREAULT",
+      "prenom": "Johanne",
+      "occupation": null,
+      "fonction": "Présidente"
+    },
+    {
+      "nom": "PELLETIER",
+      "prenom": "Denise",
+      "occupation": null,
+      "fonction": "Retraité Secrétaire"
+    },
+    {
+      "nom": "LAPIERRE",
+      "prenom": "Richard",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "GIRARD",
+      "prenom": "Madeleine",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "SIMARD",
+      "prenom": "Danielle",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "791",
+  "_regionCdRSS": "02",
+  "noForm": "791",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 41,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 41,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 41,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 41
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": "Personnel de l'EÉSAD sauf la responsable."
+      }
+    ],
+    "capaciteTotaleImmeubles": 41,
+    "repartitionAges": {
+      "de85plus": 5,
+      "totalResidents": 33,
+      "de65a74": 16,
+      "de75a84": 12,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 5
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=791",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "02 - CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireRLS": "RLS de Jonquière",
+    "esssNom": "CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Maison d'un Nouvel Élan",
+    "telephone": "418-695-6026",
+    "codePostal": "G7X 5S2",
+    "telecopieur": "418-695-3125",
+    "esssCode": "02",
+    "territoireCLSC": "Jonquière",
+    "dateOuverture": "1990-04-01",
+    "adresse": "1969, rue Price",
+    "immeublesAssocies": [],
+    "municipalite": "Saguenay",
+    "courriels": [
+      "finances@mnelan.com"
+    ],
+    "nombreTotalUnitesImmeubles": 41
+  },
+  "statut": "Active"
+}

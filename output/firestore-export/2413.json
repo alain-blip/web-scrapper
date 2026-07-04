@@ -1,0 +1,220 @@
+{
+  "_collecteLe": "2026-07-01T07:03:24.107Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "9225 5397 Québec Inc.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "9328 7647 Québec Inc.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Les Immeubles Beaulieu et Collin",
+      "datePrisePossession": "2017-09-01",
+      "neq": "3367012971"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "2413",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "MARIE-JOSÉE",
+      "prenom": "Collin"
+    },
+    {
+      "nom": "MARIE-CLAUDE",
+      "prenom": "Gasse"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": false,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "2413",
+  "_regionCdRSS": "01",
+  "noForm": "2413",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 48,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 65,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 48,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 37,
+        "chambresSimples": 11
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 65,
+    "repartitionAges": {
+      "de85plus": 19,
+      "totalResidents": 48,
+      "de65a74": 6,
+      "de75a84": 23,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=2413",
+  "section1_identification": {
+    "categorieRPA": 2,
+    "esss": "01 - CISSS du Bas-Saint-Laurent",
+    "territoireRLS": "RLS de Rimouski",
+    "esssNom": "CISSS du Bas-Saint-Laurent",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Les Villas de l'Évêché",
+    "telephone": "418-725-3436",
+    "codePostal": "G5L 8X4",
+    "telecopieur": "418-724-4636",
+    "esssCode": "01",
+    "territoireCLSC": "Rimouski-Neigette",
+    "dateOuverture": "1989-11-01",
+    "adresse": "150, rue de l'Évêché Est",
+    "immeublesAssocies": [],
+    "municipalite": "Rimouski",
+    "courriels": [
+      "immeublesbc@telus.net"
+    ],
+    "nombreTotalUnitesImmeubles": 48
+  },
+  "statut": "Active"
+}

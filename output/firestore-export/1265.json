@@ -1,0 +1,231 @@
+{
+  "_collecteLe": "2026-07-02T16:45:13.677Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "WC OPERATING (QUEBEC) GP INC.",
+        "prenom": "Commandité",
+        "mention": null
+      },
+      {
+        "nom": "WC OPERATING (HOLDING) LP",
+        "prenom": "Commanditaire",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2025-02-03",
+      "neq": "3379277505",
+      "neqNormalise": "3379277505"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "1265",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "VOULA",
+      "prenom": "Kollias"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 8,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "CHEUNG",
+      "prenom": "Edward",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "HAYAT",
+      "prenom": "Khalid",
+      "occupation": null,
+      "fonction": "Vice-président"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 20,
+    "liste": [],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "1265",
+  "_regionCdRSS": "61",
+  "noForm": "1265",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 157,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 157,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 157,
+        "chambresDoubles": 35,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 122
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 157,
+    "repartitionAges": {
+      "de85plus": 77,
+      "totalResidents": 137,
+      "de65a74": 0,
+      "de75a84": 60,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 7,
+        "nuit": 2,
+        "jour": 16
+      },
+      "finDeSemaine": {
+        "soir": 7,
+        "nuit": 2,
+        "jour": 10
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=1265",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireRLS": "RLS de Pierrefonds - Lac Saint-Louis",
+    "esssNom": "CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Le Wellesley",
+    "telephone": "514-697-7331",
+    "codePostal": "H9R 5P5",
+    "telecopieur": "514-697-7654",
+    "esssCode": "61",
+    "territoireCLSC": "Lac Saint-Louis",
+    "dateOuverture": "1989-11-01",
+    "adresse": "230, boulevard Hymus",
+    "immeublesAssocies": [],
+    "municipalite": "Pointe-Claire",
+    "courriels": [
+      "vkollias@cogir.net"
+    ],
+    "nombreTotalUnitesImmeubles": 157
+  },
+  "statut": "Active"
+}

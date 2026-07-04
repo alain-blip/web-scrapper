@@ -1,0 +1,224 @@
+{
+  "_collecteLe": "2026-07-02T16:44:28.439Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "HCN Canadian Leasing LTD",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "Chartwell M Holdings LP",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "CSH-HCN Lessee (Lachine) GP Inc",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2006-07-01",
+      "neq": "3368072982",
+      "neqNormalise": "3368072982"
+    }
+  },
+  "residencesLiees": [
+    "5023-1",
+    "5023-2"
+  ],
+  "numeroRegistre": "5023-1",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "ANNIE",
+      "prenom": "Lestage"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 4,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 8,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "5023",
+  "_regionCdRSS": "61",
+  "noForm": "5023",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 229,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 1,
+        "jour": 5
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 1,
+        "jour": 5
+      }
+    },
+    "capaciteRPA": 237,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 229,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 229,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": "rejoignable en tout temps: soir, nuit et weekend"
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 1
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 1
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 264,
+    "repartitionAges": {
+      "de85plus": 114,
+      "totalResidents": 237,
+      "de65a74": 30,
+      "de75a84": 92,
+      "moins65": 1
+    },
+    "employes": {
+      "semaine": {
+        "soir": 5,
+        "nuit": 3,
+        "jour": 25
+      },
+      "finDeSemaine": {
+        "soir": 5,
+        "nuit": 3,
+        "jour": 11
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=5023",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireRLS": "RLS de Dorval - Lachine - Lasalle",
+    "esssNom": "CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Chartwell Belvédères de Lachine",
+    "telephone": "514-639-7776",
+    "codePostal": "H8S 2H1",
+    "telecopieur": "514-639-9081",
+    "esssCode": "61",
+    "territoireCLSC": "Lachine",
+    "dateOuverture": "2006-07-01",
+    "adresse": "3000, rue Notre-Dame",
+    "immeublesAssocies": [],
+    "municipalite": "Montréal",
+    "courriels": [
+      "alestage@chartwell.com"
+    ],
+    "nombreTotalUnitesImmeubles": 229
+  },
+  "statut": "Active"
+}

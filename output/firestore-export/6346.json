@@ -1,0 +1,266 @@
+{
+  "_collecteLe": "2026-07-01T07:02:32.147Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Coup de main à domicile de Rimouski",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Coup de main à domicile de Rimouski",
+      "datePrisePossession": "2019-03-01",
+      "neq": "1142340620"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "6346",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés",
+      "Réseau de coopération des EÉSAD et ARIHQ"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "GASSE",
+      "prenom": "Marie-Claude"
+    },
+    {
+      "nom": "COUTURIER",
+      "prenom": "Guylaine"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "DIONNE",
+      "prenom": "Kina",
+      "occupation": null,
+      "fonction": "Administratrice"
+    },
+    {
+      "nom": "PELLETIER",
+      "prenom": "Sylvain",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "GAUVIN",
+      "prenom": "Daniel",
+      "occupation": null,
+      "fonction": "Vice-président"
+    },
+    {
+      "nom": "DESCHÊNES",
+      "prenom": "Francis",
+      "occupation": null,
+      "fonction": "Trésorier"
+    },
+    {
+      "nom": "RHÉAUME",
+      "prenom": "Pierre",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "VIEL",
+      "prenom": "Marjolaine",
+      "occupation": null,
+      "fonction": "Secrétaire"
+    },
+    {
+      "nom": "GASSEAU",
+      "prenom": "Elizabeth",
+      "occupation": null,
+      "fonction": "Administratrice"
+    },
+    {
+      "nom": "BOLDUC",
+      "prenom": "Daniel",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "6346",
+  "_regionCdRSS": "01",
+  "noForm": "6346",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 61,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 6,
+        "nuit": 3,
+        "jour": 7
+      },
+      "finDeSemaine": {
+        "soir": 6,
+        "nuit": 3,
+        "jour": 7
+      }
+    },
+    "capaciteRPA": 58,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 61,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 61
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 61,
+    "repartitionAges": {
+      "de85plus": 38,
+      "totalResidents": 58,
+      "de65a74": 2,
+      "de75a84": 18,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 6,
+        "nuit": 4,
+        "jour": 17
+      },
+      "finDeSemaine": {
+        "soir": 7,
+        "nuit": 4,
+        "jour": 11
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=6346",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "01 - CISSS du Bas-Saint-Laurent",
+    "territoireRLS": "RLS de Rimouski",
+    "esssNom": "CISSS du Bas-Saint-Laurent",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "L'Ancien Monastère",
+    "telephone": "418-730-6330",
+    "codePostal": "G5L 3V7",
+    "telecopieur": "418-730-6343",
+    "esssCode": "01",
+    "territoireCLSC": "Rimouski-Neigette",
+    "dateOuverture": "2011-03-25",
+    "adresse": "400, rue La Salle",
+    "immeublesAssocies": [],
+    "municipalite": "Rimouski",
+    "courriels": [
+      "info@coupdemainadomicile.com"
+    ],
+    "nombreTotalUnitesImmeubles": 61
+  },
+  "statut": "Active"
+}

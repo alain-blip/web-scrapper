@@ -1,0 +1,371 @@
+{
+  "_collecteLe": "2026-07-02T21:47:39.832Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "WC OPERATING (QUEBEC) GP INC.",
+        "prenom": "Commandité",
+        "mention": null
+      },
+      {
+        "nom": "WC OPERATING (HOLDING) LP",
+        "prenom": "Commanditaire",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2025-02-03",
+      "neq": "3379277505",
+      "neqNormalise": "3379277505"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "415",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "PLANTE",
+      "prenom": "Esther"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 4,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 8,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "CHEUNG",
+      "prenom": "Edward",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "HAYAT",
+      "prenom": "Khalid",
+      "occupation": null,
+      "fonction": "Vice-président"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 20,
+    "liste": [
+      {
+        "cellules": [
+          "Manoir Pointe-aux-Trembles",
+          "3379277505",
+          "3478, 32e Avenue",
+          "Montréal",
+          "65 - CIUSSS de l'Est-de-l'Île-de-Montréal",
+          "H1A 3M1"
+        ]
+      },
+      {
+        "cellules": [
+          "Bois-de-Boulogne, résidence pour retraités",
+          "3379277505",
+          "10005, avenue du Bois-de-Boulogne",
+          "Montréal",
+          "64 - CIUSSS du Nord-de-l'Île-de-Montréal",
+          "H4N 3B2"
+        ]
+      },
+      {
+        "cellules": [
+          "Domaine La Fontaine",
+          "3379277505",
+          "230, rue des Chênes",
+          "Rivière-du-Loup",
+          "01 - CISSS du Bas-Saint-Laurent",
+          "G5R 5E2"
+        ]
+      },
+      {
+        "cellules": [
+          "Havre La Fontaine",
+          "3379277505",
+          "235, rue des Chênes",
+          "Rivière-du-Loup",
+          "01 - CISSS du Bas-Saint-Laurent",
+          "G5R 5L5"
+        ]
+      },
+      {
+        "cellules": [
+          "Pavillon des Cèdres",
+          "3379277505",
+          "35, rue des Cèdres",
+          "Rivière-du-Loup",
+          "01 - CISSS du Bas-Saint-Laurent",
+          "G5R 3X3"
+        ]
+      },
+      {
+        "cellules": [
+          "L'Émérite de Brossard",
+          "3379277505",
+          "2455, boulevard Rome",
+          "Brossard",
+          "71 - CISSS de la Montérégie-Centre",
+          "J4Y 2W9"
+        ]
+      },
+      {
+        "cellules": [
+          "Jardins Intérieurs",
+          "3379277505",
+          "1705, avenue Victoria, bureau 101",
+          "Saint-Lambert",
+          "71 - CISSS de la Montérégie-Centre",
+          "J4R 2T7"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Jardins Vaudreuil",
+          "3379277505",
+          "333, rue Querbes",
+          "Vaudreuil-Dorion",
+          "73 - CISSS de la Montérégie-Ouest",
+          "J7V 1J9"
+        ]
+      },
+      {
+        "cellules": [
+          "Le Clair Matin",
+          "3379277505",
+          "70, rue Lévis",
+          "Longueuil",
+          "72 - CISSS de la Montérégie-Est",
+          "J4H 4C2"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Jardins du Couvent",
+          "3379277505",
+          "425, rue Claude de Ramezay",
+          "Marieville",
+          "71 - CISSS de la Montérégie-Centre",
+          "J3M 1J6"
+        ]
+      },
+      {
+        "cellules": [
+          "Bois-de-Boulogne, résidence pour retraités",
+          "3379277505",
+          "10005, avenue du Bois-de-Boulogne",
+          "Montréal",
+          "64 - CIUSSS du Nord-de-l'Île-de-Montréal",
+          "H4N 3B2"
+        ]
+      },
+      {
+        "cellules": [
+          "Jardins Intérieurs",
+          "3379277505",
+          "1705, avenue Victoria, bureau 101",
+          "Saint-Lambert",
+          "71 - CISSS de la Montérégie-Centre",
+          "J4R 2T7"
+        ]
+      },
+      {
+        "cellules": [
+          "Le Clair Matin",
+          "3379277505",
+          "70, rue Lévis",
+          "Longueuil",
+          "72 - CISSS de la Montérégie-Est",
+          "J4H 4C2"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Jardins du Couvent",
+          "3379277505",
+          "425, rue Claude de Ramezay",
+          "Marieville",
+          "71 - CISSS de la Montérégie-Centre",
+          "J3M 1J6"
+        ]
+      }
+    ],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "415",
+  "_regionCdRSS": "05",
+  "noForm": "415",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 246,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 3
+      }
+    },
+    "capaciteRPA": 404,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 246,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 246,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 404,
+    "repartitionAges": {
+      "de85plus": 152,
+      "totalResidents": 244,
+      "de65a74": 16,
+      "de75a84": 72,
+      "moins65": 4
+    },
+    "employes": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 28
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 14
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=415",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Sherbrooke",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Villa de l'Estrie",
+    "telephone": "819-823-1123",
+    "codePostal": "J1L 2G1",
+    "telecopieur": null,
+    "esssCode": "05",
+    "territoireCLSC": "Sherbrooke",
+    "dateOuverture": "1989-01-01",
+    "adresse": "3300, rue Des Chênes",
+    "immeublesAssocies": [],
+    "municipalite": "Sherbrooke",
+    "courriels": [
+      "eplante@cogir.net"
+    ],
+    "nombreTotalUnitesImmeubles": 246
+  },
+  "statut": "Active"
+}

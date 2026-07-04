@@ -1,0 +1,242 @@
+{
+  "_collecteLe": "2026-07-02T21:46:06.826Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "THUIN",
+        "prenom": "Jean-Pol",
+        "mention": null
+      },
+      {
+        "nom": "DUTRIEUX",
+        "prenom": "Carine",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "GESTION SGH INC.",
+      "datePrisePossession": "1998-01-01",
+      "neq": "1174440728",
+      "neqNormalise": "1174440728"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "383",
+  "section8_reconnaissance": {
+    "associations": [],
+    "membreAssociation": false,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "THUIN",
+      "prenom": "Jean-Pol"
+    },
+    {
+      "nom": "THUIN",
+      "prenom": "Anthony"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 3,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "THUIN",
+      "prenom": "Jean-Pol",
+      "occupation": null,
+      "fonction": "Gestionnaire Président"
+    },
+    {
+      "nom": "DUTRIEUX",
+      "prenom": "Carine",
+      "occupation": null,
+      "fonction": "Gestionnaire Secrétaire"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 1,
+    "liste": [
+      {
+        "cellules": [
+          "Résidence St-Patrice",
+          "1166195116",
+          "320, rue Saint-Patrice Ouest",
+          "Magog",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J1X 1W6"
+        ]
+      }
+    ],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "383",
+  "_regionCdRSS": "05",
+  "noForm": "383",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 83,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 3
+      }
+    },
+    "capaciteRPA": 83,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 83,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 83
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 83,
+    "repartitionAges": {
+      "de85plus": 41,
+      "totalResidents": 83,
+      "de65a74": 10,
+      "de75a84": 28,
+      "moins65": 4
+    },
+    "employes": {
+      "semaine": {
+        "soir": 4,
+        "nuit": 3,
+        "jour": 10
+      },
+      "finDeSemaine": {
+        "soir": 4,
+        "nuit": 3,
+        "jour": 6
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=383",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Memphrémagog",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Résidence Ste-Marguerite-Marie",
+    "telephone": "819-843-0202",
+    "codePostal": "J1X 3A2",
+    "telecopieur": "819-843-9518",
+    "esssCode": "05",
+    "territoireCLSC": "Memphrémagog",
+    "dateOuverture": "1990-01-01",
+    "adresse": "64, rue St-Pierre",
+    "immeublesAssocies": [],
+    "municipalite": "Magog",
+    "courriels": [
+      "jeanpol.thuin@gmail.com",
+      "anthony_thuin@hotmail.com"
+    ],
+    "nombreTotalUnitesImmeubles": 83
+  },
+  "statut": "Active"
+}

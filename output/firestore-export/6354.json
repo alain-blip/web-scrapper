@@ -1,0 +1,293 @@
+{
+  "_collecteLe": "2026-07-01T07:01:30.066Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Office d'habitation de Rivière-du-Loup et Les Basques",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Habitation Denonville",
+      "datePrisePossession": "2010-07-01",
+      "neq": "8874165226"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "6354",
+  "section8_reconnaissance": {
+    "associations": [
+      "Fédération des OSBL BSL-Gaspésie"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": false
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BAZE",
+      "prenom": "Ikrame"
+    },
+    {
+      "nom": "PAQUETTE",
+      "prenom": "Manon"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "Non",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": false,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 0,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 1,
+      "present": false
+    },
+    "mitigeurEauChaude": false,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "RIOUX",
+      "prenom": "Joselle",
+      "occupation": null,
+      "fonction": "Retraitée- Représentante de groupe socio-économique MRC des Basques Vice-présidente"
+    },
+    {
+      "nom": "OUELLET",
+      "prenom": "Francis",
+      "occupation": null,
+      "fonction": "Retraité- Représentant des locataires de la MRC des Basques Administrateur"
+    },
+    {
+      "nom": "GUILBERT",
+      "prenom": "Philippe",
+      "occupation": null,
+      "fonction": "Maire de la ville de Trois-Pistoles Administrateur"
+    },
+    {
+      "nom": "SAUCIER",
+      "prenom": "Guylain",
+      "occupation": null,
+      "fonction": "Élu municipal- Représentant de la municipalité de St-Mathieu Secrétaire-Trésorier"
+    },
+    {
+      "nom": "ST-PIERRE",
+      "prenom": "Johanne",
+      "occupation": null,
+      "fonction": "Retraitée- Représentante de la ville de Rivière du Loup Administratrice"
+    },
+    {
+      "nom": "LAGACÉ",
+      "prenom": "Michel",
+      "occupation": null,
+      "fonction": "Préfet de la MRC de Rivière-du-Loup Administrateur"
+    },
+    {
+      "nom": "BEAULIEU",
+      "prenom": "Claude",
+      "occupation": null,
+      "fonction": "Retraité-Représentant des locataires de la ville de Rivière du Loup Administrateur"
+    },
+    {
+      "nom": "SANTERRE",
+      "prenom": "Murielle",
+      "occupation": null,
+      "fonction": "Retraitée- Représentante des locataires de la MRC de Rivière-du-Loup Administratrice"
+    },
+    {
+      "nom": "BASTILLE",
+      "prenom": "Mario",
+      "occupation": null,
+      "fonction": "Maire de la ville de Rivière-du-Loup-du-Loup Président"
+    },
+    {
+      "nom": "NADEAU",
+      "prenom": "Michel",
+      "occupation": null,
+      "fonction": "Maire de la ville de St-Antonin Administrateur"
+    },
+    {
+      "nom": "PLOURDE",
+      "prenom": "Gérald",
+      "occupation": null,
+      "fonction": "Retraité- Élu municipal de la municipalité de St-Hubert Administrateur"
+    },
+    {
+      "nom": "DIONNE",
+      "prenom": "Marc",
+      "occupation": null,
+      "fonction": "Élu municipal de St-Arsène Administrateur"
+    },
+    {
+      "nom": "CARON",
+      "prenom": "Rachelle",
+      "occupation": null,
+      "fonction": "Mairesse de la municipalité de St-Épiphane Administratrice"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 1,
+    "liste": [],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "6354",
+  "_regionCdRSS": "01",
+  "noForm": "6354",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 10,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 20,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 10,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 10,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 20,
+    "repartitionAges": {
+      "de85plus": 4,
+      "totalResidents": 10,
+      "de65a74": 1,
+      "de75a84": 5,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 1
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=6354",
+  "section1_identification": {
+    "categorieRPA": 1,
+    "esss": "01 - CISSS du Bas-Saint-Laurent",
+    "territoireRLS": "RLS des Basques",
+    "esssNom": "CISSS du Bas-Saint-Laurent",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Habitation Denonville",
+    "telephone": "418-963-6271",
+    "codePostal": "G0L 2N0",
+    "telecopieur": null,
+    "esssCode": "01",
+    "territoireCLSC": "Les Basques",
+    "dateOuverture": "2010-07-01",
+    "adresse": "20, rue St-Pierre",
+    "immeublesAssocies": [],
+    "municipalite": "Saint-Clément",
+    "courriels": [
+      "administration@orhrdl.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 0
+  },
+  "statut": "Active"
+}

@@ -1,0 +1,220 @@
+{
+  "_collecteLe": "2026-07-02T16:45:52.644Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Chartwell Master Care LP",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "CSH Manoir Kirkland",
+      "datePrisePossession": "1977-07-10",
+      "neq": "1163930978",
+      "neqNormalise": "1163930978"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "641",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "LAPERRIÈRE",
+      "prenom": "Lucie"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 7,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "VLAD",
+      "prenom": "Volodarski",
+      "occupation": null,
+      "fonction": "Chef de la direction Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "641",
+  "_regionCdRSS": "61",
+  "noForm": "641",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 189,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 1
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 360,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 189,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 189,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": "de 8H à 16 H"
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 360,
+    "repartitionAges": {
+      "de85plus": 118,
+      "totalResidents": 181,
+      "de65a74": 7,
+      "de75a84": 55,
+      "moins65": 1
+    },
+    "employes": {
+      "semaine": {
+        "soir": 5,
+        "nuit": 2,
+        "jour": 19
+      },
+      "finDeSemaine": {
+        "soir": 6,
+        "nuit": 2,
+        "jour": 7
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=641",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireRLS": "RLS de Pierrefonds - Lac Saint-Louis",
+    "esssNom": "CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Manoir Kirkland",
+    "telephone": "438-825-6271",
+    "codePostal": "H9H 4B5",
+    "telecopieur": "514-695-3777",
+    "esssCode": "61",
+    "territoireCLSC": "Lac Saint-Louis",
+    "dateOuverture": "1977-07-10",
+    "adresse": "2, rue Canvin",
+    "immeublesAssocies": [],
+    "municipalite": "Kirkland",
+    "courriels": [
+      "llaperriere@chartwell.com"
+    ],
+    "nombreTotalUnitesImmeubles": 189
+  },
+  "statut": "Active"
+}

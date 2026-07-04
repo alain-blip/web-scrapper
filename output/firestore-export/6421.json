@@ -1,0 +1,215 @@
+{
+  "_collecteLe": "2026-07-02T21:38:05.512Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "OUELLET",
+        "prenom": "Stéphanie",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2021-11-19",
+      "neq": "2277039774",
+      "neqNormalise": "2277039774"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "6421",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "OUELLET",
+      "prenom": "Stéphanie"
+    },
+    {
+      "nom": "BARHOMA",
+      "prenom": "Meena"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "6421",
+  "_regionCdRSS": "05",
+  "noForm": "6421",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 22,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      }
+    },
+    "capaciteRPA": 27,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 22,
+        "chambresDoubles": 5,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 17
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 27,
+    "repartitionAges": {
+      "de85plus": 4,
+      "totalResidents": 18,
+      "de65a74": 3,
+      "de75a84": 2,
+      "moins65": 9
+    },
+    "employes": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 4
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 3
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=6421",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Coaticook",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "La Maison du Berger",
+    "telephone": "819-408-3117",
+    "codePostal": "J0B 3H0",
+    "telecopieur": null,
+    "esssCode": "05",
+    "territoireCLSC": "Coaticook",
+    "dateOuverture": "2011-07-01",
+    "adresse": "265, rue Compton Est",
+    "immeublesAssocies": [],
+    "municipalite": "Waterville",
+    "courriels": [
+      "lamaisonduberger265@gmail.com"
+    ],
+    "nombreTotalUnitesImmeubles": 0
+  },
+  "statut": "Active"
+}

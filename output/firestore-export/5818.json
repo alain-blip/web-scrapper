@@ -1,0 +1,221 @@
+{
+  "_collecteLe": "2026-07-02T00:00:16.526Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "NOLET",
+        "prenom": "Jocelyne",
+        "mention": null
+      },
+      {
+        "nom": "RANCOURT",
+        "prenom": "Samuel",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Domicile Adoré Inc.",
+      "datePrisePossession": "2018-12-01",
+      "neq": "1173931024",
+      "neqNormalise": "1173931024"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "5818",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": false
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "NOLET",
+      "prenom": "Jocelyne"
+    },
+    {
+      "nom": "RANCOURT",
+      "prenom": "Samuel"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "Non",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": false,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 0,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 1,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "5818",
+  "_regionCdRSS": "08",
+  "noForm": "5818",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 23,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      }
+    },
+    "capaciteRPA": 23,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 23,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 23
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 23,
+    "repartitionAges": {
+      "de85plus": 11,
+      "totalResidents": 22,
+      "de65a74": 2,
+      "de75a84": 9,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 5
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 3
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=5818",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "08 - CISSS de l'Abitibi-Témiscamingue",
+    "territoireRLS": "RLS de la Vallée-de-l'Or",
+    "esssNom": "CISSS de l'Abitibi-Témiscamingue",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Domicile Adoré Inc.",
+    "telephone": "819-874-5210",
+    "codePostal": "J9P 0B8",
+    "telecopieur": null,
+    "esssCode": "08",
+    "territoireCLSC": "Vallée-de-l'Or",
+    "dateOuverture": "1989-01-16",
+    "adresse": "3187, chemin Sullivan",
+    "immeublesAssocies": [],
+    "municipalite": "Val-d'Or",
+    "courriels": [
+      "domicile.adore.inc@outlook.fr"
+    ],
+    "nombreTotalUnitesImmeubles": 23
+  },
+  "statut": "Active"
+}

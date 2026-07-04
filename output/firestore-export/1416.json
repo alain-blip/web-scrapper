@@ -1,0 +1,221 @@
+{
+  "_collecteLe": "2026-07-02T07:00:25.616Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "LOKIA MT INC",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Domaine des Ainés Inc.",
+      "datePrisePossession": "2006-12-01",
+      "neq": "1164100829",
+      "neqNormalise": "1164100829"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "1416",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés",
+      "ARIHQ"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BOUCHARD",
+      "prenom": "Mireille"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "TREMBLAY",
+      "prenom": "Guy",
+      "occupation": null,
+      "fonction": "Président - Secrétaire"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 8,
+    "liste": [],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "1416",
+  "_regionCdRSS": "02",
+  "noForm": "1416",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 124,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 4,
+        "nuit": 2,
+        "jour": 6
+      },
+      "finDeSemaine": {
+        "soir": 4,
+        "nuit": 2,
+        "jour": 5
+      }
+    },
+    "capaciteRPA": 124,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 106,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 106,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 18,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 18,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 124,
+    "repartitionAges": {
+      "de85plus": 60,
+      "totalResidents": 118,
+      "de65a74": 17,
+      "de75a84": 38,
+      "moins65": 3
+    },
+    "employes": {
+      "semaine": {
+        "soir": 9,
+        "nuit": 2,
+        "jour": 21
+      },
+      "finDeSemaine": {
+        "soir": 8,
+        "nuit": 2,
+        "jour": 11
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=1416",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "02 - CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireRLS": "RLS de Lac-Saint-Jean-Est",
+    "esssNom": "CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Domaine des Ainés inc.",
+    "telephone": "418-668-4071",
+    "codePostal": "G8E 1R3",
+    "telecopieur": "418-668-8163",
+    "esssCode": "02",
+    "territoireCLSC": "Lac-Saint-Jean-Est",
+    "dateOuverture": "1991-01-01",
+    "adresse": "2592, avenue du Pont Nord",
+    "immeublesAssocies": [],
+    "municipalite": "Alma",
+    "courriels": [
+      "direction.dda@lokia.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 124
+  },
+  "statut": "Active"
+}

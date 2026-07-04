@@ -1,0 +1,249 @@
+{
+  "_collecteLe": "2026-07-02T21:40:02.788Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "JUBINVILLE",
+        "prenom": "Michel",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Les Résidences et Appartements Le Monastère inc.",
+      "datePrisePossession": "2021-07-13",
+      "neq": "1176084482",
+      "neqNormalise": "1176084482"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "420",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "PAGE",
+      "prenom": "Thomas"
+    },
+    {
+      "nom": "CHARTRAND",
+      "prenom": "Karine"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 4,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 6,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "JUBINVILLE",
+      "prenom": "Michel",
+      "occupation": null,
+      "fonction": "Président"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "420",
+  "_regionCdRSS": "05",
+  "noForm": "420",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 162,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 177,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 162,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 162,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 177,
+    "repartitionAges": {
+      "de85plus": 55,
+      "totalResidents": 145,
+      "de65a74": 36,
+      "de75a84": 51,
+      "moins65": 3
+    },
+    "employes": {
+      "semaine": {
+        "soir": 4,
+        "nuit": 1,
+        "jour": 17
+      },
+      "finDeSemaine": {
+        "soir": 4,
+        "nuit": 1,
+        "jour": 6
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=420",
+  "section1_identification": {
+    "categorieRPA": 2,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Sherbrooke",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Les Résidences et Appartements Le Monastère",
+    "telephone": "819-564-0027",
+    "codePostal": "J1J 3S1",
+    "telecopieur": null,
+    "esssCode": "05",
+    "territoireCLSC": "Sherbrooke",
+    "dateOuverture": "1985-03-01",
+    "adresse": "871, rue de l'Ontario",
+    "immeublesAssocies": [
+      {
+        "cellules": [
+          "420 -immeuble 1",
+          "871, rue de l'Ontario",
+          "Sherbrooke",
+          "J1J3S1"
+        ]
+      },
+      {
+        "cellules": [
+          "420 -immeuble 2",
+          "861, rue de l'Ontario",
+          "Sherbrooke",
+          "J1J3R9"
+        ]
+      },
+      {
+        "cellules": [
+          "420 -immeuble 3",
+          "1400, rue Desgagné",
+          "Sherbrooke",
+          "J1J3V8"
+        ]
+      }
+    ],
+    "municipalite": "Sherbrooke",
+    "courriels": [
+      "direction@lemonastere.ca",
+      "secretaire@lemonastere.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 162
+  },
+  "statut": "Active"
+}

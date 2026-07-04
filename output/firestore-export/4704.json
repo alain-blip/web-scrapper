@@ -1,0 +1,238 @@
+{
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "CHOINIÈRE",
+        "prenom": "Maxime",
+        "mention": null
+      },
+      {
+        "nom": "BROWNE",
+        "prenom": "James",
+        "mention": null
+      },
+      {
+        "nom": "BROWNE",
+        "prenom": "Francis",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "VASSIMEUBLE INC.",
+      "datePrisePossession": "2004-12-01",
+      "neq": "1148378418",
+      "neqNormalise": "1148378418"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "4704",
+  "section8_reconnaissance": {
+    "associations": [],
+    "membreAssociation": false,
+    "permisMAPAQ": true,
+    "permisRBQ": false
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BROWN",
+      "prenom": "James"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 0,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 2,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "BROWNE",
+      "prenom": "James",
+      "occupation": null,
+      "fonction": "PDG Président, secrétaire et trésorier"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 1,
+    "liste": [
+      {
+        "cellules": [
+          "Château Marysia de Vassimmeuble inc.",
+          "1148378418",
+          "351, rue de l'Église",
+          "Saint-Prosper-de-Champlain",
+          "04 - CIUSSS de la Mauricie-et-du-Centre-du-Québec",
+          "G0X 3A0"
+        ]
+      }
+    ],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "4704",
+  "_regionCdRSS": "05",
+  "noForm": "4704",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 11,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      }
+    },
+    "capaciteRPA": 14,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 11,
+        "chambresDoubles": 2,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 1,
+        "chambresSimples": 8
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 14,
+    "repartitionAges": {
+      "de85plus": 7,
+      "totalResidents": 11,
+      "de65a74": 0,
+      "de75a84": 4,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=4704",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS du Granit",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Château Marysia",
+    "telephone": "418-443-2929",
+    "codePostal": "G0Y 1P0",
+    "telecopieur": null,
+    "esssCode": "05",
+    "territoireCLSC": "Granit",
+    "dateOuverture": "2004-11-21",
+    "adresse": "141, Centrale Sud",
+    "immeublesAssocies": [],
+    "municipalite": "Stratford",
+    "courriels": [
+      "lechateaumarysia@hotmail.com"
+    ],
+    "nombreTotalUnitesImmeubles": 11
+  },
+  "statut": "Active",
+  "_collecteLe": "2026-07-02T21:36:37.852Z"
+}

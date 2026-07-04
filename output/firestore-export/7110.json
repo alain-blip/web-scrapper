@@ -1,0 +1,223 @@
+{
+  "_collecteLe": "2026-07-01T07:01:47.606Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "BUDKER",
+        "prenom": "Vladimir",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "9294-2861 Québec INC.",
+      "datePrisePossession": "2011-01-18",
+      "neq": "1169735991"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "7110",
+  "section8_reconnaissance": {
+    "associations": [],
+    "membreAssociation": false,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "KOUASSI",
+      "prenom": "Amenan Nina Rodrigue"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 4,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "TOUMANOV",
+      "prenom": "Vyacheslav",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "BUDKER",
+      "prenom": "Vladimir",
+      "occupation": null,
+      "fonction": "Trésorier-Secrétaire"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7110",
+  "_regionCdRSS": "01",
+  "noForm": "7110",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 68,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 6,
+        "nuit": 3,
+        "jour": 7
+      },
+      "finDeSemaine": {
+        "soir": 6,
+        "nuit": 3,
+        "jour": 7
+      }
+    },
+    "capaciteRPA": 71,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 68,
+        "chambresDoubles": 4,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 64
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 71,
+    "repartitionAges": {
+      "de85plus": 23,
+      "totalResidents": 45,
+      "de65a74": 6,
+      "de75a84": 16,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 7,
+        "nuit": 3,
+        "jour": 13
+      },
+      "finDeSemaine": {
+        "soir": 7,
+        "nuit": 3,
+        "jour": 9
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7110",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "01 - CISSS du Bas-Saint-Laurent",
+    "territoireRLS": "RLS de La Mitis",
+    "esssNom": "CISSS du Bas-Saint-Laurent",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "La Grande Maison de Sainte-Luce",
+    "telephone": "418-739-3840",
+    "codePostal": "G0K 1P0",
+    "telecopieur": "418-739-0106",
+    "esssCode": "01",
+    "territoireCLSC": "La Mitis",
+    "dateOuverture": "2014-01-12",
+    "adresse": "181, Route 132 Ouest",
+    "immeublesAssocies": [],
+    "municipalite": "Sainte-Luce",
+    "courriels": [
+      "lagrandemaison2014@gmail.com"
+    ],
+    "nombreTotalUnitesImmeubles": 68
+  },
+  "statut": "Active"
+}

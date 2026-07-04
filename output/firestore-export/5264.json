@@ -1,0 +1,394 @@
+{
+  "_collecteLe": "2026-07-02T20:58:27.565Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Office Municipal d'Habitation de Montréal",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Office Municipal d'habitation de Montréal",
+      "datePrisePossession": "2008-03-14",
+      "neq": "8831855430",
+      "neqNormalise": "8831855430"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "5264",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés",
+      "ROHQ"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "CHAREST",
+      "prenom": "Dominic"
+    },
+    {
+      "nom": "LAURIN",
+      "prenom": "Alexandre"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 6,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "FOURNIER",
+      "prenom": "Danielle",
+      "occupation": null,
+      "fonction": "Vice-Présidente"
+    },
+    {
+      "nom": "CRISPO",
+      "prenom": "Sylvie",
+      "occupation": null,
+      "fonction": "Présidente"
+    },
+    {
+      "nom": "CHAMPAGNE",
+      "prenom": "Christian",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "JANNAS",
+      "prenom": "Sandrine",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "GUILLEMETTE",
+      "prenom": "Lise",
+      "occupation": null,
+      "fonction": "Secrétaire / Trésorière"
+    },
+    {
+      "nom": "PAYANT",
+      "prenom": "Suzanne",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "DIAGNE",
+      "prenom": "M'Baye",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "RAYNAULT",
+      "prenom": "Marie-France",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "ROCHA",
+      "prenom": "Sylvia",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 12,
+    "liste": [
+      {
+        "cellules": [
+          "Manoir Anjou",
+          "8831855430",
+          "7025, avenue Rondeau",
+          "Montréal",
+          "65 - CIUSSS de l'Est-de-l'Île-de-Montréal",
+          "H1K 4Z1"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Lionel-Bourdon",
+          "8831855430",
+          "12100, boulevard Rodolphe-Forget",
+          "Montréal",
+          "65 - CIUSSS de l'Est-de-l'Île-de-Montréal",
+          "H1E 7S2"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Maywood",
+          "8831855430",
+          "33, rue Maywood",
+          "Pointe-Claire",
+          "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+          "H9R 6B9"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Jean-Placide-Desrosiers",
+          "8831855430",
+          "55, avenue Ouellette",
+          "Montréal",
+          "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+          "H8R 1L4"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Rosalie-Cadron",
+          "8831855430",
+          "12260, boulevard Laurentien",
+          "Montréal",
+          "64 - CIUSSS du Nord-de-l'Île-de-Montréal",
+          "H4K 2Z4"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence des Sources",
+          "8831855430",
+          "4200, boulevard des Sources",
+          "Dollard-des-Ormeaux",
+          "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+          "H9B 3M6"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Saint-Eugène",
+          "8831855430",
+          "3500, rue Beaubien Est",
+          "Montréal",
+          "65 - CIUSSS de l'Est-de-l'Île-de-Montréal",
+          "H1X 1G7"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Piero-Corti",
+          "8831855430",
+          "3131, rue Sherbrooke Est",
+          "Montréal",
+          "65 - CIUSSS de l'Est-de-l'Île-de-Montréal",
+          "H1W 1B2"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Côte-Saint-Paul",
+          "8831855430",
+          "5400, chemin de la Côte-Saint-Paul, bureau 104",
+          "Montréal",
+          "63 - CIUSSS du Centre-Sud-de-l'Île-de-Montréal",
+          "H4C 0A4"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Le Mile-End",
+          "8831855430",
+          "225, rue Maguire, bureau 4",
+          "Montréal",
+          "63 - CIUSSS du Centre-Sud-de-l'Île-de-Montréal",
+          "H2T 0A2"
+        ]
+      },
+      {
+        "cellules": [
+          "Manoir Charles Dutaud",
+          "8831855430",
+          "2165, rue Tupper",
+          "Montréal",
+          "62 - CIUSSS du Centre-Ouest-de-l'Île-de-Montréal",
+          "H3H 2N2"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Des Ateliers",
+          "8831855430",
+          "5785, rue Saint-Denis",
+          "Montréal",
+          "64 - CIUSSS du Nord-de-l'Île-de-Montréal",
+          "H2S 0E5"
+        ]
+      }
+    ],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": false,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "5264",
+  "_regionCdRSS": "64",
+  "noForm": "5264",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 96,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 175,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 95,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 95,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 1,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 1,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 175,
+    "repartitionAges": {
+      "de85plus": 37,
+      "totalResidents": 99,
+      "de65a74": 26,
+      "de75a84": 35,
+      "moins65": 1
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 6
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=5264",
+  "section1_identification": {
+    "categorieRPA": 1,
+    "esss": "64 - CIUSSS du Nord-de-l'Île-de-Montréal",
+    "territoireRLS": "RLS de la Petite Patrie - Villeray",
+    "esssNom": "CIUSSS du Nord-de-l'Île-de-Montréal",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Alfredo-Gagliardi",
+    "telephone": "514-279-0075",
+    "codePostal": "H2R 0A2",
+    "telecopieur": "514-273-8339",
+    "esssCode": "64",
+    "territoireCLSC": "Villeray",
+    "dateOuverture": "2008-04-01",
+    "adresse": "7170, rue Berri",
+    "immeublesAssocies": [],
+    "municipalite": "Montréal",
+    "courriels": [
+      "admin.alfredo-gagliardi@omhm.qc.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 95
+  },
+  "statut": "Active"
+}

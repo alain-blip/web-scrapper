@@ -1,0 +1,306 @@
+{
+  "_collecteLe": "2026-07-02T21:38:40.485Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "9354-1696 QUÉBEC INC.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "Les Investissements du Rayol inc.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "Fonds d'investissement Alizé inc.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2026-01-03",
+      "neq": "1181488843",
+      "neqNormalise": "1181488843"
+    }
+  },
+  "residencesLiees": [
+    "7537-1",
+    "7537-2"
+  ],
+  "numeroRegistre": "7537-1",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "FAUTEUX",
+      "prenom": "Vincent"
+    },
+    {
+      "nom": "LACOURSE",
+      "prenom": "Angélique"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 3,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 8,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "FAUTEUX",
+      "prenom": "Vincent",
+      "occupation": null,
+      "fonction": "DG Vice-président, secrétaire et trésorier"
+    },
+    {
+      "nom": "CUSTEAU",
+      "prenom": "Charles",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "CUSTEAU",
+      "prenom": "Denis",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "RATELLE",
+      "prenom": "Louis-Charles",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 2,
+    "liste": [
+      {
+        "cellules": [
+          "Le Renaissance Thetford Mines",
+          "1170466933",
+          "101, rue Monfette Est",
+          "Thetford Mines",
+          "12 - CISSS de Chaudière-Appalaches",
+          "G6G 1N9"
+        ]
+      },
+      {
+        "cellules": [
+          "Le Renaissance Cowansville",
+          "3373042913",
+          "130, rue Jean-Besré",
+          "Cowansville",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J2K 0L6"
+        ]
+      },
+      {
+        "cellules": [
+          "Le Renaissance Thetford Mines",
+          "1170466933",
+          "101, rue Monfette Est",
+          "Thetford Mines",
+          "12 - CISSS de Chaudière-Appalaches",
+          "G6G 1N9"
+        ]
+      },
+      {
+        "cellules": [
+          "Le Renaissance Cowansville",
+          "3373042913",
+          "130, rue Jean-Besré",
+          "Cowansville",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J2K 0L6"
+        ]
+      },
+      {
+        "cellules": [
+          "Le Renaissance Fleurimont inc.",
+          "1181488843",
+          "1341, rue King Est",
+          "Sherbrooke",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J1G 0G4"
+        ]
+      }
+    ],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7537",
+  "_regionCdRSS": "05",
+  "noForm": "7537",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 199,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      }
+    },
+    "capaciteRPA": 250,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 199,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 199,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 271,
+    "repartitionAges": {
+      "de85plus": 90,
+      "totalResidents": 250,
+      "de65a74": 16,
+      "de75a84": 144,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 9
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 8
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7537",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Sherbrooke",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Le Renaissance Fleurimont inc.",
+    "telephone": "819-780-7777",
+    "codePostal": "J1G 0G4",
+    "telecopieur": "819-346-2485",
+    "esssCode": "05",
+    "territoireCLSC": "Sherbrooke",
+    "dateOuverture": "2021-10-01",
+    "adresse": "1341, rue King Est",
+    "immeublesAssocies": [],
+    "municipalite": "Sherbrooke",
+    "courriels": [
+      "info@lerenaissance.ca",
+      "angeliquelacourse@lerenaissance.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 218
+  },
+  "statut": "Active"
+}

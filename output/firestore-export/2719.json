@@ -1,0 +1,230 @@
+{
+  "_collecteLe": "2026-07-01T07:03:05.979Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Les Habitations des Cônes",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Les Habitations-des-Cônes (organisation)",
+      "datePrisePossession": "2002-05-01",
+      "neq": "1160354743"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "2719",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQOH-Réseau québécois des osbl d’habitation",
+      "Fédération des OSBL du Bas-St-Laurent"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": false
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "HADJEM",
+      "prenom": "Farida"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "Non",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": false,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 0,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 1,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "DARISSE",
+      "prenom": "Gervais",
+      "occupation": null,
+      "fonction": "président"
+    },
+    {
+      "nom": "BARBAZA-ESCAICH",
+      "prenom": "David",
+      "occupation": null,
+      "fonction": "vice-président"
+    },
+    {
+      "nom": "DESAJRDINS",
+      "prenom": "Cathy",
+      "occupation": null,
+      "fonction": "Secrétaire/trésoriere"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "2719",
+  "_regionCdRSS": "01",
+  "noForm": "2719",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 10,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 20,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 10,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 10,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 20,
+    "repartitionAges": {
+      "de85plus": 1,
+      "totalResidents": 9,
+      "de65a74": 2,
+      "de75a84": 6,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 1
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=2719",
+  "section1_identification": {
+    "categorieRPA": 1,
+    "esss": "01 - CISSS du Bas-Saint-Laurent",
+    "territoireRLS": "RLS de Rivière-du-Loup",
+    "esssNom": "CISSS du Bas-Saint-Laurent",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Les Habitations-des-Cônes",
+    "telephone": "418-867-8750",
+    "codePostal": "G0L 3W0",
+    "telecopieur": "418-867-8750",
+    "esssCode": "01",
+    "territoireCLSC": "Rivière-du-Loup",
+    "dateOuverture": "2002-05-01",
+    "adresse": "306, rue Principale",
+    "immeublesAssocies": [],
+    "municipalite": "Saint-Modeste",
+    "courriels": [
+      "coordination.residences@logeco.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 10
+  },
+  "statut": "Active"
+}

@@ -1,0 +1,262 @@
+{
+  "_collecteLe": "2026-07-01T07:04:32.677Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Résidence A Parent inc. Corporation",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Résidence A. Parent inc.",
+      "datePrisePossession": "1994-11-01",
+      "neq": "1143282920"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "2633",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQOH-Réseau québécois des osbl d’habitation",
+      "FOHBGI"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "SOUCY",
+      "prenom": "Kim"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 3,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "LAVOIE",
+      "prenom": "Laurette",
+      "occupation": null,
+      "fonction": "Retratée Présidente"
+    },
+    {
+      "nom": "OUELLET",
+      "prenom": "Maurice",
+      "occupation": null,
+      "fonction": "Retraité Vice-Président"
+    },
+    {
+      "nom": "BOURGOIN",
+      "prenom": "Louis",
+      "occupation": null,
+      "fonction": "Retraité Administrateur"
+    },
+    {
+      "nom": "PELLETIER",
+      "prenom": "Gaétane",
+      "occupation": null,
+      "fonction": "Retraitée Administratrice"
+    },
+    {
+      "nom": "CASTONGUAY",
+      "prenom": "Jacqueline",
+      "occupation": null,
+      "fonction": "Retraitée Administratrice"
+    },
+    {
+      "nom": "ST-ONGE",
+      "prenom": "Rino",
+      "occupation": null,
+      "fonction": "Retraité Administrateur"
+    },
+    {
+      "nom": "BOSSÉ",
+      "prenom": "Lucy",
+      "occupation": null,
+      "fonction": "Retraité Secrétaire"
+    },
+    {
+      "nom": "CARON",
+      "prenom": "Michel",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "2633",
+  "_regionCdRSS": "01",
+  "noForm": "2633",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 36,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 44,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 36,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 26,
+        "chambresSimples": 10
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 44,
+    "repartitionAges": {
+      "de85plus": 14,
+      "totalResidents": 35,
+      "de65a74": 0,
+      "de75a84": 21,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 7
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 3
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=2633",
+  "section1_identification": {
+    "categorieRPA": 1,
+    "esss": "01 - CISSS du Bas-Saint-Laurent",
+    "territoireRLS": "RLS de Témiscouata",
+    "esssNom": "CISSS du Bas-Saint-Laurent",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Résidence A. Parent inc.",
+    "telephone": "418-854-1779",
+    "codePostal": "G0L 3S0",
+    "telecopieur": "418-854-7967",
+    "esssCode": "01",
+    "territoireCLSC": "Témiscouata",
+    "dateOuverture": "1994-11-01",
+    "adresse": "97, rue St-Charles",
+    "immeublesAssocies": [],
+    "municipalite": "Saint-Louis-du-Ha! Ha!",
+    "courriels": [
+      "residence.parent@vidéotron.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 36
+  },
+  "statut": "Active"
+}

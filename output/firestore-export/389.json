@@ -1,0 +1,229 @@
+{
+  "_collecteLe": "2026-07-02T21:44:03.829Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "GAUDREAU",
+        "prenom": "Lucie",
+        "mention": null
+      },
+      {
+        "nom": "DROLET",
+        "prenom": "Stéphane",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "9168-4514 Québec inc.",
+      "datePrisePossession": "2006-06-13",
+      "neq": "1163670913",
+      "neqNormalise": "1163670913"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "389",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "SÉNÉCAL",
+      "prenom": "Caroline"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 4,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "DROLET",
+      "prenom": "Stéphane",
+      "occupation": null,
+      "fonction": "Comptable professionnel agréé Président"
+    },
+    {
+      "nom": "GAUDREAU",
+      "prenom": "Lucie",
+      "occupation": null,
+      "fonction": "Comptable professionnel agréé Secrétaire"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "389",
+  "_regionCdRSS": "05",
+  "noForm": "389",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 66,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 4
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      }
+    },
+    "capaciteRPA": 78,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 66,
+        "chambresDoubles": 4,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 8,
+        "chambresSimples": 54
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 78,
+    "repartitionAges": {
+      "de85plus": 17,
+      "totalResidents": 56,
+      "de65a74": 11,
+      "de75a84": 25,
+      "moins65": 3
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 7
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 4
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=389",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Sherbrooke",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Résidence La Cité Fleurie",
+    "telephone": "819-822-4348",
+    "codePostal": "J1G 1N5",
+    "telecopieur": "819-562-0367",
+    "esssCode": "05",
+    "territoireCLSC": "Sherbrooke",
+    "dateOuverture": "1989-01-01",
+    "adresse": "1525, rue du Conseil",
+    "immeublesAssocies": [],
+    "municipalite": "Sherbrooke",
+    "courriels": [
+      "citefleurieadm@outlook.com"
+    ],
+    "nombreTotalUnitesImmeubles": 0
+  },
+  "statut": "Active"
+}

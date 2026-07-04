@@ -1,0 +1,230 @@
+{
+  "_collecteLe": "2026-07-02T21:43:09.872Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "MÉNARD",
+        "prenom": "René",
+        "mention": null
+      },
+      {
+        "nom": "GRAVEL",
+        "prenom": "Joceline",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Résidence du Roy (JR) inc.",
+      "datePrisePossession": "2023-01-01",
+      "neq": "1162728167",
+      "neqNormalise": "1162728167"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "4870",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "GRAVEL",
+      "prenom": "Joceline"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 2,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "MÉNARD",
+      "prenom": "René",
+      "occupation": null,
+      "fonction": "Vice-président"
+    },
+    {
+      "nom": "GRAVEL",
+      "prenom": "Joceline",
+      "occupation": null,
+      "fonction": "Présidente"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "4870",
+  "_regionCdRSS": "05",
+  "noForm": "4870",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 13,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 3
+      }
+    },
+    "capaciteRPA": 16,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 13,
+        "chambresDoubles": 4,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 9
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 16,
+    "repartitionAges": {
+      "de85plus": 2,
+      "totalResidents": 16,
+      "de65a74": 0,
+      "de75a84": 13,
+      "moins65": 1
+    },
+    "employes": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 3
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=4870",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Sherbrooke",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Résidence du Roy (JR) inc.",
+    "telephone": "819-346-2136",
+    "codePostal": "J1H 1Z8",
+    "telecopieur": "819-575-0568",
+    "esssCode": "05",
+    "territoireCLSC": "Sherbrooke",
+    "dateOuverture": "2006-01-26",
+    "adresse": "1016, rue Galt Ouest",
+    "immeublesAssocies": [],
+    "municipalite": "Sherbrooke",
+    "courriels": [
+      "joceline-cpa@videotron.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 13
+  },
+  "statut": "Active"
+}

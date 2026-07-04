@@ -1,0 +1,234 @@
+{
+  "_collecteLe": "2026-07-02T16:44:30.824Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Les RésidencesSélection S.E.C.-III",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "8453233 Canadainc.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2004-07-01",
+      "neq": "3369003093",
+      "neqNormalise": "3369003093"
+    }
+  },
+  "residencesLiees": [
+    "4483-1",
+    "4483-2"
+  ],
+  "numeroRegistre": "4483-1",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés",
+      "Corpiq"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "YVAN",
+      "prenom": "Bailbled"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 6,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 16,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "HIGGS",
+      "prenom": "Andrew Fujio",
+      "occupation": null,
+      "fonction": "VP sénior, gestion des actifs VP; administrateur"
+    },
+    {
+      "nom": "Sylvia Von Ellm",
+      "prenom": "VP, fiscalité",
+      "occupation": null,
+      "fonction": "VP, fiscalité Administratrice; Trésorière"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "4483",
+  "_regionCdRSS": "61",
+  "noForm": "4483",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 426,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 2
+      }
+    },
+    "capaciteRPA": 871,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 426,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 426,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 2,
+          "soir": 1,
+          "nuit": 1
+        },
+        "finDeSemaine": {
+          "jour": 2,
+          "soir": 1,
+          "nuit": 1
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 894,
+    "repartitionAges": {
+      "de85plus": 185,
+      "totalResidents": 449,
+      "de65a74": 85,
+      "de75a84": 170,
+      "moins65": 9
+    },
+    "employes": {
+      "semaine": {
+        "soir": 10,
+        "nuit": 5,
+        "jour": 23
+      },
+      "finDeSemaine": {
+        "soir": 10,
+        "nuit": 5,
+        "jour": 10
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=4483",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireRLS": "RLS de Dorval - Lachine - Lasalle",
+    "esssNom": "CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Chartwell Les Tours Angrignon",
+    "telephone": "514-364-5111",
+    "codePostal": "H8N 3H8",
+    "telecopieur": null,
+    "esssCode": "61",
+    "territoireCLSC": "Lasalle",
+    "dateOuverture": "2004-07-01",
+    "adresse": "1500, boulevard Angrignon",
+    "immeublesAssocies": [],
+    "municipalite": "Montréal",
+    "courriels": [
+      "ybailbled@chartwell.com"
+    ],
+    "nombreTotalUnitesImmeubles": 426
+  },
+  "statut": "Active"
+}

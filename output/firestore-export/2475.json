@@ -1,0 +1,254 @@
+{
+  "_collecteLe": "2026-07-01T07:02:13.145Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Corporation d'hébergement de Mont-Joli",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Corporation d'hébergement de Mont-Joli",
+      "datePrisePossession": "2000-01-12",
+      "neq": "1148987523"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "2475",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQOH-Réseau québécois des osbl d’habitation",
+      "FOHBGI"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BOUCHER",
+      "prenom": "Synthia"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "GAGNON",
+      "prenom": "Normand",
+      "occupation": null,
+      "fonction": "Conseiller municipal Administrateur"
+    },
+    {
+      "nom": "LAVOIE",
+      "prenom": "Gilles",
+      "occupation": null,
+      "fonction": "Retraité Vice-président"
+    },
+    {
+      "nom": "MORISSETTE",
+      "prenom": "Johanne",
+      "occupation": null,
+      "fonction": "Retraitée Secrétaire"
+    },
+    {
+      "nom": "BEAULIEU",
+      "prenom": "Marc",
+      "occupation": null,
+      "fonction": "Retraité Administrateur"
+    },
+    {
+      "nom": "PAGE",
+      "prenom": "Steve",
+      "occupation": null,
+      "fonction": "Retraité Vice-président"
+    },
+    {
+      "nom": "LAVOIE",
+      "prenom": "Roland",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "BOIZARD",
+      "prenom": "Gaétan",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": false,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "2475",
+  "_regionCdRSS": "01",
+  "noForm": "2475",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 45,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 67,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 45,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 45,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 67,
+    "repartitionAges": {
+      "de85plus": 19,
+      "totalResidents": 43,
+      "de65a74": 2,
+      "de75a84": 22,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 7
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 3
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=2475",
+  "section1_identification": {
+    "categorieRPA": 1,
+    "esss": "01 - CISSS du Bas-Saint-Laurent",
+    "territoireRLS": "RLS de La Mitis",
+    "esssNom": "CISSS du Bas-Saint-Laurent",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "La Résidence de Mont-Joli",
+    "telephone": "418-775-5295",
+    "codePostal": "G5H 1E7",
+    "telecopieur": "418-775-9675",
+    "esssCode": "01",
+    "territoireCLSC": "La Mitis",
+    "dateOuverture": "2000-01-12",
+    "adresse": "75, Avenue des Retraites",
+    "immeublesAssocies": [],
+    "municipalite": "Mont-Joli",
+    "courriels": [
+      "synthia.boucher@ohfv.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 45
+  },
+  "statut": "Active"
+}

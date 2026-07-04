@@ -1,0 +1,222 @@
+{
+  "_collecteLe": "2026-07-02T21:45:00.356Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "COGIR RPA 2, SOCIÉTÉ EN COMMANDITE",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "9324-3137 Québec inc.",
+      "datePrisePossession": "2007-06-04",
+      "neq": "1171036461",
+      "neqNormalise": "1171036461"
+    }
+  },
+  "residencesLiees": [
+    "5461-1",
+    "5461-2"
+  ],
+  "numeroRegistre": "5461-2",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "DUCHESNE",
+      "prenom": "Lise"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 3,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 3,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "DUGUAY",
+      "prenom": "Mathieu",
+      "occupation": null,
+      "fonction": "Gestionnaire Président et secrétaire"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7748",
+  "_regionCdRSS": "05",
+  "noForm": "7748",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 36,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 6
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 5
+      }
+    },
+    "capaciteRPA": 25,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 26,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 26
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 10,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 10
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 196,
+    "repartitionAges": {
+      "de85plus": 10,
+      "totalResidents": 25,
+      "de65a74": 0,
+      "de75a84": 15,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 4,
+        "nuit": 3,
+        "jour": 13
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 7
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7748",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Memphrémagog",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Résidence Memphrémagog",
+    "telephone": "819-847-2222",
+    "codePostal": "J1X 2G9",
+    "telecopieur": "819-847-3648",
+    "esssCode": "05",
+    "territoireCLSC": "Memphrémagog",
+    "dateOuverture": "2007-07-04",
+    "adresse": "1007, rue Merry Nord",
+    "immeublesAssocies": [],
+    "municipalite": "Magog",
+    "courriels": [
+      "lduchesne@cogir.net"
+    ],
+    "nombreTotalUnitesImmeubles": 139
+  },
+  "statut": "Active"
+}

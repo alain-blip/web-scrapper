@@ -1,0 +1,205 @@
+{
+  "_collecteLe": "2026-07-02T18:50:15.463Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "MADOO",
+        "prenom": "Anne",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Anne's Residence",
+      "datePrisePossession": "2006-01-05",
+      "neq": "1162385711",
+      "neqNormalise": "1162385711"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "5385",
+  "section8_reconnaissance": {
+    "associations": [],
+    "membreAssociation": false,
+    "permisMAPAQ": false,
+    "permisRBQ": false
+  },
+  "section4_personneResponsable": [],
+  "section9_immeuble": {
+    "systemeGicleurs": "Non",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 0,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 2,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "5385",
+  "_regionCdRSS": "62",
+  "noForm": "5385",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 8,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 8,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 8,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 8
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 8,
+    "repartitionAges": {
+      "de85plus": 1,
+      "totalResidents": 6,
+      "de65a74": 1,
+      "de75a84": 4,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=5385",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "62 - CIUSSS du Centre-Ouest-de-l'Île-de-Montréal",
+    "territoireRLS": "RLS de Côte-Saint-Luc - NDG - Montréal-Ouest",
+    "esssNom": "CIUSSS du Centre-Ouest-de-l'Île-de-Montréal",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Anne's Residence",
+    "telephone": "514-489-7612",
+    "codePostal": "H4V 2S2",
+    "telecopieur": null,
+    "esssCode": "62",
+    "territoireCLSC": "Notre-Dame-de-Grâce - Montréal-Ouest",
+    "dateOuverture": "2006-05-01",
+    "adresse": "4943 Bessborough Street",
+    "immeublesAssocies": [],
+    "municipalite": "Montréal",
+    "courriels": [
+      "annemadoo27@yahoo.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 8
+  },
+  "statut": "Active"
+}

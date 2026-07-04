@@ -1,0 +1,301 @@
+{
+  "_collecteLe": "2026-07-02T21:41:34.977Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "9413-3717 QUÉBEC INC.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "GESTION BINAYAT INC.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Résidences de l’Estrie inc.",
+      "datePrisePossession": "2024-10-07",
+      "neq": "1180086705",
+      "neqNormalise": "1180086705"
+    }
+  },
+  "residencesLiees": [
+    "640-1",
+    "640-2"
+  ],
+  "numeroRegistre": "640-2",
+  "section8_reconnaissance": {
+    "associations": [],
+    "membreAssociation": false,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BEAULIEU LERICHE",
+      "prenom": "Manon"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "KHODER",
+      "prenom": "Bilal",
+      "occupation": null,
+      "fonction": "Homme d'affaires Président"
+    },
+    {
+      "nom": "POULIOT",
+      "prenom": "Éric",
+      "occupation": null,
+      "fonction": "Vice-président et trésorier"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 6,
+    "liste": [
+      {
+        "cellules": [
+          "Manoir Compton inc.",
+          "1180496185",
+          "4, chemin de la Station",
+          "Compton",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J0B 1L0"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Boiscastel",
+          "1180804545",
+          "399, rue Court",
+          "Coaticook",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J1A 1L7"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence 6900 Papineau",
+          "1179517769",
+          "6900, avenue Papineau",
+          "Montréal",
+          "64 - CIUSSS du Nord-de-l'Île-de-Montréal",
+          "H2G 2X7"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence évolutive Granby",
+          "1179557237",
+          "150, rue Saint-Charles Sud",
+          "Granby",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J2G 7A4"
+        ]
+      },
+      {
+        "cellules": [
+          "Manoir Magog",
+          "1180086705",
+          "975, rue St-Luc",
+          "Magog",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J1X 0C9"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Les Jardins de Montarville Inc.",
+          "1179376778",
+          "155, rue de Muy",
+          "Boucherville",
+          "72 - CISSS de la Montérégie-Est",
+          "J4B 4W7"
+        ]
+      },
+      {
+        "cellules": [
+          "Manoir St-Francis",
+          "1180086705",
+          "125, rue Queen",
+          "Sherbrooke",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J1M 1J7"
+        ]
+      }
+    ],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7994",
+  "_regionCdRSS": "05",
+  "noForm": "7994",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 19,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 19,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 19,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 8,
+        "chambresSimples": 11
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 2,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 130,
+    "repartitionAges": {
+      "de85plus": 12,
+      "totalResidents": 13,
+      "de65a74": 1,
+      "de75a84": 0,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 13
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 7
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7994",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Sherbrooke",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Manoir St-Francis",
+    "telephone": "819-562-0875",
+    "codePostal": "J1M 1J7",
+    "telecopieur": "819-562-2242",
+    "esssCode": "05",
+    "territoireCLSC": "Sherbrooke",
+    "dateOuverture": "1992-07-01",
+    "adresse": "125, rue Queen",
+    "immeublesAssocies": [],
+    "municipalite": "Sherbrooke",
+    "courriels": [
+      "direction@manoirstfrancis.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 116
+  },
+  "statut": "Active"
+}

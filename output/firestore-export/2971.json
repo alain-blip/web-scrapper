@@ -1,0 +1,229 @@
+{
+  "_collecteLe": "2026-07-01T07:02:53.460Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "DUMAIS",
+        "prenom": "Pierre",
+        "mention": null
+      },
+      {
+        "nom": "DUMAIS",
+        "prenom": "Johanne",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Hôtel Victoria La Pocatière inc.",
+      "datePrisePossession": "2019-07-01",
+      "neq": "1144530707"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "2971",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "DUMAIS",
+      "prenom": "Johanne"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "DUMAIS",
+      "prenom": "Pierre",
+      "occupation": null,
+      "fonction": "Retraité Secrétaire"
+    },
+    {
+      "nom": "DUMAIS",
+      "prenom": "Johanne",
+      "occupation": null,
+      "fonction": "Gestionnaire-Infirmière auxiliaire Présidente"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "2971",
+  "_regionCdRSS": "01",
+  "noForm": "2971",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 28,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 0,
+        "jour": 1
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 0,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 35,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 28,
+        "chambresDoubles": 10,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 18
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 1
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 1
+        },
+        "precisions": "07-02-2024: Pour des raisons financières Mme Dumais a pris la décision de faire toutes les nuits."
+      }
+    ],
+    "capaciteTotaleImmeubles": 35,
+    "repartitionAges": {
+      "de85plus": 7,
+      "totalResidents": 28,
+      "de65a74": 5,
+      "de75a84": 13,
+      "moins65": 3
+    },
+    "employes": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 4
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=2971",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "01 - CISSS du Bas-Saint-Laurent",
+    "territoireRLS": "RLS de Kamouraska",
+    "esssNom": "CISSS du Bas-Saint-Laurent",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Le Victoria",
+    "telephone": "418-856-1273",
+    "codePostal": "G0R 1Z0",
+    "telecopieur": "418-474-0337",
+    "esssCode": "01",
+    "territoireCLSC": "Kamouraska",
+    "dateOuverture": "1993-01-11",
+    "adresse": "506, 4e avenue Painchaud",
+    "immeublesAssocies": [],
+    "municipalite": "La Pocatière",
+    "courriels": [
+      "residencelevictoria@outlook.com"
+    ],
+    "nombreTotalUnitesImmeubles": 28
+  },
+  "statut": "Active"
+}

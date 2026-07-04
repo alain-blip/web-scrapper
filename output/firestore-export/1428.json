@@ -1,0 +1,235 @@
+{
+  "_collecteLe": "2026-07-02T00:00:38.513Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "BOURQUE",
+        "prenom": "Jason",
+        "mention": null
+      },
+      {
+        "nom": "BÉLANGER",
+        "prenom": "Pascal",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "HÔTEL DES ESKERS INC.",
+      "datePrisePossession": "1997-01-03",
+      "neq": "1180153364",
+      "neqNormalise": "1180153364"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "1428",
+  "section8_reconnaissance": {
+    "associations": [],
+    "membreAssociation": false,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BERNARD",
+      "prenom": "Alison"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 4,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "BOURQUE",
+      "prenom": "Jason",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "BÉLANGER",
+      "prenom": "Pascal",
+      "occupation": null,
+      "fonction": "vice-Président"
+    },
+    {
+      "nom": "BERNARD",
+      "prenom": "Miriame",
+      "occupation": null,
+      "fonction": "secrétaire"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "1428",
+  "_regionCdRSS": "08",
+  "noForm": "1428",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 35,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 35,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 35,
+        "chambresDoubles": 6,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 29
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 35,
+    "repartitionAges": {
+      "de85plus": 15,
+      "totalResidents": 31,
+      "de65a74": 3,
+      "de75a84": 13,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=1428",
+  "section1_identification": {
+    "categorieRPA": 2,
+    "esss": "08 - CISSS de l'Abitibi-Témiscamingue",
+    "territoireRLS": "RLS de l'Abitibi",
+    "esssNom": "CISSS de l'Abitibi-Témiscamingue",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "La Résidence la Cathédrale",
+    "telephone": "819-732-3636",
+    "codePostal": "J9T 1W1",
+    "telecopieur": null,
+    "esssCode": "08",
+    "territoireCLSC": "Abitibi",
+    "dateOuverture": "1997-03-01",
+    "adresse": "201, avenue Authier",
+    "immeublesAssocies": [],
+    "municipalite": "Amos",
+    "courriels": [
+      "residence.cathedrale@hoteleseskers.com"
+    ],
+    "nombreTotalUnitesImmeubles": 29
+  },
+  "statut": "Active"
+}

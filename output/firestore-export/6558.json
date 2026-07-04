@@ -1,0 +1,233 @@
+{
+  "_collecteLe": "2026-07-02T21:47:08.683Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "RPA BROMONT INC.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "Commandité RPA Bromont Inc.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2025-06-01",
+      "neq": "3374162868",
+      "neqNormalise": "3374162868"
+    }
+  },
+  "residencesLiees": [
+    "6558-1",
+    "6558-2"
+  ],
+  "numeroRegistre": "6558-1",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "THÉRIAULT",
+      "prenom": "Karine"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 4,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "BASTIEN",
+      "prenom": "Guy",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "LUSSIER",
+      "prenom": "Thomas",
+      "occupation": null,
+      "fonction": "Vice-président"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "6558",
+  "_regionCdRSS": "05",
+  "noForm": "6558",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 61,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 3
+      }
+    },
+    "capaciteRPA": 74,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 61,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 60,
+        "chambresSimples": 1
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 97,
+    "repartitionAges": {
+      "de85plus": 47,
+      "totalResidents": 67,
+      "de65a74": 2,
+      "de75a84": 18,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 6,
+        "nuit": 2,
+        "jour": 16
+      },
+      "finDeSemaine": {
+        "soir": 6,
+        "nuit": 2,
+        "jour": 10
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=6558",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de la Haute-Yamaska",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "RPA Résidence Bromont S.E.C.",
+    "telephone": "450-534-4739",
+    "codePostal": "J2L 0G7",
+    "telecopieur": "450-534-3644",
+    "esssCode": "05",
+    "territoireCLSC": "Haute-Yamaska",
+    "dateOuverture": "2012-07-01",
+    "adresse": "871, rue du Violoneux",
+    "immeublesAssocies": [],
+    "municipalite": "Bromont",
+    "courriels": [
+      "direction@residencebromont.com"
+    ],
+    "nombreTotalUnitesImmeubles": 84
+  },
+  "statut": "Active"
+}

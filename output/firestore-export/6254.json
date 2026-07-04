@@ -1,0 +1,243 @@
+{
+  "_collecteLe": "2026-07-02T21:38:00.966Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "La Grande Vie Coopérative de solidarité en habitation",
+        "prenom": null,
+        "mention": "Conseil d'administration"
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "La Grande Vie, Coopérative de solidarité en habitation (organisation)",
+      "datePrisePossession": "2011-01-22",
+      "neq": "1165167900",
+      "neqNormalise": "1165167900"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "6254",
+  "section8_reconnaissance": {
+    "associations": [],
+    "membreAssociation": false,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BINETTE",
+      "prenom": "Sylvie"
+    },
+    {
+      "nom": "GRENIER",
+      "prenom": "Philippe"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": false,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "PAGÉ",
+      "prenom": "Réjeanne",
+      "occupation": null,
+      "fonction": "Administratrice"
+    },
+    {
+      "nom": "AUDET",
+      "prenom": "Diane",
+      "occupation": null,
+      "fonction": "Présidente"
+    },
+    {
+      "nom": "BOLDUC",
+      "prenom": "Liane",
+      "occupation": null,
+      "fonction": "Administratrice"
+    },
+    {
+      "nom": "LATERREUR",
+      "prenom": "Nicole",
+      "occupation": null,
+      "fonction": "Présidente"
+    },
+    {
+      "nom": "DESROSIERS",
+      "prenom": "Christian",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": false,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "6254",
+  "_regionCdRSS": "05",
+  "noForm": "6254",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 87,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 103,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 87,
+        "chambresDoubles": 9,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 33,
+        "chambresSimples": 45
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 103,
+    "repartitionAges": {
+      "de85plus": 43,
+      "totalResidents": 89,
+      "de65a74": 17,
+      "de75a84": 29,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 4
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 4
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=6254",
+  "section1_identification": {
+    "categorieRPA": 1,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Sherbrooke",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Coopérative d'habitation",
+    "nomResidence": "La Grande Vie, coopérative de solidarité en habitation",
+    "telephone": "819-791-3007",
+    "codePostal": "J1H 3Y5",
+    "telecopieur": "819-791-3001",
+    "esssCode": "05",
+    "territoireCLSC": "Sherbrooke",
+    "dateOuverture": "2011-01-02",
+    "adresse": "1360, rue Courcelette",
+    "immeublesAssocies": [],
+    "municipalite": "Sherbrooke",
+    "courriels": [
+      "lagrandevie1360@gmail.com"
+    ],
+    "nombreTotalUnitesImmeubles": 87
+  },
+  "statut": "Active"
+}

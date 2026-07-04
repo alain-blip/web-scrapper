@@ -1,0 +1,256 @@
+{
+  "_collecteLe": "2026-07-02T07:02:18.891Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Groupe de soutien St-Nazaire",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Groupe de soutien de St-Nazaire",
+      "datePrisePossession": "1994-10-24",
+      "neq": "1142061952",
+      "neqNormalise": "1142061952"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "1396",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQOH-Réseau québécois des osbl d’habitation",
+      "TROC 02, Table des aînées"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "DESSUREAULT",
+      "prenom": "Mélanie"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": false,
+      "nombreEtagesHorsSousSol": 4,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "TREMBLAY",
+      "prenom": "Marie-Andrée",
+      "occupation": null,
+      "fonction": "Consultante Présidente"
+    },
+    {
+      "nom": "DUPERRÉ",
+      "prenom": "Diane",
+      "occupation": null,
+      "fonction": "Retraitée Vice-Présidente"
+    },
+    {
+      "nom": "PLOURDE",
+      "prenom": "Rebecca",
+      "occupation": null,
+      "fonction": "Éducatrice spécialisé Administratrice"
+    },
+    {
+      "nom": "FORTIN",
+      "prenom": "Marc",
+      "occupation": null,
+      "fonction": "Travailleur Administrateur"
+    },
+    {
+      "nom": "HARVEY",
+      "prenom": "Gilles",
+      "occupation": null,
+      "fonction": "Retraité Administrateur"
+    },
+    {
+      "nom": "TREMBLAY",
+      "prenom": "Bianca",
+      "occupation": null,
+      "fonction": "Travailleuse Administratrice"
+    },
+    {
+      "nom": "PILOTE",
+      "prenom": "Marie-Ange",
+      "occupation": null,
+      "fonction": "Administratrice"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "1396",
+  "_regionCdRSS": "02",
+  "noForm": "1396",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 33,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 42,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 33,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 33,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 42,
+    "repartitionAges": {
+      "de85plus": 23,
+      "totalResidents": 38,
+      "de65a74": 1,
+      "de75a84": 13,
+      "moins65": 1
+    },
+    "employes": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 5
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=1396",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "02 - CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireRLS": "RLS de Lac-Saint-Jean-Est",
+    "esssNom": "CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Oasis des Bâtisseurs",
+    "telephone": "418-662-5525",
+    "codePostal": "G0W 2V0",
+    "telecopieur": null,
+    "esssCode": "02",
+    "territoireCLSC": "Lac-Saint-Jean-Est",
+    "dateOuverture": "1994-10-24",
+    "adresse": "159, 1re Rue Sud",
+    "immeublesAssocies": [],
+    "municipalite": "Saint-Nazaire",
+    "courriels": [
+      "oasisdesbatisseurs@hotmail.fr"
+    ],
+    "nombreTotalUnitesImmeubles": 33
+  },
+  "statut": "Active"
+}

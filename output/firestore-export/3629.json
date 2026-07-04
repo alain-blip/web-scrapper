@@ -1,0 +1,255 @@
+{
+  "_collecteLe": "2026-07-02T21:43:05.295Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "DUMAS",
+        "prenom": "Bernard",
+        "mention": null
+      },
+      {
+        "nom": "BOUTHIETTE DUMAS",
+        "prenom": "Sylvie",
+        "mention": null
+      },
+      {
+        "nom": "DUMAS",
+        "prenom": "Élizabeth",
+        "mention": null
+      },
+      {
+        "nom": "DUMAS",
+        "prenom": "Audrey",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Résidence du Mont (2007) Inc.",
+      "datePrisePossession": "1985-06-01",
+      "neq": "1164492002",
+      "neqNormalise": "1164492002"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "3629",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "DUMAS",
+      "prenom": "Élizabeth"
+    },
+    {
+      "nom": "DUMAS",
+      "prenom": "Audrey"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "DUMAS",
+      "prenom": "Bernard",
+      "occupation": null,
+      "fonction": "Administrateur Président"
+    },
+    {
+      "nom": "BOUTHIETTE",
+      "prenom": "Sylvie",
+      "occupation": null,
+      "fonction": "Administratrice Vice-présidente"
+    },
+    {
+      "nom": "DUMAS",
+      "prenom": "Audrey",
+      "occupation": null,
+      "fonction": "Directrice adjointe Secrétaire"
+    },
+    {
+      "nom": "DUMAS",
+      "prenom": "Élizabeth",
+      "occupation": null,
+      "fonction": "Directrice adjointe Trésorière"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "3629",
+  "_regionCdRSS": "05",
+  "noForm": "3629",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 75,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      }
+    },
+    "capaciteRPA": 75,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 75,
+        "chambresDoubles": 15,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 60
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 75,
+    "repartitionAges": {
+      "de85plus": 28,
+      "totalResidents": 73,
+      "de65a74": 19,
+      "de75a84": 23,
+      "moins65": 3
+    },
+    "employes": {
+      "semaine": {
+        "soir": 4,
+        "nuit": 2,
+        "jour": 10
+      },
+      "finDeSemaine": {
+        "soir": 4,
+        "nuit": 1,
+        "jour": 7
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=3629",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de la Haute-Yamaska",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Résidence du Mont",
+    "telephone": "450-375-4684",
+    "codePostal": "J2H 2R6",
+    "telecopieur": "450-375-5692",
+    "esssCode": "05",
+    "territoireCLSC": "Haute-Yamaska",
+    "dateOuverture": "1985-06-01",
+    "adresse": "280, rue Denison Est",
+    "immeublesAssocies": [],
+    "municipalite": "Granby",
+    "courriels": [
+      "residencedumont@videotron.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 75
+  },
+  "statut": "Active"
+}

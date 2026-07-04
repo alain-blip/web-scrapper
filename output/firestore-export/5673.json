@@ -1,0 +1,227 @@
+{
+  "_collecteLe": "2026-07-02T16:45:36.251Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Sunrise Senior Living LLC",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Sunrise North Senior Living Ltd",
+      "datePrisePossession": "2008-08-25",
+      "neq": "1164617962",
+      "neqNormalise": "1164617962"
+    }
+  },
+  "residencesLiees": [
+    "5673-1",
+    "5673-2"
+  ],
+  "numeroRegistre": "5673-1",
+  "section8_reconnaissance": {
+    "associations": [],
+    "membreAssociation": false,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "SUSAN",
+      "prenom": "Toth"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 2,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "FRANTZ",
+      "prenom": "Edward",
+      "occupation": null,
+      "fonction": "secrétaire et administrateur"
+    },
+    {
+      "nom": "PAINTER",
+      "prenom": "David",
+      "occupation": null,
+      "fonction": "Président"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "5673",
+  "_regionCdRSS": "61",
+  "noForm": "5673",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 60,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 22,
+        "nuit": 6,
+        "jour": 25
+      },
+      "finDeSemaine": {
+        "soir": 22,
+        "nuit": 6,
+        "jour": 25
+      }
+    },
+    "capaciteRPA": 91,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 60,
+        "chambresDoubles": 30,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 30
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 2,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 2,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 2,
+          "soir": 2,
+          "nuit": 1
+        },
+        "finDeSemaine": {
+          "jour": 2,
+          "soir": 2,
+          "nuit": 1
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 119,
+    "repartitionAges": {
+      "de85plus": 51,
+      "totalResidents": 64,
+      "de65a74": 1,
+      "de75a84": 12,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 22,
+        "nuit": 6,
+        "jour": 40
+      },
+      "finDeSemaine": {
+        "soir": 22,
+        "nuit": 6,
+        "jour": 30
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=5673",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireRLS": "RLS de Pierrefonds - Lac Saint-Louis",
+    "esssNom": "CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Maison de vie Sunrise de Beaconsfield",
+    "telephone": "514-693-1616",
+    "codePostal": "H9W 2E5",
+    "telecopieur": "514-693-1717",
+    "esssCode": "61",
+    "territoireCLSC": "Lac Saint-Louis",
+    "dateOuverture": "2008-08-25",
+    "adresse": "505, Elm avenue",
+    "immeublesAssocies": [],
+    "municipalite": "Beaconsfield",
+    "courriels": [
+      "beaconsfield.ed@sunriseseniorliving.com"
+    ],
+    "nombreTotalUnitesImmeubles": 60
+  },
+  "statut": "Active"
+}

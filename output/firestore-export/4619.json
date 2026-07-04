@@ -1,0 +1,234 @@
+{
+  "_collecteLe": "2026-07-02T07:01:23.966Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "SAVARD",
+        "prenom": "Christian",
+        "mention": null
+      },
+      {
+        "nom": "DUFOUR",
+        "prenom": "Cynthia",
+        "mention": null
+      },
+      {
+        "nom": "9108-5142 Québec inc.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "9193-0941 Québec inc.",
+      "datePrisePossession": "2003-08-01",
+      "neq": "1164997430",
+      "neqNormalise": "1164997430"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "4619",
+  "section8_reconnaissance": {
+    "associations": [
+      "ARIHQ"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "LAPLANTE",
+      "prenom": "Karine"
+    },
+    {
+      "nom": "DUCHESNE",
+      "prenom": "Eric (2)"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 6,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 6,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "SAVARD",
+      "prenom": "Réjean",
+      "occupation": null,
+      "fonction": "Président Président"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "4619",
+  "_regionCdRSS": "02",
+  "noForm": "4619",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 364,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 5,
+        "nuit": 2,
+        "jour": 6
+      },
+      "finDeSemaine": {
+        "soir": 5,
+        "nuit": 2,
+        "jour": 6
+      }
+    },
+    "capaciteRPA": 412,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 339,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 286,
+        "chambresSimples": 53
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 16,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 1,
+        "chambresSimples": 15
+      },
+      "autres": {
+        "total": 9,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 4,
+        "chambresSimples": 5
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 428,
+    "repartitionAges": {
+      "de85plus": 174,
+      "totalResidents": 327,
+      "de65a74": 21,
+      "de75a84": 131,
+      "moins65": 1
+    },
+    "employes": {
+      "semaine": {
+        "soir": 6,
+        "nuit": 4,
+        "jour": 27
+      },
+      "finDeSemaine": {
+        "soir": 5,
+        "nuit": 4,
+        "jour": 13
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=4619",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "02 - CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireRLS": "RLS de Jonquière",
+    "esssNom": "CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Les Jardins Ste-Émilie",
+    "telephone": "418-548-2663",
+    "codePostal": "G7S 6C3",
+    "telecopieur": "418-548-9550",
+    "esssCode": "02",
+    "territoireCLSC": "Jonquière",
+    "dateOuverture": "2003-08-01",
+    "adresse": "3228, rue Ste-Émilie",
+    "immeublesAssocies": [],
+    "municipalite": "Saguenay",
+    "courriels": [
+      "administration@jardinssteemilie.com"
+    ],
+    "nombreTotalUnitesImmeubles": 348
+  },
+  "statut": "Active"
+}

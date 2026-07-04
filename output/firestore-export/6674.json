@@ -1,0 +1,223 @@
+{
+  "_collecteLe": "2026-07-01T07:00:59.756Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Gestion GDD Inc.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Domaine Lac au Saumon Inc.",
+      "datePrisePossession": "2023-11-01",
+      "neq": "1178944824"
+    }
+  },
+  "residencesLiees": [
+    "6674-1",
+    "6674-2"
+  ],
+  "numeroRegistre": "6674-1",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés",
+      "ARIHQ"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "LEPAGE",
+      "prenom": "France"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "Partiellement",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 4,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "DREIGE",
+      "prenom": "Danny",
+      "occupation": null,
+      "fonction": "Ophtalmologue- Homme d'affaire Président"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "6674",
+  "_regionCdRSS": "01",
+  "noForm": "6674",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 84,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 4,
+        "nuit": 2,
+        "jour": 5
+      },
+      "finDeSemaine": {
+        "soir": 4,
+        "nuit": 2,
+        "jour": 4
+      }
+    },
+    "capaciteRPA": 99,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 75,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 7,
+        "chambresSimples": 68
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 8,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 8
+      },
+      "autres": {
+        "total": 1,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 1
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 1,
+          "nuit": 0
+        },
+        "precisions": "1 semaine/2, infirmière fait un 7 de travail le soir. Jour : il y a 1 infirmière chef et 1 infirmière gestionnaire."
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": "Jour: 1 semaine/2, infirmière auxiliaire fait un 7 de travail le soir opposé à celui de l'infirmière de soir."
+      }
+    ],
+    "capaciteTotaleImmeubles": 107,
+    "repartitionAges": {
+      "de85plus": 28,
+      "totalResidents": 51,
+      "de65a74": 3,
+      "de75a84": 18,
+      "moins65": 2
+    },
+    "employes": {
+      "semaine": {
+        "soir": 4,
+        "nuit": 2,
+        "jour": 19
+      },
+      "finDeSemaine": {
+        "soir": 4,
+        "nuit": 2,
+        "jour": 7
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=6674",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "01 - CISSS du Bas-Saint-Laurent",
+    "territoireRLS": "RLS de La Matapédia",
+    "esssNom": "CISSS du Bas-Saint-Laurent",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Domaine Lac au Saumon inc.",
+    "telephone": "418-778-5836",
+    "codePostal": "G0J 1M0",
+    "telecopieur": "418-778-3504",
+    "esssCode": "01",
+    "territoireCLSC": "La Matapédia",
+    "dateOuverture": "2011-07-01",
+    "adresse": "13, rue du Foyer",
+    "immeublesAssocies": [],
+    "municipalite": "Lac-au-Saumon",
+    "courriels": [
+      "direction@domaine-lac-au-saumon.com"
+    ],
+    "nombreTotalUnitesImmeubles": 108
+  },
+  "statut": "Active"
+}

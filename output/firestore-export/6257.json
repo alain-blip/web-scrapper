@@ -1,0 +1,235 @@
+{
+  "_collecteLe": "2026-07-02T21:44:42.564Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "GESTION MALM INC.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "PINET",
+        "prenom": "Isabelle",
+        "mention": null
+      },
+      {
+        "nom": "CHOUINARD",
+        "prenom": "Steve",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Résidence l'Escale Inc.",
+      "datePrisePossession": "2022-10-06",
+      "neq": "1177757599",
+      "neqNormalise": "1177757599"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "6257",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "PINET",
+      "prenom": "Isabelle"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 2,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "PINET",
+      "prenom": "Isabelle",
+      "occupation": null,
+      "fonction": "Cuisinière et préposée Présidente et secrétaire"
+    },
+    {
+      "nom": "CHOUINARD",
+      "prenom": "Steve",
+      "occupation": null,
+      "fonction": "Finances Vice-président et trésorier"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "6257",
+  "_regionCdRSS": "05",
+  "noForm": "6257",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 19,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      }
+    },
+    "capaciteRPA": 28,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 19,
+        "chambresDoubles": 9,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 6,
+        "chambresSimples": 4
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 28,
+    "repartitionAges": {
+      "de85plus": 8,
+      "totalResidents": 21,
+      "de65a74": 4,
+      "de75a84": 8,
+      "moins65": 1
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=6257",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS du Granit",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Résidence l'Escale",
+    "telephone": "819-548-5277",
+    "codePostal": "G0M 1W0",
+    "telecopieur": "819-548-5277",
+    "esssCode": "05",
+    "territoireCLSC": "Granit",
+    "dateOuverture": "2011-01-01",
+    "adresse": "100, rue de l'Escale",
+    "immeublesAssocies": [],
+    "municipalite": "Saint-Ludger",
+    "courriels": [
+      "isabellepinet1974@gmail.com"
+    ],
+    "nombreTotalUnitesImmeubles": 19
+  },
+  "statut": "Active"
+}

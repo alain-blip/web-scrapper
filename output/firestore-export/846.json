@@ -1,0 +1,232 @@
+{
+  "_collecteLe": "2026-07-02T00:00:46.371Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Le Domaine des Pionniers Vallée-de-l'Or",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Le Domaine des Pionniers Vallée-de-l'Or",
+      "datePrisePossession": "1992-01-01",
+      "neq": "1160043197",
+      "neqNormalise": "1160043197"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "846",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés",
+      "RQOH-Réseau québécois des osbl d’habitation"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "MEUNIER",
+      "prenom": "Lyne"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": false,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 3,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "POULETTE",
+      "prenom": "Jessie",
+      "occupation": null,
+      "fonction": "Administratrice"
+    },
+    {
+      "nom": "MEUNIER",
+      "prenom": "Lyne",
+      "occupation": null,
+      "fonction": "Administratrice"
+    },
+    {
+      "nom": "CROUSSETTE",
+      "prenom": "Nany",
+      "occupation": null,
+      "fonction": "Administratrice"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "846",
+  "_regionCdRSS": "08",
+  "noForm": "846",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 147,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 200,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 147,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 49,
+        "chambresSimples": 98
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 200,
+    "repartitionAges": {
+      "de85plus": 28,
+      "totalResidents": 103,
+      "de65a74": 15,
+      "de75a84": 58,
+      "moins65": 2
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=846",
+  "section1_identification": {
+    "categorieRPA": 1,
+    "esss": "08 - CISSS de l'Abitibi-Témiscamingue",
+    "territoireRLS": "RLS de la Vallée-de-l'Or",
+    "esssNom": "CISSS de l'Abitibi-Témiscamingue",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Le Domaine des Pionniers Vallée-de-l'Or",
+    "telephone": "819-824-3472",
+    "codePostal": "J9P 1L8",
+    "telecopieur": null,
+    "esssCode": "08",
+    "territoireCLSC": "Vallée-de-l'Or",
+    "dateOuverture": "1992-01-01",
+    "adresse": "1300, chemin Sullivan",
+    "immeublesAssocies": [],
+    "municipalite": "Val-d'Or",
+    "courriels": [
+      "lmeunier@domainepionniers.com"
+    ],
+    "nombreTotalUnitesImmeubles": 147
+  },
+  "statut": "Active"
+}

@@ -1,0 +1,246 @@
+{
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "DESMARAIS",
+        "prenom": "Jean",
+        "mention": null
+      },
+      {
+        "nom": "DESMARAIS",
+        "prenom": "Catherine",
+        "mention": null
+      },
+      {
+        "nom": "GUAY",
+        "prenom": "Jimmy",
+        "mention": null
+      },
+      {
+        "nom": "BOURASSA",
+        "prenom": "Karine",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Auberge Anokhi inc.",
+      "datePrisePossession": "2022-09-01",
+      "neq": "1177628220",
+      "neqNormalise": "1177628220"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "414",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "DESMARAIS",
+      "prenom": "Catherine"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "DESMARAIS",
+      "prenom": "Jean",
+      "occupation": null,
+      "fonction": "Comptable agréé Secrétaire et trésorier"
+    },
+    {
+      "nom": "DESMARAIS",
+      "prenom": "Catherine",
+      "occupation": null,
+      "fonction": "Éducatrice spécialisée Présidente"
+    },
+    {
+      "nom": "GUAY",
+      "prenom": "Jimmy",
+      "occupation": null,
+      "fonction": "Charpentier-menuisier Vice-président"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "414",
+  "_regionCdRSS": "05",
+  "noForm": "414",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 37,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      }
+    },
+    "capaciteRPA": 37,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 37,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 3,
+        "chambresSimples": 34
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 37,
+    "repartitionAges": {
+      "de85plus": 0,
+      "totalResidents": 36,
+      "de65a74": 13,
+      "de75a84": 5,
+      "moins65": 18
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 8
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 3
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=414",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Sherbrooke",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Auberge Anokhi",
+    "telephone": "819-346-0423",
+    "codePostal": "J1H 4X6",
+    "telecopieur": "819-791-1021",
+    "esssCode": "05",
+    "territoireCLSC": "Sherbrooke",
+    "dateOuverture": "1983-01-01",
+    "adresse": "10, rue Brooks",
+    "immeublesAssocies": [],
+    "municipalite": "Sherbrooke",
+    "courriels": [
+      "catherine.desmarais@auberge-anokhi.com"
+    ],
+    "nombreTotalUnitesImmeubles": 37
+  },
+  "statut": "Active",
+  "_collecteLe": "2026-07-02T21:36:20.315Z"
+}

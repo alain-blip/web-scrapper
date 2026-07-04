@@ -1,0 +1,267 @@
+{
+  "_collecteLe": "2026-07-02T21:47:48.138Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Conseil d'administration",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Les Communautés de Retraités Massawippi",
+      "datePrisePossession": "2017-07-08",
+      "neq": "1147146022",
+      "neqNormalise": "1147146022"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "7311",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "LAMBERT",
+      "prenom": "Brigitte"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 0,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 1,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "WILLMS",
+      "prenom": "Brad",
+      "occupation": null,
+      "fonction": "Professeur Président"
+    },
+    {
+      "nom": "FRAZER",
+      "prenom": "Robert",
+      "occupation": null,
+      "fonction": "Secrétaire"
+    },
+    {
+      "nom": "BENSON",
+      "prenom": "James",
+      "occupation": null,
+      "fonction": "Professeur Vice-président"
+    },
+    {
+      "nom": "DRINKWATER",
+      "prenom": "Joan",
+      "occupation": null,
+      "fonction": "Administratrice"
+    },
+    {
+      "nom": "ALLATT",
+      "prenom": "Stephen",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "SHUFELT",
+      "prenom": "James",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "LAMBERT",
+      "prenom": "Brigitte",
+      "occupation": null,
+      "fonction": "Administratrice"
+    },
+    {
+      "nom": "ROBB",
+      "prenom": "John",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "LOMBARDO",
+      "prenom": "John",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7311",
+  "_regionCdRSS": "05",
+  "noForm": "7311",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 120,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 9,
+        "nuit": 5,
+        "jour": 9
+      },
+      "finDeSemaine": {
+        "soir": 9,
+        "nuit": 5,
+        "jour": 9
+      }
+    },
+    "capaciteRPA": 120,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 120,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 120
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 0
+        },
+        "precisions": "Sur appel de nuit au besoin"
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 3,
+          "soir": 3,
+          "nuit": 2
+        },
+        "finDeSemaine": {
+          "jour": 3,
+          "soir": 3,
+          "nuit": 2
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 120,
+    "repartitionAges": {
+      "de85plus": 83,
+      "totalResidents": 118,
+      "de65a74": 8,
+      "de75a84": 27,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 26,
+        "nuit": 9,
+        "jour": 46
+      },
+      "finDeSemaine": {
+        "soir": 23,
+        "nuit": 9,
+        "jour": 29
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7311",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Sherbrooke",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Village Grace",
+    "telephone": "819-569-0546",
+    "codePostal": "J1M 0C6",
+    "telecopieur": null,
+    "esssCode": "05",
+    "territoireCLSC": "Sherbrooke",
+    "dateOuverture": "2017-07-08",
+    "adresse": "1515, rue Pleasant View",
+    "immeublesAssocies": [],
+    "municipalite": "Sherbrooke",
+    "courriels": [
+      "info@masscom.ca, blambert@masscom.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 120
+  },
+  "statut": "Active"
+}

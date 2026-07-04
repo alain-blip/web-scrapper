@@ -1,0 +1,224 @@
+{
+  "_collecteLe": "2026-07-02T07:01:06.658Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "GIRARD",
+        "prenom": "Bruno",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Le Noble Âge inc.",
+      "datePrisePossession": "2015-01-22",
+      "neq": "1170459169",
+      "neqNormalise": "1170459169"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "7161",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "GIRARD",
+      "prenom": "Bruno"
+    },
+    {
+      "nom": "GIRARD",
+      "prenom": "Tanya"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 3,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "GIRARD",
+      "prenom": "Bruno",
+      "occupation": null,
+      "fonction": "Cadre HQ Président"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7161",
+  "_regionCdRSS": "02",
+  "noForm": "7161",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 125,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 8,
+        "nuit": 3,
+        "jour": 8
+      },
+      "finDeSemaine": {
+        "soir": 8,
+        "nuit": 3,
+        "jour": 8
+      }
+    },
+    "capaciteRPA": 218,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 108,
+        "chambresDoubles": 76,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 32
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 17,
+        "chambresDoubles": 17,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 3,
+          "soir": 2,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 2,
+          "soir": 2,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 3,
+          "soir": 3,
+          "nuit": 1
+        },
+        "finDeSemaine": {
+          "jour": 3,
+          "soir": 3,
+          "nuit": 1
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 218,
+    "repartitionAges": {
+      "de85plus": 49,
+      "totalResidents": 91,
+      "de65a74": 10,
+      "de75a84": 27,
+      "moins65": 5
+    },
+    "employes": {
+      "semaine": {
+        "soir": 13,
+        "nuit": 4,
+        "jour": 32
+      },
+      "finDeSemaine": {
+        "soir": 13,
+        "nuit": 4,
+        "jour": 20
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7161",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "02 - CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireRLS": "RLS de Jonquière",
+    "esssNom": "CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Le Noble Âge inc.",
+    "telephone": "418-695-9969",
+    "codePostal": "G7X 3L7",
+    "telecopieur": "418-695-9966",
+    "esssCode": "02",
+    "territoireCLSC": "Jonquière",
+    "dateOuverture": "2015-02-02",
+    "adresse": "3880, rue Saint-Léon",
+    "immeublesAssocies": [],
+    "municipalite": "Saguenay",
+    "courriels": [
+      "info@lenobleage.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 125
+  },
+  "statut": "Active"
+}

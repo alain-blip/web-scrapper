@@ -1,0 +1,298 @@
+{
+  "_collecteLe": "2026-07-02T21:41:50.058Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "FERLAND",
+        "prenom": "Sylvain",
+        "mention": null
+      },
+      {
+        "nom": "FERLAND",
+        "prenom": "Bruno",
+        "mention": null
+      },
+      {
+        "nom": "FERLAND",
+        "prenom": "Alexandre",
+        "mention": null
+      },
+      {
+        "nom": "FERLAND",
+        "prenom": "Catherine",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Pavillon Rock Forest inc.",
+      "datePrisePossession": "2019-06-01",
+      "neq": "1174475823",
+      "neqNormalise": "1174475823"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "423",
+  "section8_reconnaissance": {
+    "associations": [],
+    "membreAssociation": false,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "FERLAND",
+      "prenom": "Alexandre"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "FERLAND",
+      "prenom": "Sylvain",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "FERLAND",
+      "prenom": "Bruno",
+      "occupation": null,
+      "fonction": "Directeur des opérations Administrateur"
+    },
+    {
+      "nom": "FERLAND",
+      "prenom": "Alexandre",
+      "occupation": null,
+      "fonction": "Directeur général Administrateur"
+    },
+    {
+      "nom": "FERLAND",
+      "prenom": "Catherine",
+      "occupation": null,
+      "fonction": "Directrice management Administratrice"
+    },
+    {
+      "nom": "LIZOTTE",
+      "prenom": "Sylvie",
+      "occupation": null,
+      "fonction": "Directrice administrative Secrétaire et vice-présidente"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 5,
+    "liste": [
+      {
+        "cellules": [
+          "Les Résidences Cardinal Roy",
+          "1165826463",
+          "105, rue Cooke",
+          "Trois-Rivières",
+          "04 - CIUSSS de la Mauricie-et-du-Centre-du-Québec",
+          "G8T 8Z5"
+        ]
+      },
+      {
+        "cellules": [
+          "Pavillon du Parc",
+          "1175443036",
+          "175, avenue du Parc",
+          "Granby",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J2G 2M4"
+        ]
+      },
+      {
+        "cellules": [
+          "Pavillon Leduc",
+          "1175443036",
+          "610, rue Lebrun",
+          "Granby",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J2J 2L4"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Cardinal Roy",
+          "1165826463",
+          "105, rue Cooke",
+          "Trois-Rivières",
+          "04 - CIUSSS de la Mauricie-et-du-Centre-du-Québec",
+          "G8T 8Z5"
+        ]
+      }
+    ],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "423",
+  "_regionCdRSS": "05",
+  "noForm": "423",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 154,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 2
+      }
+    },
+    "capaciteRPA": 195,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 154,
+        "chambresDoubles": 69,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 41,
+        "chambresSimples": 44
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 195,
+    "repartitionAges": {
+      "de85plus": 69,
+      "totalResidents": 152,
+      "de65a74": 18,
+      "de75a84": 60,
+      "moins65": 5
+    },
+    "employes": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 9
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 5
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=423",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Sherbrooke",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Pavillon Rock Forest inc.",
+    "telephone": "819-564-2911",
+    "codePostal": "J1N 2C9",
+    "telecopieur": "819-564-3634",
+    "esssCode": "05",
+    "territoireCLSC": "Sherbrooke",
+    "dateOuverture": "2000-01-04",
+    "adresse": "5323, rue Gaspé",
+    "immeublesAssocies": [],
+    "municipalite": "Sherbrooke",
+    "courriels": [
+      "direction@pavillonrockforest.ca",
+      "residencesdistinction29@gmail.com"
+    ],
+    "nombreTotalUnitesImmeubles": 154
+  },
+  "statut": "Active"
+}

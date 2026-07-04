@@ -1,0 +1,234 @@
+{
+  "_collecteLe": "2026-07-02T21:40:56.120Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Carlor inc.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "9199-8765 Québec inc.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Résidence Cookshire-Eaton inc.",
+      "datePrisePossession": "2013-07-01",
+      "neq": "1167915769",
+      "neqNormalise": "1167915769"
+    }
+  },
+  "residencesLiees": [
+    "7083-1",
+    "7083-2"
+  ],
+  "numeroRegistre": "7083-1",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés",
+      "FADOQ"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "POIRIER",
+      "prenom": "Lisa"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 5,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "HALLÉ",
+      "prenom": "Steven",
+      "occupation": null,
+      "fonction": "Vice-président"
+    },
+    {
+      "nom": "CHOQUETTE",
+      "prenom": "Mario",
+      "occupation": null,
+      "fonction": "Président"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "7083",
+  "_regionCdRSS": "05",
+  "noForm": "7083",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 74,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 4
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 3
+      }
+    },
+    "capaciteRPA": 139,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 74,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 74,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 152,
+    "repartitionAges": {
+      "de85plus": 41,
+      "totalResidents": 76,
+      "de65a74": 6,
+      "de75a84": 29,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 14
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 6
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7083",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS du Haut-Saint-François",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Manoir de L'Eau Vive",
+    "telephone": "819-875-3923",
+    "codePostal": "J0B 1M0",
+    "telecopieur": "819-875-3722",
+    "esssCode": "05",
+    "territoireCLSC": "Haut-Saint-François",
+    "dateOuverture": "2013-06-27",
+    "adresse": "210, rue Principale Est",
+    "immeublesAssocies": [],
+    "municipalite": "Cookshire-Eaton",
+    "courriels": [
+      "direction@residencecookshire-eaton.com"
+    ],
+    "nombreTotalUnitesImmeubles": 87
+  },
+  "statut": "Active"
+}

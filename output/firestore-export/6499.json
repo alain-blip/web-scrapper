@@ -1,0 +1,251 @@
+{
+  "_collecteLe": "2026-07-02T07:01:13.842Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Les aînés de l'anse",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Les Aînés de l'Anse",
+      "datePrisePossession": "2011-08-23",
+      "neq": "1162302856",
+      "neqNormalise": "1162302856"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "6499",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQOH-Réseau québécois des osbl d’habitation",
+      "FROH"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "SIMARD",
+      "prenom": "Maude"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 2,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "BOUDREAULT",
+      "prenom": "Daniel",
+      "occupation": null,
+      "fonction": "Conseiller municipal Administrateur"
+    },
+    {
+      "nom": "BOUDREAULT",
+      "prenom": "Dorice",
+      "occupation": null,
+      "fonction": "Retraitée Vice-présidente"
+    },
+    {
+      "nom": "CÔTÉ",
+      "prenom": "Chantale",
+      "occupation": null,
+      "fonction": "Retraitée Présidente"
+    },
+    {
+      "nom": "LAVOIE",
+      "prenom": "Clara",
+      "occupation": null,
+      "fonction": "Retraitée Administratrice"
+    },
+    {
+      "nom": "CÔTÉ",
+      "prenom": "Claudette",
+      "occupation": null,
+      "fonction": "Retraitée Administratrice"
+    },
+    {
+      "nom": "MAJOR",
+      "prenom": "Sylvie",
+      "occupation": null,
+      "fonction": "Administratrice"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "6499",
+  "_regionCdRSS": "02",
+  "noForm": "6499",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 16,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 32,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 16,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 16,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 32,
+    "repartitionAges": {
+      "de85plus": 10,
+      "totalResidents": 16,
+      "de65a74": 1,
+      "de75a84": 5,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=6499",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "02 - CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireRLS": "RLS de La Baie",
+    "esssNom": "CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Les Aînés de l'Anse",
+    "telephone": "418-272-3431",
+    "codePostal": "G0V 1J0",
+    "telecopieur": null,
+    "esssCode": "02",
+    "territoireCLSC": "Fjord",
+    "dateOuverture": "2008-12-01",
+    "adresse": "257, rue Saint-Jean-Baptiste",
+    "immeublesAssocies": [],
+    "municipalite": "L'Anse-Saint-Jean",
+    "courriels": [
+      "lesainesdelanse@hotmail.com"
+    ],
+    "nombreTotalUnitesImmeubles": 16
+  },
+  "statut": "Active"
+}

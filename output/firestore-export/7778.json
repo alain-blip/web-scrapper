@@ -1,0 +1,239 @@
+{
+  "_collecteLe": "2026-07-02T21:37:57.981Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "GESTION GROUPE MAURICE INC.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "FONDS IMMOBILIER GROUPE MAURICE, S.E.C.",
+        "prenom": null,
+        "mention": "NEQ: 3371266878"
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2009-12-01",
+      "neq": "3365142606",
+      "neqNormalise": "3365142606"
+    }
+  },
+  "residencesLiees": [
+    "6050-1",
+    "6050-2"
+  ],
+  "numeroRegistre": "6050-2",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "LAPLANTE",
+      "prenom": "Chantal"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 4,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 5,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "MAURICE",
+      "prenom": "Luc",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "NANTAIS",
+      "prenom": "Isabelle",
+      "occupation": null,
+      "fonction": "Vice-présidente, secrétaire"
+    },
+    {
+      "nom": "TARDIF",
+      "prenom": "Julie",
+      "occupation": null,
+      "fonction": "Trésorier"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7778",
+  "_regionCdRSS": "05",
+  "noForm": "7778",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 26,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 3
+      }
+    },
+    "capaciteRPA": 26,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 26,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 26
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 2,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 1
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 1
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 370,
+    "repartitionAges": {
+      "de85plus": 18,
+      "totalResidents": 26,
+      "de65a74": 1,
+      "de75a84": 7,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 14,
+        "nuit": 3,
+        "jour": 24
+      },
+      "finDeSemaine": {
+        "soir": 14,
+        "nuit": 3,
+        "jour": 17
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7778",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de la Haute-Yamaska",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "La Croisée de l'Est",
+    "telephone": "450-372-2224",
+    "codePostal": "J2G 6N4",
+    "telecopieur": "450-372-2225",
+    "esssCode": "05",
+    "territoireCLSC": "Haute-Yamaska",
+    "dateOuverture": "2009-12-01",
+    "adresse": "65, rue Évangeline",
+    "immeublesAssocies": [],
+    "municipalite": "Granby",
+    "courriels": [
+      "dg@lacroiseedelest.com"
+    ],
+    "nombreTotalUnitesImmeubles": 272
+  },
+  "statut": "Active"
+}

@@ -1,0 +1,330 @@
+{
+  "_collecteLe": "2026-07-02T21:37:13.137Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Excelsoins, société en commandite",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "FIDUCIE FAMILIALE ARCHAMBAULT",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "9414-9903 Québec inc.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2020-05-08",
+      "neq": "3375299073",
+      "neqNormalise": "3375299073"
+    }
+  },
+  "residencesLiees": [
+    "2270-1",
+    "2270-2"
+  ],
+  "numeroRegistre": "2270-1",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés",
+      "ARHIQ"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BOUDREAU",
+      "prenom": "Alyre"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 4,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "ARCHAMBAULT",
+      "prenom": "Christian Gilles",
+      "occupation": null,
+      "fonction": "Président et secrétaire"
+    },
+    {
+      "nom": "PINET",
+      "prenom": "Denis",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 5,
+    "liste": [
+      {
+        "cellules": [
+          "Résidence Marie-Luce Labossière, Excelsoins St-Hyacinthe SEC",
+          "3375012583",
+          "16650, avenue Bourdages Sud",
+          "Saint-Hyacinthe",
+          "72 - CISSS de la Montérégie-Est",
+          "J2T 4J9"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Ville-Marie, Société en commandite",
+          "3372227259",
+          "2150, avenue Papineau",
+          "Montréal",
+          "63 - CIUSSS du Centre-Sud-de-l'Île-de-Montréal",
+          "H2K 4J6"
+        ]
+      },
+      {
+        "cellules": [
+          "SOCIETE EN COMMANDITE EXCELSOINS STE-GENEVIEVE",
+          "3374306770",
+          "16375, boulevard Gouin Ouest",
+          "Montréal",
+          "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+          "H9H 5L3"
+        ]
+      },
+      {
+        "cellules": [
+          "Société en commandite Excelsoins Vivalis",
+          "3373266744",
+          "300, rue Stillview",
+          "Pointe-Claire",
+          "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+          "H9R 0A1"
+        ]
+      },
+      {
+        "cellules": [
+          "Société en Commandite Excelsoins Ste-Geneviève",
+          "3374306770",
+          "16375, boulevard Gouin Ouest",
+          "Montréal",
+          "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+          "H9H 5L3"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Ville-Marie, SEC",
+          "3372227259",
+          "2150, avenue Papineau",
+          "Montréal",
+          "63 - CIUSSS du Centre-Sud-de-l'Île-de-Montréal",
+          "H2K 4J6"
+        ]
+      },
+      {
+        "cellules": [
+          "Société en Commandite Excelsoins Ste-Geneviève",
+          "3374306770",
+          "16375, boulevard Gouin Ouest",
+          "Montréal",
+          "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+          "H9H 5L3"
+        ]
+      },
+      {
+        "cellules": [
+          "Excelsoins Cowansville S.E.C.",
+          "3375299073",
+          "339, rue Principale",
+          "Cowansville",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J2K 1J4"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Bellagio SEC",
+          "3364815517",
+          "1205, chemin du Tremblay",
+          "Longueuil",
+          "72 - CISSS de la Montérégie-Est",
+          "J4N 1R4"
+        ]
+      }
+    ],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "2270",
+  "_regionCdRSS": "05",
+  "noForm": "2270",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 136,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 4,
+        "nuit": 2,
+        "jour": 5
+      },
+      "finDeSemaine": {
+        "soir": 4,
+        "nuit": 2,
+        "jour": 5
+      }
+    },
+    "capaciteRPA": 99,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 99,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 99
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 22,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 22
+      },
+      "autres": {
+        "total": 15,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 15
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 194,
+    "repartitionAges": {
+      "de85plus": 33,
+      "totalResidents": 89,
+      "de65a74": 16,
+      "de75a84": 34,
+      "moins65": 6
+    },
+    "employes": {
+      "semaine": {
+        "soir": 9,
+        "nuit": 5,
+        "jour": 32
+      },
+      "finDeSemaine": {
+        "soir": 9,
+        "nuit": 5,
+        "jour": 18
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=2270",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de la Pommeraie",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Excelsoins Cowansville S.E.C.",
+    "telephone": "450-263-6001",
+    "codePostal": "J2K 1J4",
+    "telecopieur": "450-616-5556",
+    "esssCode": "05",
+    "territoireCLSC": "Pommeraie",
+    "dateOuverture": "1976-01-01",
+    "adresse": "339, rue Principale",
+    "immeublesAssocies": [],
+    "municipalite": "Cowansville",
+    "courriels": [
+      "aboudreau@excelsoins.com"
+    ],
+    "nombreTotalUnitesImmeubles": 194
+  },
+  "statut": "Active"
+}

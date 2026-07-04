@@ -1,0 +1,255 @@
+{
+  "_collecteLe": "2026-07-02T00:00:12.649Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Domaine de l'Hirondelle",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Domaine de l'Hirondelle",
+      "datePrisePossession": "1998-02-12",
+      "neq": "1146625794",
+      "neqNormalise": "1146625794"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "1374",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQOH-Réseau québécois des osbl d’habitation"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": false,
+    "permisRBQ": false
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "GIROUX",
+      "prenom": "Lucille"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "Non",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 0,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": false,
+      "nombreEtagesHorsSousSol": 1,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Puits artésien"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "GIROUX",
+      "prenom": "Lucille",
+      "occupation": null,
+      "fonction": "Secrétaire"
+    },
+    {
+      "nom": "RANCOURT",
+      "prenom": "Germain",
+      "occupation": null,
+      "fonction": "retraité vice-président"
+    },
+    {
+      "nom": "AUDET",
+      "prenom": "Michèle",
+      "occupation": null,
+      "fonction": "retraitée administratrice"
+    },
+    {
+      "nom": "DROUIN",
+      "prenom": "Diane",
+      "occupation": null,
+      "fonction": "secrétaire"
+    },
+    {
+      "nom": "RONDEAU",
+      "prenom": "Guylaine",
+      "occupation": null,
+      "fonction": "administratrice"
+    },
+    {
+      "nom": "RANCOURT",
+      "prenom": "Karine",
+      "occupation": null,
+      "fonction": "administratrice"
+    },
+    {
+      "nom": "GAUTHIER",
+      "prenom": "Michel Jr.",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "1374",
+  "_regionCdRSS": "08",
+  "noForm": "1374",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 9,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 9,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 9,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 9
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 9,
+    "repartitionAges": {
+      "de85plus": 6,
+      "totalResidents": 9,
+      "de65a74": 0,
+      "de75a84": 3,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=1374",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "08 - CISSS de l'Abitibi-Témiscamingue",
+    "territoireRLS": "RLS de l'Abitibi-Ouest",
+    "esssNom": "CISSS de l'Abitibi-Témiscamingue",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Domaine de l'Hirondelle",
+    "telephone": "819-787-2035",
+    "codePostal": "J0Z 1M0",
+    "telecopieur": null,
+    "esssCode": "08",
+    "territoireCLSC": "Abitibi-Ouest",
+    "dateOuverture": "1998-01-01",
+    "adresse": "204, rue principale C.P. 238",
+    "immeublesAssocies": [],
+    "municipalite": "Sainte-Germaine-Boulé",
+    "courriels": [
+      "domaine1998@hotmail.com"
+    ],
+    "nombreTotalUnitesImmeubles": 9
+  },
+  "statut": "Active"
+}

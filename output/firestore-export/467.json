@@ -1,0 +1,239 @@
+{
+  "_collecteLe": "2026-07-02T21:41:02.316Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Les Constructions Réal Laplante inc.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "PERRON",
+        "prenom": "Marc-André",
+        "mention": null
+      },
+      {
+        "nom": "VIGNEAULT",
+        "prenom": "Richard",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Manoir Des Doux Souvenirs inc.",
+      "datePrisePossession": "2017-04-01",
+      "neq": "1172523368",
+      "neqNormalise": "1172523368"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "467",
+  "section8_reconnaissance": {
+    "associations": [],
+    "membreAssociation": false,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "VIGNEAULT",
+      "prenom": "Richard"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 2,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "PERRON",
+      "prenom": "Marc-André",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "VIGNEAULT",
+      "prenom": "Richard",
+      "occupation": null,
+      "fonction": "Vice-président et secrétaire"
+    },
+    {
+      "nom": "LAPLANTE",
+      "prenom": "Réal",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "467",
+  "_regionCdRSS": "05",
+  "noForm": "467",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 21,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      }
+    },
+    "capaciteRPA": 26,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 20,
+        "chambresDoubles": 6,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 14
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 1,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 1
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 26,
+    "repartitionAges": {
+      "de85plus": 10,
+      "totalResidents": 19,
+      "de65a74": 2,
+      "de75a84": 7,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 4
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 3
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=467",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS du Granit",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Manoir Des Doux Souvenirs inc.",
+    "telephone": "819-549-9990",
+    "codePostal": "G0Y 1C0",
+    "telecopieur": "819-549-9990",
+    "esssCode": "05",
+    "territoireCLSC": "Granit",
+    "dateOuverture": "1998-01-02",
+    "adresse": "684, rue Principale",
+    "immeublesAssocies": [],
+    "municipalite": "Lac-Drolet",
+    "courriels": [
+      "manoirdouxsouvenirs@gmail.com"
+    ],
+    "nombreTotalUnitesImmeubles": 21
+  },
+  "statut": "Active"
+}

@@ -1,0 +1,240 @@
+{
+  "_collecteLe": "2026-07-01T07:00:51.855Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "LEBLANC",
+        "prenom": "Martin",
+        "mention": null
+      },
+      {
+        "nom": "GRENIER",
+        "prenom": "Suzie",
+        "mention": null
+      },
+      {
+        "nom": "9375-3713 Québec inc.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Domaine Élie-Raphaël inc.",
+      "datePrisePossession": "2019-03-01",
+      "neq": "1173542946"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "7428",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés",
+      "ARIHQ"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "GRENIER",
+      "prenom": "Suzie"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 0,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 1,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "LEBLANC",
+      "prenom": "Martin",
+      "occupation": null,
+      "fonction": "Gestionnaire Président"
+    },
+    {
+      "nom": "GRENIER",
+      "prenom": "Suzie",
+      "occupation": null,
+      "fonction": "Directrice Secrétaire"
+    },
+    {
+      "nom": "SAVOIE",
+      "prenom": "Isabelle",
+      "occupation": null,
+      "fonction": "Trésorière"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7428",
+  "_regionCdRSS": "01",
+  "noForm": "7428",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 30,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 4
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 4
+      }
+    },
+    "capaciteRPA": 9,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 6,
+        "chambresDoubles": 3,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 3
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 24,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 24
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 33,
+    "repartitionAges": {
+      "de85plus": 3,
+      "totalResidents": 6,
+      "de65a74": 2,
+      "de75a84": 1,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 7
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 5
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7428",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "01 - CISSS du Bas-Saint-Laurent",
+    "territoireRLS": "RLS de Rivière-du-Loup",
+    "esssNom": "CISSS du Bas-Saint-Laurent",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Domaine Élie-Raphaël inc.",
+    "telephone": "581-801-4034",
+    "codePostal": "G5R 5S6",
+    "telecopieur": "418-867-7121",
+    "esssCode": "01",
+    "territoireCLSC": "Rivière-du-Loup",
+    "dateOuverture": "2019-03-01",
+    "adresse": "206, rue Fraser",
+    "immeublesAssocies": [],
+    "municipalite": "Rivière-du-Loup",
+    "courriels": [
+      "direction@domaineelieraphael.com"
+    ],
+    "nombreTotalUnitesImmeubles": 30
+  },
+  "statut": "Active"
+}

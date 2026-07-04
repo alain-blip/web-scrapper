@@ -1,0 +1,236 @@
+{
+  "_collecteLe": "2026-07-02T16:44:40.449Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "BARRETTE",
+        "prenom": "Sébastien",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Château Pierrefonds inc.",
+      "datePrisePossession": "1987-02-01",
+      "neq": "1141016072",
+      "neqNormalise": "1141016072"
+    }
+  },
+  "residencesLiees": [
+    "1564-1",
+    "1564-2"
+  ],
+  "numeroRegistre": "1564-2",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "CHETIOUI",
+      "prenom": "Ahmed",
+      "occupation": null,
+      "fonction": "Directeur Général Administrateur"
+    },
+    {
+      "nom": "BARRETTE",
+      "prenom": "Sébastien",
+      "occupation": null,
+      "fonction": "Président Gestion BBT Président"
+    },
+    {
+      "nom": "GRÉGOIRE",
+      "prenom": "André",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "TREMBLAY",
+      "prenom": "Denis",
+      "occupation": null,
+      "fonction": "Vice-Président"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 2,
+    "liste": [],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7632",
+  "_regionCdRSS": "61",
+  "noForm": "7632",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 24,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 7,
+        "nuit": 3,
+        "jour": 9
+      },
+      "finDeSemaine": {
+        "soir": 7,
+        "nuit": 3,
+        "jour": 9
+      }
+    },
+    "capaciteRPA": 24,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 24,
+        "chambresDoubles": 20,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 4
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 2,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 2,
+          "soir": 2,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 2,
+          "soir": 2,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 118,
+    "repartitionAges": {
+      "de85plus": 9,
+      "totalResidents": 23,
+      "de65a74": 2,
+      "de75a84": 10,
+      "moins65": 2
+    },
+    "employes": {
+      "semaine": {
+        "soir": 13,
+        "nuit": 4,
+        "jour": 30
+      },
+      "finDeSemaine": {
+        "soir": 13,
+        "nuit": 4,
+        "jour": 20
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7632",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireRLS": "RLS de Pierrefonds - Lac Saint-Louis",
+    "esssNom": "CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Château Pierrefonds",
+    "telephone": "514-626-2300",
+    "codePostal": "H9H 1C8",
+    "telecopieur": "514-696-8910",
+    "esssCode": "61",
+    "territoireCLSC": "Pierrefonds",
+    "dateOuverture": "1987-02-01",
+    "adresse": "15928, boulevard Gouin Ouest",
+    "immeublesAssocies": [],
+    "municipalite": "Montréal",
+    "courriels": [
+      "info@chateaupierrefonds.com"
+    ],
+    "nombreTotalUnitesImmeubles": 24
+  },
+  "statut": "Active"
+}

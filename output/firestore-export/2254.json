@@ -1,0 +1,237 @@
+{
+  "_collecteLe": "2026-07-02T21:40:39.003Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "GESTION PLMA INC.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "9317-0058 QUÉBEC INC.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "9318-1824 QUÉBEC INC.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "9111-4991 Québec inc.",
+      "datePrisePossession": "2015-04-01",
+      "neq": "1170697768",
+      "neqNormalise": "1170697768"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "2254",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés",
+      "ARIHQ"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "MORIN",
+      "prenom": "Pierre-Luc"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "MORIN",
+      "prenom": "Pierre-Luc",
+      "occupation": null,
+      "fonction": "Infirmier Secrétaire"
+    },
+    {
+      "nom": "LEGRESLEY",
+      "prenom": "Jovain",
+      "occupation": null,
+      "fonction": "Médecin Président"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "2254",
+  "_regionCdRSS": "05",
+  "noForm": "2254",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 35,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 4
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 3
+      }
+    },
+    "capaciteRPA": 6,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 6,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 6
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 29,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 29
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": "Garde 24/7 au besoin"
+      }
+    ],
+    "capaciteTotaleImmeubles": 35,
+    "repartitionAges": {
+      "de85plus": 2,
+      "totalResidents": 4,
+      "de65a74": 1,
+      "de75a84": 1,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 9
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 5
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=2254",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de la Pommeraie",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Maison Cowansville",
+    "telephone": "450-266-4545",
+    "codePostal": "J2K 1W1",
+    "telecopieur": "450-955-1315",
+    "esssCode": "05",
+    "territoireCLSC": "Pommeraie",
+    "dateOuverture": "2001-01-01",
+    "adresse": "430, rue Beaumont",
+    "immeublesAssocies": [],
+    "municipalite": "Cowansville",
+    "courriels": [
+      "pierre-luc.morin@outlook.com",
+      "maisoncowansville_dg@hotmail.com"
+    ],
+    "nombreTotalUnitesImmeubles": 35
+  },
+  "statut": "Active"
+}

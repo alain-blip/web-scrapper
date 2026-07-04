@@ -1,0 +1,230 @@
+{
+  "_collecteLe": "2026-07-02T21:47:53.744Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Gestion C.M.R.G. inc.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "Gestion André Nadeau inc.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "BOLDUC",
+        "prenom": "Sarah",
+        "mention": null
+      },
+      {
+        "nom": "9129-7473 QUÉBEC INC.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2006-01-04",
+      "neq": "3363055388",
+      "neqNormalise": "3363055388"
+    }
+  },
+  "residencesLiees": [
+    "4859-1",
+    "4859-2"
+  ],
+  "numeroRegistre": "4859-2",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "ROMERO RICANO",
+      "prenom": "Zuleidy"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 3,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7716",
+  "_regionCdRSS": "05",
+  "noForm": "7716",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 27,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 3
+      }
+    },
+    "capaciteRPA": 27,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 27,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 27
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 220,
+    "repartitionAges": {
+      "de85plus": 22,
+      "totalResidents": 26,
+      "de65a74": 0,
+      "de75a84": 4,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 20
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 11
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7716",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS du Granit",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Village Harmonie",
+    "telephone": "819-583-2266",
+    "codePostal": "G6B 0A1",
+    "telecopieur": "819-583-1616",
+    "esssCode": "05",
+    "territoireCLSC": "Granit",
+    "dateOuverture": "2006-01-01",
+    "adresse": "5650, rue de l'Harmonie, case postale 375",
+    "immeublesAssocies": [],
+    "municipalite": "Lac-Mégantic",
+    "courriels": [
+      "directrice@villageharmonie.com"
+    ],
+    "nombreTotalUnitesImmeubles": 179
+  },
+  "statut": "Active"
+}

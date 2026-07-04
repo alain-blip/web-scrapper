@@ -1,0 +1,243 @@
+{
+  "_collecteLe": "2026-07-02T00:00:51.974Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "9227-4778 Québec inc",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "9187-8884 Québec inc",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "9227-4752 Québec Inc.",
+      "datePrisePossession": "2012-04-01",
+      "neq": "1166845702",
+      "neqNormalise": "1166845702"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "6506",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "GINGRAS",
+      "prenom": "Élise"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 4,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "TREMBLAY",
+      "prenom": "Guylain",
+      "occupation": null,
+      "fonction": "propriétaire Tim Hortons secrétaire-trésorier"
+    },
+    {
+      "nom": "ALEXANTRE",
+      "prenom": "Pierre",
+      "occupation": null,
+      "fonction": "propriétaire Forage Orbit Garant administrateur"
+    },
+    {
+      "nom": "OUELLET",
+      "prenom": "Pierre",
+      "occupation": null,
+      "fonction": "propriétaire domaine privé Président"
+    },
+    {
+      "nom": "ROULEAU",
+      "prenom": "Sylvain",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "6506",
+  "_regionCdRSS": "08",
+  "noForm": "6506",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 149,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 200,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 149,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 149,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 200,
+    "repartitionAges": {
+      "de85plus": 81,
+      "totalResidents": 180,
+      "de65a74": 21,
+      "de75a84": 75,
+      "moins65": 3
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 20
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 7
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=6506",
+  "section1_identification": {
+    "categorieRPA": 2,
+    "esss": "08 - CISSS de l'Abitibi-Témiscamingue",
+    "territoireRLS": "RLS de la Vallée-de-l'Or",
+    "esssNom": "CISSS de l'Abitibi-Témiscamingue",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Les Jardins du Patrimoine",
+    "telephone": "819-874-6777",
+    "codePostal": "J9P 0A8",
+    "telecopieur": "819-874-2819",
+    "esssCode": "08",
+    "territoireCLSC": "Vallée-de-l'Or",
+    "dateOuverture": "2012-04-01",
+    "adresse": "1421, des Hauts Bois",
+    "immeublesAssocies": [],
+    "municipalite": "Val-d'Or",
+    "courriels": [
+      "direction@lesjardinsvd.com"
+    ],
+    "nombreTotalUnitesImmeubles": 149
+  },
+  "statut": "Active"
+}

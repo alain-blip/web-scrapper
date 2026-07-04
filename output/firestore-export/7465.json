@@ -1,0 +1,249 @@
+{
+  "_collecteLe": "2026-07-02T00:01:26.581Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Pavillon Amos Inc.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Résidence Les Sources 2019",
+      "datePrisePossession": "2019-10-15",
+      "neq": "1142114876",
+      "neqNormalise": "1142114876"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "7465",
+  "section8_reconnaissance": {
+    "associations": [
+      "ARIHQ"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "LAPERLE",
+      "prenom": "Roch"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 3,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "ST-PIERRE",
+      "prenom": "Philippe",
+      "occupation": null,
+      "fonction": "Vice-Président"
+    },
+    {
+      "nom": "ÉBACHER",
+      "prenom": "Ghislaine",
+      "occupation": null,
+      "fonction": "Secrétaire trésorière"
+    },
+    {
+      "nom": "ROSE",
+      "prenom": "Daniel",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "NOLET",
+      "prenom": "Guy",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "BOUTIN",
+      "prenom": "Jacques, Denis",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "NÉRON",
+      "prenom": "Kathy",
+      "occupation": null,
+      "fonction": "Administratrice"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7465",
+  "_regionCdRSS": "08",
+  "noForm": "7465",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 93,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 35,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 35,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 35
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 58,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 58
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 93,
+    "repartitionAges": {
+      "de85plus": 3,
+      "totalResidents": 8,
+      "de65a74": 1,
+      "de75a84": 4,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7465",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "08 - CISSS de l'Abitibi-Témiscamingue",
+    "territoireRLS": "RLS de l'Abitibi",
+    "esssNom": "CISSS de l'Abitibi-Témiscamingue",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Résidence Les Sources",
+    "telephone": "819-727-9040",
+    "codePostal": "J9T 0B7",
+    "telecopieur": "819-727-9474",
+    "esssCode": "08",
+    "territoireCLSC": "Abitibi",
+    "dateOuverture": "2019-10-15",
+    "adresse": "692, 4eme Avenue-Ouest",
+    "immeublesAssocies": [],
+    "municipalite": "Amos",
+    "courriels": [
+      "residencelessourcesadm@cablevision.com"
+    ],
+    "nombreTotalUnitesImmeubles": 93
+  },
+  "statut": "Active"
+}

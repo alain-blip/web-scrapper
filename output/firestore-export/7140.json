@@ -1,0 +1,271 @@
+{
+  "_collecteLe": "2026-07-02T20:58:49.986Z",
+  "section2_titulaires": {
+    "actionnaires": [],
+    "personneMorale": {
+      "nomCompagnie": "ESPACE LA TRAVERSÉE",
+      "datePrisePossession": "2014-10-17",
+      "neq": "1173934820",
+      "neqNormalise": "1173934820"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "7140",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés",
+      "FOHM - Fédération des organismes d'habitation de Montréal"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "LEBARBÉ",
+      "prenom": "Adèle"
+    },
+    {
+      "nom": "PARENT",
+      "prenom": "Yves"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": false,
+      "nombreEtagesHorsSousSol": 7,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "OSTIGUY",
+      "prenom": "Jean-Luc",
+      "occupation": null,
+      "fonction": "Retraité Président"
+    },
+    {
+      "nom": "BROSSEAU",
+      "prenom": "Ghislaine",
+      "occupation": null,
+      "fonction": "Retraitée Administrateur"
+    },
+    {
+      "nom": "MEDEIROS",
+      "prenom": "Anne-Marie",
+      "occupation": null,
+      "fonction": "Associée en recrutement de cadre Administrateur"
+    },
+    {
+      "nom": "TREMBLAY",
+      "prenom": "Sylvie",
+      "occupation": null,
+      "fonction": "Gestionnaire Trésorier"
+    },
+    {
+      "nom": "MORISSETTE",
+      "prenom": "Miriam-",
+      "occupation": null,
+      "fonction": "Avocate Vice-présidente"
+    },
+    {
+      "nom": "FORTIN",
+      "prenom": "Daniel",
+      "occupation": null,
+      "fonction": "Conseiller à la direction Administrateur"
+    },
+    {
+      "nom": "TARDIF",
+      "prenom": "Marie-Josée",
+      "occupation": null,
+      "fonction": "Retraitée Administrateur"
+    },
+    {
+      "nom": "BOUCHER",
+      "prenom": "Jocelyn",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 1,
+    "liste": [
+      {
+        "cellules": [
+          "La Maison D'Esther",
+          "1173934820",
+          "747, rue Esther - Blondin",
+          "Montréal",
+          "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+          "H8S 3R6"
+        ]
+      }
+    ],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": false,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "7140",
+  "_regionCdRSS": "63",
+  "noForm": "7140",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 124,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 62,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 62,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 62,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 62,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 62
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 124,
+    "repartitionAges": {
+      "de85plus": 4,
+      "totalResidents": 56,
+      "de65a74": 26,
+      "de75a84": 25,
+      "moins65": 1
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7140",
+  "section1_identification": {
+    "categorieRPA": 1,
+    "esss": "63 - CIUSSS du Centre-Sud-de-l'Île-de-Montréal",
+    "territoireRLS": "RLS des Faubourgs - Plateau-Mont-Royal - St-Louis-du-Parc",
+    "esssNom": "CIUSSS du Centre-Sud-de-l'Île-de-Montréal",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Habitat Fullum",
+    "telephone": "514-524-2310",
+    "codePostal": "H2K 0B5",
+    "telecopieur": "438-858-2059",
+    "esssCode": "63",
+    "territoireCLSC": "Montréal - Centre-Sud",
+    "dateOuverture": "2014-10-01",
+    "adresse": "1431, rue Fullum",
+    "immeublesAssocies": [],
+    "municipalite": "Montréal",
+    "courriels": [
+      "yparent@espacelt.org"
+    ],
+    "nombreTotalUnitesImmeubles": 62
+  },
+  "statut": "Active"
+}

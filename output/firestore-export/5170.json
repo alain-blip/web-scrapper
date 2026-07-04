@@ -1,0 +1,229 @@
+{
+  "_collecteLe": "2026-07-02T21:43:02.542Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Auberge Albatros (2001) inc.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "Gestion Groupe Legault inc.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Manoir Jeffrey inc.",
+      "datePrisePossession": "2022-08-01",
+      "neq": "1177505055",
+      "neqNormalise": "1177505055"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "5170",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BEAULIEU",
+      "prenom": "Nathalie"
+    },
+    {
+      "nom": "MARCOTTE",
+      "prenom": "Nancy"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 3,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 4,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "PROULX",
+      "prenom": "Michel",
+      "occupation": null,
+      "fonction": "Président, Secrétaire"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "5170",
+  "_regionCdRSS": "05",
+  "noForm": "5170",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 199,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 3
+      }
+    },
+    "capaciteRPA": 330,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 199,
+        "chambresDoubles": 54,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 131,
+        "chambresSimples": 14
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 2,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": "7\\7 appel garde 24\\24h 3h min. 7 jours"
+      }
+    ],
+    "capaciteTotaleImmeubles": 330,
+    "repartitionAges": {
+      "de85plus": 83,
+      "totalResidents": 151,
+      "de65a74": 11,
+      "de75a84": 56,
+      "moins65": 1
+    },
+    "employes": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 19
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 11
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=5170",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS des Sources",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Résidence du Manoir Jeffrey",
+    "telephone": "819-879-5422",
+    "codePostal": "J1T 3M7",
+    "telecopieur": "819-879-1145",
+    "esssCode": "05",
+    "territoireCLSC": "Sources",
+    "dateOuverture": "2007-06-01",
+    "adresse": "391, chemin du Golf",
+    "immeublesAssocies": [],
+    "municipalite": "Val-des-Sources",
+    "courriels": [
+      "directionmanoirjeffrey@gmail.com",
+      "rhmanoirjeffrey@gmail.com"
+    ],
+    "nombreTotalUnitesImmeubles": 199
+  },
+  "statut": "Active"
+}

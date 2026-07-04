@@ -1,0 +1,282 @@
+{
+  "_collecteLe": "2026-07-02T07:01:21.618Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Fondation de l'hôpital de Dolbeau",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Fondation de l'hôpital de Dolbeau inc.",
+      "datePrisePossession": "2017-02-28",
+      "neq": "1144281301",
+      "neqNormalise": "1144281301"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "1187",
+  "section8_reconnaissance": {
+    "associations": [],
+    "membreAssociation": false,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BOUDREAULT",
+      "prenom": "Rémi"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": false,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 4,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "GIRARD",
+      "prenom": "Floriant",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "BOIVIN",
+      "prenom": "Jean-Pierre",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "LAVOIE",
+      "prenom": "Réjean",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "BONNEAU",
+      "prenom": "Elodée",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "SERVANT",
+      "prenom": "Gilles",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "DAOUST",
+      "prenom": "Danielle",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "LAROCHE.",
+      "prenom": "Louise",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "GUY",
+      "prenom": "André",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "PRÉVOST",
+      "prenom": "Monica",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "GAGNON",
+      "prenom": "Sylvain",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "AUDET",
+      "prenom": "Marc",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "GAGNON",
+      "prenom": "Doris",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": false,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "1187",
+  "_regionCdRSS": "02",
+  "noForm": "1187",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 54,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 60,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 54,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 54,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 60,
+    "repartitionAges": {
+      "de85plus": 31,
+      "totalResidents": 57,
+      "de65a74": 4,
+      "de75a84": 22,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=1187",
+  "section1_identification": {
+    "categorieRPA": 1,
+    "esss": "02 - CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireRLS": "RLS de Maria-Chapdelaine",
+    "esssNom": "CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Les Jardins du Monastère",
+    "telephone": "418-276-1234",
+    "codePostal": "G8L 5C3",
+    "telecopieur": null,
+    "esssCode": "02",
+    "territoireCLSC": "Maria-Chapdelaine",
+    "dateOuverture": "1990-09-01",
+    "adresse": "205, boulevard des Pères",
+    "immeublesAssocies": [],
+    "municipalite": "Dolbeau-Mistassini",
+    "courriels": [
+      "remi.boudreault@ssss.gouv.qc.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 54
+  },
+  "statut": "Active"
+}

@@ -1,0 +1,273 @@
+{
+  "_collecteLe": "2026-07-02T21:37:41.256Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Cogir RPA, société en commandite",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "Cogir Havre des Cantons GP ULC",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2021-08-11",
+      "neq": "3376726629",
+      "neqNormalise": "3376726629"
+    }
+  },
+  "residencesLiees": [
+    "5939-1",
+    "5939-2"
+  ],
+  "numeroRegistre": "5939-2",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "DESSUREAULT",
+      "prenom": "Jimmy"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 4,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 5,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "DESAUTELS",
+      "prenom": "Bruno",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "FORTIER",
+      "prenom": "Charles-Éric",
+      "occupation": null,
+      "fonction": "Vice-président"
+    },
+    {
+      "nom": "BAZINET",
+      "prenom": "Martine",
+      "occupation": null,
+      "fonction": "Secrétaire"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7772",
+  "_regionCdRSS": "05",
+  "noForm": "7772",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 39,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 4
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 4
+      }
+    },
+    "capaciteRPA": 27,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 27,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 27
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 12,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 12,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 2,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 557,
+    "repartitionAges": {
+      "de85plus": 23,
+      "totalResidents": 26,
+      "de65a74": 0,
+      "de75a84": 3,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 4,
+        "nuit": 3,
+        "jour": 28
+      },
+      "finDeSemaine": {
+        "soir": 4,
+        "nuit": 3,
+        "jour": 13
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7772",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Memphrémagog",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Havre des Cantons",
+    "telephone": "819-868-1010",
+    "codePostal": "J1X 0G7",
+    "telecopieur": "819-868-1094",
+    "esssCode": "05",
+    "territoireCLSC": "Memphrémagog",
+    "dateOuverture": "2009-07-01",
+    "adresse": "231, Dollard",
+    "immeublesAssocies": [
+      {
+        "cellules": [
+          "5939 -immeuble 1",
+          "231, rue Dollard",
+          "Magog",
+          "J1X0G7"
+        ]
+      },
+      {
+        "cellules": [
+          "5939 -immeuble 2",
+          "233, rue Dollard",
+          "Magog",
+          "J1X2M5"
+        ]
+      },
+      {
+        "cellules": [
+          "5939 -immeuble 3",
+          "235, rue Dollard",
+          "Magog",
+          "J1X2M5"
+        ]
+      },
+      {
+        "cellules": [
+          "5939 -immeuble 4",
+          "260, rue Ste-Catherine",
+          "Magog",
+          "J1X2L3"
+        ]
+      }
+    ],
+    "municipalite": "Magog",
+    "courriels": [
+      "jdessureault@cogir.net",
+      "vmaisonneuve@cogir.net"
+    ],
+    "nombreTotalUnitesImmeubles": 324
+  },
+  "statut": "Active"
+}

@@ -1,0 +1,255 @@
+{
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Accueil Notre-Dame inc.",
+        "prenom": null,
+        "mention": "conseil d'administration"
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Accueil Notre-Dame inc.",
+      "datePrisePossession": "1986-02-01",
+      "neq": "1142120568",
+      "neqNormalise": "1142120568"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "4016",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés",
+      "RQOH-Réseau québécois des osbl d’habitation",
+      "FOHM - Fédération des organismes d'habitation de Montréal"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "TOPPING",
+      "prenom": "Annie"
+    },
+    {
+      "nom": "CHAPDELAINE",
+      "prenom": "Luc"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 3,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": false,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "LÉVESQUE",
+      "prenom": "Lorraine",
+      "occupation": null,
+      "fonction": "Retraitée Secrétaire"
+    },
+    {
+      "nom": "CHAPDELAINE",
+      "prenom": "Luc",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "GINGRAS",
+      "prenom": "Jean-Guy",
+      "occupation": null,
+      "fonction": "Retraité Vice-président"
+    },
+    {
+      "nom": "PELLETIER",
+      "prenom": "Charles-Alexandre",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "BISSONNETTE",
+      "prenom": "Michel",
+      "occupation": null,
+      "fonction": "Retraité Administrateur"
+    },
+    {
+      "nom": "PELLETIER",
+      "prenom": "Jacques",
+      "occupation": null,
+      "fonction": "Trésorier"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "4016",
+  "_regionCdRSS": "05",
+  "noForm": "4016",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 81,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      }
+    },
+    "capaciteRPA": 81,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 81,
+        "chambresDoubles": 8,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 73
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 81,
+    "repartitionAges": {
+      "de85plus": 23,
+      "totalResidents": 49,
+      "de65a74": 3,
+      "de75a84": 18,
+      "moins65": 5
+    },
+    "employes": {
+      "semaine": {
+        "soir": 5,
+        "nuit": 2,
+        "jour": 12
+      },
+      "finDeSemaine": {
+        "soir": 5,
+        "nuit": 2,
+        "jour": 5
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=4016",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Memphrémagog",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Accueil Notre-Dame inc.",
+    "telephone": "819-847-1299",
+    "codePostal": "J1X 1X6",
+    "telecopieur": "819-847-2146",
+    "esssCode": "05",
+    "territoireCLSC": "Memphrémagog",
+    "dateOuverture": "1986-01-02",
+    "adresse": "320, rue Cartier",
+    "immeublesAssocies": [],
+    "municipalite": "Magog",
+    "courriels": [
+      "direction@accueilnd.org"
+    ],
+    "nombreTotalUnitesImmeubles": 0
+  },
+  "statut": "Active",
+  "_collecteLe": "2026-07-02T21:36:17.545Z"
+}

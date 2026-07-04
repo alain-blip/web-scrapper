@@ -1,0 +1,257 @@
+{
+  "_collecteLe": "2026-07-02T21:46:35.892Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "FOYER WALES",
+        "prenom": null,
+        "mention": "Conseil d'administration"
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "FOYER WALES",
+      "datePrisePossession": "2000-01-01",
+      "neq": "1146904223",
+      "neqNormalise": "1146904223"
+    }
+  },
+  "residencesLiees": [
+    "5515-1",
+    "5515-2"
+  ],
+  "numeroRegistre": "5515-1",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 6,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 6,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Puits artésien"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "CARSON",
+      "prenom": "Norman",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "BEAUBIEN",
+      "prenom": "Denis",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "TAYLOR",
+      "prenom": "Martin",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "JUBINVILLE",
+      "prenom": "Pauline",
+      "occupation": null,
+      "fonction": "Vice-présidente"
+    },
+    {
+      "nom": "PIIRONEN",
+      "prenom": "Brendalee",
+      "occupation": null,
+      "fonction": "Secrétaire"
+    },
+    {
+      "nom": "BOISVERT",
+      "prenom": "Chantal",
+      "occupation": null,
+      "fonction": "Administratrice"
+    },
+    {
+      "nom": "FOWLIS",
+      "prenom": "Sylvie",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "LEBLOND",
+      "prenom": "Philippe",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "5515",
+  "_regionCdRSS": "05",
+  "noForm": "5515",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 182,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 3
+      }
+    },
+    "capaciteRPA": 113,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 92,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 21,
+        "chambresSimples": 71
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 12,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 12
+      },
+      "autres": {
+        "total": 78,
+        "chambresDoubles": 18,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 60
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 209,
+    "repartitionAges": {
+      "de85plus": 52,
+      "totalResidents": 84,
+      "de65a74": 6,
+      "de75a84": 23,
+      "moins65": 3
+    },
+    "employes": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 43
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 2,
+        "jour": 15
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=5515",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Val Saint-François",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Résidence Wales Home",
+    "telephone": "819-826-3266",
+    "codePostal": "J0B 2H0",
+    "telecopieur": "819-826-3910",
+    "esssCode": "05",
+    "territoireCLSC": "Val Saint-François",
+    "dateOuverture": "1921-03-17",
+    "adresse": "506, Route 243 Nord",
+    "immeublesAssocies": [],
+    "municipalite": "Cleveland",
+    "courriels": [
+      "info@waleshome.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 224
+  },
+  "statut": "Active"
+}

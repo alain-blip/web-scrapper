@@ -1,0 +1,313 @@
+{
+  "_collecteLe": "2026-07-02T21:47:31.725Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "9375-5841 Québec Inc.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "Lokia GN inc.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "Société en commandite Investisseurs Corev Horizon",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2020-09-01",
+      "neq": "3373542508",
+      "neqNormalise": "3373542508"
+    }
+  },
+  "residencesLiees": [
+    "7477-1",
+    "7477-2"
+  ],
+  "numeroRegistre": "7477-2",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BOULET",
+      "prenom": "Danielle"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 3,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 8,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "TREMBLAY",
+      "prenom": "Guy",
+      "occupation": null,
+      "fonction": "Président"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 7,
+    "liste": [
+      {
+        "cellules": [
+          "Lokia Trois-Rivières",
+          "3373536849",
+          "800, avenue des Draveurs",
+          "Trois-Rivières",
+          "04 - CIUSSS de la Mauricie-et-du-Centre-du-Québec",
+          "G9A 0G2"
+        ]
+      },
+      {
+        "cellules": [
+          "Domaine Mahonia",
+          "3374884677",
+          "745, avenue du Père-Pelletier Québec (Québec)",
+          "Québec",
+          "03 - CIUSSS de la Capitale-Nationale",
+          "G1S 0C9"
+        ]
+      },
+      {
+        "cellules": [
+          "Domaine Mahonia",
+          "3374884677",
+          "745, avenue du Père-Pelletier Québec (Québec)",
+          "Québec",
+          "03 - CIUSSS de la Capitale-Nationale",
+          "G1S 0C9"
+        ]
+      },
+      {
+        "cellules": [
+          "Lokia Trois-Rivières",
+          "3373536849",
+          "800, avenue des Draveurs",
+          "Trois-Rivières",
+          "04 - CIUSSS de la Mauricie-et-du-Centre-du-Québec",
+          "G9A 0G2"
+        ]
+      },
+      {
+        "cellules": [
+          "Terrasses Bowen",
+          "3373542508",
+          "633, rue Bowen Sud",
+          "Sherbrooke",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J1G 2E5"
+        ]
+      },
+      {
+        "cellules": [
+          "Domaine Mahonia",
+          "3374884677",
+          "745, avenue du Père-Pelletier Québec (Québec)",
+          "Québec",
+          "03 - CIUSSS de la Capitale-Nationale",
+          "G1S 0C9"
+        ]
+      },
+      {
+        "cellules": [
+          "Villa Opale",
+          "3379326450",
+          "650, 32e AVENUE",
+          "Montréal",
+          "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+          "H8T 3K5"
+        ]
+      },
+      {
+        "cellules": [
+          "Villa Opale",
+          "3379326450",
+          "650, 32e AVENUE",
+          "Montréal",
+          "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+          "H8T 3K5"
+        ]
+      }
+    ],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7889",
+  "_regionCdRSS": "05",
+  "noForm": "7889",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 68,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 11,
+        "nuit": 4,
+        "jour": 15
+      },
+      "finDeSemaine": {
+        "soir": 11,
+        "nuit": 4,
+        "jour": 14
+      }
+    },
+    "capaciteRPA": 68,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 68,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 68,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 3,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 2,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 2,
+          "soir": 2,
+          "nuit": 1
+        },
+        "finDeSemaine": {
+          "jour": 2,
+          "soir": 2,
+          "nuit": 1
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 274,
+    "repartitionAges": {
+      "de85plus": 43,
+      "totalResidents": 57,
+      "de65a74": 2,
+      "de75a84": 12,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 24,
+        "nuit": 5,
+        "jour": 49
+      },
+      "finDeSemaine": {
+        "soir": 25,
+        "nuit": 5,
+        "jour": 29
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7889",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Sherbrooke",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Terrasses Bowen",
+    "telephone": "819-562-6330",
+    "codePostal": "J1G 2E5",
+    "telecopieur": null,
+    "esssCode": "05",
+    "territoireCLSC": "Sherbrooke",
+    "dateOuverture": "2020-09-01",
+    "adresse": "633, rue Bowen Sud",
+    "immeublesAssocies": [],
+    "municipalite": "Sherbrooke",
+    "courriels": [
+      "direction.bow@lokia.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 252
+  },
+  "statut": "Active"
+}

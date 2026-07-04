@@ -1,0 +1,242 @@
+{
+  "_collecteLe": "2026-07-02T07:00:54.041Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Services d'entraide Robervalois",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "La résidence La maison rose",
+      "datePrisePossession": "1995-01-02",
+      "neq": "1142084319",
+      "neqNormalise": "1142084319"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "4458",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQOH-Réseau québécois des osbl d’habitation"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BLACKBURN",
+      "prenom": "Luc"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": false,
+      "nombreEtagesHorsSousSol": 2,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "FLEURY",
+      "prenom": "Serge",
+      "occupation": null,
+      "fonction": "Secrétaire Fabrique Notre-Dame Vice-président"
+    },
+    {
+      "nom": "TURCOTTE",
+      "prenom": "Annie",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "DESBIENS",
+      "prenom": "Marc",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "DALLAIRE",
+      "prenom": "denise",
+      "occupation": null,
+      "fonction": "Administrative"
+    },
+    {
+      "nom": "TREMBLAY",
+      "prenom": "Jean-Guy",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "4458",
+  "_regionCdRSS": "02",
+  "noForm": "4458",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 12,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 24,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 12,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 12,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 24,
+    "repartitionAges": {
+      "de85plus": 2,
+      "totalResidents": 12,
+      "de65a74": 2,
+      "de75a84": 8,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 4
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=4458",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "02 - CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireRLS": "RLS du Domaine-du-Roy",
+    "esssNom": "CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "La maison rose",
+    "telephone": "418-275-5468",
+    "codePostal": "G8H 3M2",
+    "telecopieur": "418-765-0159",
+    "esssCode": "02",
+    "territoireCLSC": "Domaine-du-Roy",
+    "dateOuverture": "1995-01-02",
+    "adresse": "360, rue Brassard",
+    "immeublesAssocies": [],
+    "municipalite": "Roberval",
+    "courriels": [
+      "residencerose2022@gmail.com"
+    ],
+    "nombreTotalUnitesImmeubles": 12
+  },
+  "statut": "Active"
+}

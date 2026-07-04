@@ -1,0 +1,236 @@
+{
+  "_collecteLe": "2026-07-02T21:45:55.947Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "GESTION BINAYAT INC.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "Fiducie Familiale Jakubowski",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "9247-0236 Québec inc.",
+      "datePrisePossession": "2019-04-30",
+      "neq": "1167442673",
+      "neqNormalise": "1167442673"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "6528",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "JAKUBOWSKI",
+      "prenom": "Andrzej"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "JAKUBOWSKI",
+      "prenom": "Andrzej",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "TOUHAMI",
+      "prenom": "Nadia",
+      "occupation": null,
+      "fonction": "Vice-présidente"
+    },
+    {
+      "nom": "KHODER",
+      "prenom": "Bilal",
+      "occupation": null,
+      "fonction": "Président"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "6528",
+  "_regionCdRSS": "05",
+  "noForm": "6528",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 48,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 4
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 3
+      }
+    },
+    "capaciteRPA": 48,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 48,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 12,
+        "chambresSimples": 36
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 48,
+    "repartitionAges": {
+      "de85plus": 25,
+      "totalResidents": 47,
+      "de65a74": 4,
+      "de75a84": 17,
+      "moins65": 1
+    },
+    "employes": {
+      "semaine": {
+        "soir": 5,
+        "nuit": 2,
+        "jour": 10
+      },
+      "finDeSemaine": {
+        "soir": 5,
+        "nuit": 2,
+        "jour": 6
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=6528",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de la Haute-Yamaska",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Résidence St-Antoine",
+    "telephone": "450-378-6374",
+    "codePostal": "J2G 6X7",
+    "telecopieur": "450-378-9174",
+    "esssCode": "05",
+    "territoireCLSC": "Haute-Yamaska",
+    "dateOuverture": "1985-01-01",
+    "adresse": "110, rue Saint-Antoine Sud",
+    "immeublesAssocies": [],
+    "municipalite": "Granby",
+    "courriels": [
+      "residencest-antoine@hotmail.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 48
+  },
+  "statut": "Active"
+}

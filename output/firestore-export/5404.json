@@ -1,0 +1,262 @@
+{
+  "_collecteLe": "2026-07-01T07:00:47.142Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Domaine des Pivoines",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Domaine des Pivoines",
+      "datePrisePossession": "2007-12-01",
+      "neq": "1162102769"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "5404",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQOH-Réseau québécois des osbl d’habitation",
+      "Société Habitation du Québec"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "LYNDA",
+      "prenom": "Lorion"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": false,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 3,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "DESCHÊNES",
+      "prenom": "Marie-Rose",
+      "occupation": null,
+      "fonction": "Retraitée Trésorière"
+    },
+    {
+      "nom": "BÉRUBÉ",
+      "prenom": "Lise Pelletier",
+      "occupation": null,
+      "fonction": "Retraitée Vice-présidente"
+    },
+    {
+      "nom": "BOUFFARD",
+      "prenom": "Rose-Hélène",
+      "occupation": null,
+      "fonction": "Retraitée Présidente"
+    },
+    {
+      "nom": "MOREAU",
+      "prenom": "Odette",
+      "occupation": null,
+      "fonction": "Résidente #303 Administratrice"
+    },
+    {
+      "nom": "LÉVESQUE",
+      "prenom": "Alain",
+      "occupation": null,
+      "fonction": "Résident Administrateur"
+    },
+    {
+      "nom": "DESROSIERS",
+      "prenom": "Gérald",
+      "occupation": null,
+      "fonction": "Trésorier"
+    },
+    {
+      "nom": "DIONNE",
+      "prenom": "Denis",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "LAPOINTE",
+      "prenom": "Yvette",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "5404",
+  "_regionCdRSS": "01",
+  "noForm": "5404",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 20,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 30,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 20,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 20,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 30,
+    "repartitionAges": {
+      "de85plus": 6,
+      "totalResidents": 19,
+      "de65a74": 5,
+      "de75a84": 7,
+      "moins65": 1
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=5404",
+  "section1_identification": {
+    "categorieRPA": 1,
+    "esss": "01 - CISSS du Bas-Saint-Laurent",
+    "territoireRLS": "RLS de Kamouraska",
+    "esssNom": "CISSS du Bas-Saint-Laurent",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Domaine des Pivoines",
+    "telephone": "418-492-6006",
+    "codePostal": "G0L 3J0",
+    "telecopieur": "418-492-2558",
+    "esssCode": "01",
+    "territoireCLSC": "Kamouraska",
+    "dateOuverture": "2007-12-01",
+    "adresse": "6000, rue Adélard-Lapointe",
+    "immeublesAssocies": [],
+    "municipalite": "Sainte-Hélène-de-Kamouraska",
+    "courriels": [
+      "domainedespivoines@videotron.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 20
+  },
+  "statut": "Active"
+}

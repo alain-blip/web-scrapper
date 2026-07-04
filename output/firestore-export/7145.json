@@ -1,0 +1,257 @@
+{
+  "_collecteLe": "2026-07-02T07:01:27.864Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Manoir du Lac",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Les Résidences Communautaires de Lac-Bouchette inc.",
+      "datePrisePossession": "2013-09-25",
+      "neq": "1166986589",
+      "neqNormalise": "1166986589"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "7145",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés",
+      "FROH"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "JULIEN",
+      "prenom": "Nathaly"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 1,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "HUDON",
+      "prenom": "Ghislaine",
+      "occupation": null,
+      "fonction": "Mairesse Secrétaire"
+    },
+    {
+      "nom": "MARTEL",
+      "prenom": "Claude",
+      "occupation": null,
+      "fonction": "Gérant Nutrinor Administrateur"
+    },
+    {
+      "nom": "GAUTHIER",
+      "prenom": "Michel",
+      "occupation": null,
+      "fonction": "Retraité Trésorier"
+    },
+    {
+      "nom": "BOUCHARD",
+      "prenom": "Aliette",
+      "occupation": null,
+      "fonction": "Retraitée Administrateur"
+    },
+    {
+      "nom": "SAVARD",
+      "prenom": "Aurore",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "PARADIS",
+      "prenom": "Gisèle",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "PARADIS",
+      "prenom": "Noëlla",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7145",
+  "_regionCdRSS": "02",
+  "noForm": "7145",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 17,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 19,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 17,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 17,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 19,
+    "repartitionAges": {
+      "de85plus": 10,
+      "totalResidents": 17,
+      "de65a74": 0,
+      "de75a84": 7,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 5
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7145",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "02 - CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireRLS": "RLS du Domaine-du-Roy",
+    "esssNom": "CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Les Résidences du Manoir des Lacs",
+    "telephone": "581-818-0109",
+    "codePostal": "G0W 1V0",
+    "telecopieur": "581-818-1266",
+    "esssCode": "02",
+    "territoireCLSC": "Domaine-du-Roy",
+    "dateOuverture": "2014-12-01",
+    "adresse": "99, route de l'Ermitage",
+    "immeublesAssocies": [],
+    "municipalite": "Lac-Bouchette",
+    "courriels": [
+      "manoirdeslacs@hotmail.com"
+    ],
+    "nombreTotalUnitesImmeubles": 17
+  },
+  "statut": "Active"
+}

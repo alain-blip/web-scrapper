@@ -1,0 +1,260 @@
+{
+  "_collecteLe": "2026-07-01T07:00:35.209Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Office d’habitation de Kamouraska-l’Islet",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2006-01-10",
+      "neq": "8880932312"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "5470",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQOH-Réseau québécois des osbl d’habitation"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BERNIER",
+      "prenom": "Hélène"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 4,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "GAUDETTE",
+      "prenom": "André",
+      "occupation": null,
+      "fonction": "Retraité Président"
+    },
+    {
+      "nom": "PELLETIER",
+      "prenom": "Alphée",
+      "occupation": null,
+      "fonction": "Retraité Administrateur"
+    },
+    {
+      "nom": "CARRIER",
+      "prenom": "Claude",
+      "occupation": null,
+      "fonction": "Informaticien Administrateur"
+    },
+    {
+      "nom": "LIZOTTE",
+      "prenom": "Mario",
+      "occupation": null,
+      "fonction": "Retraité Administrateur"
+    },
+    {
+      "nom": "DIONNE",
+      "prenom": "François",
+      "occupation": null,
+      "fonction": "Retraité Administrateur"
+    },
+    {
+      "nom": "PELLETIER",
+      "prenom": "Natasha",
+      "occupation": null,
+      "fonction": "Vice-présidente"
+    },
+    {
+      "nom": "DORION",
+      "prenom": "Sylvain",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "DUFOUR",
+      "prenom": "Guillaume",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 1,
+    "liste": [],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "5470",
+  "_regionCdRSS": "01",
+  "noForm": "5470",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 33,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 60,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 33,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 33,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 60,
+    "repartitionAges": {
+      "de85plus": 15,
+      "totalResidents": 32,
+      "de65a74": 6,
+      "de75a84": 10,
+      "moins65": 1
+    },
+    "employes": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 4
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 2
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=5470",
+  "section1_identification": {
+    "categorieRPA": 1,
+    "esss": "01 - CISSS du Bas-Saint-Laurent",
+    "territoireRLS": "RLS de Kamouraska",
+    "esssNom": "CISSS du Bas-Saint-Laurent",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Domaine Angélique",
+    "telephone": "418-856-9879",
+    "codePostal": "G0R 1Z0",
+    "telecopieur": "418-856-1937",
+    "esssCode": "01",
+    "territoireCLSC": "Kamouraska",
+    "dateOuverture": "2006-01-10",
+    "adresse": "402, 1ère rue Poiré",
+    "immeublesAssocies": [],
+    "municipalite": "La Pocatière",
+    "courriels": [
+      "helene.bernier@ohkam-lislet.com"
+    ],
+    "nombreTotalUnitesImmeubles": 33
+  },
+  "statut": "Active"
+}

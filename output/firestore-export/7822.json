@@ -1,0 +1,249 @@
+{
+  "_collecteLe": "2026-07-02T07:02:14.991Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "BOIVIN",
+        "prenom": "Paul",
+        "mention": null
+      },
+      {
+        "nom": "BOIVIN",
+        "prenom": "Simon",
+        "mention": null
+      },
+      {
+        "nom": "BOIVIN",
+        "prenom": "Sarah",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Manoir Tadoussac Inc.",
+      "datePrisePossession": "2014-07-01",
+      "neq": "1165839698",
+      "neqNormalise": "1165839698"
+    }
+  },
+  "residencesLiees": [
+    "7124-1",
+    "7124-2"
+  ],
+  "numeroRegistre": "7124-2",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "FORTIN",
+      "prenom": "Vicky"
+    },
+    {
+      "nom": "GIRARD",
+      "prenom": "Nadia"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 3,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 5,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "BOIVIN",
+      "prenom": "Paul",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "BOIVIN",
+      "prenom": "Simon",
+      "occupation": null,
+      "fonction": "Vice-président"
+    },
+    {
+      "nom": "BOIVIN",
+      "prenom": "Sarah",
+      "occupation": null,
+      "fonction": "Secrétaire"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7822",
+  "_regionCdRSS": "02",
+  "noForm": "7822",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 16,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 3
+      }
+    },
+    "capaciteRPA": 16,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 16,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 16
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 3,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 268,
+    "repartitionAges": {
+      "de85plus": 12,
+      "totalResidents": 16,
+      "de65a74": 0,
+      "de75a84": 4,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 6,
+        "nuit": 2,
+        "jour": 14
+      },
+      "finDeSemaine": {
+        "soir": 6,
+        "nuit": 3,
+        "jour": 8
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7822",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "02 - CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireRLS": "RLS de Chicoutimi",
+    "esssNom": "CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Manoir Tadoussac Inc.",
+    "telephone": "418-549-6333",
+    "codePostal": "G7G 0H5",
+    "telecopieur": "418-615-0965",
+    "esssCode": "02",
+    "territoireCLSC": "Saguenay",
+    "dateOuverture": "2014-07-01",
+    "adresse": "1865, boul. Tadoussac",
+    "immeublesAssocies": [],
+    "municipalite": "Saguenay",
+    "courriels": [
+      "info@manoirtadoussac.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 168
+  },
+  "statut": "Active"
+}

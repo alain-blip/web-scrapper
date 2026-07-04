@@ -1,0 +1,252 @@
+{
+  "_collecteLe": "2026-07-02T00:00:25.947Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Hébergement la Maisonnée",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Hébergement La Maisonnée",
+      "datePrisePossession": "1999-01-01",
+      "neq": "1161525028",
+      "neqNormalise": "1161525028"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "1377",
+  "section8_reconnaissance": {
+    "associations": [],
+    "membreAssociation": false,
+    "permisMAPAQ": false,
+    "permisRBQ": false
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "PETIT",
+      "prenom": "Gaétan"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "Non",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "PERREAULT",
+      "prenom": "Réjean",
+      "occupation": null,
+      "fonction": "retraité président"
+    },
+    {
+      "nom": "LAMOUREUX",
+      "prenom": "Claude",
+      "occupation": null,
+      "fonction": "retraité vice-président"
+    },
+    {
+      "nom": "BÉDARD",
+      "prenom": "Georgette",
+      "occupation": null,
+      "fonction": "retraitée administratrice"
+    },
+    {
+      "nom": "MAILLOUX",
+      "prenom": "Jean-Guy",
+      "occupation": null,
+      "fonction": "retraité administrateur"
+    },
+    {
+      "nom": "BÉLANGER",
+      "prenom": "Julie",
+      "occupation": null,
+      "fonction": "administrateur"
+    },
+    {
+      "nom": "TRUDEL",
+      "prenom": "Céline",
+      "occupation": null,
+      "fonction": "administrateur"
+    },
+    {
+      "nom": "GAGNON",
+      "prenom": "Claudine",
+      "occupation": null,
+      "fonction": "administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "1377",
+  "_regionCdRSS": "08",
+  "noForm": "1377",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 9,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 9,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 9,
+        "chambresDoubles": 1,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 8
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 9,
+    "repartitionAges": {
+      "de85plus": 0,
+      "totalResidents": 6,
+      "de65a74": 2,
+      "de75a84": 3,
+      "moins65": 1
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=1377",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "08 - CISSS de l'Abitibi-Témiscamingue",
+    "territoireRLS": "RLS de l'Abitibi-Ouest",
+    "esssNom": "CISSS de l'Abitibi-Témiscamingue",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Hébergement La Maisonnée",
+    "telephone": "819-788-3737",
+    "codePostal": "J0Z 3A0",
+    "telecopieur": null,
+    "esssCode": "08",
+    "territoireCLSC": "Abitibi-Ouest",
+    "dateOuverture": "1999-01-01",
+    "adresse": "37, 7e Avenue",
+    "immeublesAssocies": [],
+    "municipalite": "Normétal",
+    "courriels": [
+      "hebergementlamaisonnee@outlook.com"
+    ],
+    "nombreTotalUnitesImmeubles": 9
+  },
+  "statut": "Active"
+}

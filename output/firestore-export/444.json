@@ -1,0 +1,309 @@
+{
+  "_collecteLe": "2026-07-02T21:46:27.412Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "GESTION BINAYAT INC.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "9413-3717 QUÉBEC INC.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Résidence Terrasses Belle-Vue inc.",
+      "datePrisePossession": "2026-05-01",
+      "neq": "1181807935",
+      "neqNormalise": "1181807935"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "444",
+  "section8_reconnaissance": {
+    "associations": [],
+    "membreAssociation": false,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BEAUCHEMIN",
+      "prenom": "Lyne"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 3,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "KHODER",
+      "prenom": "Bilal",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "POULIOT",
+      "prenom": "Éric",
+      "occupation": null,
+      "fonction": "Vice-président et trésorier"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 7,
+    "liste": [
+      {
+        "cellules": [
+          "Manoir Compton inc.",
+          "1180496185",
+          "4, chemin de la Station",
+          "Compton",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J0B 1L0"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Boiscastel",
+          "1180804545",
+          "399, rue Court",
+          "Coaticook",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J1A 1L7"
+        ]
+      },
+      {
+        "cellules": [
+          "Manoir St-Francis",
+          "1180086705",
+          "125, rue Queen",
+          "Sherbrooke",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J1M 1J7"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence 6900 Papineau",
+          "1179517769",
+          "6900, avenue Papineau",
+          "Montréal",
+          "64 - CIUSSS du Nord-de-l'Île-de-Montréal",
+          "H2G 2X7"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence évolutive Granby",
+          "1179557237",
+          "150, rue Saint-Charles Sud",
+          "Granby",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J2G 7A4"
+        ]
+      },
+      {
+        "cellules": [
+          "Manoir Magog",
+          "1180086705",
+          "975, rue St-Luc",
+          "Magog",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J1X 0C9"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Les Jardins de Montarville Inc.",
+          "1179376778",
+          "155, rue de Muy",
+          "Boucherville",
+          "72 - CISSS de la Montérégie-Est",
+          "J4B 4W7"
+        ]
+      },
+      {
+        "cellules": [
+          "Manoir St-Francis",
+          "1180086705",
+          "125, rue Queen",
+          "Sherbrooke",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J1M 1J7"
+        ]
+      }
+    ],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "444",
+  "_regionCdRSS": "05",
+  "noForm": "444",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 104,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 128,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 104,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 31,
+        "chambresSimples": 73
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 128,
+    "repartitionAges": {
+      "de85plus": 18,
+      "totalResidents": 97,
+      "de65a74": 27,
+      "de75a84": 35,
+      "moins65": 17
+    },
+    "employes": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 17
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 5
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=444",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Sherbrooke",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Résidence Terrasses Belle-Vue inc.",
+    "telephone": "819-822-3083",
+    "codePostal": "J1H 2A7",
+    "telecopieur": "819-822-3454",
+    "esssCode": "05",
+    "territoireCLSC": "Sherbrooke",
+    "dateOuverture": "1987-05-15",
+    "adresse": "1330, rue Galt Ouest",
+    "immeublesAssocies": [],
+    "municipalite": "Sherbrooke",
+    "courriels": [
+      "Direction@lesterrassesbellevue.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 104
+  },
+  "statut": "Active"
+}

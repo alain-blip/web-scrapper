@@ -1,0 +1,468 @@
+{
+  "_collecteLe": "2026-07-02T21:40:16.397Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Groupe immobilier Eddy Savoie inc.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "2967880 Canada inc.",
+      "datePrisePossession": "1994-01-01",
+      "neq": "1142488957",
+      "neqNormalise": "1142488957"
+    }
+  },
+  "residencesLiees": [
+    "4589-1",
+    "4589-2"
+  ],
+  "numeroRegistre": "4589-2",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés",
+      "Association des propriétaires du Québec (APQ)"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "CARRIER",
+      "prenom": "Francis"
+    },
+    {
+      "nom": "LEBLANC",
+      "prenom": "Monique"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 6,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 4,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "SAVOIE OUELLET",
+      "prenom": "Carmelle",
+      "occupation": null,
+      "fonction": "Femme d'affaires administrateur"
+    },
+    {
+      "nom": "SAVOIE",
+      "prenom": "Eddy",
+      "occupation": null,
+      "fonction": "Homme d'affaires Président"
+    },
+    {
+      "nom": "SAVOIE",
+      "prenom": "Nataly",
+      "occupation": null,
+      "fonction": "Femme d'affaires Secrétaire"
+    },
+    {
+      "nom": "SAVOIE",
+      "prenom": "Eddy Junior",
+      "occupation": null,
+      "fonction": "Homme d'affaires Trésorier"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 14,
+    "liste": [
+      {
+        "cellules": [
+          "Les Résidences Soleil - Manoir Mont St-Hilaire",
+          "1163426506",
+          "550, boulevard Sir-Wilfrid-Laurier",
+          "Mont-Saint-Hilaire",
+          "72 - CISSS de la Montérégie-Est",
+          "J3H 5J7"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil - Manoir Boucherville",
+          "1147378377",
+          "549, rue De Verrazano",
+          "Boucherville",
+          "72 - CISSS de la Montérégie-Est",
+          "J4B 7W2"
+        ]
+      },
+      {
+        "cellules": [
+          "LES RÉSIDENCES SOLEIL MANOIR SOREL",
+          "1163426456",
+          "71, rue George",
+          "Sorel-Tracy",
+          "72 - CISSS de la Montérégie-Est",
+          "J3P 7Y3"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil Manoir Granby",
+          "1143365824",
+          "235, rue Denison Est",
+          "Granby",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J2H 2R5"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil Manoir Saint-Laurent",
+          "1147379664",
+          "115, boulevard Deguire",
+          "Montréal",
+          "64 - CIUSSS du Nord-de-l'Île-de-Montréal",
+          "H4N 1N7"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil Manoir Dollard-des-Ormeaux",
+          "1163426837",
+          "53, rue Hasting",
+          "Dollard-des-Ormeaux",
+          "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+          "H9G 3C4"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil Manoir St-Léonard",
+          "1163426860",
+          "7650, rue Lespinay",
+          "Montréal",
+          "65 - CIUSSS de l'Est-de-l'Île-de-Montréal",
+          "H1S 2Y6"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil Manoir du Musée",
+          "1163426738",
+          "245, rue Frontenac",
+          "Sherbrooke",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J1H 1K1"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil Pointe-aux-Trembles",
+          "1163426902",
+          "13900, rue Notre-Dame Est",
+          "Montréal",
+          "65 - CIUSSS de l'Est-de-l'Île-de-Montréal",
+          "H1A 1T5"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil Manoir Laval",
+          "1164744048",
+          "1455, boulevard de L'Avenir",
+          "Laval",
+          "13 - CISSS de Laval",
+          "H7N 0A1"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil - Manoir Sainte-Julie",
+          "1165216145",
+          "1975, chemin du Fer-à-Cheval",
+          "Sainte-Julie",
+          "72 - CISSS de la Montérégie-Est",
+          "J3E 0B7"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil Manoir Brossard",
+          "1169034718",
+          "8080-200, boulevard du Saint-Laurent",
+          "Brossard",
+          "71 - CISSS de la Montérégie-Centre",
+          "J4X 0A6"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil Manoir Plaza",
+          "1168182260",
+          "505, rue Sherbrooke Est",
+          "Montréal",
+          "63 - CIUSSS du Centre-Sud-de-l'Île-de-Montréal",
+          "H2L 4N3"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil Manoir Boucherville",
+          "1147378377",
+          "549, rue De Verrazano",
+          "Boucherville",
+          "16 - Montérégie",
+          "J4B 7W2"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil Manoir Granby",
+          "1143365824",
+          "235, rue Denison Est",
+          "Granby",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J2H 2R5"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil Manoir Saint-Laurent",
+          "1147379664",
+          "115, boulevard Deguire",
+          "Montréal",
+          "64 - CIUSSS du Nord-de-l'Île-de-Montréal",
+          "H4N 1N7"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil Manoir Sherbrooke",
+          "1142488957",
+          "1150, rue des Quatre-Saisons",
+          "Sherbrooke",
+          "05 - CIUSSS de l'Estrie  CHUS",
+          "J1E 3X3"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil Manoir Laval",
+          "1164744048",
+          "1455, boulevard de L'Avenir",
+          "Laval",
+          "13 - CISSS de Laval",
+          "H7N 0A1"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil - Manoir Sainte-Julie",
+          "1165216145",
+          "1975, chemin du Fer-à-Cheval",
+          "Sainte-Julie",
+          "72 - CISSS de la Montérégie-Est",
+          "J3E 0B7"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil Manoir Brossard",
+          "1169034718",
+          "8080-200, boulevard du Saint-Laurent",
+          "Brossard",
+          "71 - CISSS de la Montérégie-Centre",
+          "J4X 0A6"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil Manoir Plaza",
+          "1168182260",
+          "505, rue Sherbrooke Est",
+          "Montréal",
+          "63 - CIUSSS du Centre-Sud-de-l'Île-de-Montréal",
+          "H2L 4N3"
+        ]
+      },
+      {
+        "cellules": [
+          "Les Résidences Soleil Manoir Repentigny",
+          "1178573698",
+          "230, rue Notre-Dame",
+          "Repentigny",
+          "14 - CISSS de Lanaudière",
+          "J6A 2R5"
+        ]
+      }
+    ],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7703",
+  "_regionCdRSS": "05",
+  "noForm": "7703",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 33,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 5
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 3,
+        "jour": 5
+      }
+    },
+    "capaciteRPA": 33,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 33,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 33,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 5,
+          "soir": 3,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 5,
+          "soir": 3,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 640,
+    "repartitionAges": {
+      "de85plus": 17,
+      "totalResidents": 33,
+      "de65a74": 2,
+      "de75a84": 14,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 10,
+        "nuit": 5,
+        "jour": 40
+      },
+      "finDeSemaine": {
+        "soir": 10,
+        "nuit": 5,
+        "jour": 30
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7703",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Sherbrooke",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Les Résidences Soleil Manoir Sherbrooke",
+    "telephone": "819-822-1038",
+    "codePostal": "J1E 3X3",
+    "telecopieur": "819-822-1681",
+    "esssCode": "05",
+    "territoireCLSC": "Sherbrooke",
+    "dateOuverture": "1994-01-01",
+    "adresse": "1150, rue des Quatre-Saisons",
+    "immeublesAssocies": [],
+    "municipalite": "Sherbrooke",
+    "courriels": [
+      "info@residencessoleil.ca",
+      "mleblanc@residencessoleil.ca",
+      "fcarrier@residencessoleil.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 444
+  },
+  "statut": "Active"
+}

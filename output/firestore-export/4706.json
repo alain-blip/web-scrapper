@@ -1,0 +1,295 @@
+{
+  "_collecteLe": "2026-07-02T21:46:04.327Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Gestion C. Munger inc.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "Les placements Martin Simard inc.",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "Construction Brik inc.",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "9148-3016 QUÉBEC INC.",
+      "datePrisePossession": "2005-07-01",
+      "neq": "1162581103",
+      "neqNormalise": "1162581103"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "4706",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BOURQUE",
+      "prenom": "Marie-Claude"
+    },
+    {
+      "nom": "DALLAIRE",
+      "prenom": "Michel"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 2,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 4,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "SIMARD",
+      "prenom": "Martin",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "DALLAIRE",
+      "prenom": "Michel",
+      "occupation": null,
+      "fonction": "DG Administrateur"
+    },
+    {
+      "nom": "MUNGER",
+      "prenom": "Christian",
+      "occupation": null,
+      "fonction": "Vice-président"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 5,
+    "liste": [
+      {
+        "cellules": [
+          "Domaine du Marquis",
+          "3342610295",
+          "2557, rue Saint-Dominique",
+          "Saguenay",
+          "02 - CIUSSS du Saguenay  Lac-Saint-Jean",
+          "G7X 0C7"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Saint-Raphaël",
+          "3347479167",
+          "2323, Saint-Jean Baptiste",
+          "Saguenay",
+          "02 - CIUSSS du Saguenay  Lac-Saint-Jean",
+          "G8A 1W6"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence Saint-Philippe",
+          "1149233398",
+          "2165, rue Saint-Régis",
+          "Saguenay",
+          "02 - CIUSSS du Saguenay  Lac-Saint-Jean",
+          "G7S 2W4"
+        ]
+      },
+      {
+        "cellules": [
+          "Domaine du Cap",
+          "3345569316",
+          "885, rue Victoria",
+          "Saguenay",
+          "02 - CIUSSS du Saguenay  Lac-Saint-Jean",
+          "G7B 3M9"
+        ]
+      },
+      {
+        "cellules": [
+          "Résidence St-Sacrement-Alma",
+          "1163507677",
+          "690, rue de la Gare Ouest",
+          "Alma",
+          "02 - CIUSSS du Saguenay  Lac-Saint-Jean",
+          "G8B 7W2"
+        ]
+      }
+    ],
+    "proprietaireAutresRPA": true
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "4706",
+  "_regionCdRSS": "05",
+  "noForm": "4706",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 71,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    },
+    "capaciteRPA": 117,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 71,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 71,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 117,
+    "repartitionAges": {
+      "de85plus": 42,
+      "totalResidents": 68,
+      "de65a74": 2,
+      "de75a84": 24,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 5
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 3
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=4706",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "05 - CIUSSS de l'Estrie  CHUS",
+    "territoireRLS": "RLS de Sherbrooke",
+    "esssNom": "CIUSSS de l'Estrie  CHUS",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Résidence Ste-Jeanne D'Arc",
+    "telephone": "819-566-0505",
+    "codePostal": "J1H 2A7",
+    "telecopieur": "819-566-9481",
+    "esssCode": "05",
+    "territoireCLSC": "Sherbrooke",
+    "dateOuverture": "2005-07-01",
+    "adresse": "1270, rue Galt Ouest",
+    "immeublesAssocies": [],
+    "municipalite": "Sherbrooke",
+    "courriels": [
+      "stejeannedarc@residencesbeauquartier.com",
+      "info@residencesbeauquartier.com"
+    ],
+    "nombreTotalUnitesImmeubles": 71
+  },
+  "statut": "Active"
+}

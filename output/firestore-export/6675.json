@@ -1,0 +1,242 @@
+{
+  "_collecteLe": "2026-07-01T07:02:04.319Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Maison Octavie",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "La Maison Octavie",
+      "datePrisePossession": "2013-01-28",
+      "neq": "1165002214"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "6675",
+  "section8_reconnaissance": {
+    "associations": [
+      "Fédération des OSBL du Bas-Saint-Laurent, de la Gaspésie et des Iles."
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "MICHAUD",
+      "prenom": "Nathalie"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 1,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 2,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "PELLETIER",
+      "prenom": "Lorraine",
+      "occupation": null,
+      "fonction": "Retraitée Présidente"
+    },
+    {
+      "nom": "DUBÉ",
+      "prenom": "Sabrina",
+      "occupation": null,
+      "fonction": "Garderie La petite Enfance Administratrice"
+    },
+    {
+      "nom": "RICHARD DUBÉ",
+      "prenom": "Maxime",
+      "occupation": null,
+      "fonction": "Réseau Biblio Vice-président"
+    },
+    {
+      "nom": "DUFOUR",
+      "prenom": "Francine",
+      "occupation": null,
+      "fonction": "Retraitée Secrétaire -trésorière"
+    },
+    {
+      "nom": "BOUCHER",
+      "prenom": "Marie-Pier",
+      "occupation": null,
+      "fonction": "Secrétaire"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "6675",
+  "_regionCdRSS": "01",
+  "noForm": "6675",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 18,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 36,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 18,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 18,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 36,
+    "repartitionAges": {
+      "de85plus": 7,
+      "totalResidents": 15,
+      "de65a74": 1,
+      "de75a84": 5,
+      "moins65": 2
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 3
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 1
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=6675",
+  "section1_identification": {
+    "categorieRPA": 1,
+    "esss": "01 - CISSS du Bas-Saint-Laurent",
+    "territoireRLS": "RLS de La Mitis",
+    "esssNom": "CISSS du Bas-Saint-Laurent",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "La Maison Octavie",
+    "telephone": "418-775-0115",
+    "codePostal": "G0J 3B0",
+    "telecopieur": null,
+    "esssCode": "01",
+    "territoireCLSC": "La Mitis",
+    "dateOuverture": "2013-02-01",
+    "adresse": "300-201, rue des Quatre-Vents",
+    "immeublesAssocies": [],
+    "municipalite": "Saint-Octave-de-Métis",
+    "courriels": [
+      "maisonoctavie1@gmail.com"
+    ],
+    "nombreTotalUnitesImmeubles": 18
+  },
+  "statut": "Active"
+}

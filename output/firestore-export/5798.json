@@ -1,0 +1,253 @@
+{
+  "_collecteLe": "2026-07-01T07:02:45.628Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "Le Domaine des Trois-Pistoles",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Le Domaine des Trois-Pistoles (organisation)",
+      "datePrisePossession": "2008-01-10",
+      "neq": "1162562533"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "5798",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQOH-Réseau québécois des osbl d’habitation",
+      "FOHBGI- Fédération des OSBL d'habitation du Bas-St-Laurent/Gaspésie/Iles de la Madeleine"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "RIOUX",
+      "prenom": "Harold"
+    },
+    {
+      "nom": "SÉNÉCHAL",
+      "prenom": "Denise"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 3,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": null,
+      "porteExterieure": null,
+      "nombreEtagesHorsSousSol": 3,
+      "present": false
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "ALLARD",
+      "prenom": "François",
+      "occupation": null,
+      "fonction": "Retraité Secrétaire"
+    },
+    {
+      "nom": "HUDON",
+      "prenom": "Dany",
+      "occupation": null,
+      "fonction": "Retraité Président"
+    },
+    {
+      "nom": "THIBAULT",
+      "prenom": "Henri",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "LANDRY",
+      "prenom": "Jean-Luc",
+      "occupation": null,
+      "fonction": "Vice-président"
+    },
+    {
+      "nom": "DENIS",
+      "prenom": "Carmelle",
+      "occupation": null,
+      "fonction": "Administratrice"
+    },
+    {
+      "nom": "RIOUX",
+      "prenom": "Yvanho",
+      "occupation": null,
+      "fonction": "Administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "5798",
+  "_regionCdRSS": "01",
+  "noForm": "5798",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 51,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 72,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 51,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 51,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 72,
+    "repartitionAges": {
+      "de85plus": 0,
+      "totalResidents": 0,
+      "de65a74": 0,
+      "de75a84": 0,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 7
+      },
+      "finDeSemaine": {
+        "soir": 1,
+        "nuit": 1,
+        "jour": 4
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=5798",
+  "section1_identification": {
+    "categorieRPA": 1,
+    "esss": "01 - CISSS du Bas-Saint-Laurent",
+    "territoireRLS": "RLS des Basques",
+    "esssNom": "CISSS du Bas-Saint-Laurent",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Organisme à but non lucratif (OBNL ou OSBL)",
+    "nomResidence": "Le Domaine des Trois-Pistoles",
+    "telephone": "418-851-1117",
+    "codePostal": "G0L 4K0",
+    "telecopieur": "000-000-0000",
+    "esssCode": "01",
+    "territoireCLSC": "Les Basques",
+    "dateOuverture": "2008-10-01",
+    "adresse": "135, rue de la Seigneurie",
+    "immeublesAssocies": [],
+    "municipalite": "Trois-Pistoles",
+    "courriels": [
+      "domaine3p@gmail.com"
+    ],
+    "nombreTotalUnitesImmeubles": 51
+  },
+  "statut": "Active"
+}

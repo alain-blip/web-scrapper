@@ -1,0 +1,239 @@
+{
+  "_collecteLe": "2026-07-02T16:45:11.349Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "FONDS IMMOBILIER GROUPE MAURICE, S.E.C",
+        "prenom": null,
+        "mention": "commanditaire"
+      },
+      {
+        "nom": "Gestion Groupe Maurice Inc. NEQ: 1171334072",
+        "prenom": null,
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2013-10-01",
+      "neq": "3368181379",
+      "neqNormalise": "3368181379"
+    }
+  },
+  "residencesLiees": [
+    "7095-1",
+    "7095-2"
+  ],
+  "numeroRegistre": "7095-2",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BEAULIEU",
+      "prenom": "Joëlle"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 5,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 8,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "MAURICE",
+      "prenom": "Luc",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "NANTAIS",
+      "prenom": "Isabelle",
+      "occupation": null,
+      "fonction": "Vice-présidente et secrétaire"
+    },
+    {
+      "nom": "TARDIF",
+      "prenom": "Julie",
+      "occupation": null,
+      "fonction": "Trésorier"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": true,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7820",
+  "_regionCdRSS": "61",
+  "noForm": "7820",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 76,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      }
+    },
+    "capaciteRPA": 17,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 17,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 17
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 59,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 59,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": "Fin de semaine (jour) : 1 fds sur 5"
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 2,
+          "soir": 2,
+          "nuit": 1
+        },
+        "finDeSemaine": {
+          "jour": 2,
+          "soir": 2,
+          "nuit": 1
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 440,
+    "repartitionAges": {
+      "de85plus": 14,
+      "totalResidents": 17,
+      "de65a74": 1,
+      "de75a84": 2,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 11,
+        "nuit": 3,
+        "jour": 24
+      },
+      "finDeSemaine": {
+        "soir": 10,
+        "nuit": 3,
+        "jour": 12
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7820",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireRLS": "RLS de Dorval - Lachine - Lasalle",
+    "esssNom": "CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Le Savignon",
+    "telephone": "514-634-4646",
+    "codePostal": "H8S 0B1",
+    "telecopieur": "514-634-4242",
+    "esssCode": "61",
+    "territoireCLSC": "Lachine",
+    "dateOuverture": "2013-10-01",
+    "adresse": "3111, rue Victoria",
+    "immeublesAssocies": [],
+    "municipalite": "Montréal",
+    "courriels": [
+      "dg@lesavignon.com"
+    ],
+    "nombreTotalUnitesImmeubles": 440
+  },
+  "statut": "Active"
+}

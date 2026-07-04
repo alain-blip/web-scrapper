@@ -1,0 +1,240 @@
+{
+  "_collecteLe": "2026-07-02T16:44:53.953Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "DevLasalle, société en commandite",
+        "prenom": null,
+        "mention": null
+      },
+      {
+        "nom": "9415-8334 Québec inc.",
+        "prenom": null,
+        "mention": "commandité"
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": null,
+      "datePrisePossession": "2022-12-22",
+      "neq": "3375336891",
+      "neqNormalise": "3375336891"
+    }
+  },
+  "residencesLiees": [
+    "7583-1",
+    "7583-2"
+  ],
+  "numeroRegistre": "7583-2",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "CHAVEZ",
+      "prenom": "Laurence"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": true,
+      "lieuxCommuns": true,
+      "chambresLogements": true,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 4,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 17,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "MORIN",
+      "prenom": "Vincent",
+      "occupation": null,
+      "fonction": "Homme d'affaires - Gestionnaire placements administrateur"
+    },
+    {
+      "nom": "ROY",
+      "prenom": "Tony",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "BERNIER",
+      "prenom": "Antoine",
+      "occupation": null,
+      "fonction": "vice président, administrateur"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "8009",
+  "_regionCdRSS": "61",
+  "noForm": "8009",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 26,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 4
+      },
+      "finDeSemaine": {
+        "soir": 3,
+        "nuit": 2,
+        "jour": 4
+      }
+    },
+    "capaciteRPA": 26,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 26,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 26
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 650,
+    "repartitionAges": {
+      "de85plus": 21,
+      "totalResidents": 24,
+      "de65a74": 1,
+      "de75a84": 2,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 10,
+        "nuit": 3,
+        "jour": 26
+      },
+      "finDeSemaine": {
+        "soir": 8,
+        "nuit": 3,
+        "jour": 11
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=8009",
+  "section1_identification": {
+    "categorieRPA": 4,
+    "esss": "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireRLS": "RLS de Dorval - Lachine - Lasalle",
+    "esssNom": "CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Jazz Newman",
+    "telephone": "514-744-9191",
+    "codePostal": "H8N 0H8",
+    "telecopieur": null,
+    "esssCode": "61",
+    "territoireCLSC": "Lasalle",
+    "dateOuverture": "2022-10-01",
+    "adresse": "7315, boul. Newman",
+    "immeublesAssocies": [],
+    "municipalite": "Montréal",
+    "courriels": [
+      "lchavez@cogir.net"
+    ],
+    "nombreTotalUnitesImmeubles": 27
+  },
+  "statut": "Active"
+}

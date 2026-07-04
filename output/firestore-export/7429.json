@@ -1,0 +1,227 @@
+{
+  "_collecteLe": "2026-07-02T16:45:50.363Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "PRATT",
+        "prenom": "Jannett",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Manoir D'Amour Inc.",
+      "datePrisePossession": "2018-12-12",
+      "neq": "1172093354",
+      "neqNormalise": "1172093354"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "7429",
+  "section8_reconnaissance": {
+    "associations": [],
+    "membreAssociation": false,
+    "permisMAPAQ": false,
+    "permisRBQ": false
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "PRATT",
+      "prenom": "Jannett"
+    },
+    {
+      "nom": "Brown Feron Lee",
+      "prenom": null
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "Non",
+    "typeConstruction": "Une combinaison des deux type de charpente (a et b) due à un agrandissement",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 0,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": false,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 2,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "PRATT",
+      "prenom": "Jannett",
+      "occupation": null,
+      "fonction": "President"
+    },
+    {
+      "nom": "Feron Lee Brown",
+      "prenom": "ingineer",
+      "occupation": null,
+      "fonction": "ingineer secretary Treasurer"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide combiné fixe et mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "7429",
+  "_regionCdRSS": "61",
+  "noForm": "7429",
+  "section6_portraits": {
+    "entente108": true,
+    "totalUnitesLocatives": 8,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      }
+    },
+    "capaciteRPA": 9,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 8,
+        "chambresDoubles": 1,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 0,
+        "chambresSimples": 7
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 1
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 1,
+          "nuit": 1
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 8,
+    "repartitionAges": {
+      "de85plus": 6,
+      "totalResidents": 6,
+      "de65a74": 0,
+      "de75a84": 0,
+      "moins65": 0
+    },
+    "employes": {
+      "semaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      },
+      "finDeSemaine": {
+        "soir": 2,
+        "nuit": 1,
+        "jour": 2
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=7429",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "61 - CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireRLS": "RLS de Dorval - Lachine - Lasalle",
+    "esssNom": "CIUSSS de l'Ouest-de-l'Île-de-Montréal",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Manoir D'Amour",
+    "telephone": "438-722-9846",
+    "codePostal": "H8R 3E9",
+    "telecopieur": null,
+    "esssCode": "61",
+    "territoireCLSC": "Lasalle",
+    "dateOuverture": "2019-02-19",
+    "adresse": "454, rue d'Amour",
+    "immeublesAssocies": [],
+    "municipalite": "Montréal",
+    "courriels": [
+      "jannett@manoirdamour.ca / fbrown@revtechsolution.ca"
+    ],
+    "nombreTotalUnitesImmeubles": 8
+  },
+  "statut": "Active"
+}

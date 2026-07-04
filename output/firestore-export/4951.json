@@ -1,0 +1,223 @@
+{
+  "_collecteLe": "2026-07-02T07:01:58.391Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "ROUSSEAU",
+        "prenom": "M. Jean-Pierre",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "Manoir Cinq Saisons Inc.",
+      "datePrisePossession": "2025-12-15",
+      "neq": "1173628810",
+      "neqNormalise": "1173628810"
+    }
+  },
+  "residencesLiees": [
+    "4951-1",
+    "4951-2"
+  ],
+  "numeroRegistre": "4951-1",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "TROTTIER",
+      "prenom": "Steve"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De poutres de métal, de colonnes d'acier ou en dalles de béton (matériaux incombustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Avertisseurs de monoxyde de carbone",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 3,
+    "generatrice": true,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "ROUSSEAU",
+      "prenom": "M. Jean-Pierre",
+      "occupation": null,
+      "fonction": "Administrateur Président"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": true,
+    "loisirs": true,
+    "assistancePersonnelle": true,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide fixe",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": true
+    }
+  },
+  "numeroInterne": "4951",
+  "_regionCdRSS": "02",
+  "noForm": "4951",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 133,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 5,
+        "nuit": 3,
+        "jour": 7
+      },
+      "finDeSemaine": {
+        "soir": 6,
+        "nuit": 3,
+        "jour": 5
+      }
+    },
+    "capaciteRPA": 167,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 133,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 133,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Non",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 3,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 1,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 230,
+    "repartitionAges": {
+      "de85plus": 76,
+      "totalResidents": 148,
+      "de65a74": 10,
+      "de75a84": 58,
+      "moins65": 4
+    },
+    "employes": {
+      "semaine": {
+        "soir": 6,
+        "nuit": 4,
+        "jour": 23
+      },
+      "finDeSemaine": {
+        "soir": 4,
+        "nuit": 4,
+        "jour": 12
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=4951",
+  "section1_identification": {
+    "categorieRPA": 3,
+    "esss": "02 - CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireRLS": "RLS de Maria-Chapdelaine",
+    "esssNom": "CIUSSS du Saguenay  Lac-Saint-Jean",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Manoir Cinq Saisons Inc.",
+    "telephone": "418-276-5537",
+    "codePostal": "G8L 1W9",
+    "telecopieur": "418-276-0797",
+    "esssCode": "02",
+    "territoireCLSC": "Maria-Chapdelaine",
+    "dateOuverture": "2005-01-07",
+    "adresse": "243, 5e Avenue",
+    "immeublesAssocies": [],
+    "municipalite": "Dolbeau-Mistassini",
+    "courriels": [
+      "administration@manoircinqsaisons.com"
+    ],
+    "nombreTotalUnitesImmeubles": 189
+  },
+  "statut": "Active"
+}

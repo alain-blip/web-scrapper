@@ -1,0 +1,252 @@
+{
+  "_collecteLe": "2026-07-02T00:00:59.216Z",
+  "section2_titulaires": {
+    "actionnaires": [
+      {
+        "nom": "ROY",
+        "prenom": "Denis",
+        "mention": null
+      },
+      {
+        "nom": "ROULEAU",
+        "prenom": "Sylvain",
+        "mention": null
+      },
+      {
+        "nom": "MANDEVILLE",
+        "prenom": "Jean-Marc",
+        "mention": null
+      },
+      {
+        "nom": "MALO",
+        "prenom": "Joanne",
+        "mention": null
+      }
+    ],
+    "personneMorale": {
+      "nomCompagnie": "9201-2699 QUÉBEC INC.",
+      "datePrisePossession": "2010-02-01",
+      "neq": "1165403198",
+      "neqNormalise": "1165403198"
+    }
+  },
+  "residencesLiees": [],
+  "numeroRegistre": "6033",
+  "section8_reconnaissance": {
+    "associations": [
+      "RQRA- Regroupement québecois des résidences pour aînés"
+    ],
+    "membreAssociation": true,
+    "permisMAPAQ": true,
+    "permisRBQ": true
+  },
+  "section4_personneResponsable": [
+    {
+      "nom": "BOISVERT",
+      "prenom": "Mélanie"
+    }
+  ],
+  "section9_immeuble": {
+    "systemeGicleurs": "En totalité",
+    "typeConstruction": "De bois (matériaux combustible)",
+    "equipementsDetectionAlarme": [
+      "Avertisseurs de fumée",
+      "Détecteurs de fumée",
+      "Éclairage de sécurité",
+      "Système de détection et d'alarme incendie",
+      "Séparations coupe-feu (murs et planchers)"
+    ],
+    "rampeAcces": true,
+    "climatisation": {
+      "controleIndependant": false,
+      "lieuxCommuns": true,
+      "chambresLogements": false,
+      "ensembleImmeubles": null
+    },
+    "nombreAscenseurs": 3,
+    "generatrice": false,
+    "sousSol": {
+      "residentsHeberges": true,
+      "porteExterieure": true,
+      "nombreEtagesHorsSousSol": 3,
+      "present": true
+    },
+    "mitigeurEauChaude": true,
+    "sourceEauPotable": "Système d'aqueduc municipal"
+  },
+  "section5_administrateurs": [
+    {
+      "nom": "ROY",
+      "prenom": "Denis",
+      "occupation": null,
+      "fonction": "Président"
+    },
+    {
+      "nom": "MANDEVILLE",
+      "prenom": "Jean-Marc",
+      "occupation": null,
+      "fonction": "vice-président"
+    },
+    {
+      "nom": "ROULEAU",
+      "prenom": "Sylvain",
+      "occupation": null,
+      "fonction": "Administrateur"
+    },
+    {
+      "nom": "MALO",
+      "prenom": "Joanne",
+      "occupation": null,
+      "fonction": "Secrétaire"
+    }
+  ],
+  "section3_autresRPA": {
+    "nombreAutresResidences": 0,
+    "liste": [],
+    "proprietaireAutresRPA": false
+  },
+  "section7_services": {
+    "soinsInfirmiers": false,
+    "loisirs": true,
+    "assistancePersonnelle": false,
+    "repas": true,
+    "aideDomestique": true,
+    "securite": {
+      "typeAppelAide": "Système d'appel à l'aide mobile",
+      "clienteleErrance": false,
+      "dispositifSecuriteSortie": false
+    }
+  },
+  "numeroInterne": "6033",
+  "_regionCdRSS": "08",
+  "noForm": "6033",
+  "section6_portraits": {
+    "entente108": false,
+    "totalUnitesLocatives": 277,
+    "personnelAssistance": {
+      "semaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      },
+      "finDeSemaine": {
+        "soir": 0,
+        "nuit": 0,
+        "jour": 0
+      }
+    },
+    "capaciteRPA": 554,
+    "unitesParMission": {
+      "chsld": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": null,
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "rpa": {
+        "total": 277,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "Oui",
+        "logements": 277,
+        "chambresSimples": 0
+      },
+      "rtf": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "ri": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      },
+      "autres": {
+        "total": 0,
+        "chambresDoubles": 0,
+        "clientelePersonnesAgees": "N/D",
+        "logements": 0,
+        "chambresSimples": 0
+      }
+    },
+    "personnelInfirmier": [
+      {
+        "type": "Infirmier(ère)",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      },
+      {
+        "type": "Infirmier(ère) auxiliaire",
+        "semaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "finDeSemaine": {
+          "jour": 0,
+          "soir": 0,
+          "nuit": 0
+        },
+        "precisions": null
+      }
+    ],
+    "capaciteTotaleImmeubles": 554,
+    "repartitionAges": {
+      "de85plus": 185,
+      "totalResidents": 290,
+      "de65a74": 14,
+      "de75a84": 89,
+      "moins65": 2
+    },
+    "employes": {
+      "semaine": {
+        "soir": 6,
+        "nuit": 2,
+        "jour": 25
+      },
+      "finDeSemaine": {
+        "soir": 6,
+        "nuit": 2,
+        "jour": 10
+      }
+    }
+  },
+  "detailUrl": "http://k10.pub.msss.rtss.qc.ca/public/formulaire/K10FormCons.asp?noForm=6033",
+  "section1_identification": {
+    "categorieRPA": 2,
+    "esss": "08 - CISSS de l'Abitibi-Témiscamingue",
+    "territoireRLS": "RLS de Rouyn-Noranda",
+    "esssNom": "CISSS de l'Abitibi-Témiscamingue",
+    "territoireMRC": null,
+    "appartenanceGroupeReseau": null,
+    "typeResidence": "Résidence à but lucratif",
+    "nomResidence": "Les Jardins du Patrimoine Rouyn-Noranda",
+    "telephone": "819-797-6605",
+    "codePostal": "J9X 0A5",
+    "telecopieur": "819-797-9605",
+    "esssCode": "08",
+    "territoireCLSC": "Rouyn-Noranda",
+    "dateOuverture": "2010-02-01",
+    "adresse": "1455, rue perreault est",
+    "immeublesAssocies": [],
+    "municipalite": "Rouyn-Noranda",
+    "courriels": [
+      "direction@lesjardinsrn.com"
+    ],
+    "nombreTotalUnitesImmeubles": 277
+  },
+  "statut": "Active"
+}

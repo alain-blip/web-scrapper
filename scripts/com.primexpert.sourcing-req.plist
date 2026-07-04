@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.primexpert.sourcing-req</string>
+
+  <!-- Lance le wrapper qui exécute src/local/sourcingQuotidien.ts -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Volumes/SAUVEGARDE GRIS/03_WEBSCRAPPER/code/scripts/run-sourcing-req.sh</string>
+  </array>
+
+  <!-- Tous les jours à 5h00. Si la machine dort à 5h00, launchd exécute au
+       réveil suivant ; le réveil pmset de 4h58 garantit le déclenchement. -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key><integer>5</integer>
+    <key>Minute</key><integer>0</integer>
+  </dict>
+
+  <!-- Sortie brute de launchd (le log détaillé est écrit par le wrapper dans
+       code/logs/sourcing-req.log). -->
+  <key>StandardOutPath</key>
+  <string>/Users/alainst-jean/Library/Logs/sourcing-req.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/alainst-jean/Library/Logs/sourcing-req.err.log</string>
+</dict>
+</plist>

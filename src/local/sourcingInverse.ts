@@ -1,21 +1,31 @@
 import { Firestore } from '@google-cloud/firestore';
 import puppeteer from 'puppeteer-extra';
 import StealthPlugin from 'puppeteer-extra-plugin-stealth';
+import { pathToFileURL } from 'url';
 import { parserHTMLAdministrateurs } from './parsers/reqParser';
 
 puppeteer.use(StealthPlugin());
 
 const db = new Firestore({ projectId: 'primexpert-msss-registre' });
 
-export async function executerSourcingInverseLocal() {
-  console.log("⚡ Démarrage du pipeline de masse LOCAL sur /Volumes/SAUVEGARDE GRIS/03_WEBSCRAPPER");
+// codesRegions : si fourni (ex. ['04']), on ne traite que ces régions (mode
+// quotidien aligné sur le collecteur). Sinon : balayage complet de la base.
+export async function executerSourcingInverseLocal({ codesRegions = null }: { codesRegions?: string[] | null } = {}) {
+  console.log("⚡ Démarrage du pipeline de sourcing REQ LOCAL sur /Volumes/SAUVEGARDE GRIS/03_WEBSCRAPPER");
 
-  // 1. Extraction sélective selon ton chemin exact validé
-  const snapshot = await db.collection('residences')
-    .where('section2_titulaires.personneMorale.neqNormalise', '!=', '')
-    .get();
+  // 1. Extraction des fiches à traiter.
+  let query: FirebaseFirestore.Query = db.collection('residences');
+  if (codesRegions && codesRegions.length) {
+    // Firestore 'in' accepte jusqu'à 10 valeurs (les jours de calendrier en ont ≤5).
+    query = query.where('_regionCdRSS', 'in', codesRegions);
+    console.log(`🎯 Périmètre : région(s) ${codesRegions.join(', ')} (mode quotidien).`);
+  } else {
+    query = query.where('section2_titulaires.personneMorale.neqNormalise', '!=', '');
+    console.log('🌐 Périmètre : base complète.');
+  }
+  const snapshot = await query.get();
 
-  console.log(`📋 ${snapshot.size} fiches détectées avec un NEQ normalisé.`);
+  console.log(`📋 ${snapshot.size} fiches dans le périmètre.`);
 
   if (snapshot.empty) return;
 
@@ -36,6 +46,9 @@ export async function executerSourcingInverseLocal() {
     const fichesData = doc.data();
     const neq = fichesData.section2_titulaires?.personneMorale?.neqNormalise;
     const nomResidence = fichesData.section1_identification?.nomResidence || `Fiche ID: ${doc.id}`;
+
+    // Sans NEQ : rien à chercher au REQ (le filtre région ne l'écarte pas en amont).
+    if (!neq) continue;
 
     // Idempotence : On saute si le palier 1 REQ est déjà enregistré [Charte §II]
     if (fichesData.enrichissement?.sourcingInverse?.status === 'REQ_DONE') {
@@ -156,7 +169,12 @@ export async function executerSourcingInverseLocal() {
 
   // Fermeture propre du navigateur à la fin du lot
   await browser.close();
-  console.log("🏁 Pipeline de masse terminé avec succès.");
+  console.log("🏁 Pipeline de sourcing REQ terminé avec succès.");
 }
 
-executerSourcingInverseLocal();
+// Auto-exécution (balayage complet) SEULEMENT si lancé directement, jamais à
+// l'import — sinon importer ce module depuis sourcingQuotidien déclencherait
+// un scrape involontaire.
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  executerSourcingInverseLocal();
+}

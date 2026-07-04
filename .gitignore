@@ -4,3 +4,4 @@ functions/functions.yaml
 .firebase/
 
 .DS_Store
+logs/

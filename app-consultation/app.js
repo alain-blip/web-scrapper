@@ -55,11 +55,15 @@ async function peuplerRegions() {
   } catch (e) {
     return;
   }
-  for (const r of regions) {
-    const opt = document.createElement('option');
-    opt.value = r.cdRSS;
-    opt.textContent = `${r.cdRSS} - ${r.libelle || '(région inconnue)'}`;
-    elRegion.appendChild(opt);
+  // Remplit les deux déroulantes région (onglet K10 + onglet Sourcing).
+  for (const sel of [document.getElementById('f-region'), document.getElementById('s-region')]) {
+    if (!sel || sel.options.length > 1) continue;
+    for (const r of regions) {
+      const opt = document.createElement('option');
+      opt.value = r.cdRSS;
+      opt.textContent = `${r.cdRSS} - ${r.libelle || '(région inconnue)'}`;
+      sel.appendChild(opt);
+    }
   }
 }
 
@@ -421,12 +425,176 @@ function esc(s) {
     ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 
+// ==================== SOURCING REQ & CONTACTS ====================
+const vueSourcing = document.getElementById('vue-sourcing');
+const elSRegion = document.getElementById('s-region');
+const elSContact = document.getElementById('s-contact');
+const elSStatut = document.getElementById('s-statut');
+const elSSearch = document.getElementById('s-search');
+const elSExport = document.getElementById('s-export');
+const elSCompteur = document.getElementById('s-compteur');
+const elSCartes = document.getElementById('s-cartes');
+
+let SOURCING = [];          // amalgame de la région chargée
+let sourcingFiltrees = [];  // sous-ensemble après filtres (base de l'export)
+
+async function chargerRegionSourcing() {
+  const cd = elSRegion.value;
+  if (!cd) {
+    SOURCING = [];
+    elSCompteur.textContent = 'Choisis une région pour charger l’amalgame K10 + REQ.';
+    elSCartes.innerHTML = '';
+    return;
+  }
+  elSCompteur.textContent = 'Chargement…';
+  elSCartes.innerHTML = '';
+  let data;
+  try {
+    data = await appelApi(`?vue=sourcing&cdRSS=${encodeURIComponent(cd)}`);
+  } catch (e) {
+    return; // 401/403 déjà géré par appelApi
+  }
+  SOURCING = data.fiches || [];
+  rendreSourcing();
+}
+
+function badgeStatut(s) {
+  if (s === 'REQ_DONE') return '<span class="badge b-ok">Enrichi REQ</span>';
+  if (s === 'A_REVISER') return '<span class="badge b-warn">À réviser</span>';
+  return '<span class="badge b-neutre">Non traité</span>';
+}
+function badgeQualite(q) {
+  if (q === 'DECIDEUR') return '<span class="badge b-ok">🎯 Décideur</span>';
+  if (q === 'GENERALE') return '<span class="badge b-neutre">🏢 Ligne générale</span>';
+  if (q === 'PERSO') return '<span class="badge b-info">❓ Perso à confirmer</span>';
+  return '';
+}
+
+function sourcingFiltre() {
+  const c = elSContact.value;
+  const st = elSStatut.value;
+  const q = elSSearch.value.trim().toLowerCase();
+  return SOURCING.filter((r) => {
+    if (c && r.courrielQualite !== c) return false;
+    if (st && (r.sourcingStatus || 'NON_TRAITE') !== st) return false;
+    if (q) {
+      const foin = [r.nom, r.neq, r.telephone, r.courriel].map((x) => String(x || '').toLowerCase());
+      if (!foin.some((x) => x.includes(q))) return false;
+    }
+    return true;
+  });
+}
+
+function rendreSourcing() {
+  const fiches = sourcingFiltre();
+  sourcingFiltrees = fiches;
+  elSCompteur.textContent = `${fiches.length} résidence${fiches.length > 1 ? 's' : ''}`
+    + (fiches.length !== SOURCING.length ? ` (sur ${SOURCING.length})` : '');
+  if (!fiches.length) {
+    elSCartes.innerHTML = '<p class="vide">Aucune fiche pour ces critères.</p>';
+    return;
+  }
+  elSCartes.innerHTML = fiches.map(carteSourcing).join('');
+}
+
+function carteSourcing(r) {
+  const admins = Array.isArray(r.administrateurs) ? r.administrateurs : [];
+  let blocAdmins = '<p class="cs-vide">Aucune donnée corporative associée.</p>';
+  if (admins.length) {
+    blocAdmins = '<table class="cs-admins"><thead><tr><th>Dirigeant</th><th>Fonction</th><th>Adresse résidentielle</th></tr></thead><tbody>'
+      + admins.map((a) => `<tr><td class="cs-dir">${esc(`${a.prenom || ''} ${a.nom || ''}`.trim())}</td><td>${esc(a.fonction || '—')}</td><td>${esc(a.adresseResidentielle || '—')}</td></tr>`).join('')
+      + '</tbody></table>';
+  }
+  const contacts = [];
+  if (r.telephone) contacts.push(`<a href="tel:${esc(r.telephone)}">📞 ${esc(r.telephone)}</a>`);
+  if (r.courriel) contacts.push(`<span>✉️ <a href="mailto:${esc(r.courriel)}">${esc(r.courriel)}</a> ${badgeQualite(r.courrielQualite)}</span>`);
+  if (r.telecopieur) contacts.push(`<span class="cs-vide">📠 ${esc(r.telecopieur)}</span>`);
+  if (!r.telephone && !r.courriel) contacts.push('<span class="cs-vide">Aucune coordonnée au registre K10</span>');
+
+  return `<div class="carte-sourcing">
+    <div class="cs-tete">
+      <div>
+        <h3 class="cs-nom">${esc(r.nom || '(sans nom)')} ${badgeStatut(r.sourcingStatus)}</h3>
+        <p class="cs-sous">${esc(r.esss || '—')}</p>
+      </div>
+      <div class="cs-droite">
+        <span class="badge">Catégorie ${r.categorieRPA ?? '—'}</span>
+        <p class="cs-neq">NEQ : ${esc(r.neq || 'Aucun')} · ${r.capacite ?? '—'} places</p>
+      </div>
+    </div>
+    <div class="cs-contacts">${contacts.join('')}</div>
+    <div class="cs-titre-bloc">Structure juridique &amp; organes de direction (REQ)</div>
+    ${blocAdmins}
+  </div>`;
+}
+
+// Export CSV des adresses de domicile des dirigeants (publipostage).
+// Respecte les filtres courants et dédoublonne par foyer.
+function exporterAdresses() {
+  const source = sourcingFiltrees.length ? sourcingFiltrees : SOURCING;
+  const CP = /([A-Za-z]\d[A-Za-z]\s?\d[A-Za-z]\d)/;
+  const foyers = new Map();
+  source.forEach((r) => (r.administrateurs || []).forEach((a) => {
+    const adr = (a.adresseResidentielle || '').trim();
+    if (!adr) return;
+    const cle = adr.toLowerCase().replace(/\s+/g, ' ');
+    if (!foyers.has(cle)) foyers.set(cle, { adresse: adr, noms: new Set(), fonctions: new Set(), residences: new Set(), neqs: new Set() });
+    const f = foyers.get(cle);
+    f.noms.add(`${a.prenom || ''} ${a.nom || ''}`.trim());
+    if (a.fonction) f.fonctions.add(a.fonction);
+    if (r.nom) f.residences.add(r.nom);
+    if (r.neq && r.neq !== 'Aucun') f.neqs.add(r.neq);
+  }));
+  if (!foyers.size) {
+    alert('Aucune adresse de dirigeant dans la sélection courante (région non enrichie REQ, ou filtre trop restrictif).');
+    return;
+  }
+  const cpDe = (adr) => { const m = adr.match(CP); return m ? m[1].toUpperCase() : ''; };
+  const nettoyer = (adr) => adr.replace(/\s*Canada\s*$/i, '').trim();
+  const escCsv = (v) => `"${String(v).replace(/"/g, '""')}"`;
+  const lignes = [['Dirigeant(s)', 'Fonction(s)', 'Adresse', 'Code postal', 'Résidence(s)', 'NEQ']];
+  [...foyers.values()].forEach((f) => lignes.push([
+    [...f.noms].join(' ; '), [...f.fonctions].join(' ; '), nettoyer(f.adresse), cpDe(f.adresse), [...f.residences].join(' ; '), [...f.neqs].join(' ; '),
+  ]));
+  const csv = '﻿' + lignes.map((l) => l.map(escCsv).join(',')).join('\r\n');
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const lien = document.createElement('a');
+  lien.href = url;
+  lien.download = `adresses_dirigeants_${foyers.size}_foyers.csv`;
+  document.body.appendChild(lien);
+  lien.click();
+  document.body.removeChild(lien);
+  URL.revokeObjectURL(url);
+}
+
+elSRegion.addEventListener('change', chargerRegionSourcing);
+[elSContact, elSStatut].forEach((el) => el.addEventListener('change', rendreSourcing));
+elSSearch.addEventListener('input', rendreSourcing);
+elSExport.addEventListener('click', exporterAdresses);
+
+// --- Onglets ---
+const elOnglets = document.getElementById('onglets');
+const elBoutonsOnglet = document.querySelectorAll('.onglet');
+let ongletActif = 'k10';
+
+function activerOnglet(tab) {
+  ongletActif = tab;
+  for (const b of elBoutonsOnglet) b.classList.toggle('actif', b.dataset.tab === tab);
+  vueListe.hidden = tab !== 'k10';
+  vueDetail.hidden = true; // le détail K10 ne s'ouvre que via un clic de ligne
+  vueSourcing.hidden = tab !== 'sourcing';
+}
+for (const b of elBoutonsOnglet) b.addEventListener('click', () => activerOnglet(b.dataset.tab));
+
 // ============================ AUTH / MUR ==========================
 
 function afficherEcranConnexion(message) {
   vueConnexion.hidden = false;
+  elOnglets.hidden = true;
   vueListe.hidden = true;
   vueDetail.hidden = true;
+  vueSourcing.hidden = true;
   elBtnConnexion.hidden = false;
   elConnexionMessage.textContent = message || '';
 }
@@ -436,16 +604,18 @@ function afficherEcranConnexion(message) {
 // dans l'en-tête pour essayer un autre compte.
 function afficherAccesRefuse(message) {
   vueConnexion.hidden = false;
+  elOnglets.hidden = true;
   vueListe.hidden = true;
   vueDetail.hidden = true;
+  vueSourcing.hidden = true;
   elBtnConnexion.hidden = true;
   elConnexionMessage.textContent = message;
 }
 
 function afficherApp() {
   vueConnexion.hidden = true;
-  vueListe.hidden = false;
-  vueDetail.hidden = true;
+  elOnglets.hidden = false;
+  activerOnglet(ongletActif); // affiche la vue de l'onglet courant (K10 par défaut)
 }
 
 // Appel centralisé à consultationApi : porte le token, gère 401/403.

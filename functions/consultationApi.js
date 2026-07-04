@@ -67,6 +67,51 @@ function resume(fiche) {
   };
 }
 
+// --- Vue « Sourcing REQ & Contacts » : amalgame K10 + enrichissement REQ. ---
+// Classification du courriel identique à src/local/server.ts (dupliquée ici à
+// dessein : ce fichier n'importe rien du collecteur, cf. en-tête).
+const PREFIXE_GENERIQUE = /^(info|admin|administration|reception|réception|contact|direction|bureau|rpa|residence|résidence|accueil|comptabilite|comptabilité|location|secretariat|secrétariat|service|dg)s?[0-9._-]*@/i;
+const sansAccents = (s) => (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+
+function classifierCourriel(mail, admins) {
+  if (!mail) return 'AUCUN';
+  if (PREFIXE_GENERIQUE.test(mail)) return 'GENERALE';
+  const local = sansAccents(mail.split('@')[0]);
+  const match = (admins || []).some((a) => {
+    const nom = sansAccents(a.nom), pre = sansAccents(a.prenom);
+    return (nom.length > 2 && local.includes(nom)) || (pre.length > 2 && local.includes(pre));
+  });
+  return match ? 'DECIDEUR' : 'PERSO';
+}
+
+// Résumé enrichi : coordonnées K10 (section1) + dirigeants/adresses REQ
+// (enrichissement.sourcingInverse). Full parity avec la console locale.
+function resumeSourcing(fiche) {
+  const s1 = fiche.section1_identification || {};
+  const p6 = fiche.section6_portraits || {};
+  const si = fiche.enrichissement?.sourcingInverse || {};
+  const admins = Array.isArray(si.administrateurs) ? si.administrateurs : [];
+  const courriels = Array.isArray(s1.courriels) ? s1.courriels : [];
+  const courriel = courriels[0] ?? null;
+  return {
+    noForm: fiche.noForm,
+    nom: s1.nomResidence ?? null,
+    esss: s1.esssNom ?? s1.esss ?? null,
+    cdRSS: fiche._regionCdRSS ?? null,
+    categorieRPA: s1.categorieRPA ?? null,
+    capacite: p6.capaciteRPA ?? null,
+    neq: fiche.section2_titulaires?.personneMorale?.neqNormalise ?? null,
+    telephone: s1.telephone ?? null,
+    telecopieur: s1.telecopieur ?? null,
+    courriel,
+    courriels,
+    courrielQualite: classifierCourriel(courriel, admins),
+    sourcingStatus: si.status ?? 'NON_TRAITE',
+    administrateurs: admins,
+    erreurREQ: si.erreur ?? null,
+  };
+}
+
 const MAX_LIMIT = 500; // plafond de sécurité ; la plus grosse région mesurée à ce jour (03) fait 166 écrites / 388 vues
 
 export const consultationApi = onRequest(
@@ -116,8 +161,10 @@ export const consultationApi = onRequest(
     query = query.limit(limit);
 
     const snap = await query.get();
-    const fiches = snap.docs.map((d) => resume(d.data()));
+    // ?vue=sourcing → amalgame enrichi (K10 + REQ + contacts) ; sinon résumé K10.
+    const vueSourcing = String(req.query.vue || '') === 'sourcing';
+    const fiches = snap.docs.map((d) => (vueSourcing ? resumeSourcing(d.data()) : resume(d.data())));
 
-    res.status(200).json({ cdRSS, total: fiches.length, limit, offset, fiches });
+    res.status(200).json({ cdRSS, vue: vueSourcing ? 'sourcing' : 'k10', total: fiches.length, limit, offset, fiches });
   },
 );

@@ -16,6 +16,12 @@
     </div>
   </header>
 
+  <!-- ONGLETS (visibles une fois connecté) -->
+  <nav id="onglets" class="onglets" hidden>
+    <button type="button" class="onglet actif" data-tab="k10">Registre K10</button>
+    <button type="button" class="onglet" data-tab="sourcing">Sourcing REQ &amp; Contacts</button>
+  </nav>
+
   <!-- VUE CONNEXION -->
   <main id="vue-connexion">
     <section class="connexion">
@@ -75,6 +81,43 @@
   <main id="vue-detail" hidden>
     <button id="retour" type="button" class="retour">← Retour à la liste</button>
     <div id="detail"></div>
+  </main>
+
+  <!-- VUE SOURCING REQ & CONTACTS -->
+  <main id="vue-sourcing" hidden>
+    <section class="filtres" aria-label="Filtres sourcing">
+      <div class="filtre">
+        <label for="s-region">Région</label>
+        <select id="s-region"><option value="">— choisir une région —</option></select>
+      </div>
+      <div class="filtre">
+        <label for="s-contact">Qualité du contact</label>
+        <select id="s-contact">
+          <option value="">Toutes</option>
+          <option value="DECIDEUR">🎯 Décideur</option>
+          <option value="PERSO">❓ Perso à confirmer</option>
+          <option value="GENERALE">🏢 Ligne générale</option>
+        </select>
+      </div>
+      <div class="filtre">
+        <label for="s-statut">Statut REQ</label>
+        <select id="s-statut">
+          <option value="">Tous</option>
+          <option value="REQ_DONE">Enrichi</option>
+          <option value="A_REVISER">À réviser</option>
+          <option value="NON_TRAITE">Non traité</option>
+        </select>
+      </div>
+      <div class="filtre filtre-recherche">
+        <label for="s-search">Recherche (nom, NEQ, tél., courriel)</label>
+        <input type="text" id="s-search" placeholder="Ex: Chartwell…">
+      </div>
+      <button id="s-export" type="button" class="reset" title="Exporte les adresses de domicile des dirigeants (foyers dédoublonnés) pour publipostage">📄 Exporter les adresses (CSV)</button>
+    </section>
+
+    <p id="s-compteur" class="compteur" aria-live="polite">Choisis une région pour charger l'amalgame K10 + REQ.</p>
+
+    <div id="s-cartes"></div>
   </main>
 
   <footer class="pied">

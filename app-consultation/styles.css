@@ -151,6 +151,56 @@ td.nom { font-weight: 600; color: var(--bleu); }
 
 .pied { text-align: center; color: var(--muet); font-size: .8rem; padding: 20px; }
 
+/* --- Onglets --- */
+.onglets {
+  display: flex; gap: 4px;
+  max-width: 1100px; margin: 0 auto; padding: 0 16px;
+  border-bottom: 1px solid var(--bord);
+}
+.onglet {
+  padding: 11px 18px; border: none; background: none; cursor: pointer;
+  font-size: .95rem; color: var(--muet); border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
+}
+.onglet:hover { color: var(--bleu); }
+.onglet.actif { color: var(--bleu); font-weight: 600; border-bottom-color: var(--bleu); }
+
+/* --- Vue Sourcing REQ & Contacts --- */
+.filtre-recherche { flex: 1 1 200px; }
+.filtre-recherche input { width: 100%; padding: 8px 10px; border: 1px solid var(--bord); border-radius: 8px; font-size: 1rem; }
+#s-export { margin-left: auto; background: var(--bleu); color: #fff; border-color: var(--bleu); }
+#s-export:hover { opacity: .9; background: var(--bleu); }
+
+.carte-sourcing { background: #fff; border: 1px solid var(--bord); border-radius: 10px; padding: 16px; margin-bottom: 14px; }
+.carte-sourcing .cs-tete { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; border-bottom: 1px solid var(--bord); padding-bottom: 10px; margin-bottom: 10px; }
+.carte-sourcing .cs-nom { margin: 0; font-size: 1.05rem; color: var(--bleu); }
+.carte-sourcing .cs-sous { color: var(--muet); font-size: .85rem; margin: 3px 0 0; }
+.carte-sourcing .cs-droite { text-align: right; white-space: nowrap; }
+.carte-sourcing .cs-neq { color: var(--muet); font-size: .8rem; margin: 4px 0 0; font-variant-numeric: tabular-nums; }
+
+.cs-contacts { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; font-size: .9rem; margin-bottom: 10px; }
+.cs-contacts a { color: var(--bleu); text-decoration: none; }
+.cs-contacts a:hover { text-decoration: underline; }
+.cs-vide { color: var(--muet); font-style: italic; font-size: .85rem; }
+
+/* Badges variantes (réutilise .badge de la vue détail) */
+.badge.b-ok { background: #dcfce7; color: #157347; }
+.badge.b-warn { background: #fef3c7; color: #9a3412; }
+.badge.b-info { background: #e0f2fe; color: #075985; }
+.badge.b-neutre { background: var(--gris); color: var(--muet); }
+
+.cs-admins { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: .88rem; }
+.cs-admins th, .cs-admins td { border-bottom: 1px solid #eef1f4; padding: 6px 8px; text-align: left; vertical-align: top; }
+.cs-admins th { color: var(--muet); font-size: .78rem; text-transform: uppercase; letter-spacing: .02em; }
+.cs-admins .cs-dir { font-weight: 600; }
+.cs-titre-bloc { font-size: .8rem; font-weight: 600; color: #334; text-transform: uppercase; letter-spacing: .02em; margin: 4px 0; }
+
+@media (max-width: 640px) {
+  .carte-sourcing .cs-tete { flex-direction: column; }
+  .carte-sourcing .cs-droite { text-align: left; }
+  #s-export { margin-left: 0; width: 100%; }
+}
+
 /* --- Mobile --- */
 @media (max-width: 640px) {
   .filtres { flex-direction: column; align-items: stretch; }

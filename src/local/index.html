@@ -54,6 +54,10 @@
                 <label class="text-xs text-gray-400 font-bold mb-1 uppercase">Recherche par Nom, NEQ, tél. ou courriel</label>
                 <input type="text" id="searchBar" placeholder="Ex: Château Pierrefonds..." class="bg-gray-900 border border-gray-700 rounded p-2 text-sm focus:outline-none focus:border-emerald-500 text-gray-100" oninput="filtrerDonnees()">
             </div>
+            <div class="flex flex-col justify-end">
+                <label class="text-xs text-transparent font-bold mb-1 uppercase select-none">Export</label>
+                <button onclick="exporterAdresses()" title="Exporte les adresses de domicile des dirigeants (foyers dédoublonnés) pour publipostage" class="bg-emerald-700 hover:bg-emerald-600 text-white text-sm font-bold px-4 py-2 rounded transition whitespace-nowrap">📄 Exporter les adresses (CSV)</button>
+            </div>
         </section>
 
         <section id="cardsContainer" class="grid grid-cols-1 gap-6">
@@ -63,6 +67,7 @@
 
     <script>
         let toutesLesResidences = [];
+        let residencesFiltrees = [];
 
         // Badge de qualité du courriel : distingue le décideur de la réception
         function badgeQualite(q) {
@@ -106,7 +111,62 @@
                 return matchCat && matchStatus && matchContact && matchSearch;
             });
 
+            residencesFiltrees = filtre;
             genererCards(filtre);
+        }
+
+        // Export CSV des adresses de domicile des dirigeants (publipostage)
+        // Respecte les filtres courants et dédoublonne par foyer.
+        function exporterAdresses() {
+            const source = residencesFiltrees.length ? residencesFiltrees : toutesLesResidences;
+            const CP = /([A-Za-z]\d[A-Za-z]\s?\d[A-Za-z]\d)/;
+            const foyers = new Map();
+
+            source.forEach(r => {
+                (r.administrateurs || []).forEach(a => {
+                    const adr = (a.adresseResidentielle || '').trim();
+                    if (!adr) return;
+                    const cle = adr.toLowerCase().replace(/\s+/g, ' ');
+                    if (!foyers.has(cle)) foyers.set(cle, { adresse: adr, noms: new Set(), fonctions: new Set(), residences: new Set(), neqs: new Set() });
+                    const f = foyers.get(cle);
+                    f.noms.add(`${a.prenom || ''} ${a.nom || ''}`.trim());
+                    if (a.fonction) f.fonctions.add(a.fonction);
+                    f.residences.add(r.nom);
+                    if (r.neq && r.neq !== 'Aucun') f.neqs.add(r.neq);
+                });
+            });
+
+            if (foyers.size === 0) {
+                alert("Aucune adresse de dirigeant dans la sélection courante (filtre trop restrictif, ou fiches non encore enrichies REQ).");
+                return;
+            }
+
+            const cpDe = adr => { const m = adr.match(CP); return m ? m[1].toUpperCase() : ''; };
+            const nettoyer = adr => adr.replace(/\s*Canada\s*$/i, '').trim();
+            const esc = v => `"${String(v).replace(/"/g, '""')}"`;
+
+            const lignes = [['Dirigeant(s)', 'Fonction(s)', 'Adresse', 'Code postal', 'Résidence(s)', 'NEQ']];
+            [...foyers.values()].forEach(f => {
+                lignes.push([
+                    [...f.noms].join(' ; '),
+                    [...f.fonctions].join(' ; '),
+                    nettoyer(f.adresse),
+                    cpDe(f.adresse),
+                    [...f.residences].join(' ; '),
+                    [...f.neqs].join(' ; ')
+                ]);
+            });
+
+            const csv = '﻿' + lignes.map(l => l.map(esc).join(',')).join('\r\n');
+            const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+            const url = URL.createObjectURL(blob);
+            const lien = document.createElement('a');
+            lien.href = url;
+            lien.download = `adresses_dirigeants_${foyers.size}_foyers.csv`;
+            document.body.appendChild(lien);
+            lien.click();
+            document.body.removeChild(lien);
+            URL.revokeObjectURL(url);
         }
 
         // 3. Génération dynamique du layout scannable

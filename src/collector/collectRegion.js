@@ -173,6 +173,15 @@ export async function collectRegion(cdRSS, opts = {}) {
     }
   }
 
+  // Échec de la requête de LISTE (ex. connect timeout K10, cf. L.87-90) : la
+  // boucle par-fiche n'a jamais tourné (nbListe:0, nbErreurs:0) mais l'erreur est
+  // dans stats.erreurs. Sans cette règle, un run totalement vide se loggerait 'ok'
+  // et _collectionLog — l'outil qui doit dire quelle région a manqué — deviendrait
+  // mensonger. Priorité sur 'ok' ; ne touche ni 'bloque' ni 'partiel' (nbListe===0
+  // ⇒ boucle non exécutée ⇒ ces statuts n'ont pas pu être posés).
+  if (!stats.bloque && stats.nbListe === 0 && stats.erreurs.length > 0) {
+    stats.statut = 'echec_liste';
+  }
   if (stats.statut === 'ok' && stats.nbErreurs > 0) stats.statut = 'ok_avec_erreurs';
 
   // F7 : détection d'un vrai bris structurel (ex. renommage de l'ancre K10, qui

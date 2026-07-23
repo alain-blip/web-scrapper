@@ -3,6 +3,11 @@
 # Chargé par scripts/com.primexpert.sourcing-req.plist. Voir
 # src/local/sourcingQuotidien.ts pour la logique (région du jour, idempotence).
 #
+# Un échec interne DOIT remonter comme code de sortie du wrapper (sinon launchd
+# croit le job sain — c'était le bug : le groupe { ... } se terminait sur le
+# dernier `echo`, toujours 0, quel que soit le sort de `npx tsx`).
+set -o pipefail
+
 # launchd ne fournit PAS le PATH d'une session de login : on l'établit ici (nvm).
 export PATH="/Users/alainst-jean/.nvm/versions/node/v20.19.4/bin:/usr/local/bin:/usr/bin:/bin"
 
@@ -26,6 +31,11 @@ cd "$CODE_DIR" || { echo "$(date '+%F %T %Z') ❌ cd impossible vers $CODE_DIR" 
 {
   echo "===== $(date '+%F %T %Z') — lancement sourcing REQ quotidien ====="
   npx tsx src/local/sourcingQuotidien.ts
-  echo "===== $(date '+%F %T %Z') — fin (code de sortie $?) ====="
+  CODE=$?
+  echo "===== $(date '+%F %T %Z') — fin (code de sortie $CODE) ====="
   echo ""
 } >> "$LOG" 2>&1
+
+# Le groupe { ... } n'est pas un sous-shell : $CODE reste visible ici. C'est ce
+# code — celui de `npx tsx`, pas celui du dernier `echo` — que launchd verra.
+exit "$CODE"

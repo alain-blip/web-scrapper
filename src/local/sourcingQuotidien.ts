@@ -1,61 +1,77 @@
-// Sourcing REQ quotidien — aligné sur le collecteur K10 de 3h00.
+// Sourcing REQ quotidien — sélection backlog (remplace le miroir jour-pour-
+// jour du calendrier K10).
 //
-// Le collecteur (functions/index.js, onSchedule '0 3 * * *') collecte la/les
-// région(s) du jour selon le calendrier de collector/regions.js. Ce script,
-// lancé à 5h00 par launchd (voir scripts/com.primexpert.sourcing-req.plist),
-// enrichit AU REQ ces mêmes fiches — en LOCAL, sur l'IP résidentielle, pour
-// passer Cloudflare (une Cloud Function sur IP datacenter se ferait bloquer).
+// Cible : résidences avec section2_titulaires.personneMorale.neqNormalise
+// peuplé ET sans enrichissement.sourcingInverse (jamais touchées par ce
+// pipeline), les plus anciennes (_collecteLe) en premier. Plafonné à
+// PLAFOND_FICHES ou TIME_BOX_MS, ce qui arrive en premier — KISS, pas de
+// pagination Firestore, la base tient en mémoire (~1600 docs).
 //
-// Idempotent : saute les fiches déjà REQ_DONE. Jours 19–31 : rien à faire.
+// Tourne TOUS les jours, y compris 19–31 (l'ancien calendrier régional ne
+// s'applique plus au REQ — il reste utilisé tel quel par le collecteur K10
+// de 3h00, functions/index.js, non touché ici).
+//
+// Idempotent + auto-réparant : la sélection relit à chaque run "ce qui manque
+// encore" depuis Firestore, jamais un état local. Une coupure (crash, panne
+// de courant, machine éteinte) ne perd rien : chaque fiche déjà écrite ne
+// sera plus jamais resélectionnée ; le reste du backlog attend le prochain
+// run, qu'il soit demain ou dans 3 jours.
 //
 // Usage :
 //   npx tsx src/local/sourcingQuotidien.ts            # exécution réelle
 //   npx tsx src/local/sourcingQuotidien.ts --dry-run  # simule, ne scrape pas
 
 import { Firestore } from '@google-cloud/firestore';
-import { regionsPourJour, jourDuMoisMontreal, LIBELLES } from '../collector/regions.js';
 import { executerSourcingInverseLocal } from './sourcingInverse';
 
 const dryRun = process.argv.includes('--dry-run');
 
-async function main() {
-  const jour = jourDuMoisMontreal();
-  const codes = regionsPourJour(jour);
+const PLAFOND_FICHES = 150;
+const TIME_BOX_MS = 90 * 60 * 1000; // 90 minutes
 
+async function selectionnerBacklog(db: Firestore) {
+  // Même filtre que l'ex-branche "balayage complet" de sourcingInverse.ts
+  // (Règle #0 — on réutilise plutôt que d'inventer un autre filtre).
+  const snap = await db.collection('residences')
+    .where('section2_titulaires.personneMorale.neqNormalise', '!=', '')
+    .get();
+
+  return snap.docs
+    .filter((doc) => !doc.data().enrichissement?.sourcingInverse)
+    .sort((a, b) => {
+      const ta = a.data()._collecteLe?.toMillis?.() ?? 0;
+      const tb = b.data()._collecteLe?.toMillis?.() ?? 0;
+      return ta - tb; // plus anciennes (_collecteLe le plus petit) en premier
+    });
+}
+
+async function main() {
   const horodatage = new Intl.DateTimeFormat('fr-CA', {
     timeZone: 'America/Montreal', dateStyle: 'short', timeStyle: 'short',
   }).format(new Date());
-  console.log(`\n===== Sourcing REQ quotidien — ${horodatage} (jour ${jour}) =====`);
+  console.log(`\n===== Sourcing REQ backlog — ${horodatage} =====`);
 
-  if (!codes.length) {
-    console.log('📭 Hors calendrier (jours 19–31) : aucune région à enrichir aujourd’hui.');
-    return;
-  }
+  const db = new Firestore({ projectId: 'primexpert-msss-registre' });
+  const backlog = await selectionnerBacklog(db);
+  const lot = backlog.slice(0, PLAFOND_FICHES);
 
-  const libelles = codes.map((c) => `${c} (${LIBELLES[c] || '?'})`).join(', ');
-  console.log(`🗓️  Région(s) du jour : ${libelles}`);
+  console.log(`📋 Backlog : ${backlog.length} fiche(s) jamais enrichies. Lot de ce run : ${lot.length}`
+    + ` (plafond ${PLAFOND_FICHES}, time-box ${TIME_BOX_MS / 60000} min).`);
 
   if (dryRun) {
-    // Simulation : compte ce qui SERAIT traité, sans ouvrir de navigateur.
-    const db = new Firestore({ projectId: 'primexpert-msss-registre' });
-    const snap = await db.collection('residences').where('_regionCdRSS', 'in', codes).get();
-    let sansNeq = 0, dejaFait = 0, aTraiter = 0;
-    for (const doc of snap.docs) {
-      const d = doc.data();
-      const neq = d.section2_titulaires?.personneMorale?.neqNormalise;
-      if (!neq) { sansNeq++; continue; }
-      if (d.enrichissement?.sourcingInverse?.status === 'REQ_DONE') { dejaFait++; continue; }
-      aTraiter++;
-    }
-    console.log(`🔎 [DRY-RUN] ${snap.size} fiches dans la région : ${aTraiter} à traiter, ${dejaFait} déjà REQ_DONE (sautées), ${sansNeq} sans NEQ.`);
     console.log('🔎 [DRY-RUN] Aucun scrape lancé.');
     return;
   }
 
-  await executerSourcingInverseLocal({ codesRegions: codes });
+  if (!lot.length) {
+    console.log('✅ Backlog vide — rien à enrichir aujourd’hui.');
+    return;
+  }
+
+  await executerSourcingInverseLocal({ docs: lot, timeBoxMs: TIME_BOX_MS });
 }
 
 main().catch((e) => {
-  console.error('❌ Sourcing quotidien en échec :', e);
+  console.error('❌ Sourcing backlog en échec :', e);
   process.exit(1);
 });

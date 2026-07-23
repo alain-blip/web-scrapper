@@ -13,6 +13,17 @@
     <string>/Users/alainst-jean/03_WEBSCRAPPER/code/scripts/run-sourcing-req.sh</string>
   </array>
 
+  <!-- Compte de service dédié (roles/datastore.user, primexpert-msss-registre),
+       pas l'ADC utilisateur : le SDK Admin (@google-cloud/firestore) lit
+       GOOGLE_APPLICATION_CREDENTIALS avant l'ADC — zéro changement de code
+       côté sourcingInverse.ts/sourcingQuotidien.ts. Tue invalid_rapt (ce
+       jeton de compte de service ne demande jamais de réauth interactive). -->
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>GOOGLE_APPLICATION_CREDENTIALS</key>
+    <string>/Users/alainst-jean/.config/primexpert/sa-sourcing-req.json</string>
+  </dict>
+
   <!-- Tous les jours à 5h00. Si la machine dort à 5h00, launchd exécute au
        réveil suivant ; le réveil pmset de 4h58 garantit le déclenchement. -->
   <key>StartCalendarInterval</key>

@@ -9,25 +9,48 @@ puppeteer.use(StealthPlugin());
 const db = new Firestore({ projectId: 'primexpert-msss-registre' });
 
 // codesRegions : si fourni (ex. ['04']), on ne traite que ces régions (mode
-// quotidien aligné sur le collecteur). Sinon : balayage complet de la base.
-export async function executerSourcingInverseLocal({ codesRegions = null }: { codesRegions?: string[] | null } = {}) {
+// quotidien aligné sur le collecteur). docs : si fourni, remplace la requête
+// interne par une liste déjà sélectionnée en amont (mode backlog — la
+// sélection, le tri et le plafond restent dans sourcingQuotidien.ts ; ce
+// module reste "un NEQ à la fois", peu importe qui a choisi la liste). Ni l'un
+// ni l'autre : balayage complet de la base. timeBoxMs : arrête proprement le
+// lot en cours après ce délai (coupure = rien perdu, chaque fiche traitée est
+// déjà écrite ; le prochain run reprend le reste du backlog).
+export async function executerSourcingInverseLocal({
+  codesRegions = null,
+  docs = null,
+  timeBoxMs = null,
+}: {
+  codesRegions?: string[] | null;
+  docs?: FirebaseFirestore.QueryDocumentSnapshot[] | null;
+  timeBoxMs?: number | null;
+} = {}) {
   console.log(`⚡ Démarrage du pipeline de sourcing REQ LOCAL (${process.cwd()})`);
 
+  const debut = Date.now();
+
   // 1. Extraction des fiches à traiter.
-  let query: FirebaseFirestore.Query = db.collection('residences');
-  if (codesRegions && codesRegions.length) {
-    // Firestore 'in' accepte jusqu'à 10 valeurs (les jours de calendrier en ont ≤5).
-    query = query.where('_regionCdRSS', 'in', codesRegions);
-    console.log(`🎯 Périmètre : région(s) ${codesRegions.join(', ')} (mode quotidien).`);
+  let docsATraiter: FirebaseFirestore.QueryDocumentSnapshot[];
+  if (docs) {
+    docsATraiter = docs;
+    console.log(`🎯 Périmètre : liste pré-sélectionnée (${docs.length} fiche(s), mode backlog).`);
   } else {
-    query = query.where('section2_titulaires.personneMorale.neqNormalise', '!=', '');
-    console.log('🌐 Périmètre : base complète.');
+    let query: FirebaseFirestore.Query = db.collection('residences');
+    if (codesRegions && codesRegions.length) {
+      // Firestore 'in' accepte jusqu'à 10 valeurs (les jours de calendrier en ont ≤5).
+      query = query.where('_regionCdRSS', 'in', codesRegions);
+      console.log(`🎯 Périmètre : région(s) ${codesRegions.join(', ')} (mode quotidien).`);
+    } else {
+      query = query.where('section2_titulaires.personneMorale.neqNormalise', '!=', '');
+      console.log('🌐 Périmètre : base complète.');
+    }
+    const snapshot = await query.get();
+    docsATraiter = snapshot.docs;
   }
-  const snapshot = await query.get();
 
-  console.log(`📋 ${snapshot.size} fiches dans le périmètre.`);
+  console.log(`📋 ${docsATraiter.length} fiches dans le périmètre.`);
 
-  if (snapshot.empty) return;
+  if (!docsATraiter.length) return;
 
   // BASE DE CACHE REQ POUR CETTE SESSION
   const cacheAdministrateurs = new Map<string, { admins: any[], status: string, erreur?: string }>();
@@ -42,7 +65,12 @@ export async function executerSourcingInverseLocal({ codesRegions = null }: { co
 
   const REQ_RECHERCHE_URL = 'https://www.registreentreprises.gouv.qc.ca/REQNA/GR/GR03/GR03A71.RechercheRegistre.MVC/GR03A71';
 
-  for (const doc of snapshot.docs) {
+  for (const doc of docsATraiter) {
+    if (timeBoxMs && Date.now() - debut >= timeBoxMs) {
+      console.log(`⏱️ [TIME-BOX] ${Math.round(timeBoxMs / 60000)} min écoulées — arrêt propre du lot`
+        + ' (rien perdu, chaque fiche déjà traitée est écrite ; le reste reprendra au prochain run).');
+      break;
+    }
     const fichesData = doc.data();
     const neq = fichesData.section2_titulaires?.personneMorale?.neqNormalise;
     const nomResidence = fichesData.section1_identification?.nomResidence || `Fiche ID: ${doc.id}`;

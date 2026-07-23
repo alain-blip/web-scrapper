@@ -2,12 +2,12 @@
   {
     "cdRSS": "01",
     "libelle": "CISSS du Bas-Saint-Laurent",
-    "total": 42
+    "total": 100
   },
   {
     "cdRSS": "02",
     "libelle": "CIUSSS du Saguenay – Lac-Saint-Jean",
-    "total": 25
+    "total": 83
   },
   {
     "cdRSS": "03",
@@ -15,14 +15,29 @@
     "total": 166
   },
   {
+    "cdRSS": "04",
+    "libelle": "CIUSSS de la Mauricie-et-du-Centre-du-Québec",
+    "total": 144
+  },
+  {
     "cdRSS": "05",
     "libelle": "CIUSSS de l'Estrie – CHUS",
-    "total": 100
+    "total": 103
+  },
+  {
+    "cdRSS": "07",
+    "libelle": "CISSS de l'Outaouais",
+    "total": 71
   },
   {
     "cdRSS": "08",
     "libelle": "CISSS de l'Abitibi-Témiscamingue",
-    "total": 17
+    "total": 29
+  },
+  {
+    "cdRSS": "09",
+    "libelle": "CISSS de la Côte-Nord",
+    "total": 4
   },
   {
     "cdRSS": "10",
@@ -30,28 +45,68 @@
     "total": 2
   },
   {
+    "cdRSS": "11",
+    "libelle": "CISSS de la Gaspésie / Îles-de-la-Madeleine",
+    "total": 34
+  },
+  {
+    "cdRSS": "12",
+    "libelle": "CISSS de Chaudière-Appalaches",
+    "total": 161
+  },
+  {
+    "cdRSS": "13",
+    "libelle": "CISSS de Laval",
+    "total": 50
+  },
+  {
+    "cdRSS": "14",
+    "libelle": "CISSS de Lanaudière",
+    "total": 104
+  },
+  {
+    "cdRSS": "15",
+    "libelle": "CISSS des Laurentides",
+    "total": 95
+  },
+  {
     "cdRSS": "61",
     "libelle": "CIUSSS de l'Ouest-de-l'Île-de-Montréal",
-    "total": 24
+    "total": 67
   },
   {
     "cdRSS": "62",
     "libelle": "CIUSSS du Centre-Ouest-de-l'Île-de-Montréal",
-    "total": 1
+    "total": 34
   },
   {
     "cdRSS": "63",
     "libelle": "CIUSSS du Centre-Sud-de-l'Île-de-Montréal",
-    "total": 1
+    "total": 18
   },
   {
     "cdRSS": "64",
     "libelle": "CIUSSS du Nord-de-l'Île-de-Montréal",
-    "total": 1
+    "total": 46
   },
   {
     "cdRSS": "65",
     "libelle": "CIUSSS de l'Est-de-l'Île-de-Montréal",
-    "total": 1
+    "total": 47
+  },
+  {
+    "cdRSS": "71",
+    "libelle": "CISSS de la Montérégie-Centre",
+    "total": 60
+  },
+  {
+    "cdRSS": "72",
+    "libelle": "CISSS de la Montérégie-Est",
+    "total": 105
+  },
+  {
+    "cdRSS": "73",
+    "libelle": "CISSS de la Montérégie-Ouest",
+    "total": 73
   }
 ]

@@ -1,57 +1,61 @@
 # Enrichissement REQ (Registraire des entreprises du Québec) — par NEQ
 
-Couche de collecte **autour** du même patron que le collecteur K10 : elle récupère,
-pour un NEQ, la fiche « État des renseignements » du REQ et en produit le champ
-`section_req` (structure juridique + organes de direction) à attacher au document
-`residences`. C'est ce champ que l'onglet « Sourcing REQ » lira — aujourd'hui vide
-parce qu'**aucune collecte REQ n'a jamais existé** (voir l'audit).
+Récupère, pour un NEQ, la fiche « État des renseignements » du REQ et en produit
+le champ `section_req` (structure juridique + organes de direction) à attacher au
+document `residences`. C'est ce champ que l'onglet « Sourcing REQ » lira — vide
+aujourd'hui parce qu'**aucune collecte REQ n'a jamais existé** (voir l'audit).
 
-| Fichier | Rôle |
-|---|---|
-| `fetchReq.js` | Télécharge la fiche `AfficherNeq` d'un NEQ. **Méthode/paramètre et encodage à confirmer sur le vrai site** (isolés dans `reqUrl()` / `decodeReq()`). |
-| `extractReq.js` | Parse le HTML → structure brute. **STUB** : sélecteurs à câbler sur une fixture réelle. |
-| `transformReq.js` | Structure brute → schéma final `section_req` (forme **définitive**, valeurs nulles tant que le parseur est un stub). |
-| `collectReq.js` | Orchestrateur : liste de NEQ → `fetchReq` → `extract` → `transform` → `writeReq`. Throttle 1,5 s, canary de blocage réel, marqueur `_incomplete`. |
-| `scrapeReq.js` | Orchestrateur unitaire (1 NEQ), live **ou** fixture. Miroir de `src/scrape.js`. |
+| Fichier | Rôle | État |
+|---|---|---|
+| `extractReq.js` | Parse le HTML « État des renseignements » → structure brute. | **Validé** sur fixture réelle. |
+| `transformReq.js` | Structure brute → schéma final `section_req`. | **Validé**. |
+| `scrapeReq.js` | Orchestrateur unitaire (1 NEQ), live **ou** fixture. Miroir de `src/scrape.js`. | OK |
+| `fetchReq.js` | Récupère la fiche via **navigateur** (Cloudflare). | À valider en local. |
+| `collectReq.js` | Orchestrateur : liste de NEQ → fetch → extract → transform → `writeReq`. Throttle, canary, `_incomplete`. | À brancher. |
 
-## Endpoint REQ (fourni par le métier)
+## Ce que le site impose (mesuré sur captures réelles)
 
-```
-https://www.registreentreprises.gouv.qc.ca/REQNA/GR/GR03/
-  GR03A71.RechercheRegistre.MVC/GR03A71/EtatRenseignements/AfficherNeq
-```
-Appli **MVC** (pas le vieux WebForms) → probablement UTF-8, requête plus simple.
+- **Cloudflare « managed challenge »** : un `fetch()` nu récupère « Just a moment… »
+  (`test_req.html`), pas les données. Il faut un **vrai navigateur** avec JS+cookies
+  — c'est le rôle de `fetchReqBrowser()` (Playwright, Chromium préinstallé). C'est
+  ce que faisait le poste **local (VSCode)** : un navigateur *stealth* → d'où les
+  captures `stealth_req_*.html`.
+- **Flux multi-étapes** avec jeton `__RequestVerificationToken` :
+  `RechercheParEntreprise` (Objet = NEQ, Domaines=1, Etendues=4, conditions cochées)
+  → résultats → « État des renseignements ».
+- **Réseau** : depuis l'environnement d'exécution géré, le domaine REQ est refusé
+  par la politique réseau (403 au CONNECT). Le *live* ne tourne donc que **en local**
+  (ou dans un environnement dont la politique ouvre `registreentreprises.gouv.qc.ca`).
 
-## ⚠️ Deux blocages à lever (les deux hors de ce dépôt)
+## Workflow
 
-1. **Réseau.** Depuis l'environnement d'exécution géré, le domaine REQ est **refusé
-   par la politique réseau** (`403` au CONNECT). Le chemin *live* ne marche donc que
-   là où la sortie vers `registreentreprises.gouv.qc.ca` est autorisée (poste local,
-   ou politique réseau de l'environnement modifiée).
-2. **Parseur non calé.** `extractReq.js` est un **stub** : ses sélecteurs sont des
-   hypothèses. Il faut une **fixture** pour les câler sur le vrai balisage.
-
-## Workflow « fixture d'abord » (la méthode du repo)
-
-Aucun réseau requis ici une fois la fixture en main — exactement comme la fiche
-Murray a validé le K10 à 141/141.
-
+**A. Parser une capture (aucun réseau requis — validé)** :
 ```bash
-# 1. (localement, où le REQ répond) sauvegarder la page d'un vrai NEQ :
-#    fixtures/req-1162487210.html   ← Ctrl+S « page web complète »
-#    + noter, via DevTools → Network, la méthode + le paramètre du NEQ.
-
-# 2. câbler les sélecteurs de extractReq.js sur ce HTML, puis :
-node src/req/scrapeReq.js --neq 1162487210 --fixture fixtures/req-1162487210.html
-
-# 3. une fois le mapping validé, brancher fetchReq (live) puis la collecte.
+node src/req/scrapeReq.js --neq 1141016072 --fixture fixtures/req-1141016072.html
 ```
+Sort le `section_req` complet (raison sociale, forme juridique, statut,
+administrateurs[], actionnaires[], bénéficiaires ultimes, CAE, salariés…).
 
-## À faire ensuite (après validation du parseur)
+**B. Live via navigateur (en local, où le host répond)** :
+```bash
+npm i -D playwright        # Chromium déjà présent (PLAYWRIGHT_BROWSERS_PATH)
+node src/req/scrapeReq.js --neq 1141016072
+```
+`fetchReqBrowser()` est écrit d'après les formulaires observés mais **non validé de
+bout en bout** (réseau bloqué côté serveur d'exécution) : ajuster les sélecteurs de
+résultat au besoin. Le mode fixture (A), lui, est le socle stable.
 
-- Câbler `reqUrl()` / `decodeReq()` sur la requête réelle mesurée.
-- Fixer `CANARY_NEQ` (`collectReq.js`) sur une entreprise stable et active.
+## Fixture de référence
+
+`fixtures/req-1141016072.html` — CHÂTEAU PIERREFONDS INC. (capturée via navigateur
+stealth en local, renseignements au 2026-07-03). Sert de golden pour le parseur,
+comme `murray-395.html` pour le K10.
+
+## À faire ensuite
+
+- Valider `fetchReqBrowser` en local sur quelques NEQ (dont un radié, un actif, un
+  introuvable) ; fixer `CANARY_NEQ` (`collectReq.js`) sur une entreprise stable.
 - Étape prod : lire les `residences` ayant `neqNormalise`, appeler `collectReq`,
   écrire `section_req` (merge idempotent) + journaliser dans `_collectionLog`,
-  branché au planificateur existant (`functions/index.js`) — **pas avant** que le
-  parseur soit vert sur fixture.
+  branché au planificateur (`functions/index.js`). Le collecteur REQ tourne **en
+  local ou dans un env au réseau ouvert**, pas dans une Cloud Function bridée.

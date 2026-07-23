@@ -41,6 +41,13 @@ function fonctions(v) {
   return strOrNull(v) ? v.split('|').map((s) => s.trim()).filter(Boolean) : [];
 }
 
+// Le REQ colle parfois un libellé après la date (« 1986-10-27 Constitution ») :
+// on isole la date AAAA-MM-JJ pour un champ propre.
+function dateSeule(v) {
+  const m = strOrNull(v) && v.match(/\d{4}-\d{2}-\d{2}/);
+  return m ? m[0] : strOrNull(v);
+}
+
 export function transformReq(raw = {}) {
   const imm = raw.immatriculation || {};
   const forme = raw.formeJuridique || {};
@@ -88,7 +95,16 @@ export function transformReq(raw = {}) {
 
     formeJuridique: strOrNull(forme['Forme juridique']),
     regimeCourant: strOrNull(forme['Régime courant']),
-    dateConstitution: strOrNull(forme['Date de la constitution']),
+    dateConstitution: dateSeule(forme['Date de la constitution']),
+
+    fusions: (raw.fusions || []).map((f) => ({
+      type: strOrNull(f.cellules?.[0]),
+      loi: strOrNull(f.cellules?.[1]),
+      date: strOrNull(f.cellules?.[2]),
+      nomDomicile: strOrNull(f.cellules?.[3]),
+      composante: strOrNull(f.cellules?.[4]),
+      resultante: strOrNull(f.cellules?.[5]),
+    })),
 
     statutImmatriculation: strOrNull(imm['Statut']),
     dateImmatriculation: strOrNull(imm["Date d'immatriculation"]),
@@ -122,4 +138,38 @@ export function transformReq(raw = {}) {
   if (raw._stub || !aDuContenu) section._incomplete = true;
 
   return section;
+}
+
+// Mappe l'objet REQ riche vers les CHAMPS CANONIQUES du document `residences`
+// (project_canonical_fields.md:382-417). C'est ce payload — et lui seul — qui
+// sera écrit en base (barrière 4, après signature PO). Aucun champ inventé :
+// chaque clé racine ci-dessous figure au canonique.
+//
+// ⚠️ À CONFIRMER avant écriture (sous-shapes des tableaux, non figés au canonique) :
+//   - éléments de `administrateursREQ` : quelles clés exactes le front lit-il ?
+//     (identitySections.ts ~L.130-139) — ici {nom, prenom, fonction, dateDebut}.
+//   - éléments de `legal.actionnaires` (identitySections.ts ~L.148-157).
+//   - éléments de `historiqueFusionREQ`.
+// Ne pas écrire ces tableaux tant que leurs clés ne sont pas confirmées.
+export function toResidenceCanonical(section) {
+  const administrateursREQ = (section.administrateurs || []).map((a) => ({
+    nom: a.prenom ? `${a.prenom} ${a.nom}`.trim() : a.nom,
+    fonction: (a.fonctions || []).join(', ') || null,
+    dateDebut: a.dateDebut || null,
+  }));
+
+  return {
+    // scalaires — noms canoniques confirmés, prêts à écrire
+    raisonSociale: section.raisonSociale,
+    formeJuridique: section.formeJuridique,
+    neq: section.neq,
+    dateConstitution: section.dateConstitution,
+    trancheSalariesREQ: section.nombreSalaries,
+
+    // tableaux — sous-shape à confirmer (voir avertissement ci-dessus)
+    historiqueFusionREQ: section.fusions,
+    administrateursREQ,
+    structureJuridique: { administrateursREQ }, // miroir attendu par le front
+    legal: { actionnaires: section.actionnaires },
+  };
 }

@@ -53,6 +53,22 @@ function blocSous($, titre) {
   return blocsSous($, titre)[0] || {};
 }
 
+// Lignes d'un tableau repéré par le texte de son <caption> (le REQ réutilise le
+// même id="tableauFusionScission" pour plusieurs tables → on cible par légende).
+// Renvoie [{ entetes: [...], cellules: [...] }].
+function tableParCaption($, captionText) {
+  const table = $('table').filter((_, el) =>
+    norm($(el).find('caption').first().text()) === captionText).first();
+  if (!table.length) return [];
+  const entetes = table.find('thead th').map((_, th) => norm($(th).text())).get();
+  const lignes = [];
+  table.find('tbody tr').each((_, tr) => {
+    const cellules = $(tr).find('td').map((__, td) => norm($(td).text())).get();
+    if (cellules.some(Boolean)) lignes.push({ entetes, cellules });
+  });
+  return lignes;
+}
+
 export function extractReq(html, meta = {}) {
   const $ = load(html);
 
@@ -74,6 +90,9 @@ export function extractReq(html, meta = {}) {
   const dirigeants = blocsSous($, 'Dirigeants non membres du conseil d’administration');
   const beneficiairesUltimes = blocsSous($, 'Listes des bénéficiaires ultimes');
   const fondeDePouvoir = blocsSous($, 'Fondé de pouvoir');
+
+  // Historique de fusion/scission/conversion (tableau dédié).
+  const fusions = tableParCaption($, 'Fusion, scission et conversion');
 
   // Autres noms utilisés au Québec.
   const autresNoms = blocsSous($, 'Autres noms utilisés au Québec')
@@ -98,6 +117,8 @@ export function extractReq(html, meta = {}) {
 
     secteur1,              // { "Code d'activité économique (CAE)", "Activité", "Précisions (facultatives)" }
     salaries,              // { "Nombre de salariés au Québec", … }
+
+    fusions,               // [{ entetes:[…], cellules:[Type, Loi, Date, Nom/domicile, Composante, Résultante] }]
 
     actionnaires,          // [{ … }]
     administrateurs,       // [{ "Nom de famille", "Prénom", "Date du début de la charge", "Fonctions actuelles", … }]

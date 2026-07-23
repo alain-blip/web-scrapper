@@ -158,6 +158,21 @@ export function toResidenceCanonical(section) {
     dateDebut: a.dateDebut || null,
   }));
 
+  // historiqueFusionREQ : le front sérialise l'array via String().join(', ') —
+  // donc chaque élément DOIT être une chaîne lisible (sinon « [object Object] »).
+  const historiqueFusionREQ = (section.fusions || []).map((f) => {
+    const tete = [f.type, f.date].filter(Boolean).join(' — ');
+    const flux = f.composante && f.resultante ? `${f.composante} → ${f.resultante}` : '';
+    return [tete, flux].filter(Boolean).join(' — ');
+  });
+
+  // legal.actionnaires : le front lit `nom` (affiché) et `pourcentage` (absent au
+  // REQ, qui ne donne qu'un qualitatif « majoritaire »). On garde `nom` + `mention`
+  // (conservée au dossier, non affichée aujourd'hui) ; on n'INVENTE pas de %.
+  const actionnaires = (section.actionnaires || []).map((a) => ({
+    nom: a.nom, mention: a.mention,
+  }));
+
   return {
     // scalaires — noms canoniques confirmés, prêts à écrire
     raisonSociale: section.raisonSociale,
@@ -166,10 +181,9 @@ export function toResidenceCanonical(section) {
     dateConstitution: section.dateConstitution,
     trancheSalariesREQ: section.nombreSalaries,
 
-    // tableaux — sous-shape à confirmer (voir avertissement ci-dessus)
-    historiqueFusionREQ: section.fusions,
-    administrateursREQ,
-    structureJuridique: { administrateursREQ }, // miroir attendu par le front
-    legal: { actionnaires: section.actionnaires },
+    historiqueFusionREQ,                          // array de chaînes lisibles
+    administrateursREQ,                           // {nom, fonction, dateDebut}
+    structureJuridique: { administrateursREQ },   // miroir attendu par le front
+    legal: { actionnaires },                      // {nom, mention}
   };
 }

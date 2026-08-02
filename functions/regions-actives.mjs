@@ -7,12 +7,21 @@
 // pas touché : il reste l'unique source des fiches elles-mêmes).
 //
 // Usage : node functions/regions-actives.mjs
+//   Le chemin de sortie est ancré sur l'emplacement du script (voir __dirname
+//   ci-dessous) — la commande fonctionne désormais depuis n'importe quel
+//   répertoire de travail (p. ex. depuis code/ comme depuis functions/).
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { initializeApp } from 'firebase-admin/app';
 import { getFirestore } from 'firebase-admin/firestore';
 import { LIBELLES } from '../src/collector/regions.js';
+
+// Emplacement du script (functions/) — ancre le chemin de sortie dessus plutôt
+// que sur process.cwd(), pour que le générateur écrive au bon endroit quel que
+// soit le répertoire de lancement.
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 initializeApp({ projectId: 'primexpert-msss-registre' });
 const db = getFirestore();
@@ -28,7 +37,7 @@ const regions = Object.entries(compte)
   .map(([cdRSS, total]) => ({ cdRSS, libelle: LIBELLES[cdRSS] || null, total }))
   .sort((a, b) => a.cdRSS.localeCompare(b.cdRSS));
 
-const outPath = path.resolve('..', 'app-consultation', 'regions-actives.json');
+const outPath = path.resolve(__dirname, '..', 'app-consultation', 'regions-actives.json');
 fs.writeFileSync(outPath, JSON.stringify(regions, null, 2) + '\n');
 console.log(`Écrit : ${outPath} (${regions.length} régions)`);
 console.log(JSON.stringify(regions, null, 2));

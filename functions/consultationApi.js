@@ -64,6 +64,7 @@ function resume(fiche) {
     nombreTotalUnitesImmeubles: s1.nombreTotalUnitesImmeubles ?? null,
     esss: s1.esss ?? null,
     statut: fiche.statut ?? null,
+    _collecteLe: fiche._collecteLe ?? null,
   };
 }
 

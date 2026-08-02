@@ -130,7 +130,7 @@ function rendreListe() {
   elCorps.innerHTML = '';
   if (!fiches.length) {
     const tr = document.createElement('tr');
-    tr.innerHTML = '<td class="vide" colspan="5">Aucune résidence — choisis une région ci-dessus.</td>';
+    tr.innerHTML = '<td class="vide" colspan="6">Aucune résidence — choisis une région ci-dessus.</td>';
     elCorps.appendChild(tr);
     return;
   }
@@ -143,7 +143,8 @@ function rendreListe() {
       <td>${esc(get.municipalite(f))}</td>
       <td class="num">${get.cat(f) ?? '—'}</td>
       <td class="num">${get.unites(f) ?? '—'}</td>
-      <td>${esc(get.esss(f))}</td>`;
+      <td>${esc(get.esss(f))}</td>
+      <td>${formatCollecteLe(f._collecteLe) ?? '—'}</td>`;
     tr.addEventListener('click', () => ouvrirDetail(f.noForm));
     tr.addEventListener('keydown', (e) => { if (e.key === 'Enter') ouvrirDetail(f.noForm); });
     elCorps.appendChild(tr);

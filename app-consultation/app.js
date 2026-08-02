@@ -569,10 +569,16 @@ function exporterAdresses() {
   URL.revokeObjectURL(url);
 }
 
-elSRegion.addEventListener('change', chargerRegionSourcing);
-[elSContact, elSStatut].forEach((el) => el.addEventListener('change', rendreSourcing));
-elSSearch.addEventListener('input', rendreSourcing);
-elSExport.addEventListener('click', exporterAdresses);
+// Coupure réversible : onglet/conteneur Sourcing retirés du DOM (index.html)
+// → ces éléments n'existent plus, donc pas de branchement d'écouteur ni
+// d'appel à chargerRegionSourcing() (qui portait ?vue=sourcing, app.js:453).
+// Fonctions ci-dessus conservées intactes pour une restauration simple.
+if (elSRegion) {
+  elSRegion.addEventListener('change', chargerRegionSourcing);
+  [elSContact, elSStatut].forEach((el) => el.addEventListener('change', rendreSourcing));
+  elSSearch.addEventListener('input', rendreSourcing);
+  elSExport.addEventListener('click', exporterAdresses);
+}
 
 // --- Onglets ---
 const elOnglets = document.getElementById('onglets');
@@ -584,7 +590,7 @@ function activerOnglet(tab) {
   for (const b of elBoutonsOnglet) b.classList.toggle('actif', b.dataset.tab === tab);
   vueListe.hidden = tab !== 'k10';
   vueDetail.hidden = true; // le détail K10 ne s'ouvre que via un clic de ligne
-  vueSourcing.hidden = tab !== 'sourcing';
+  if (vueSourcing) vueSourcing.hidden = tab !== 'sourcing';
 }
 for (const b of elBoutonsOnglet) b.addEventListener('click', () => activerOnglet(b.dataset.tab));
 
@@ -595,7 +601,7 @@ function afficherEcranConnexion(message) {
   elOnglets.hidden = true;
   vueListe.hidden = true;
   vueDetail.hidden = true;
-  vueSourcing.hidden = true;
+  if (vueSourcing) vueSourcing.hidden = true;
   elBtnConnexion.hidden = false;
   elConnexionMessage.textContent = message || '';
 }
@@ -608,7 +614,7 @@ function afficherAccesRefuse(message) {
   elOnglets.hidden = true;
   vueListe.hidden = true;
   vueDetail.hidden = true;
-  vueSourcing.hidden = true;
+  if (vueSourcing) vueSourcing.hidden = true;
   elBtnConnexion.hidden = true;
   elConnexionMessage.textContent = message;
 }

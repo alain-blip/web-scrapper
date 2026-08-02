@@ -113,6 +113,18 @@ function resumeSourcing(fiche) {
   };
 }
 
+// Retire enrichissement.sourcingInverse (adresses résidentielles des
+// dirigeants, courriels classifiés, statut REQ, administrateurs — tout le
+// sous-objet) avant de servir une fiche brute. Coupure réversible : ne
+// touche jamais Firestore, seulement la réponse HTTP.
+function sansSourcing(data) {
+  if (!data) return data;
+  const { enrichissement, ...reste } = data;
+  if (!enrichissement) return data;
+  const { sourcingInverse, ...enrReste } = enrichissement;
+  return { ...reste, enrichissement: enrReste };
+}
+
 const MAX_LIMIT = 500; // plafond de sécurité ; la plus grosse région mesurée à ce jour (03) fait 166 écrites / 388 vues
 
 export const consultationApi = onRequest(
@@ -141,7 +153,7 @@ export const consultationApi = onRequest(
         res.status(404).json({ erreur: `Fiche noForm=${noForm} introuvable.` });
         return;
       }
-      res.status(200).json(doc.data());
+      res.status(200).json(sansSourcing(doc.data()));
       return;
     }
 
@@ -161,11 +173,18 @@ export const consultationApi = onRequest(
     if (offset > 0) query = query.offset(offset);
     query = query.limit(limit);
 
-    const snap = await query.get();
     // ?vue=sourcing → amalgame enrichi (K10 + REQ + contacts) ; sinon résumé K10.
+    // Coupure réversible : vue désactivée, court-circuit avant tout accès
+    // Firestore/resumeSourcing (aucune donnée REQ/sourcing/adresse ne sort).
     const vueSourcing = String(req.query.vue || '') === 'sourcing';
-    const fiches = snap.docs.map((d) => (vueSourcing ? resumeSourcing(d.data()) : resume(d.data())));
+    if (vueSourcing) {
+      res.status(403).json({ erreur: 'vue desactivee' });
+      return;
+    }
 
-    res.status(200).json({ cdRSS, vue: vueSourcing ? 'sourcing' : 'k10', total: fiches.length, limit, offset, fiches });
+    const snap = await query.get();
+    const fiches = snap.docs.map((d) => resume(d.data()));
+
+    res.status(200).json({ cdRSS, vue: 'k10', total: fiches.length, limit, offset, fiches });
   },
 );

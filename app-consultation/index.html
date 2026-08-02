@@ -20,6 +20,7 @@
   <nav id="onglets" class="onglets" hidden>
     <button type="button" class="onglet actif" data-tab="k10">Registre K10</button>
     <button type="button" class="onglet" data-tab="sourcing">Sourcing REQ &amp; Contacts</button>
+    <button type="button" class="onglet" data-tab="changements">Changements</button>
   </nav>
 
   <!-- VUE CONNEXION -->
@@ -119,6 +120,12 @@
     <p id="s-compteur" class="compteur" aria-live="polite">Choisis une région pour charger l'amalgame K10 + REQ.</p>
 
     <div id="s-cartes"></div>
+  </main>
+
+  <!-- VUE CHANGEMENTS (veille mensuelle : diff du registre) -->
+  <main id="vue-changements" hidden>
+    <p id="chg-compteur" class="compteur" aria-live="polite">Chargement…</p>
+    <div id="chg-contenu"></div>
   </main>
 
   <footer class="pied">

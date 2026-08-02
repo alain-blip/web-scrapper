@@ -439,6 +439,106 @@ const elSCartes = document.getElementById('s-cartes');
 let SOURCING = [];          // amalgame de la région chargée
 let sourcingFiltrees = [];  // sous-ensemble après filtres (base de l'export)
 
+// ==================== CHANGEMENTS (veille mensuelle) ====================
+const vueChangements = document.getElementById('vue-changements');
+const elChgCompteur = document.getElementById('chg-compteur');
+const elChgContenu = document.getElementById('chg-contenu');
+let changementsCharges = false; // garde anti-refetch (rechargé une fois par session)
+
+// Formate une valeur de champ pour l'affichage (null → "(aucun)", tableaux
+// lisibles : associations = liste ; personneResponsable = "Prénom Nom").
+function formaterValeurChangement(champ, v) {
+  if (v === null || v === undefined || v === '') return '(aucun)';
+  if (Array.isArray(v)) {
+    if (!v.length) return '(aucun)';
+    if (champ === 'personneResponsable') {
+      return v.map((p) => `${p?.prenom || ''} ${p?.nom || ''}`.trim() || '(sans nom)').join(', ');
+    }
+    return v.join(', '); // associations et autres tableaux de chaînes
+  }
+  return String(v);
+}
+
+async function chargerChangements() {
+  elChgCompteur.textContent = 'Chargement…';
+  elChgContenu.innerHTML = '';
+  let data;
+  try {
+    data = await appelApi('?vue=changements'); // mode réel : dernier diff daté
+  } catch (e) {
+    // appelApi lève Error('HTTP 404') sur !res.ok — le 404 (aucun diff) est
+    // ainsi distinguable du 401/403 (déjà gérés/redirigés par appelApi).
+    if (String(e.message).includes('404')) {
+      elChgCompteur.textContent = 'Aucun changement à afficher pour l’instant.';
+      elChgContenu.innerHTML = '';
+      changementsCharges = true; // rien à recharger tant qu'on reste connecté
+      return;
+    }
+    return; // 401/403 : écran déjà basculé par appelApi
+  }
+  changementsCharges = true;
+  rendreChangements(data);
+}
+
+function rendreChangements(data) {
+  const apparues = Array.isArray(data.apparues) ? data.apparues : [];
+  const disparues = Array.isArray(data.disparues) ? data.disparues : [];
+  const modifiees = Array.isArray(data.modifiees) ? data.modifiees : [];
+  const total = apparues.length + disparues.length + modifiees.length;
+
+  // Compteur récap + provenance (quels snapshots ont été comparés).
+  elChgCompteur.textContent =
+    `${total} changement${total > 1 ? 's' : ''} — `
+    + `${apparues.length} apparue${apparues.length > 1 ? 's' : ''}, `
+    + `${disparues.length} disparue${disparues.length > 1 ? 's' : ''}, `
+    + `${modifiees.length} modifiée${modifiees.length > 1 ? 's' : ''} · `
+    + `depuis ${esc(data._snapshot_ancien || '?')} → ${esc(data._snapshot_recent || '?')}`;
+
+  // Carte APPARUE : nom (ou libellé "nouvelle fiche" si nom null) + noForm.
+  const carteApparue = (e) => {
+    const nom = e.nom ? esc(e.nom) : `— (nouvelle fiche ${esc(e.noForm)})`;
+    return `<div class="carte-sourcing">
+      <div class="cs-tete">
+        <div><h3 class="cs-nom">${nom} <span class="badge b-ok">Apparue</span></h3>
+          <p class="cs-sous">noForm ${esc(e.noForm)}</p></div>
+      </div>
+    </div>`;
+  };
+
+  // Carte DISPARUE : nom résolu depuis le snapshot ancien + "Fermeture probable".
+  const carteDisparue = (e) => `<div class="carte-sourcing">
+      <div class="cs-tete">
+        <div><h3 class="cs-nom">${esc(e.nom || '(sans nom)')} <span class="badge b-warn">Disparue</span></h3>
+          <p class="cs-sous">noForm ${esc(e.noForm)} · Fermeture probable</p></div>
+      </div>
+    </div>`;
+
+  // Carte MODIFIÉE : nom + noForm, puis une ligne par champ (avant → après).
+  const carteModifiee = (e) => {
+    const champs = Array.isArray(e.champs) ? e.champs : [];
+    const lignes = champs.map((c) =>
+      `<p class="cs-sous">${esc(c.champ)} : ${esc(formaterValeurChangement(c.champ, c.avant))} → ${esc(formaterValeurChangement(c.champ, c.apres))}</p>`
+    ).join('');
+    return `<div class="carte-sourcing">
+      <div class="cs-tete">
+        <div><h3 class="cs-nom">${esc(e.nom || '(sans nom)')} <span class="badge b-info">Modifiée</span></h3>
+          <p class="cs-sous">noForm ${esc(e.noForm)}</p></div>
+      </div>
+      ${lignes}
+    </div>`;
+  };
+
+  // Une section titrée ; 0 entrée → "Aucune" discret plutôt qu'une carte vide.
+  const section = (titre, entrees, renduCarte) =>
+    `<h2 class="cs-titre-bloc">${esc(titre)} (${entrees.length})</h2>`
+    + (entrees.length ? entrees.map(renduCarte).join('') : '<p class="vide">Aucune</p>');
+
+  elChgContenu.innerHTML =
+    section('Apparues', apparues, carteApparue)
+    + section('Disparues', disparues, carteDisparue)
+    + section('Modifiées', modifiees, carteModifiee);
+}
+
 async function chargerRegionSourcing() {
   const cd = elSRegion.value;
   if (!cd) {
@@ -585,6 +685,9 @@ function activerOnglet(tab) {
   vueListe.hidden = tab !== 'k10';
   vueDetail.hidden = true; // le détail K10 ne s'ouvre que via un clic de ligne
   vueSourcing.hidden = tab !== 'sourcing';
+  vueChangements.hidden = tab !== 'changements';
+  // Changements n'a pas de filtre région : on charge au premier affichage.
+  if (tab === 'changements' && !changementsCharges) chargerChangements();
 }
 for (const b of elBoutonsOnglet) b.addEventListener('click', () => activerOnglet(b.dataset.tab));
 
@@ -597,6 +700,7 @@ function afficherEcranConnexion(message) {
   vueDetail.hidden = true;
   vueSourcing.hidden = true;
   elBtnConnexion.hidden = false;
+  vueChangements.hidden = true;
   elConnexionMessage.textContent = message || '';
 }
 
@@ -610,6 +714,7 @@ function afficherAccesRefuse(message) {
   vueDetail.hidden = true;
   vueSourcing.hidden = true;
   elBtnConnexion.hidden = true;
+  vueChangements.hidden = true;
   elConnexionMessage.textContent = message;
 }
 

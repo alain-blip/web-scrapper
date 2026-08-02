@@ -133,6 +133,87 @@ export const consultationApi = onRequest(
 
     const db = getFirestore();
 
+    // Mode changements : ?vue=changements → un doc _changements (diff mensuel).
+    //   - sans ?date : le plus récent des changements_AAAA-MM-JJ (tri id desc =
+    //     chronologique) ; le doc de test changements_TEST est ignoré ici.
+    //   - avec ?date=AAAA-MM-JJ ou ?date=TEST : lit ce doc précis.
+    // L'objet _changements ne contient que des noForm + champs K10 publics
+    // (aucun nominatif sensible) → renvoyé tel quel, enrichi du nom de résidence
+    // pour chaque noForm listé (sinon l'écran n'affiche que des numéros).
+    if (String(req.query.vue || '') === 'changements') {
+      const date = req.query.date ? String(req.query.date) : null;
+
+      let docChg;
+      if (date) {
+        docChg = await db.collection('_changements').doc(`changements_${date}`).get();
+        if (!docChg.exists) {
+          res.status(404).json({ erreur: `Aucun changements_${date}.` });
+          return;
+        }
+      } else {
+        // Plus récent parmi les seuls ids datés (exclut changements_TEST).
+        const tous = (await db.collection('_changements').get()).docs
+          .filter((d) => /^changements_\d{4}-\d{2}-\d{2}$/.test(d.id))
+          .sort((a, b) => (a.id < b.id ? 1 : -1));
+        if (!tous.length) {
+          res.status(404).json({ erreur: 'Aucun diff de changements disponible pour l’instant.' });
+          return;
+        }
+        docChg = tous[0];
+      }
+
+      const chg = docChg.data();
+      const apparues = Array.isArray(chg.apparues) ? chg.apparues : [];
+      const disparues = Array.isArray(chg.disparues) ? chg.disparues : [];
+      const modifiees = Array.isArray(chg.modifiees) ? chg.modifiees : [];
+
+      // Résolution des noms : un seul batch get sur residences pour tous les
+      // noForm cités. Un noForm disparu n'existe plus → nom = null (normal).
+      const noForms = [...new Set([
+        ...apparues.map(String),
+        ...disparues.map(String),
+        ...modifiees.map((m) => String(m.noForm)),
+      ])];
+      const nomParNoForm = new Map();
+      if (noForms.length) {
+        const refs = noForms.map((nf) => db.collection('residences').doc(nf));
+        const snaps = await db.getAll(...refs);
+        for (const s of snaps) {
+          nomParNoForm.set(s.id, s.exists ? (s.data().section1_identification?.nomResidence ?? null) : null);
+        }
+      }
+      const nom = (nf) => nomParNoForm.get(String(nf)) ?? null;
+
+      // Disparues : elles n'existent plus dans residences → nom résolu depuis le
+      // snapshot ANCIEN (une seule lecture), qui contient fiches[].nomResidence.
+      // Garde-fou : si la rétention a purgé ce snapshot, on ne plante pas — les
+      // noms des disparues restent null.
+      const nomDisparueParNoForm = new Map();
+      if (disparues.length && chg._snapshot_ancien) {
+        const snapAncien = await db.collection('_snapshots').doc(String(chg._snapshot_ancien)).get();
+        if (snapAncien.exists) {
+          for (const f of (snapAncien.data().fiches ?? [])) {
+            nomDisparueParNoForm.set(String(f.noForm), f.nomResidence ?? null);
+          }
+        } else {
+          console.warn(`consultationApi/changements : snapshot ancien ${chg._snapshot_ancien} absent (purgé ?) — noms des disparues = null.`);
+        }
+      }
+      const nomDisparue = (nf) => nomDisparueParNoForm.get(String(nf)) ?? null;
+
+      res.status(200).json({
+        vue: 'changements',
+        id: docChg.id,
+        _cree_le: chg._cree_le ?? null,
+        _snapshot_ancien: chg._snapshot_ancien ?? null,
+        _snapshot_recent: chg._snapshot_recent ?? null,
+        apparues: apparues.map((nf) => ({ noForm: String(nf), nom: nom(nf) })),
+        disparues: disparues.map((nf) => ({ noForm: String(nf), nom: nomDisparue(nf) })),
+        modifiees: modifiees.map((m) => ({ noForm: String(m.noForm), nom: nom(m.noForm), champs: m.champs ?? [] })),
+      });
+      return;
+    }
+
     // Mode détail : ?noForm=2316 → fiche complète, toutes sections.
     if (req.query.noForm) {
       const noForm = String(req.query.noForm);

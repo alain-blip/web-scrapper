@@ -20,6 +20,16 @@ LOG_DIR="$HOME/Library/Logs"
 mkdir -p "$LOG_DIR"
 LOG="$LOG_DIR/sourcing-req.log"
 
+# Préflight : le code doit être disponible et lisible là où le wrapper s'exécute
+# (CODE_DIR auto-localisé). Aucune dépendance à un disque externe — le code vit
+# désormais sur l'interne. Si le script cible est illisible, on AVORTE proprement
+# (exit 1) plutôt que de laisser npx tsx échouer en cascade.
+if [ ! -r "$CODE_DIR/src/local/sourcingQuotidien.ts" ]; then
+  echo "===== $(date '+%F %T %Z') — ABORT : code inaccessible ($CODE_DIR) =====" >> "$LOG"
+  exit 1
+fi
+echo "===== $(date '+%F %T %Z') — préflight OK, exécution depuis CODE_DIR=$CODE_DIR =====" >> "$LOG"
+
 # Garde-fou : code introuvable/illisible → on le note et on sort proprement.
 if [ ! -r "$CODE_DIR/package.json" ]; then
   echo "$(date '+%F %T %Z') ❌ Code illisible ($CODE_DIR). Sourcing annulé." >> "$LOG"

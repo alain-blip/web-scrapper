@@ -23,7 +23,7 @@
 // Functions + Auth (voir DEPLOY.md).
 
 import { onRequest } from 'firebase-functions/v2/https';
-import { getFirestore } from 'firebase-admin/firestore';
+import { FieldPath, getFirestore } from 'firebase-admin/firestore';
 import { getAuth } from 'firebase-admin/auth';
 
 // Vérifie le token Bearer et l'appartenance à la liste blanche. Ne sert
@@ -56,8 +56,14 @@ async function verifierAcces(req) {
 // ligne (mêmes champs que les filtres déjà utilisés dans app-consultation/app.js).
 function resume(fiche) {
   const s1 = fiche.section1_identification || {};
+  const pm = fiche.section2_titulaires?.personneMorale || {};
   return {
     noForm: fiche.noForm,
+    numeroRegistre: fiche.numeroRegistre ?? null,
+    cdRSS: fiche._regionCdRSS ?? null,
+    nomCompagnie: pm.nomCompagnie ?? null,
+    neq: pm.neq ?? null,
+    neqNormalise: pm.neqNormalise ?? null,
     nomResidence: s1.nomResidence ?? null,
     municipalite: s1.municipalite ?? null,
     categorieRPA: s1.categorieRPA ?? null,
@@ -128,6 +134,20 @@ export const consultationApi = onRequest(
     const acces = await verifierAcces(req);
     if (!acces.ok) {
       res.status(acces.code).json({ erreur: acces.erreur });
+      return;
+    }
+
+    // Refuser les modes incompatibles avant toute lecture de fiche.
+    const vue = req.query.vue;
+    const present = (cle) => Object.prototype.hasOwnProperty.call(req.query, cle);
+    const conflit =
+      (present('vue') && !['index', 'sourcing', 'changements', 'k10'].includes(vue))
+      || (present('noForm') && ['vue', 'cdRSS', 'date', 'cursor'].some(present))
+      || (['index', 'changements'].includes(vue) && present('cdRSS'))
+      || (present('date') && vue !== 'changements')
+      || (present('cursor') && vue !== 'index');
+    if (conflit) {
+      res.status(400).json({ erreur: 'Combinaison de paramètres incompatible avec le mode demandé.' });
       return;
     }
 
@@ -223,6 +243,31 @@ export const consultationApi = onRequest(
         return;
       }
       res.status(200).json(doc.data());
+      return;
+    }
+
+    // Index global paginé : projection seulement, après le même mur d'accès.
+    if (String(req.query.vue || '') === 'index') {
+      const cursor = req.query.cursor;
+      if (cursor !== undefined && (typeof cursor !== 'string'
+        || !cursor || cursor.includes('/') || Buffer.byteLength(cursor, 'utf8') > 1500)) {
+        res.status(400).json({ erreur: 'Curseur invalide.' });
+        return;
+      }
+      let query = db.collection('residences')
+        .select('noForm', 'numeroRegistre', '_regionCdRSS', '_collecteLe', 'statut',
+          'section1_identification.nomResidence', 'section1_identification.municipalite',
+          'section1_identification.categorieRPA', 'section1_identification.nombreTotalUnitesImmeubles',
+          'section1_identification.esss', 'section2_titulaires.personneMorale.nomCompagnie',
+          'section2_titulaires.personneMorale.neq', 'section2_titulaires.personneMorale.neqNormalise')
+        .orderBy(FieldPath.documentId());
+      if (cursor !== undefined) query = query.startAfter(cursor);
+      const snap = await query.limit(MAX_LIMIT).get();
+      res.status(200).json({
+        vue: 'index',
+        fiches: snap.docs.map((d) => resume(d.data())),
+        nextCursor: snap.size === MAX_LIMIT ? snap.docs[snap.size - 1].id : null,
+      });
       return;
     }
 

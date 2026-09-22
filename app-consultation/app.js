@@ -12,7 +12,9 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 if (AUTH_EMULATOR) connectAuthEmulator(auth, AUTH_EMULATOR, { disableWarnings: true });
 
-let REGISTRE = []; // fiches résumé de la région actuellement chargée (mode liste)
+let REGISTRE = []; // index léger de toutes les régions, publié seulement une fois complet
+let indexEtat = 'chargement';
+let versionSession = 0;
 let idTokenActuel = null;
 
 // --- éléments DOM : connexion ---
@@ -35,6 +37,7 @@ const get = {
 
 // ============================ FILTRES =============================
 const elRegion = document.getElementById('f-region');
+const elRecherche = document.getElementById('f-search');
 const elCat = document.getElementById('f-cat');
 const elMin = document.getElementById('f-min');
 const elMax = document.getElementById('f-max');
@@ -108,11 +111,17 @@ for (const th of elEntetes) {
 }
 
 function fichesFiltrees() {
+  const region = elRegion.value;
+  const recherche = elRecherche.value.trim().toLowerCase();
   const cat = elCat.value;
   const min = elMin.value === '' ? null : Number(elMin.value);
   const max = elMax.value === '' ? null : Number(elMax.value);
 
   const filtrees = REGISTRE.filter((f) => {
+    if (region && f.cdRSS !== region) return false;
+    if (recherche && ![f.nomResidence, f.municipalite, f.nomCompagnie,
+      f.noForm, f.numeroRegistre, f.neq, f.neqNormalise]
+      .some((v) => String(v ?? '').trim().toLowerCase().includes(recherche))) return false;
     if (cat && String(get.cat(f)) !== cat) return false;
     const u = get.unites(f);
     if (min !== null && (u == null || u < min)) return false;
@@ -123,14 +132,21 @@ function fichesFiltrees() {
 }
 
 function rendreListe() {
+  if (indexEtat !== 'pret') {
+    elCorps.replaceChildren();
+    elCompteur.textContent = indexEtat === 'erreur'
+      ? 'Index indisponible ou incomplet. Rechargez la page pour réessayer.'
+      : 'Chargement de l’index toutes régions…';
+    return;
+  }
   const fiches = fichesFiltrees();
-  elCompteur.textContent = `${fiches.length} résidence${fiches.length > 1 ? 's' : ''}`
+  elCompteur.textContent = `${fiches.length} résidence${fiches.length > 1 ? 's trouvées' : ' trouvée'}`
     + (fiches.length !== REGISTRE.length ? ` (sur ${REGISTRE.length})` : '');
 
   elCorps.innerHTML = '';
   if (!fiches.length) {
     const tr = document.createElement('tr');
-    tr.innerHTML = '<td class="vide" colspan="6">Aucune résidence — choisis une région ci-dessus.</td>';
+    tr.innerHTML = '<td class="vide" colspan="6">Aucune résidence pour ces critères.</td>';
     elCorps.appendChild(tr);
     return;
   }
@@ -154,23 +170,50 @@ function rendreListe() {
 [elCat].forEach((el) => el.addEventListener('change', rendreListe));
 [elMin, elMax].forEach((el) => el.addEventListener('input', rendreListe));
 elReset.addEventListener('click', () => {
+  elRegion.value = ''; elRecherche.value = '';
   elCat.value = ''; elMin.value = ''; elMax.value = '';
   rendreListe();
 });
 
-elRegion.addEventListener('change', () => chargerRegion());
+elRegion.addEventListener('change', rendreListe);
+elRecherche.addEventListener('input', rendreListe);
 
-async function chargerRegion() {
-  const cd = elRegion.value;
-  if (!cd) { REGISTRE = []; rendreListe(); return; }
-  elCompteur.textContent = 'Chargement…';
-  let data;
+async function chargerIndex() {
+  const session = versionSession;
+  indexEtat = 'chargement';
+  REGISTRE = [];
+  rendreListe();
+  const fiches = [];
+  const curseurs = new Set();
+  let cursor = null;
   try {
-    data = await appelApi(`?cdRSS=${encodeURIComponent(cd)}`);
+    do {
+      const data = await appelApi(`?vue=index${cursor === null ? '' : `&cursor=${encodeURIComponent(cursor)}`}`);
+      if (session !== versionSession) return;
+      if (data.vue !== 'index' || !Array.isArray(data.fiches)
+        || (data.nextCursor !== null && (typeof data.nextCursor !== 'string' || !data.nextCursor))) {
+        throw new Error('index-invalide');
+      }
+      fiches.push(...data.fiches);
+      cursor = data.nextCursor;
+      if (cursor !== null) {
+        if (curseurs.has(cursor)) throw new Error('curseur-repete');
+        curseurs.add(cursor);
+      }
+    } while (cursor !== null);
+    REGISTRE = fiches;
+    // L'asset apporte les libellés; il ne détermine pas la couverture de l'index.
+    const connues = new Set([...elRegion.options].map((o) => o.value));
+    const regions = [...new Set(fiches.map((f) => f.cdRSS).filter(Boolean))].sort();
+    for (const cd of regions) {
+      if (!connues.has(cd)) elRegion.add(new Option(`Région ${cd}`, cd));
+    }
+    indexEtat = 'pret';
   } catch (e) {
-    return; // message déjà géré par appelApi
+    if (session !== versionSession) return;
+    REGISTRE = [];
+    indexEtat = 'erreur';
   }
-  REGISTRE = data.fiches || [];
   rendreListe();
 }
 
@@ -183,7 +226,7 @@ document.getElementById('retour').addEventListener('click', fermerDetail);
 // Libellés lisibles (sections + champs courants). Fallback : humanize().
 const LABELS = {
   // en-tête
-  noForm: 'N° de formulaire', numeroInterne: 'Numéro interne',
+  noForm: 'noForm MSSS', numeroInterne: 'Numéro interne',
   numeroRegistre: 'Numéro de registre', residencesLiees: 'Résidences liées',
   statut: 'Statut', detailUrl: 'Fiche source', _source: 'Fichier local',
   _collecteLe: 'Collecté le',
@@ -196,8 +239,11 @@ const LABELS = {
   categorieRPA: 'Catégorie RPA', nombreTotalUnitesImmeubles: "Nombre total d'unités",
   appartenanceGroupeReseau: 'Appartenance à un groupe', immeublesAssocies: 'Immeubles associés',
   // section 2
-  personneMorale: 'Personne morale', nomCompagnie: 'Nom de la compagnie', neq: 'NEQ',
-  datePrisePossession: 'Date de prise de possession', actionnaires: 'Actionnaires',
+  personneMorale: 'Personne morale déclarée', nomCompagnie: 'Nom de compagnie déclaré', neq: 'NEQ déclaré',
+  neqNormalise: 'NEQ normalisé (dérivé du MSSS)', nombreTotalUnites: 'Nombre total d’unités',
+  personneResponsable: 'Personnes responsables déclarées',
+  adresseResidentielle: 'Adresse extraite du REQ (type non distingué)',
+  datePrisePossession: 'Date déclarée de prise de possession', actionnaires: 'Actionnaires déclarés',
   nom: 'Nom', prenom: 'Prénom', mention: 'Mention',
   // section 3
   proprietaireAutresRPA: "Propriétaire d'autres RPA", nombreAutresResidences: 'Nombre autres résidences', liste: 'Liste',
@@ -234,10 +280,10 @@ const LABELS = {
 
 const SECTIONS = {
   section1_identification: '1 · Identification',
-  section2_titulaires: '2 · Titulaires',
+  section2_titulaires: '2 · Exploitant/titulaire déclaré au registre MSSS',
   section3_autresRPA: '3 · Autres RPA',
-  section4_personneResponsable: '4 · Personne responsable',
-  section5_administrateurs: '5 · Administrateurs',
+  section4_personneResponsable: '4 · Personnes responsables déclarées au MSSS',
+  section5_administrateurs: '5 · Administrateurs déclarés au MSSS',
   section6_portraits: '6 · Portraits',
   section7_services: '7 · Services',
   section8_reconnaissance: '8 · Reconnaissance',
@@ -253,7 +299,14 @@ async function ouvrirDetail(noForm) {
   try {
     f = await appelApi(`?noForm=${encodeURIComponent(noForm)}`);
   } catch (e) {
-    return; // message déjà géré par appelApi
+    if (!['401', '403', 'non-connecte'].includes(e.message)) {
+      const compteur = ongletActif === 'sourcing' ? elSCompteur
+        : ongletActif === 'changements' ? elChgCompteur : elCompteur;
+      compteur.textContent = e.message === 'HTTP 404'
+        ? 'Fiche courante indisponible. Cela ne confirme pas une fermeture.'
+        : 'Lecture de la fiche impossible. Réessayer ultérieurement.';
+    }
+    return;
   }
   if (!f) return;
   elDetail.innerHTML = '';
@@ -273,13 +326,32 @@ async function ouvrirDetail(noForm) {
   meta.innerHTML = `${badges}${esc([s1.adresse, s1.municipalite, s1.codePostal].filter(Boolean).join(', '))}`;
   elDetail.appendChild(meta);
 
+  const si = f.enrichissement?.sourcingInverse || {};
+  const collecte = formatCollecteLe(f._collecteLe);
+  const avis = [];
+  if (!collecte) avis.push('Date de collecte inconnue ou illisible');
+  if (f._incomplete) avis.push('Fiche signalée incomplète par la collecte');
+  if (Array.isArray(f._champsManquants)) avis.push(...f._champsManquants);
+  if (s1._categorieARevoir != null) avis.push('Catégorie MSSS à vérifier');
+  if (f.section2_titulaires?.personneMorale?._neqARevoir != null) avis.push('NEQ déclaré non normalisable — à vérifier');
+  if (si.status === 'A_REVISER' || si.erreur) avis.push('Enrichissement REQ à vérifier');
+  elDetail.appendChild(carteSection('Source, observation et qualité', {
+    Source: 'Registre MSSS (K10)',
+    'noForm MSSS': f.noForm ?? null,
+    'Numéro de registre': f.numeroRegistre ?? null,
+    'Région de collecte (code)': f._regionCdRSS ?? null,
+    'Fiche collectée le': collecte || 'Date inconnue',
+    'Fraîcheur': collecte ? 'Non classée — seuil à approuver' : 'Date inconnue',
+    'Avertissements disponibles': avis.length ? avis : 'Aucun signalement disponible; qualité non certifiée',
+  }));
+
   // En-tête : champs hors sections. On masque la plomberie (tout champ `_...`
   // sauf la date de collecte, reformatée en date lisible) et le doublon
   // numeroInterne quand il est identique à numeroRegistre — le contenu
   // métier reste intact, on ne masque que ce qui n'apporte rien à la lecture.
   const enteteKeys = Object.keys(f).filter((k) => {
     if (k.startsWith('section')) return false;
-    if (k === '_source') return false;
+    if (k === '_source' || k === 'enrichissement') return false;
     if (k.startsWith('_') && k !== '_collecteLe') return false;
     if (k === 'numeroInterne' && String(f.numeroInterne) === String(f.numeroRegistre)) return false;
     return true;
@@ -293,14 +365,75 @@ async function ouvrirDetail(noForm) {
     if (f[key] != null) elDetail.appendChild(carteSection(SECTIONS[key], f[key]));
   }
 
+  elDetail.appendChild(carteSection('Enrichissement REQ — identité non confirmée', {
+    'Statut': libelleStatutREQ(si.status),
+    'Mise à jour de l’enrichissement': formatCollecteLe(si.updatedAt) || 'Date inconnue',
+    'Limite': 'Cette date peut correspondre à une réutilisation du cache REQ, pas à une consultation du registre.',
+    'Administrateurs extraits': si.administrateurs ?? [],
+    'Erreur signalée': si.erreur ?? 'Aucune erreur renseignée',
+  }));
+  const autres = Object.fromEntries(Object.entries(f.enrichissement || {})
+    .filter(([k]) => k !== 'sourcingInverse'));
+  if (Object.keys(autres).length) elDetail.appendChild(carteSection('Autres enrichissements', autres));
+  elDetail.appendChild(historiqueObserve(noForm));
+
   vueListe.hidden = true;
+  vueSourcing.hidden = true;
+  vueChangements.hidden = true;
   vueDetail.hidden = false;
   window.scrollTo(0, 0);
 }
 
 function fermerDetail() {
-  vueDetail.hidden = true;
-  vueListe.hidden = false;
+  activerOnglet(ongletActif);
+}
+
+// Réutilise uniquement le dernier comparatif disponible, sans inventer une chronologie.
+function historiqueObserve(noForm) {
+  const sec = carteSection('Historique observé', {
+    'Périmètre': 'Dernier comparatif disponible seulement, sur les champs surveillés. Ce n’est pas un historique complet.',
+  });
+  const bouton = document.createElement('button');
+  bouton.type = 'button';
+  bouton.className = 'reset';
+  bouton.textContent = 'Lire le dernier comparatif pour cette RPA';
+  const compteur = document.createElement('p');
+  compteur.className = 'compteur';
+  compteur.setAttribute('aria-live', 'polite');
+  const contenu = document.createElement('div');
+  bouton.addEventListener('click', async () => {
+    bouton.disabled = true;
+    compteur.textContent = 'Chargement…';
+    contenu.replaceChildren();
+    try {
+      const data = await appelApi('?vue=changements');
+      if (!sec.isConnected) return;
+      const filtre = { ...data };
+      for (const cle of ['apparues', 'disparues', 'modifiees']) {
+        filtre[cle] = (Array.isArray(data[cle]) ? data[cle] : [])
+          .filter((e) => String(e.noForm) === String(noForm));
+      }
+      rendreChangements(filtre, contenu, compteur, false);
+    } catch (e) {
+      compteur.textContent = e.message === 'HTTP 404'
+        ? 'Aucun comparatif disponible; historique non vérifiable.'
+        : 'Lecture du comparatif impossible; aucune conclusion sur l’historique.';
+    } finally {
+      bouton.disabled = false;
+    }
+  });
+  sec.append(bouton, compteur, contenu);
+  return sec;
+}
+
+function boutonFiche(noForm) {
+  return `<button type="button" class="reset" data-fiche="${esc(noForm)}">Ouvrir la fiche courante</button>`;
+}
+
+function relierFiches(conteneur) {
+  conteneur.querySelectorAll('[data-fiche]').forEach((bouton) => {
+    bouton.addEventListener('click', () => ouvrirDetail(bouton.dataset.fiche));
+  });
 }
 
 // Construit une carte <section> à partir d'un objet.
@@ -396,11 +529,13 @@ function formatValeur(v) {
   return esc(s);
 }
 
-// Timestamp Firestore {_seconds, _nanoseconds} → date lisible française
+// Timestamp Firestore ou horodatage ISO avec fuseau → date lisible française
 // (fuseau America/Montreal), ex. « 3 juillet 2026 à 03h12 ».
 function formatCollecteLe(ts) {
-  if (!ts || ts._seconds == null) return null;
-  const date = new Date(ts._seconds * 1000);
+  const millis = ts && Number.isFinite(ts._seconds) ? ts._seconds * 1000
+    : typeof ts === 'string' && /T.*(?:Z|[+-]\d{2}:\d{2})$/.test(ts) ? Date.parse(ts) : NaN;
+  const date = new Date(millis);
+  if (!Number.isFinite(date.getTime())) return null;
   const jour = new Intl.DateTimeFormat('fr-CA', {
     timeZone: 'America/Montreal', day: 'numeric', month: 'long', year: 'numeric',
   }).format(date);
@@ -445,12 +580,12 @@ const elChgCompteur = document.getElementById('chg-compteur');
 const elChgContenu = document.getElementById('chg-contenu');
 let changementsCharges = false; // garde anti-refetch (rechargé une fois par session)
 
-// Formate une valeur de champ pour l'affichage (null → "(aucun)", tableaux
+// Formate une valeur de champ pour l'affichage (null → "(non renseigné)", tableaux
 // lisibles : associations = liste ; personneResponsable = "Prénom Nom").
 function formaterValeurChangement(champ, v) {
-  if (v === null || v === undefined || v === '') return '(aucun)';
+  if (v === null || v === undefined || v === '') return '(non renseigné)';
   if (Array.isArray(v)) {
-    if (!v.length) return '(aucun)';
+    if (!v.length) return '(non renseigné)';
     if (champ === 'personneResponsable') {
       return v.map((p) => `${p?.prenom || ''} ${p?.nom || ''}`.trim() || '(sans nom)').join(', ');
     }
@@ -469,47 +604,56 @@ async function chargerChangements() {
     // appelApi lève Error('HTTP 404') sur !res.ok — le 404 (aucun diff) est
     // ainsi distinguable du 401/403 (déjà gérés/redirigés par appelApi).
     if (String(e.message).includes('404')) {
-      elChgCompteur.textContent = 'Aucun changement à afficher pour l’instant.';
+      elChgCompteur.textContent = 'Aucun comparatif disponible; aucune conclusion sur les changements.';
       elChgContenu.innerHTML = '';
       changementsCharges = true; // rien à recharger tant qu'on reste connecté
       return;
     }
+    elChgCompteur.textContent = 'Lecture du comparatif impossible. Réessayer ultérieurement.';
     return; // 401/403 : écran déjà basculé par appelApi
   }
   changementsCharges = true;
   rendreChangements(data);
 }
 
-function rendreChangements(data) {
+function rendreChangements(data, contenu = elChgContenu, compteur = elChgCompteur, liens = true) {
   const apparues = Array.isArray(data.apparues) ? data.apparues : [];
   const disparues = Array.isArray(data.disparues) ? data.disparues : [];
   const modifiees = Array.isArray(data.modifiees) ? data.modifiees : [];
   const total = apparues.length + disparues.length + modifiees.length;
 
   // Compteur récap + provenance (quels snapshots ont été comparés).
-  elChgCompteur.textContent =
+  compteur.textContent =
     `${total} changement${total > 1 ? 's' : ''} — `
     + `${apparues.length} apparue${apparues.length > 1 ? 's' : ''}, `
     + `${disparues.length} disparue${disparues.length > 1 ? 's' : ''}, `
     + `${modifiees.length} modifiée${modifiees.length > 1 ? 's' : ''} · `
-    + `depuis ${esc(data._snapshot_ancien || '?')} → ${esc(data._snapshot_recent || '?')}`;
+    + 'dans ce comparatif uniquement.';
+  const dateSnapshot = (id) => /^snapshot_\d{4}-\d{2}-\d{2}$/.test(id || '')
+    ? id.slice('snapshot_'.length) : 'Date inconnue';
+  const provenance = `<p class="cs-sous">Source : observations MSSS · Comparatif ${esc(data.id || 'non renseigné')}<br>
+    Snapshot ancien : ${esc(data._snapshot_ancien || 'non renseigné')} (${esc(dateSnapshot(data._snapshot_ancien))})<br>
+    Snapshot récent : ${esc(data._snapshot_recent || 'non renseigné')} (${esc(dateSnapshot(data._snapshot_recent))})<br>
+    Comparatif produit le : ${esc(formatCollecteLe(data._cree_le) || 'Date inconnue')}<br>
+    Dates d’observation, pas dates effectives des changements. Noms : fiche courante pour apparitions/modifications; snapshot ancien pour absences, si conservé.</p>`;
+  const acces = (e) => liens ? boutonFiche(e.noForm) : '';
 
   // Carte APPARUE : nom (ou libellé "nouvelle fiche" si nom null) + noForm.
   const carteApparue = (e) => {
     const nom = e.nom ? esc(e.nom) : `— (nouvelle fiche ${esc(e.noForm)})`;
     return `<div class="carte-sourcing">
       <div class="cs-tete">
-        <div><h3 class="cs-nom">${nom} <span class="badge b-ok">Apparue</span></h3>
-          <p class="cs-sous">noForm ${esc(e.noForm)}</p></div>
+        <div><h3 class="cs-nom">${nom} <span class="badge b-ok">Apparition observée</span></h3>
+          <p class="cs-sous">noForm MSSS ${esc(e.noForm)}</p>${acces(e)}</div>
       </div>
     </div>`;
   };
 
-  // Carte DISPARUE : nom résolu depuis le snapshot ancien + "Fermeture probable".
+  // Carte DISPARUE : absence entre deux observations, sans conclusion de fermeture.
   const carteDisparue = (e) => `<div class="carte-sourcing">
       <div class="cs-tete">
-        <div><h3 class="cs-nom">${esc(e.nom || '(sans nom)')} <span class="badge b-warn">Disparue</span></h3>
-          <p class="cs-sous">noForm ${esc(e.noForm)} · Fermeture probable</p></div>
+        <div><h3 class="cs-nom">${esc(e.nom || '(sans nom)')} <span class="badge b-warn">Absence observée au registre</span></h3>
+          <p class="cs-sous">noForm MSSS ${esc(e.noForm)} · Cette observation ne confirme pas la fermeture de la résidence.</p>${acces(e)}</div>
       </div>
     </div>`;
 
@@ -517,12 +661,12 @@ function rendreChangements(data) {
   const carteModifiee = (e) => {
     const champs = Array.isArray(e.champs) ? e.champs : [];
     const lignes = champs.map((c) =>
-      `<p class="cs-sous">${esc(c.champ)} : ${esc(formaterValeurChangement(c.champ, c.avant))} → ${esc(formaterValeurChangement(c.champ, c.apres))}</p>`
+      `<p class="cs-sous">${esc(c.champ === 'nomCompagnie' ? 'Nom de compagnie déclaré modifié' : label(c.champ))} : avant ${esc(formaterValeurChangement(c.champ, c.avant))} → après ${esc(formaterValeurChangement(c.champ, c.apres))}</p>`
     ).join('');
     return `<div class="carte-sourcing">
       <div class="cs-tete">
-        <div><h3 class="cs-nom">${esc(e.nom || '(sans nom)')} <span class="badge b-info">Modifiée</span></h3>
-          <p class="cs-sous">noForm ${esc(e.noForm)}</p></div>
+        <div><h3 class="cs-nom">${esc(e.nom || '(sans nom)')} <span class="badge b-info">Modification observée</span></h3>
+          <p class="cs-sous">noForm MSSS ${esc(e.noForm)}</p>${acces(e)}</div>
       </div>
       ${lignes}
     </div>`;
@@ -533,17 +677,18 @@ function rendreChangements(data) {
     `<h2 class="cs-titre-bloc">${esc(titre)} (${entrees.length})</h2>`
     + (entrees.length ? entrees.map(renduCarte).join('') : '<p class="vide">Aucune</p>');
 
-  elChgContenu.innerHTML =
-    section('Apparues', apparues, carteApparue)
-    + section('Disparues', disparues, carteDisparue)
-    + section('Modifiées', modifiees, carteModifiee);
+  contenu.innerHTML = provenance
+    + section('Apparitions observées', apparues, carteApparue)
+    + section('Absences observées', disparues, carteDisparue)
+    + section('Modifications observées', modifiees, carteModifiee);
+  if (liens) relierFiches(contenu);
 }
 
 async function chargerRegionSourcing() {
   const cd = elSRegion.value;
   if (!cd) {
     SOURCING = [];
-    elSCompteur.textContent = 'Choisis une région pour charger l’amalgame K10 + REQ.';
+    elSCompteur.textContent = 'Choisis une région pour consulter les observations MSSS et REQ.';
     elSCartes.innerHTML = '';
     return;
   }
@@ -559,15 +704,19 @@ async function chargerRegionSourcing() {
   rendreSourcing();
 }
 
+function libelleStatutREQ(s) {
+  if (s === 'REQ_DONE') return 'Enrichissement REQ effectué';
+  if (s === 'A_REVISER') return 'À vérifier';
+  if (!s || s === 'NON_TRAITE') return 'Non traité';
+  return `Statut non reconnu : ${s}`;
+}
 function badgeStatut(s) {
-  if (s === 'REQ_DONE') return '<span class="badge b-ok">Enrichi REQ</span>';
-  if (s === 'A_REVISER') return '<span class="badge b-warn">À réviser</span>';
-  return '<span class="badge b-neutre">Non traité</span>';
+  return `<span class="badge ${s === 'A_REVISER' ? 'b-warn' : 'b-neutre'}">${esc(libelleStatutREQ(s))}</span>`;
 }
 function badgeQualite(q) {
-  if (q === 'DECIDEUR') return '<span class="badge b-ok">🎯 Décideur</span>';
-  if (q === 'GENERALE') return '<span class="badge b-neutre">🏢 Ligne générale</span>';
-  if (q === 'PERSO') return '<span class="badge b-info">❓ Perso à confirmer</span>';
+  if (q === 'DECIDEUR') return '<span class="badge b-info">Indice : contact potentiellement pertinent</span>';
+  if (q === 'GENERALE') return '<span class="badge b-neutre">Indice : courriel à préfixe générique</span>';
+  if (q === 'PERSO') return '<span class="badge b-info">Indice : courriel à vérifier</span>';
   return '';
 }
 
@@ -596,13 +745,14 @@ function rendreSourcing() {
     return;
   }
   elSCartes.innerHTML = fiches.map(carteSourcing).join('');
+  relierFiches(elSCartes);
 }
 
 function carteSourcing(r) {
   const admins = Array.isArray(r.administrateurs) ? r.administrateurs : [];
-  let blocAdmins = '<p class="cs-vide">Aucune donnée corporative associée.</p>';
+  let blocAdmins = '<p class="cs-vide">Aucun administrateur REQ extrait disponible.</p>';
   if (admins.length) {
-    blocAdmins = '<table class="cs-admins"><thead><tr><th>Dirigeant</th><th>Fonction</th><th>Adresse résidentielle</th></tr></thead><tbody>'
+    blocAdmins = '<table class="cs-admins"><thead><tr><th>Personne extraite du REQ</th><th>Fonction extraite</th><th>Adresse extraite (type non distingué)</th></tr></thead><tbody>'
       + admins.map((a) => `<tr><td class="cs-dir">${esc(`${a.prenom || ''} ${a.nom || ''}`.trim())}</td><td>${esc(a.fonction || '—')}</td><td>${esc(a.adresseResidentielle || '—')}</td></tr>`).join('')
       + '</tbody></table>';
   }
@@ -620,11 +770,17 @@ function carteSourcing(r) {
       </div>
       <div class="cs-droite">
         <span class="badge">Catégorie ${r.categorieRPA ?? '—'}</span>
-        <p class="cs-neq">NEQ : ${esc(r.neq || 'Aucun')} · ${r.capacite ?? '—'} places</p>
+        <p class="cs-neq">NEQ normalisé depuis le MSSS : ${esc(r.neq || 'non renseigné')} · Capacité RPA déclarée : ${esc(r.capacite ?? '—')}</p>
       </div>
     </div>
+    <p class="cs-sous">noForm MSSS : ${esc(r.noForm)} · Autres identifiants et dates disponibles dans la fiche.</p>
+    ${boutonFiche(r.noForm)}
+    <div class="cs-titre-bloc">Coordonnées déclarées au MSSS</div>
     <div class="cs-contacts">${contacts.join('')}</div>
-    <div class="cs-titre-bloc">Structure juridique &amp; organes de direction (REQ)</div>
+    <p class="cs-sous">Indices heuristiques sur le courriel : aucune preuve d’autorité ni autorisation de communication.</p>
+    <div class="cs-titre-bloc">Personnes et fonctions extraites du REQ</div>
+    <p class="cs-sous">Enrichissement REQ ≠ identité corporative confirmée.</p>
+    ${r.erreurREQ ? `<p class="cs-sous">À vérifier : ${esc(r.erreurREQ)}</p>` : ''}
     ${blocAdmins}
   </div>`;
 }
@@ -759,9 +915,8 @@ elBtnConnexion.addEventListener('click', async () => {
 
 elBtnDeconnexion.addEventListener('click', () => signOut(auth));
 
-// Aucune donnée n'est chargée avant ce callback ET une action explicite de
-// la personne (Charger une région / cliquer une fiche) : REGISTRE reste vide,
-// rendreListe() n'affiche rien tant qu'aucun fetch n'a réussi.
+// L'index léger est chargé après authentification et contrôle d'accès.
+// Les fiches détaillées restent chargées uniquement à la demande.
 //
 // Sonde d'accès immédiate : on ne veut pas attendre le premier clic sur
 // « Charger » pour révéler un 403 — ?cdRSS=00 est un appel légitime au sens
@@ -770,6 +925,8 @@ elBtnDeconnexion.addEventListener('click', () => signOut(auth));
 // (même si 0 résultat) ; 403 → geré par appelApi (écran refus), sans jamais
 // avoir affiché la moindre donnée.
 onAuthStateChanged(auth, async (user) => {
+  const session = ++versionSession;
+  indexEtat = 'chargement';
   if (!user) {
     idTokenActuel = null;
     elEtatConnexion.hidden = true;
@@ -777,7 +934,9 @@ onAuthStateChanged(auth, async (user) => {
     afficherEcranConnexion();
     return;
   }
-  idTokenActuel = await user.getIdToken();
+  const token = await user.getIdToken();
+  if (session !== versionSession) return;
+  idTokenActuel = token;
   elEtatConnexion.hidden = false;
   elUtilisateurInfo.textContent = user.email || '(connecté)';
   REGISTRE = [];
@@ -788,7 +947,12 @@ onAuthStateChanged(auth, async (user) => {
     return; // 401/403 déjà géré (écran approprié affiché) par appelApi
   }
 
+  if (session !== versionSession) return;
+  elRegion.value = ''; elRecherche.value = '';
+  elCat.value = ''; elMin.value = ''; elMax.value = '';
   afficherApp();
-  if (elRegion.options.length <= 1) await peuplerRegions(); // une seule fois
   rendreListe();
+  if (elRegion.options.length <= 1) await peuplerRegions(); // libellés seulement
+  if (session !== versionSession) return;
+  await chargerIndex();
 });

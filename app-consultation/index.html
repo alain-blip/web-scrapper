@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Récupération des données du Registre des résidences pour aînés</title>
+  <title>Primexpert — Veille institutionnelle RPA</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="topbar">
-    <h1>Récupération des données du Registre des résidences pour aînés</h1>
-    <p class="sub">Consultation en direct (Firestore, via API gardée) · lecture seule</p>
+    <h1>Primexpert — Veille institutionnelle RPA</h1>
+    <p class="sub">Observations MSSS et enrichissements REQ · lecture seule</p>
     <div id="etat-connexion" class="etat-connexion" hidden>
       <span id="utilisateur-info"></span>
       <button id="btn-deconnexion" type="button" class="reset">Se déconnecter</button>
@@ -37,7 +37,11 @@
     <section class="filtres" aria-label="Filtres">
       <div class="filtre">
         <label for="f-region">Région</label>
-        <select id="f-region"><option value="">— choisir une région —</option></select>
+        <select id="f-region"><option value="">Toutes les régions</option></select>
+      </div>
+      <div class="filtre">
+        <label for="f-search">Recherche</label>
+        <input type="search" id="f-search" placeholder="Rechercher une résidence…">
       </div>
       <div class="filtre">
         <label for="f-cat">Catégorie RPA</label>
@@ -81,7 +85,7 @@
 
   <!-- VUE DÉTAIL -->
   <main id="vue-detail" hidden>
-    <button id="retour" type="button" class="retour">← Retour à la liste</button>
+    <button id="retour" type="button" class="retour">← Retour à la vue précédente</button>
     <div id="detail"></div>
   </main>
 
@@ -93,20 +97,20 @@
         <select id="s-region"><option value="">— choisir une région —</option></select>
       </div>
       <div class="filtre">
-        <label for="s-contact">Qualité du contact</label>
+        <label for="s-contact">Indice sur le courriel (heuristique)</label>
         <select id="s-contact">
           <option value="">Toutes</option>
-          <option value="DECIDEUR">🎯 Décideur</option>
-          <option value="PERSO">❓ Perso à confirmer</option>
-          <option value="GENERALE">🏢 Ligne générale</option>
+          <option value="DECIDEUR">Contact potentiellement pertinent</option>
+          <option value="PERSO">Courriel à vérifier</option>
+          <option value="GENERALE">Courriel à préfixe générique</option>
         </select>
       </div>
       <div class="filtre">
         <label for="s-statut">Statut REQ</label>
         <select id="s-statut">
           <option value="">Tous</option>
-          <option value="REQ_DONE">Enrichi</option>
-          <option value="A_REVISER">À réviser</option>
+          <option value="REQ_DONE">Enrichissement REQ effectué</option>
+          <option value="A_REVISER">À vérifier</option>
           <option value="NON_TRAITE">Non traité</option>
         </select>
       </div>
@@ -114,22 +118,23 @@
         <label for="s-search">Recherche (nom, NEQ, tél., courriel)</label>
         <input type="text" id="s-search" placeholder="Ex: Chartwell…">
       </div>
-      <button id="s-export" type="button" class="reset" title="Exporte les adresses de domicile des dirigeants (foyers dédoublonnés) pour publipostage">📄 Exporter les adresses (CSV)</button>
+      <button id="s-export" type="button" class="reset" title="Exporte les adresses extraites du REQ, regroupées par adresse; leur type n’est pas distingué">📄 Exporter les adresses (CSV)</button>
     </section>
 
-    <p id="s-compteur" class="compteur" aria-live="polite">Choisis une région pour charger l'amalgame K10 + REQ.</p>
+    <p id="s-compteur" class="compteur" aria-live="polite">Choisis une région pour consulter les observations MSSS et REQ.</p>
 
     <div id="s-cartes"></div>
   </main>
 
   <!-- VUE CHANGEMENTS (veille mensuelle : diff du registre) -->
   <main id="vue-changements" hidden>
+    <p class="compteur">Comparatif observé entre deux snapshots; aucune date effective ni causalité ne peut en être déduite.</p>
     <p id="chg-compteur" class="compteur" aria-live="polite">Chargement…</p>
     <div id="chg-contenu"></div>
   </main>
 
   <footer class="pied">
-    Données : Registre K10, MSSS Québec · Affichage en lecture seule.
+    Sources : registre MSSS (K10) et enrichissements REQ · Les indices de contact sont heuristiques.
   </footer>
 
   <!-- data.js n'est plus la source (étape 3) : l'appli lit consultationApi en

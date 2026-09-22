@@ -94,7 +94,7 @@
     <section class="filtres" aria-label="Filtres sourcing">
       <div class="filtre">
         <label for="s-region">Région</label>
-        <select id="s-region"><option value="">— choisir une région —</option></select>
+        <select id="s-region"><option value="">Toutes les régions</option></select>
       </div>
       <div class="filtre">
         <label for="s-contact">Indice sur le courriel (heuristique)</label>
@@ -115,15 +115,17 @@
         </select>
       </div>
       <div class="filtre filtre-recherche">
-        <label for="s-search">Recherche (nom, NEQ, tél., courriel)</label>
-        <input type="text" id="s-search" placeholder="Ex: Chartwell…">
+        <label for="s-search">Recherche (RPA, compagnie, personne, adresse, courriel, identifiants)</label>
+        <input type="search" id="s-search" placeholder="Rechercher dans toutes les régions…">
       </div>
+      <button id="s-reset" type="button" class="reset">Réinitialiser</button>
       <button id="s-export" type="button" class="reset" title="Exporte les adresses extraites du REQ, regroupées par adresse; leur type n’est pas distingué">📄 Exporter les adresses (CSV)</button>
     </section>
 
-    <p id="s-compteur" class="compteur" aria-live="polite">Choisis une région pour consulter les observations MSSS et REQ.</p>
+    <p id="s-compteur" class="compteur" aria-live="polite">Ouvrez l’onglet pour charger la recherche REQ toutes régions.</p>
 
     <div id="s-cartes"></div>
+    <button id="s-suite" type="button" class="reset" hidden>Afficher les 50 résultats suivants</button>
   </main>
 
   <!-- VUE CHANGEMENTS (veille mensuelle : diff du registre) -->

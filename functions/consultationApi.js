@@ -114,8 +114,14 @@ function resumeSourcing(fiche) {
     courriels,
     courrielQualite: classifierCourriel(courriel, admins),
     sourcingStatus: si.status ?? 'NON_TRAITE',
-    administrateurs: admins,
+    administrateurs: admins.map(({ nom, prenom, fonction, adresseResidentielle }) =>
+      ({ nom, prenom, fonction, adresseResidentielle })),
     erreurREQ: si.erreur ?? null,
+    numeroRegistre: fiche.numeroRegistre ?? null,
+    municipalite: s1.municipalite ?? null,
+    adresse: s1.adresse ?? null,
+    nomCompagnie: fiche.section2_titulaires?.personneMorale?.nomCompagnie ?? null,
+    neqBrut: fiche.section2_titulaires?.personneMorale?.neq ?? null,
   };
 }
 
@@ -145,12 +151,15 @@ export const consultationApi = onRequest(
       || (present('noForm') && ['vue', 'cdRSS', 'date', 'cursor'].some(present))
       || (['index', 'changements'].includes(vue) && present('cdRSS'))
       || (present('date') && vue !== 'changements')
-      || (present('cursor') && vue !== 'index');
+      || (present('cursor') && vue !== 'index' && vue !== 'sourcing')
+      || (vue === 'sourcing' && present('cursor') && present('cdRSS'))
+      || (vue === 'sourcing' && !present('cdRSS') && ['offset', 'limit'].some(present));
     if (conflit) {
       res.status(400).json({ erreur: 'Combinaison de paramètres incompatible avec le mode demandé.' });
       return;
     }
 
+    res.set('Cache-Control', 'private, no-store');
     const db = getFirestore();
 
     // Mode changements : ?vue=changements → un doc _changements (diff mensuel).
@@ -246,26 +255,34 @@ export const consultationApi = onRequest(
       return;
     }
 
-    // Index global paginé : projection seulement, après le même mur d'accès.
-    if (String(req.query.vue || '') === 'index') {
+    // Deux projections, même pagination gardée. K10 reste inchangé.
+    const sourcingGlobal = vue === 'sourcing' && !present('cdRSS');
+    if (vue === 'index' || sourcingGlobal) {
       const cursor = req.query.cursor;
       if (cursor !== undefined && (typeof cursor !== 'string'
         || !cursor || cursor.includes('/') || Buffer.byteLength(cursor, 'utf8') > 1500)) {
         res.status(400).json({ erreur: 'Curseur invalide.' });
         return;
       }
-      let query = db.collection('residences')
-        .select('noForm', 'numeroRegistre', '_regionCdRSS', '_collecteLe', 'statut',
+      const champs = ['noForm', 'numeroRegistre', '_regionCdRSS', '_collecteLe', 'statut',
           'section1_identification.nomResidence', 'section1_identification.municipalite',
           'section1_identification.categorieRPA', 'section1_identification.nombreTotalUnitesImmeubles',
           'section1_identification.esss', 'section2_titulaires.personneMorale.nomCompagnie',
-          'section2_titulaires.personneMorale.neq', 'section2_titulaires.personneMorale.neqNormalise')
+          'section2_titulaires.personneMorale.neq', 'section2_titulaires.personneMorale.neqNormalise'];
+      if (sourcingGlobal) champs.push(
+        'section1_identification.esssNom', 'section1_identification.adresse',
+        'section1_identification.telephone', 'section1_identification.telecopieur',
+        'section1_identification.courriels', 'section6_portraits.capaciteRPA',
+        'enrichissement.sourcingInverse.status',
+        'enrichissement.sourcingInverse.administrateurs',
+        'enrichissement.sourcingInverse.erreur');
+      let query = db.collection('residences').select(...champs)
         .orderBy(FieldPath.documentId());
       if (cursor !== undefined) query = query.startAfter(cursor);
       const snap = await query.limit(MAX_LIMIT).get();
       res.status(200).json({
-        vue: 'index',
-        fiches: snap.docs.map((d) => resume(d.data())),
+        vue: sourcingGlobal ? 'sourcing' : 'index',
+        fiches: snap.docs.map((d) => sourcingGlobal ? resumeSourcing(d.data()) : resume(d.data())),
         nextCursor: snap.size === MAX_LIMIT ? snap.docs[snap.size - 1].id : null,
       });
       return;

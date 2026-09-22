@@ -45,6 +45,7 @@ const elReset = document.getElementById('f-reset');
 const elCompteur = document.getElementById('compteur');
 const elCorps = document.getElementById('corps');
 const elEntetes = document.querySelectorAll('#tableau th.triable');
+const libellesRegions = new Map();
 
 // Peuple la déroulante des régions à partir d'un asset statique local
 // (regions-actives.json, généré par functions/regions-actives.mjs — lecture
@@ -58,6 +59,7 @@ async function peuplerRegions() {
   } catch (e) {
     return;
   }
+  for (const r of regions) libellesRegions.set(r.cdRSS, r.libelle || '');
   // Remplit les deux déroulantes région (onglet K10 + onglet Sourcing).
   for (const sel of [document.getElementById('f-region'), document.getElementById('s-region')]) {
     if (!sel || sel.options.length > 1) continue;
@@ -68,6 +70,7 @@ async function peuplerRegions() {
       sel.appendChild(opt);
     }
   }
+  if (sourcingEtat === 'pret') rendreSourcing();
 }
 
 // --- tri des colonnes (client, sur les données déjà chargées) ---
@@ -110,9 +113,13 @@ for (const th of elEntetes) {
   });
 }
 
+function normaliserRecherche(v) {
+  return String(v ?? '').trim().toLowerCase();
+}
+
 function fichesFiltrees() {
   const region = elRegion.value;
-  const recherche = elRecherche.value.trim().toLowerCase();
+  const recherche = normaliserRecherche(elRecherche.value);
   const cat = elCat.value;
   const min = elMin.value === '' ? null : Number(elMin.value);
   const max = elMax.value === '' ? null : Number(elMax.value);
@@ -121,7 +128,7 @@ function fichesFiltrees() {
     if (region && f.cdRSS !== region) return false;
     if (recherche && ![f.nomResidence, f.municipalite, f.nomCompagnie,
       f.noForm, f.numeroRegistre, f.neq, f.neqNormalise]
-      .some((v) => String(v ?? '').trim().toLowerCase().includes(recherche))) return false;
+      .some((v) => normaliserRecherche(v).includes(recherche))) return false;
     if (cat && String(get.cat(f)) !== cat) return false;
     const u = get.unites(f);
     if (min !== null && (u == null || u < min)) return false;
@@ -178,29 +185,37 @@ elReset.addEventListener('click', () => {
 elRegion.addEventListener('change', rendreListe);
 elRecherche.addEventListener('input', rendreListe);
 
+async function chargerPages(vue, session) {
+  const fiches = [];
+  const curseurs = new Set();
+  let cursor = null;
+  do {
+    const data = await appelApi(`?vue=${vue}${cursor === null ? '' : `&cursor=${encodeURIComponent(cursor)}`}`);
+    if (session !== versionSession) throw new Error('session-modifiee');
+    if (data.vue !== vue || !Array.isArray(data.fiches) || data.fiches.length > 500
+      || (data.nextCursor !== null && (typeof data.nextCursor !== 'string' || !data.nextCursor))) {
+      throw new Error('index-invalide');
+    }
+    if (data.nextCursor !== null && !data.fiches.length) throw new Error('page-vide');
+    fiches.push(...data.fiches);
+    cursor = data.nextCursor;
+    if (cursor !== null) {
+      if (curseurs.has(cursor)) throw new Error('curseur-repete');
+      curseurs.add(cursor);
+    }
+  } while (cursor !== null);
+
+  return fiches;
+}
+
 async function chargerIndex() {
   const session = versionSession;
   indexEtat = 'chargement';
   REGISTRE = [];
   rendreListe();
-  const fiches = [];
-  const curseurs = new Set();
-  let cursor = null;
   try {
-    do {
-      const data = await appelApi(`?vue=index${cursor === null ? '' : `&cursor=${encodeURIComponent(cursor)}`}`);
-      if (session !== versionSession) return;
-      if (data.vue !== 'index' || !Array.isArray(data.fiches)
-        || (data.nextCursor !== null && (typeof data.nextCursor !== 'string' || !data.nextCursor))) {
-        throw new Error('index-invalide');
-      }
-      fiches.push(...data.fiches);
-      cursor = data.nextCursor;
-      if (cursor !== null) {
-        if (curseurs.has(cursor)) throw new Error('curseur-repete');
-        curseurs.add(cursor);
-      }
-    } while (cursor !== null);
+    const fiches = await chargerPages('index', session);
+    if (session !== versionSession) return;
     REGISTRE = fiches;
     // L'asset apporte les libellés; il ne détermine pas la couverture de l'index.
     const connues = new Set([...elRegion.options].map((o) => o.value));
@@ -568,11 +583,15 @@ const elSContact = document.getElementById('s-contact');
 const elSStatut = document.getElementById('s-statut');
 const elSSearch = document.getElementById('s-search');
 const elSExport = document.getElementById('s-export');
+const elSReset = document.getElementById('s-reset');
+const elSSuite = document.getElementById('s-suite');
 const elSCompteur = document.getElementById('s-compteur');
 const elSCartes = document.getElementById('s-cartes');
 
-let SOURCING = [];          // amalgame de la région chargée
-let sourcingFiltrees = [];  // sous-ensemble après filtres (base de l'export)
+let SOURCING = []; // projection REQ toutes régions, publiée seulement une fois complète
+let sourcingFiltrees = []; // sélection complète, jamais limitée à la page affichée
+let sourcingEtat = 'initial';
+let sourcingAffiches = 50;
 
 // ==================== CHANGEMENTS (veille mensuelle) ====================
 const vueChangements = document.getElementById('vue-changements');
@@ -684,23 +703,26 @@ function rendreChangements(data, contenu = elChgContenu, compteur = elChgCompteu
   if (liens) relierFiches(contenu);
 }
 
-async function chargerRegionSourcing() {
-  const cd = elSRegion.value;
-  if (!cd) {
-    SOURCING = [];
-    elSCompteur.textContent = 'Choisis une région pour consulter les observations MSSS et REQ.';
-    elSCartes.innerHTML = '';
-    return;
-  }
-  elSCompteur.textContent = 'Chargement…';
-  elSCartes.innerHTML = '';
-  let data;
+async function chargerSourcing() {
+  if (sourcingEtat !== 'initial') return;
+  const session = versionSession;
+  sourcingEtat = 'chargement';
+  SOURCING = [];
+  rendreSourcing();
   try {
-    data = await appelApi(`?vue=sourcing&cdRSS=${encodeURIComponent(cd)}`);
+    const fiches = await chargerPages('sourcing', session);
+    if (session !== versionSession) return;
+    SOURCING = fiches;
+    const connues = new Set([...elSRegion.options].map((o) => o.value));
+    for (const cd of [...new Set(fiches.map((f) => f.cdRSS).filter(Boolean))].sort()) {
+      if (!connues.has(cd)) elSRegion.add(new Option(`Région ${cd}`, cd));
+    }
+    sourcingEtat = 'pret';
   } catch (e) {
-    return; // 401/403 déjà géré par appelApi
+    if (session !== versionSession) return;
+    SOURCING = [];
+    sourcingEtat = 'erreur';
   }
-  SOURCING = data.fiches || [];
   rendreSourcing();
 }
 
@@ -720,31 +742,61 @@ function badgeQualite(q) {
   return '';
 }
 
+// Correspondances contextualisées, sans créer d'identité personne/entreprise.
+function correspondancesSourcing(r) {
+  const q = normaliserRecherche(elSSearch.value);
+  if (!q) return [];
+  const contient = (valeurs) => valeurs.some((v) => normaliserRecherche(v).includes(q));
+  const resultats = [];
+  if (contient([r.nom, r.noForm, r.numeroRegistre, r.municipalite, r.adresse,
+    r.cdRSS, r.esss, libellesRegions.get(r.cdRSS), r.telephone, r.telecopieur,
+    ...(r.courriels || [])])) resultats.push({ type: 'RPA', texte: r.nom || r.noForm });
+  if (contient([r.nomCompagnie, r.neq, r.neqBrut]))
+    resultats.push({ type: 'ENTREPRISE', texte: r.nomCompagnie || 'Nom non renseigné au MSSS' });
+  for (const a of r.administrateurs || []) {
+    const nom = `${a.prenom || ''} ${a.nom || ''}`.trim();
+    if (contient([nom, `${a.nom || ''} ${a.prenom || ''}`, a.fonction, a.adresseResidentielle]))
+      resultats.push({ type: 'PERSONNE', texte: nom || 'Nom non renseigné' });
+  }
+  return resultats;
+}
+
 function sourcingFiltre() {
   const c = elSContact.value;
   const st = elSStatut.value;
-  const q = elSSearch.value.trim().toLowerCase();
-  return SOURCING.filter((r) => {
-    if (c && r.courrielQualite !== c) return false;
-    if (st && (r.sourcingStatus || 'NON_TRAITE') !== st) return false;
-    if (q) {
-      const foin = [r.nom, r.neq, r.telephone, r.courriel].map((x) => String(x || '').toLowerCase());
-      if (!foin.some((x) => x.includes(q))) return false;
-    }
-    return true;
-  });
+  const cd = elSRegion.value;
+  const q = normaliserRecherche(elSSearch.value);
+  return SOURCING.filter((r) =>
+    (!cd || r.cdRSS === cd)
+    && (!c || r.courrielQualite === c)
+    && (!st || (r.sourcingStatus || 'NON_TRAITE') === st)
+    && (!q || correspondancesSourcing(r).length > 0));
 }
 
 function rendreSourcing() {
+  elSExport.disabled = sourcingEtat !== 'pret';
+  elSSuite.hidden = true;
+  if (sourcingEtat !== 'pret') {
+    sourcingFiltrees = [];
+    elSCartes.replaceChildren();
+    elSCompteur.textContent = sourcingEtat === 'erreur'
+      ? 'Recherche REQ indisponible ou incomplète. Rechargez la page pour réessayer.'
+      : 'Chargement de la recherche REQ toutes régions…';
+    return;
+  }
   const fiches = sourcingFiltre();
   sourcingFiltrees = fiches;
   elSCompteur.textContent = `${fiches.length} résidence${fiches.length > 1 ? 's' : ''}`
-    + (fiches.length !== SOURCING.length ? ` (sur ${SOURCING.length})` : '');
+    + (fiches.length !== SOURCING.length ? ` (sur ${SOURCING.length})` : '')
+    + ` · ${Math.min(sourcingAffiches, fiches.length)} affichées; export sur toute la sélection`;
   if (!fiches.length) {
+    elSExport.disabled = true;
     elSCartes.innerHTML = '<p class="vide">Aucune fiche pour ces critères.</p>';
     return;
   }
-  elSCartes.innerHTML = fiches.map(carteSourcing).join('');
+  elSExport.disabled = !fiches.length;
+  elSSuite.hidden = fiches.length <= sourcingAffiches;
+  elSCartes.innerHTML = fiches.slice(0, sourcingAffiches).map(carteSourcing).join('');
   relierFiches(elSCartes);
 }
 
@@ -758,14 +810,18 @@ function carteSourcing(r) {
   }
   const contacts = [];
   if (r.telephone) contacts.push(`<a href="tel:${esc(r.telephone)}">📞 ${esc(r.telephone)}</a>`);
-  if (r.courriel) contacts.push(`<span>✉️ <a href="mailto:${esc(r.courriel)}">${esc(r.courriel)}</a> ${badgeQualite(r.courrielQualite)}</span>`);
+  for (const mail of r.courriels || []) {
+    contacts.push(`<span>✉️ <a href="mailto:${esc(mail)}">${esc(mail)}</a>${mail === r.courriel ? ' ' + badgeQualite(r.courrielQualite) : ''}</span>`);
+  }
   if (r.telecopieur) contacts.push(`<span class="cs-vide">📠 ${esc(r.telecopieur)}</span>`);
   if (!r.telephone && !r.courriel) contacts.push('<span class="cs-vide">Aucune coordonnée au registre K10</span>');
 
+  const correspondances = correspondancesSourcing(r).map((m) =>
+    `<li><strong>${esc(m.type)}</strong> : ${esc(m.texte)}</li>`).join('');
   return `<div class="carte-sourcing">
     <div class="cs-tete">
       <div>
-        <h3 class="cs-nom">${esc(r.nom || '(sans nom)')} ${badgeStatut(r.sourcingStatus)}</h3>
+        <h3 class="cs-nom">RPA : ${esc(r.nom || '(sans nom)')} ${badgeStatut(r.sourcingStatus)}</h3>
         <p class="cs-sous">${esc(r.esss || '—')}</p>
       </div>
       <div class="cs-droite">
@@ -773,22 +829,28 @@ function carteSourcing(r) {
         <p class="cs-neq">NEQ normalisé depuis le MSSS : ${esc(r.neq || 'non renseigné')} · Capacité RPA déclarée : ${esc(r.capacite ?? '—')}</p>
       </div>
     </div>
-    <p class="cs-sous">noForm MSSS : ${esc(r.noForm)} · Autres identifiants et dates disponibles dans la fiche.</p>
+    <p class="cs-sous">Municipalité : ${esc(r.municipalite || '—')} · Adresse MSSS : ${esc(r.adresse || '—')}</p>
+    <p class="cs-sous">Compagnie déclarée au MSSS : ${esc(r.nomCompagnie || '—')} · NEQ déclaré : ${esc(r.neqBrut || '—')}</p>
+    <p class="cs-sous">noForm MSSS : ${esc(r.noForm)} · Numéro de registre : ${esc(r.numeroRegistre || '—')}</p>
+    ${correspondances ? `<ul>${correspondances}</ul>` : ''}
+    <p class="cs-sous">Personnes extraites lors du traitement du NEQ associé à cette fiche; relation technique, sans confirmation de propriété ni d’autorité.</p>
     ${boutonFiche(r.noForm)}
     <div class="cs-titre-bloc">Coordonnées déclarées au MSSS</div>
     <div class="cs-contacts">${contacts.join('')}</div>
     <p class="cs-sous">Indices heuristiques sur le courriel : aucune preuve d’autorité ni autorisation de communication.</p>
-    <div class="cs-titre-bloc">Personnes et fonctions extraites du REQ</div>
+    <details><summary>Personnes et fonctions extraites du REQ</summary>
     <p class="cs-sous">Enrichissement REQ ≠ identité corporative confirmée.</p>
     ${r.erreurREQ ? `<p class="cs-sous">À vérifier : ${esc(r.erreurREQ)}</p>` : ''}
     ${blocAdmins}
+    </details>
   </div>`;
 }
 
 // Export CSV des adresses de domicile des dirigeants (publipostage).
 // Respecte les filtres courants et dédoublonne par foyer.
 function exporterAdresses() {
-  const source = sourcingFiltrees.length ? sourcingFiltrees : SOURCING;
+  if (sourcingEtat !== 'pret') return;
+  const source = sourcingFiltre(); // tous les résultats filtrés, même non affichés
   const CP = /([A-Za-z]\d[A-Za-z]\s?\d[A-Za-z]\d)/;
   const foyers = new Map();
   source.forEach((r) => (r.administrateurs || []).forEach((a) => {
@@ -825,9 +887,20 @@ function exporterAdresses() {
   URL.revokeObjectURL(url);
 }
 
-elSRegion.addEventListener('change', chargerRegionSourcing);
-[elSContact, elSStatut].forEach((el) => el.addEventListener('change', rendreSourcing));
-elSSearch.addEventListener('input', rendreSourcing);
+function filtrerSourcing() {
+  sourcingAffiches = 50;
+  rendreSourcing();
+}
+[elSRegion, elSContact, elSStatut].forEach((el) => el.addEventListener('change', filtrerSourcing));
+elSSearch.addEventListener('input', filtrerSourcing);
+elSReset.addEventListener('click', () => {
+  elSRegion.value = ''; elSContact.value = ''; elSStatut.value = ''; elSSearch.value = '';
+  filtrerSourcing();
+});
+elSSuite.addEventListener('click', () => {
+  sourcingAffiches += 50;
+  rendreSourcing();
+});
 elSExport.addEventListener('click', exporterAdresses);
 
 // --- Onglets ---
@@ -844,6 +917,7 @@ function activerOnglet(tab) {
   vueChangements.hidden = tab !== 'changements';
   // Changements n'a pas de filtre région : on charge au premier affichage.
   if (tab === 'changements' && !changementsCharges) chargerChangements();
+  if (tab === 'sourcing') chargerSourcing();
 }
 for (const b of elBoutonsOnglet) b.addEventListener('click', () => activerOnglet(b.dataset.tab));
 
@@ -885,9 +959,11 @@ function afficherApp() {
 // cette fonction ne fait qu'obéir.
 async function appelApi(queryString) {
   if (!idTokenActuel) throw new Error('non-connecte');
+  const session = versionSession;
   const res = await fetch(`${CONSULTATION_API_URL}${queryString}`, {
     headers: { Authorization: `Bearer ${idTokenActuel}` },
   });
+  if (session !== versionSession) throw new Error('session-modifiee');
   if (res.status === 401) {
     await signOut(auth);
     afficherEcranConnexion('Session expirée ou invalide — reconnecte-toi.');
@@ -926,6 +1002,10 @@ elBtnDeconnexion.addEventListener('click', () => signOut(auth));
 // avoir affiché la moindre donnée.
 onAuthStateChanged(auth, async (user) => {
   const session = ++versionSession;
+  SOURCING = []; sourcingFiltrees = [];
+  sourcingEtat = 'initial'; sourcingAffiches = 50;
+  elSRegion.value = ''; elSContact.value = ''; elSStatut.value = ''; elSSearch.value = '';
+  rendreSourcing();
   indexEtat = 'chargement';
   if (!user) {
     idTokenActuel = null;
